@@ -1,0 +1,6 @@
+Server: openresty
+Date: Wed, 07 Feb 2018 07:15:01 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: _xsrf=2|0ff209f0|65cb16b6a9793b72fe3b66c5cd15e7f9|1517987701; Path=/
+Vary: User-Agent, Accept-Encoding
+Location: /history/

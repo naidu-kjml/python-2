@@ -1,0 +1,5 @@
+Server: iis8.0
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html
+Set-Cookie: AUTHSESSID=4b90055bdf40; HttpOnly
+Date: Fri, 09 Feb 2018 02:25:56 GMT

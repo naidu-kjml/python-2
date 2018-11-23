@@ -1,0 +1,84 @@
+2018-05-10 11:13:26,317 - framework - INFO - TEST START
+2018-05-10 11:13:26,318 - framework - INFO - OPEN BROWSER
+2018-05-10 11:13:33,541 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 11:13:35,497 - framework - INFO - SUCCESS
+2018-05-10 11:13:39,862 - framework - INFO - test_diary BEGIN
+2018-05-10 11:14:05,253 - framework - INFO - TEST START
+2018-05-10 11:14:05,253 - framework - INFO - OPEN BROWSER
+2018-05-10 11:14:13,077 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 11:14:14,262 - framework - INFO - SUCCESS
+2018-05-10 11:14:14,262 - framework - INFO - test_login BEGIN
+2018-05-10 11:14:57,782 - framework - INFO - TEST COMPLETE
+2018-05-10 11:15:03,990 - framework - INFO - TEST START
+2018-05-10 11:15:03,990 - framework - INFO - OPEN BROWSER
+2018-05-10 11:15:11,422 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 11:15:12,128 - framework - INFO - SUCCESS
+2018-05-10 11:15:16,944 - framework - INFO - test_genWork BEGIN
+2018-05-10 11:16:42,228 - framework - INFO - TEST COMPLETE
+2018-05-10 13:43:10,761 - framework - INFO - TEST START
+2018-05-10 13:43:10,761 - framework - INFO - OPEN BROWSER
+2018-05-10 13:43:19,115 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 13:43:27,619 - framework - INFO - SUCCESS
+2018-05-10 13:43:36,591 - framework - INFO - test_diary BEGIN
+2018-05-10 13:44:02,199 - framework - INFO - TEST START
+2018-05-10 13:44:02,199 - framework - INFO - OPEN BROWSER
+2018-05-10 13:44:09,521 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 13:44:10,309 - framework - INFO - SUCCESS
+2018-05-10 13:44:10,310 - framework - INFO - test_login BEGIN
+2018-05-10 13:44:15,603 - framework - INFO - test_login PASS
+2018-05-10 13:44:15,937 - framework - INFO - TEST COMPLETE
+2018-05-10 13:44:22,119 - framework - INFO - TEST START
+2018-05-10 13:44:22,119 - framework - INFO - OPEN BROWSER
+2018-05-10 13:44:28,836 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 13:44:29,621 - framework - INFO - SUCCESS
+2018-05-10 13:44:34,129 - framework - INFO - test_genWork BEGIN
+2018-05-10 14:18:45,102 - framework - INFO - TEST START
+2018-05-10 14:18:45,103 - framework - INFO - OPEN BROWSER
+2018-05-10 14:18:53,248 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 14:18:57,987 - framework - INFO - SUCCESS
+2018-05-10 14:19:04,231 - framework - INFO - test_diary BEGIN
+2018-05-10 14:19:04,437 - framework - INFO - TEST START
+2018-05-10 14:19:04,437 - framework - INFO - OPEN BROWSER
+2018-05-10 14:19:12,734 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 14:19:16,367 - framework - INFO - SUCCESS
+2018-05-10 14:19:16,367 - framework - INFO - test_login BEGIN
+2018-05-10 14:19:45,039 - framework - INFO - TEST START
+2018-05-10 14:19:45,039 - framework - INFO - OPEN BROWSER
+2018-05-10 14:19:52,200 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 14:19:58,386 - framework - INFO - SUCCESS
+2018-05-10 14:20:06,907 - framework - INFO - test_diary BEGIN
+2018-05-10 14:20:33,043 - framework - INFO - TEST START
+2018-05-10 14:20:33,043 - framework - INFO - OPEN BROWSER
+2018-05-10 14:20:40,906 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 14:20:42,655 - framework - INFO - SUCCESS
+2018-05-10 14:20:42,655 - framework - INFO - test_login BEGIN
+2018-05-10 14:20:48,761 - framework - INFO - TEST COMPLETE
+2018-05-10 14:28:05,374 - framework - INFO - TEST START
+2018-05-10 14:28:05,374 - framework - INFO - OPEN BROWSER
+2018-05-10 14:28:12,512 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 14:28:14,348 - framework - INFO - SUCCESS
+2018-05-10 14:28:20,698 - framework - INFO - test_diary BEGIN
+2018-05-10 14:28:46,222 - framework - INFO - TEST START
+2018-05-10 14:28:46,222 - framework - INFO - OPEN BROWSER
+2018-05-10 14:28:53,352 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 14:28:54,327 - framework - INFO - SUCCESS
+2018-05-10 14:28:54,328 - framework - INFO - test_login BEGIN
+2018-05-10 14:28:58,770 - framework - INFO - test_login PASS
+2018-05-10 14:28:59,080 - framework - INFO - TEST COMPLETE
+2018-05-10 14:32:08,256 - framework - INFO - TEST START
+2018-05-10 14:32:08,257 - framework - INFO - OPEN BROWSER
+2018-05-10 14:32:15,191 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 14:32:16,544 - framework - INFO - SUCCESS
+2018-05-10 14:32:21,273 - framework - INFO - test_diary BEGIN
+2018-05-10 14:32:46,453 - framework - INFO - TEST START
+2018-05-10 14:32:46,453 - framework - INFO - OPEN BROWSER
+2018-05-10 14:32:53,138 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 14:32:53,902 - framework - INFO - SUCCESS
+2018-05-10 14:32:53,903 - framework - INFO - test_login BEGIN
+2018-05-10 14:32:58,192 - framework - INFO - test_login PASS
+2018-05-10 14:32:58,497 - framework - INFO - TEST COMPLETE
+2018-05-10 14:33:04,860 - framework - INFO - TEST START
+2018-05-10 14:33:04,860 - framework - INFO - OPEN BROWSER
+2018-05-10 14:33:11,907 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-05-10 14:33:12,626 - framework - INFO - SUCCESS
+2018-05-10 14:33:16,993 - framework - INFO - test_work BEGIN

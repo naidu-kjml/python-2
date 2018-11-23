@@ -1,0 +1,10 @@
+2018-08-10 10:39:29,278 - framework - INFO - TEST START
+2018-08-10 10:39:29,293 - framework - INFO - OPEN BROWSER
+2018-08-10 10:39:34,358 - framework - INFO - CONNECTING TO "http://voa.grgbanking.com/"
+2018-08-10 10:39:35,865 - framework - INFO - SUCCESS
+2018-08-10 10:39:40,509 - framework - INFO - test_diary BEGIN
+2018-08-10 10:39:44,415 - framework - ERROR - test_diary FAIL
+2018-08-10 10:39:44,620 - framework - INFO - TEST START
+2018-08-10 10:39:44,621 - framework - INFO - OPEN BROWSER
+2018-08-10 10:39:49,729 - framework - INFO - TEST START
+2018-08-10 10:39:49,729 - framework - INFO - OPEN BROWSER
