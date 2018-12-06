@@ -30,13 +30,11 @@ time.sleep(1)
 browser.find_element_by_xpath('//*[@id="navMenu"]/a[6]/span').click()
 time.sleep(3)
 browser.switch_to.parent_frame()
-browser.switch_to.frame('menu_main')
-print (browser.current_url)
-for i in range(0,1):
+for i in range(0,5):
+	browser.switch_to.frame('menu_main')
 	if browser.find_element_by_xpath('//*[@id="%d"]/td[3]/a'%i).text=="【运通智能】软件产品测试申请":
 		browser.find_element_by_xpath('//*[@id="%d"]/td[4]/a'%i).click()
 		time.sleep(3)	
-		print (browser.current_url)
 		#切换页面句柄
 		handle = browser.current_window_handle
 		while True:
@@ -47,8 +45,12 @@ for i in range(0,1):
 		for newhandle in handles:
 			if newhandle!=handle:
 				browser.switch_to_window(newhandle)
-		time.sleep(3)
+		time.sleep(1)
 		browser.switch_to.frame('print_frm')
 		print (browser.current_url)
 		print(browser.find_element_by_xpath('//*[@id="bodyScroll"]/form/div[2]/table/tbody/tr[2]/td[2]/div').text)
+		browser.close()
+		browser.switch_to_window(handle)
+		browser.switch_to.frame('main')
+		
 
