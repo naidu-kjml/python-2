@@ -59,30 +59,30 @@ class TestWork(unittest.TestCase):
 			time.sleep(1)
 
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/b/span/input[1]').send_keys('2018')
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/b/span/input[2]').send_keys('06')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/b/span/input[2]').send_keys('12')
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/input[3]').send_keys('软件测试')
 			#第一项
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[4]/td[1]/textarea').send_keys('cas006硬币模块')
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[4]/td[2]/div/textarea').send_keys('第一周进行CAS002模块Linux版本测试。')
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[4]/td[3]/textarea').send_keys('第一周完成CAS002模块测试，包括全部接口的功能和容错性。')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[4]/td[1]/textarea').send_keys('BR15N模块金标')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[4]/td[2]/div/textarea').send_keys('第一周进行BR15N模块金标版本测试，验证FSN备份功能。')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[4]/td[3]/textarea').send_keys('第一周完成BR15N模块测试，包括验证FSN备份功能和回归测试其他接口基本功能。')
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[4]/td[4]/input').send_keys('余雷')
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[4]/td[5]/input').send_keys('25')
 			#第二项
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[5]/td[1]/textarea').send_keys('TAM001')
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[5]/td[2]/textarea').send_keys('第二周进行TAM001模块Linux版本测试。')
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[5]/td[3]/textarea').send_keys('第二周完成TAM001模块测试，测试全部接口功能和容错性。')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[5]/td[1]/textarea').send_keys('TIM004发卡模块')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[5]/td[2]/textarea').send_keys('第二周进行TIM004模块Linux版本测试，测试全部接口功能和容错性。')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[5]/td[3]/textarea').send_keys('第二周完成TIM004模块测试，测试全部接口功能和容错性，完成发卡接口压力测试。')
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[5]/td[4]/input').send_keys('余雷')
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[5]/td[5]/input').send_keys('25')
 			#第三项
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[6]/td[1]/textarea').send_keys('MS80打印机')
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[6]/td[2]/textarea').send_keys('第三周进行MS80打印机测试。测试所有接口功能和容错性。')
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[6]/td[3]/textarea').send_keys('第三周完成MS80打印机测试。')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[6]/td[1]/textarea').send_keys('TAM001')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[6]/td[2]/textarea').send_keys('第三周进行TAM001模块Linux版本测试，测试所有接口功能和容错性。')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[6]/td[3]/textarea').send_keys('第三周完成TAM001模块Linux版本测试，测试所有接口功能和容错性')
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[6]/td[4]/input').send_keys('余雷')
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[6]/td[5]/input').send_keys('25')
 			#第四项
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[7]/td[1]/textarea').send_keys('cas006硬币模块')
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[7]/td[2]/textarea').send_keys('第四周进行BR15N模块Linux版本测试。')
-			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[7]/td[3]/textarea').send_keys('第四周完成BR15N模块Linux版本测试，测试所有接口功能和容错性。')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[7]/td[2]/textarea').send_keys('第四周进行北京闸机驱动测试，测试所有接口功能和容错性。')
+			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[7]/td[3]/textarea').send_keys('第四周完成北京闸机驱动测试，测试所有接口功能和容错性。')
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[7]/td[4]/input').send_keys('余雷')
 			self.browser.find_element_by_xpath('//*[@id="body1"]/p[1]/span/font/font/table[3]/tbody/tr[7]/td[5]/input').send_keys('25')
 			time.sleep(1)
@@ -105,7 +105,7 @@ class TestWork(unittest.TestCase):
 			con = self.browser.find_element_by_xpath('//*[@id="0"]/td[4]/a').text
 			print(con[:-9])
 			#断言：对比内容是否相同
-			self.assertEqual('2018年05月软件测试部肖佳明【运通智能】员工月度考核',con[:-9])
+			self.assertEqual('2018年12月软件测试部肖佳明【运通智能】员工月度考核',con[:-9])
 		except:
 			self.browser.get_screenshot_as_file('./pic/test_genWork.png')
 			#logger.error('test_genWork FAIL')
