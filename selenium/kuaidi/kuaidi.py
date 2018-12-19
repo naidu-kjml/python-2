@@ -29,17 +29,17 @@ class Deliver():
 	
 if __name__=='__main__':
 	code = input('请输入运单号：')
-	t = input('请输入总共查询时间：')
+	t = input('请输入总共查询时间（小时）：')
 	deliver = Deliver(code,t)
 	init = '' #初始信息
 	times = 0 #执行次数
 	deliver.open_broswer()
 	while True:
 		times +=1
-		if times>int(deliver.hour)*60:
+		if times>int(deliver.hour)*6:
 			print('查询完成')
 			break
-		time.sleep(60)
+		time.sleep(600)
 		print('第%d次查询'%times)
 		try:
 			t,mes=deliver.get_mes()

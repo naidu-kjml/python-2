@@ -1,0 +1,82 @@
+title,link,time
+PyCon China 2018 归来，感谢曾经没有怂的自己,https://debugtalk.com/post/pycon-china-2018/,2018-10-14
+【大疆招聘】招聘核心项目测试负责人，诚意十足（附文末福利）,https://debugtalk.com/post/dji-hire-test-leader/,2018-07-01
+使用爬虫技术实现 Web 页面资源可用性检测,https://debugtalk.com/post/requests-crawler/,2018-05-28
+HttpRunner 实现 hook 机制,https://debugtalk.com/post/httprunner-hook/,2018-05-12
+HttpRunner 再议参数化数据驱动机制,https://debugtalk.com/post/httprunner-data-driven-refactor/,2018-03-25
+在大疆做测试开发是一种什么体验？,https://debugtalk.com/post/test-dev-in-dji/,2018-03-06
+HttpRunner 实现参数化数据驱动机制,https://debugtalk.com/post/httprunner-data-driven/,2018-02-16
+HttpRunner 通过 skip 机制实现对测试用例的分组执行控制,https://debugtalk.com/post/HttpRunner-skip-feature/,2018-02-08
+我的 2017 年终总结,https://debugtalk.com/post/my-2017-summary/,2017-12-31
+HttpRunner 的测试用例分层机制,https://debugtalk.com/post/HttpRunner-testcase-layer/,2017-12-23
+HttpRunner 的结果校验器优化,https://debugtalk.com/post/HttpRunner-validator-optimization/,2017-12-13
+HttpRunner 支持 HAR 意味着什么？,https://debugtalk.com/post/HttpRunner-supports-HAR/,2017-11-14
+ApiTestEngine 正式更名为 HttpRunner,https://debugtalk.com/post/ApiTestEngine-rename-to-HttpRunner/,2017-11-08
+ApiTestEngine，不再局限于API的测试,https://debugtalk.com/post/apitestengine-not-only-about-json-api/,2017-11-06
+约定大于配置：ApiTestEngine实现热加载机制,https://debugtalk.com/post/apitestengine-hot-plugin/,2017-09-09
+ApiTestEngine 集成 Locust 实现更好的性能测试体验,https://debugtalk.com/post/apitestengine-supersede-locust/,2017-08-27
+ApiTestEngine QuickStart,https://debugtalk.com/post/apitestengine-quickstart/,2017-08-20
+【大疆内推】岗位描述我只想这么写,https://debugtalk.com/post/d-test-hire-info/,2017-08-09
+How to install a package from Github that has other github dependencies ?,https://debugtalk.com/post/How-to-install-a-package-from-Github-that-has-other-github-dependencies/,2017-08-05
+解决Jenkins中无法展示HTML样式的问题,https://debugtalk.com/post/solve-Jenkins-can-not-show-html-css/,2017-07-24
+ApiTestEngine 演进之路（4）测试用例中实现 Python 函数的调用,https://debugtalk.com/post/ApiTestEngine-4-call-functions-in-yaml-testcases/,2017-07-17
+ApiTestEngine 演进之路（3）测试用例中实现 Python 函数的定义,https://debugtalk.com/post/ApiTestEngine-3-define-functions-in-yaml-testcases/,2017-07-11
+ApiTestEngine 演进之路（2）探索优雅的测试用例描述方式,https://debugtalk.com/post/ApiTestEngine-2-best-testcase-description/,2017-07-07
+300行Python代码打造实用接口测试框架,https://debugtalk.com/post/300-lines-python-code-api-test-framework/,2017-06-28
+ApiTestEngine 演进之路（1）搭建基础框架,https://debugtalk.com/post/ApiTestEngine-1-setup-basic-framework/,2017-06-22
+ApiTestEngine 演进之路（0）开发未动，测试先行,https://debugtalk.com/post/ApiTestEngine-0-setup-CI-test/,2017-06-20
+接口自动化测试的最佳工程实践（ApiTestEngine）,https://debugtalk.com/post/ApiTestEngine-api-test-best-practice/,2017-06-18
+【科普】互联网测试岗位的工作日常,https://debugtalk.com/post/introduction-to-testing-engineer-daily-work/,2017-06-15
+使用pyenv管理多个Python版本依赖环境,https://debugtalk.com/post/use-pyenv-manage-multiple-python-virtualenvs/,2017-03-25
+【GIT技巧】清除历史提交记录中的敏感信息,https://debugtalk.com/post/clean-sensitive-data-from-git-history-commits/,2017-03-17
+深入浅出开源性能测试工具Locust（使用篇）,https://debugtalk.com/post/head-first-locust-user-guide/,2017-02-22
+深入浅出开源性能测试工具Locust（脚本增强）,https://debugtalk.com/post/head-first-locust-advanced-script/,2017-02-22
+春节旅行之意法印象,https://debugtalk.com/post/my-impression-on-italy-and-france/,2017-02-02
+我的 2016 年终总结,https://debugtalk.com/post/my-2016-summary/,2016-12-31
+如何优雅地一键实现macOS网络代理切换,https://debugtalk.com/post/switch-macOS-web-proxy-in-elegant-way/,2016-11-24
+【LocustPlus序】漫谈服务端性能测试,https://debugtalk.com/post/locustplus-talk-about-performance-test/,2016-11-02
+打造心目中理想的自动化测试框架（AppiumBooster）,https://debugtalk.com/post/build-ideal-app-automation-test-framework/,2016-09-07
+Jenkins的输出日志也可以变得色色的,https://debugtalk.com/post/make-Jenkins-Console-Output-Colorful/,2016-08-15
+使用Jenkins实现持续集成构建检查,https://debugtalk.com/post/Jenkins-CI-Automation-Test/,2016-08-14
+关于持续集成打包平台的Jenkins配置和构建脚本实现细节,https://debugtalk.com/post/iOS-Android-Packing-with-Jenkins-details/,2016-07-26
+Introduction to AppiumBooster,https://debugtalk.com/post/Introduction-to-AppiumBooster/,2016-07-20
+使用Jenkins搭建iOS/Android持续集成打包平台,https://debugtalk.com/post/iOS-Android-Packing-with-Jenkins/,2016-06-28
+深入浅出Git权限校验,https://debugtalk.com/post/head-first-git-authority-verification/,2016-06-15
+GitHub权限校验失败给我的启发,https://debugtalk.com/post/trap-in-GitHub-authority-verification/,2016-06-14
+关于促销活动页面测试的那些事儿,https://debugtalk.com/post/promotion-page-test/,2016-06-09
+敏捷团队协作：Confluence简易教程,https://debugtalk.com/post/confluence-simple-tutorial/,2016-06-07
+从0到1搭建移动App功能自动化测试平台（3）：编写iOS自动化测试脚本,https://debugtalk.com/post/build-app-automated-test-platform-from-0-to-1-write-iOS-testcase-scripts/,2016-05-30
+从0到1搭建移动App功能自动化测试平台（2）：操作iOS应用的控件,https://debugtalk.com/post/build-app-automated-test-platform-from-0-to-1-Appium-interrogate-iOS-UI/,2016-05-29
+从0到1搭建移动App功能自动化测试平台（1）：模拟器中运行iOS应用,https://debugtalk.com/post/build-app-automated-test-platform-from-0-to-1-Appium-inspector-iOS-simulator/,2016-05-21
+从0到1搭建移动App功能自动化测试平台（0）：背景介绍和平台规划,https://debugtalk.com/post/build-app-automated-test-platform-from-0-to-1-backgroud-introduction/,2016-05-20
+Android App持续集成性能测试：启动流量（2）,https://debugtalk.com/post/Android-performance-test-start-traffic-tcpdump-wireshark/,2016-05-03
+Android App持续集成性能测试：启动流量（1）,https://debugtalk.com/post/Android-performance-test-start-traffic-uid-stat/,2016-05-03
+通过API远程管理Jenkins,https://debugtalk.com/post/manage-Jenkins-via-remote-api/,2016-05-02
+SQL语句中关于NULL的那些坑,https://debugtalk.com/post/traps-in-sql-null/,2016-04-25
+对Android设备CPU进行锁频,https://debugtalk.com/post/Android-CPU-lock-frequency/,2016-04-18
+Android App持续集成性能测试：使用Python实现UI自动化,https://debugtalk.com/post/Android-performance-test-UI-Automation-with-Python/,2016-04-17
+微信朋友圈投票活动的刷票案例分析,https://debugtalk.com/post/cheat-in-wechat-moments-voting-activity/,2016-04-04
+测试结果报表展现：Web页面绘制多层级表格,https://debugtalk.com/post/render-multi-level-table-in-webpage/,2016-03-20
+【灵感】线上数据采摘工具（ProductionDataPicker）,https://debugtalk.com/post/developing-idea-production-data-picker/,2016-03-08
+利用PyCharm进行Python远程调试,https://debugtalk.com/post/remote-debugging-with-pycharm/,2015-07-13
+Android开发环境配置4：配置Android设备,https://debugtalk.com/post/android-development-environment-device-configuration/,2015-07-10
+Android开发环境配置3：Root,https://debugtalk.com/post/android-development-environment-root/,2015-07-05
+Android开发环境配置2：详解Recovery,https://debugtalk.com/post/android-development-environment-recovery/,2015-07-04
+Android开发环境配置1：详解Bootloader,https://debugtalk.com/post/android-development-environment-bootloader/,2015-07-03
+Android开发环境配置0：adb和fastboot,https://debugtalk.com/post/android-development-environment-adb-and-fastboot/,2015-07-02
+黑盒测试用例设计技术--边界值分析法,https://debugtalk.com/post/blackbox-testing-method-boundary-value-analysis/,2015-03-19
+黑盒测试用例设计技术--等价类划分法,https://debugtalk.com/post/blackbox-testing-method-equivalence-partitioning/,2015-03-18
+基于HTTP的WebService测试方法,https://debugtalk.com/post/WebService-Test-Based-On-HTTP/,2015-02-13
+基于WSDL或SOAP的WebService测试方法--对原理的思考,https://debugtalk.com/post/Introspection-on-WebService-Test/,2015-02-12
+使用SIPp对基于SIP协议的IP电话通信服务器进行性能测试,https://debugtalk.com/post/SIPp-IP-Telephone-Server-Performance-Testing/,2014-05-11
+LoadRunner中获取当前系统时间,https://debugtalk.com/post/loadrunner-get-system-time/,2013-10-28
+在Pelican中使用多说评论系统,https://debugtalk.com/post/Using-DuoShuo-in-Pelican/,2013-10-05
+HTML字符实体(Character Entity),https://debugtalk.com/post/html-character-entity/,2013-10-04
+使用 Pelican + GitCafe Pages 创建 Blog,https://debugtalk.com/post/Create-Blog-with-Pelican-and-GitCafe-Pages/,2013-10-03
+测试最大在线用户数,https://debugtalk.com/post/Evaluate-Largest-Online-Users/,2013-08-22
+LoadRuner中的参数与变量,https://debugtalk.com/post/loadrunner-parameter-variable/,2013-08-12
+LoadRunner基于SOAP的WebService测试方法,https://debugtalk.com/post/LoadRunner-SOAP-WebService/,2013-08-06
+测试工程师的自我修养--理解WebService,https://debugtalk.com/post/concept-about-webservice/,2013-08-05
+LoadRunner基于WSDL的WebService测试方法,https://debugtalk.com/post/LoadRunner-WSDL-WebService/,2013-08-02
+性能指标--并发用户数（Concurrent Users）,https://debugtalk.com/post/performance-index-concurrent-users/,2013-07-31
+性能测试场景设计--混合业务场景下的脚本比例控制,https://debugtalk.com/post/scenario-design-scripts-percent-controll/,2013-07-22

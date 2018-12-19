@@ -35,6 +35,7 @@ for i in a:
 #option.add_argument('headless')
 #browser = webdriver.Chrome(chrome_options=option)
 browser = webdriver.Chrome()
+browser.implicitly_wait(5)
 browser.get("http://voa.grgbanking.com/")
 browser.find_element_by_id('UserName').clear()
 browser.find_element_by_id('UserName').send_keys('lyjie9')
@@ -46,22 +47,22 @@ browser.get('http://oa.grgbanking.com/vmobile/nav.php')
 
 #切换到已办结页面
 browser.switch_to.frame('main')
-time.sleep(1)
+#time.sleep(1)
 browser.switch_to.frame('menu_top')
-time.sleep(1)
+#time.sleep(1)
 browser.find_element_by_xpath('//*[@id="navMenu"]/a[6]/span').click()
-time.sleep(3)
+#time.sleep(3)
 browser.switch_to.parent_frame()
 browser.switch_to.frame('menu_main')
 sum = 0
-for i in range(0,10):
+for i in range(0,20):
 	#OA流程号
 	oa = browser.find_element_by_xpath('//*[@id="%d"]/td[2]'%i).text
 	if oa in oa_list:
 		continue
 	if browser.find_element_by_xpath('//*[@id="%d"]/td[3]/a'%i).text=="【运通智能】软件产品测试申请":
 		browser.find_element_by_xpath('//*[@id="%d"]/td[4]/a'%i).click()
-		time.sleep(3)	
+		#time.sleep(3)	
 		#切换页面句柄
 		handle = browser.current_window_handle
 		while True:
@@ -72,7 +73,7 @@ for i in range(0,10):
 		for newhandle in handles:
 			if newhandle!=handle:
 				browser.switch_to_window(newhandle)
-		time.sleep(1)
+		#time.sleep(1)
 		browser.switch_to.frame('print_frm')
 		#类别
 		try:
@@ -129,7 +130,7 @@ for i in range(0,10):
 				"version":leibie,
 				"dll1":pingtai,
 				"dll2":mokuai,
-				"dll3":'程序添加，需编辑',
+				"dll3":'程序添加，需编辑！',
 				"dll4":banbenhao,
 				"dll5":tjriqi,
 				"dll6":oa,
@@ -138,7 +139,7 @@ for i in range(0,10):
 				"dll9":jhwcsj,
 				"dll10":sjwcsj,
 				"dll11":csjg,
-				"column20":'程序添加，需编辑'
+				"column20":'程序添加，需编辑！'
 				}
 
 			cookies = {
@@ -155,7 +156,7 @@ for i in range(0,10):
 				print('【%s】添加失败！！！'%leibie)
 		else:
 			postData = {
-			'diqu':'程序添加，需编辑',
+			'diqu':'程序添加，需编辑！',
 			'xianlu':xiangmu,
 			'sblx':mokuai,
 			'bbh':banbenhao,
@@ -166,7 +167,7 @@ for i in range(0,10):
 			'plantime':jhwcsj,
 			'nowtime':sjwcsj,
 			'testresult':csjg,
-			'column20':'程序添加，需编辑'
+			'column20':'程序添加，需编辑！'
 			}
 			cookies = {
 				'JSESSIONID':'849271ABB41300EFFE03E1B0822CD06B',
