@@ -5,7 +5,7 @@ def CrawlKW_nosign(source_code,url):
     source_code_nospace = ""
     for i in source_code:
         if i != " " and i != "\n":
-            source_code_nospace1+= 1
+            source_code_nospace+= i
     
     for ir in range(1,11):
         re_result = eval("re.findall(r'(?<=id=\""+str(ir)+"\").+(?=id=\""+str(ir+1)+"\")',source_code_nospace)")
