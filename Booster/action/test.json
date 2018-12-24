@@ -1,0 +1,70 @@
+{
+    "Search": {
+        "enter search page": {
+            "url": "http://www.errcode.cf",
+            "control_id": null,
+            "control_action": "get",
+            "data": null,
+            "expectation": "//*[@id=\"ErrCode\"]",
+            "option": "xpath"
+        },
+        "input a error code": {
+            "url": null,
+            "control_id": "//*[@id=\"ErrCode\"]",
+            "control_action": "send_keys",
+            "data": 14410,
+            "expectation": null,
+            "option": "xpath"
+        },
+        "search": {
+            "url": null,
+            "control_id": "/html/body/div[1]/div/div/input[2]",
+            "control_action": "click",
+            "data": null,
+            "expectation": "//*[@id=\"ec\"]",
+            "option": "xpath"
+        }
+    },
+    "Feedback": {
+        "enter search page": {
+            "url": "http://www.errcode.cf",
+            "control_id": null,
+            "control_action": "get",
+            "data": null,
+            "expectation": "//*[@id=\"ErrCode\"]",
+            "option": "xpath"
+        },
+        "enter feedback page": {
+            "url": null,
+            "control_id": "/html/body/div[4]/p/a",
+            "control_action": "click",
+            "data": null,
+            "expectation": "/html/body/div/div/h3",
+            "option": "xpath"
+        },
+        "select a season": {
+            "url": null,
+            "control_id": "/html/body/div/div/div[1]/label[1]",
+            "control_action": "click",
+            "data": null,
+            "expectation": null,
+            "option": "xpath"
+        },
+        "input a feedback message": {
+            "url": null,
+            "control_id": "//*[@id=\"description\"]",
+            "control_action": "send_keys",
+            "data": "hello,world(message by selenium)",
+            "expectation": null,
+            "option": "xpath"
+        },
+        "submit": {
+            "url": null,
+            "control_id": "/html/body/div/div/button",
+            "control_action": "click",
+            "data": null,
+            "expectation": "\u63d0\u4ea4\u6210\u529f",
+            "option": "alert"
+        }
+    }
+}
