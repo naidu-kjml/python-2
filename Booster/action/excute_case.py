@@ -1,71 +1,69 @@
 from selenium import webdriver
 import json,time
+from action.autoDriver import *
+from util.log import logger
+from config.Config import *
 
 def excuteCase(driver,cases):
-	driver.implicitly_wait(3)#隐式等待
-#	with open("test.json", "w", encoding='utf-8') as f:
-#		f.write(json.dumps(a, indent=4))
+	ad = AutomateDriver(driver)
+	ad.driver.implicitly_wait(3)#隐式等待
+	case_index = 0#初始化用例号为0
+	Test_case = {}
 	for case in cases:#遍历用例
-		print('testing case:'+case)
-		for step in cases[case]:#遍历步骤
-			print('STEP:'+step)
-			#遍历步骤内容
-			url = cases[case][step]['url']
-			control_id = cases[case][step]['control_id']
-			control_action = cases[case][step]['control_action'] 
-			data = cases[case][step]['data'] 
-			expectation = cases[case][step]['expectation'] 
-			option = cases[case][step]['option'] 
-			#print(url,control_id,control_action,data,expectation,option)
-			if url != None:
-				driver.get(url)
-			else:
-				if control_action == 'click':#点击操作
-					if option == 'xpath' or option == 'alert':
-						driver.find_element_by_xpath(control_id).click()
-					elif option == 'id':
-						driver.find_element_by_id(control_id).click()
-					elif option == 'name':
-						driver.find_element_by_name(control_id).click()
-					elif option == 'class':
-						driver.find_element_by_class_name(control_id).click()
-				else:#输入操作
-					if option == 'xpath' or option == 'alert':
-						driver.find_element_by_xpath(control_id).clear()
-						driver.find_element_by_xpath(control_id).send_keys(data)
-					elif option == 'id':
-						driver.find_element_by_id(control_id).clear()
-						driver.find_element_by_id(control_id).send_keys(data)
-					elif option == 'name':
-						driver.find_element_by_name(control_id).clear()
-						driver.find_element_by_name(control_id).send_keys(data)
-					elif option == 'class':
-						driver.find_element_by_class_name(control_id).clear()
-						driver.find_element_by_class_name(control_id).send_keys(data)
-				time.sleep(3)
-				try:
-					if expectation != None:#断言
-						if option == 'xpath':
-							driver.find_element_by_xpath(control_id)
-						elif option == 'alert':
-							if driver.switch_to_alert().text == expectation:
-								pass
-								driver.switch_to_alert().accept()
-						elif option == 'id':
-							driver.find_element_by_id(control_id)
-						elif option == 'name':
-							driver.find_element_by_name(control_id)
-						elif option == 'class':
-							driver.find_element_by_class_name(control_id)
-				except:
-					print(case+' False!!!')
-					break
-		print(case+" Pass!!!")
+		try:
+			case_index += 1
+			step_index = 0#初始化用例步骤号为0
+			print('Testing %dth case:%s'%(case_index,case))
+			logger.info('Testing %dth case:%s'%(case_index,case))
+			for step in cases[case]:#遍历步骤
+				step_index += 1
+				print('STEP%d:%s'%(step_index,step))
+				logger.info('STEP%d:%s'%(step_index,step))
+				#获取步骤内容
+				url = cases[case][step]['url']
+				control_id = cases[case][step]['control_id']
+				control_action = cases[case][step]['control_action'] 
+				data = cases[case][step]['data'] 
+				expectation = cases[case][step]['expectation'] 
+				option = cases[case][step]['option']
+				selector = str(option)+','+str(control_id)
+				#执行用例
+				if control_action == 'get':
+					ad.navigate(url)
+				elif control_action == 'post':
+					pass
+				elif control_action == 'click':
+					ad.click(selector)
+				elif control_action == 'send_keys':
+					ad.type(selector,data)
+				elif control_action == 'openNewWindow':
+					ad.openNewWindow(selector)
+				#断言
+				if expectation == None:
+					continue
+				selector = str(option)+','+str(expectation)
+				ad.getElement(selector)
+				if option == 'alert':
+					rel = ad.getAlertText()
+					if rel == expectation:
+						ad.acceptAlert()
+					else:
+						raise BaseException
+		except:
+			Test_case[case] = 'Fail'
+			print(case+' Fail!!!')
+			logger.error(case+' Fail!!!')
+			ad.get_screenshot(screenshot_path+case+'.png')
+			continue
+		else:
+			Test_case[case] = 'Pass'
+			print(case+" Pass!!!")
+			logger.info(case+' Pass!!!')
+	return Test_case
 
 
 
-
-if __name__=='__main__':
+'''if __name__=='__main__':
 	driver = webdriver.Chrome()
-	excuteCase(driver)
-	driver.quit()
+	excuteCase(driver，cases)
+	driver.quit()'''

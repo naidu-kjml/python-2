@@ -12,11 +12,11 @@ class GetCase():
 		for i in range(2,int(max_row)+2):
 			case_n = self.ex.get_value('A'+str(i))
 			step_desc = self.ex.get_value('B'+str(i))
-			if case_n != None:
+			if case_n != None:#根据用例名称是否为空区分每个用例
 				case_name = case_n
 				cases_index[case_name]=''
-				index_start = i
-			if case_n == None and step_desc == None:
+				index_start = i#用例名称不为空时获取步骤的开始索引
+			if case_n == None and step_desc == None:#用例名称跟步骤描述都为空，说明用例结束
 				index_end = i
 				index = [index_start,index_end]
 				cases_index[case_name]=index
@@ -50,6 +50,6 @@ class GetCase():
 if __name__=='__main__':
 	g = GetCase(r'D:\python\unittest\errcodeWeb_test\test_case\test_search.xlsx','Sheet1')
 	index = g.get_index()
-	g.get_cases(index)
+	print(g.get_cases(index))
 
 

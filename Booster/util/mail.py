@@ -14,13 +14,11 @@ class Email:
         self.receiver = receiver
         self.password = password
 
-    def send(self):
+    def send(self,message):
         self.msg['Subject'] = Header(self.title,'utf-8')
         self.msg['From'] = Header(self.sender)
         self.msg['To'] = self.receiver
-        with open('report/HTMLReport.html','rb') as f:
-            message = f.read()
-        content = MIMEText(message,'html','utf-8')
+        content = MIMEText(message,'plain','utf-8')
         self.msg.attach(content)
         smtp_server = smtplib.SMTP(self.server)
         #smtp_server.set_debuglevel(1)
