@@ -61,24 +61,7 @@
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>Form</receiver>
-   <slot>search()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>319</x>
-     <y>52</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>382</x>
-     <y>68</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
  <slots>
   <slot>search()</slot>
  </slots>
