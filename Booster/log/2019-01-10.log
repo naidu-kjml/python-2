@@ -1,0 +1,22 @@
+2019-01-10 09:16:18,645 - framework - INFO - Testing 1th case:search
+2019-01-10 09:16:18,646 - framework - INFO - STEP1:open baidu web
+2019-01-10 09:16:22,733 - framework - INFO - STEP2:input an key word
+2019-01-10 09:16:24,267 - framework - INFO - STEP3:search
+2019-01-10 09:16:24,949 - framework - INFO - search Pass!!!
+2019-01-10 09:16:46,816 - framework - INFO - Testing 1th case:Search
+2019-01-10 09:16:46,817 - framework - INFO - STEP1:enter search page
+2019-01-10 09:16:52,126 - framework - INFO - STEP2:input a error code
+2019-01-10 09:16:52,454 - framework - INFO - STEP3:search
+2019-01-10 09:16:53,605 - framework - INFO - Search Pass!!!
+2019-01-10 09:16:53,606 - framework - INFO - Testing 2th case:Feedback
+2019-01-10 09:16:53,607 - framework - INFO - STEP1:enter feedback page
+2019-01-10 09:16:56,198 - framework - INFO - STEP2:select a season
+2019-01-10 09:16:57,407 - framework - INFO - STEP3:input a feedback message
+2019-01-10 09:16:58,485 - framework - INFO - STEP4:submit
+2019-01-10 09:17:00,700 - framework - INFO - Feedback Pass!!!
+2019-01-10 09:17:17,404 - framework - INFO - Testing 1th case:login
+2019-01-10 09:17:17,405 - framework - INFO - STEP1:enter oa login page
+2019-01-10 09:17:19,802 - framework - INFO - STEP2:input a username
+2019-01-10 09:17:21,399 - framework - INFO - STEP3:input a password
+2019-01-10 09:17:21,663 - framework - INFO - STEP4:login
+2019-01-10 09:17:22,550 - framework - INFO - login Pass!!!

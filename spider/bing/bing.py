@@ -1,6 +1,8 @@
 import requests
 import re,os
 import time
+# 导入requests_toolbelt库使用MultipartEncoder
+from requests_toolbelt import MultipartEncoder
 local = time.strftime("%Y-%m-%d")
 url = 'http://cn.bing.com/'
 con = requests.get(url)
@@ -15,13 +17,7 @@ if not os.path.exists('pic'):
 f = open('D:/bing/pic/%s.jpg' % local, 'wb')
 f.write(read.content)
 f.close()
-
-
-import requests
-# 导入requests_toolbelt库使用MultipartEncoder
-from requests_toolbelt import MultipartEncoder
-
-
+time.sleep(3)
 url = 'http://ftp09.host.me0.cn:3312/vhost/index.php?c=webftp&a=upsave'
 headers = {
 	'Cookie': 'Cookie: td_cookie=2936051868; PHPSESSID=tqb60frvuq0gmplmivbd3f6ob4',
