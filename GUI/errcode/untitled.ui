@@ -13,12 +13,28 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>请输入错误码</string>
+   </property>
+  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>30</y>
-     <width>81</width>
+     <x>280</x>
+     <y>20</y>
+     <width>75</width>
      <height>31</height>
     </rect>
    </property>
@@ -29,39 +45,65 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>30</y>
-     <width>61</width>
+     <x>40</x>
+     <y>20</y>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>错误码：</string>
    </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>90</y>
-     <width>361</width>
-     <height>201</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>30</y>
-     <width>201</width>
-     <height>31</height>
+     <x>40</x>
+     <y>80</y>
+     <width>311</width>
+     <height>192</height>
     </rect>
    </property>
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>390</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>239</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>306</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
  <slots>
   <slot>search()</slot>
  </slots>
