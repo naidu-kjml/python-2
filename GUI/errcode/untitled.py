@@ -34,7 +34,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("Form", "运通智能模块错误码查询"))
         self.lineEdit.setPlaceholderText(_translate("Form", "请输入错误码"))
         self.pushButton.setText(_translate("Form", "搜索"))
         self.label.setText(_translate("Form", "错误码："))

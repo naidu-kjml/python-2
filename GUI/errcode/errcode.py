@@ -5,10 +5,10 @@ import mysql.connector
 
 
 class MyForm(QWidget, Ui_Form):
-    def __init__(self, parent=None):
-        super(MyForm, self).__init__(parent)
+    def __init__(self):
+        super(MyForm, self).__init__()
         self.setupUi(self)
-        self.pushButton.clicked.connect(self.search)  # 将按钮点击事件和search函数绑定
+        self.response = ''
 
     def search(self):
         errcode = self.lineEdit.text()
@@ -21,15 +21,15 @@ class MyForm(QWidget, Ui_Form):
             values = cursor.fetchall()
             if values:
                 for v in values:
-                    self.textBrowser.setText(str(v[2]))
+                    self.response = errcode + ':' + str(v[2]) + '\n' + self.response
+                    self.textBrowser.setText(self.response)
                 cursor.close()
             else:
                 self.textBrowser.setText('错误码不存在')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app = QApplication(sys.argv)
-    widget = QWidget()
-    ui = MyForm(widget)
-    widget.show()
+    MyForm = MyForm()
+    MyForm.show()
     sys.exit(app.exec_())

@@ -3,22 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cff5229c-c68f-45d8-8835-9675a26992dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/Analysis-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/EXE-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/PKG-00.pkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/PKG-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/PYZ-00.pyz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/PYZ-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/errcode.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/warn-errcode.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/errcode/xref-errcode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/errcode.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/errcode.py" beforeDir="false" afterPath="$PROJECT_DIR$/errcode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errcode.spec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled.ui" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web.ico" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,22 +15,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/untitled.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="741">
+              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/errcode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="342">
+              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,7 +83,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../errcode_old/errcode.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ye" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RunDashboard">
@@ -182,14 +169,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49736565" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49894625" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49578503" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49841937" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50263435" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50421494" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -303,30 +290,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../errcode_old/errcode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <element signature="e#1#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../errcode_old/errcode.py" />
     <entry file="file://$PROJECT_DIR$/errcode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="342">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
         </state>
       </provider>
     </entry>
