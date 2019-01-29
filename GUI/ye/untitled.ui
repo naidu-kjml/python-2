@@ -2,14 +2,6 @@
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>1124</width>
-    <height>889</height>
-   </rect>
-  </property>
   <property name="windowTitle">
    <string>python大法好</string>
   </property>
@@ -21,20 +13,20 @@
     <rect>
      <x>10</x>
      <y>50</y>
-     <width>1101</width>
-     <height>831</height>
+     <width>1301</width>
+     <height>931</height>
     </rect>
    </property>
    <property name="title">
-    <string>图片</string>
+    <string/>
    </property>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>20</y>
-      <width>1081</width>
-      <height>801</height>
+      <width>1261</width>
+      <height>901</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
@@ -404,20 +396,6 @@
        </property>
       </widget>
      </item>
-     <item row="8" column="8">
-      <widget class="QPushButton" name="pushButton_33">
-       <property name="text">
-        <string>复制链接32</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="7">
-      <widget class="QPushButton" name="pushButton_32">
-       <property name="text">
-        <string>复制链接31</string>
-       </property>
-      </widget>
-     </item>
      <item row="8" column="6">
       <widget class="QPushButton" name="pushButton_31">
        <property name="text">
@@ -481,63 +459,54 @@
        </property>
       </widget>
      </item>
-     <item row="7" column="7">
-      <widget class="QLabel" name="label_31">
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="8">
-      <widget class="QLabel" name="label_32">
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>10</y>
-     <width>261</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>123456</string>
-   </property>
-  </widget>
-  <widget class="QSplitter" name="splitter">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>10</y>
-     <width>271</width>
+     <width>171</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>页数：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="spinBox">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>下载</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>901</width>
      <height>23</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
+   <property name="value">
+    <number>24</number>
    </property>
-   <widget class="QLabel" name="label">
-    <property name="text">
-     <string>页数：</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="spinBox">
-    <property name="minimum">
-     <number>1</number>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="text">
-     <string>下载</string>
-    </property>
-   </widget>
   </widget>
  </widget>
  <resources/>
@@ -549,8 +518,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>84</x>
-     <y>256</y>
+     <x>95</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>392</x>
@@ -565,8 +534,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>245</x>
-     <y>253</y>
+     <x>340</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>503</x>
@@ -581,8 +550,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>372</x>
-     <y>251</y>
+     <x>498</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>615</x>
@@ -597,8 +566,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>484</x>
-     <y>252</y>
+     <x>657</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>701</x>
@@ -613,8 +582,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>618</x>
-     <y>256</y>
+     <x>815</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>781</x>
@@ -629,8 +598,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>742</x>
-     <y>251</y>
+     <x>973</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>864</x>
@@ -645,8 +614,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>899</x>
-     <y>253</y>
+     <x>1131</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>949</x>
@@ -661,8 +630,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>990</x>
-     <y>253</y>
+     <x>1289</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>1048</x>
@@ -677,8 +646,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>50</x>
-     <y>454</y>
+     <x>61</x>
+     <y>517</y>
     </hint>
     <hint type="destinationlabel">
      <x>108</x>
@@ -693,8 +662,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>183</x>
-     <y>452</y>
+     <x>340</x>
+     <y>517</y>
     </hint>
     <hint type="destinationlabel">
      <x>312</x>
@@ -709,8 +678,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>386</x>
-     <y>455</y>
+     <x>498</x>
+     <y>517</y>
     </hint>
     <hint type="destinationlabel">
      <x>433</x>
@@ -725,8 +694,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>465</x>
-     <y>447</y>
+     <x>657</x>
+     <y>517</y>
     </hint>
     <hint type="destinationlabel">
      <x>548</x>
@@ -741,8 +710,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>596</x>
-     <y>454</y>
+     <x>815</x>
+     <y>517</y>
     </hint>
     <hint type="destinationlabel">
      <x>653</x>
@@ -757,8 +726,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>734</x>
-     <y>454</y>
+     <x>973</x>
+     <y>517</y>
     </hint>
     <hint type="destinationlabel">
      <x>763</x>
@@ -773,8 +742,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>870</x>
-     <y>447</y>
+     <x>1131</x>
+     <y>517</y>
     </hint>
     <hint type="destinationlabel">
      <x>924</x>
@@ -789,8 +758,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>987</x>
-     <y>455</y>
+     <x>1289</x>
+     <y>517</y>
     </hint>
     <hint type="destinationlabel">
      <x>1030</x>
@@ -805,8 +774,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>56</x>
-     <y>659</y>
+     <x>67</x>
+     <y>743</y>
     </hint>
     <hint type="destinationlabel">
      <x>355</x>
@@ -821,8 +790,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>657</y>
+     <x>340</x>
+     <y>743</y>
     </hint>
     <hint type="destinationlabel">
      <x>398</x>
@@ -837,8 +806,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>355</x>
-     <y>658</y>
+     <x>498</x>
+     <y>743</y>
     </hint>
     <hint type="destinationlabel">
      <x>494</x>
@@ -853,8 +822,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>506</x>
-     <y>651</y>
+     <x>657</x>
+     <y>743</y>
     </hint>
     <hint type="destinationlabel">
      <x>555</x>
@@ -869,8 +838,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>631</x>
-     <y>653</y>
+     <x>815</x>
+     <y>743</y>
     </hint>
     <hint type="destinationlabel">
      <x>718</x>
@@ -885,8 +854,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>751</x>
-     <y>657</y>
+     <x>973</x>
+     <y>743</y>
     </hint>
     <hint type="destinationlabel">
      <x>860</x>
@@ -901,8 +870,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>890</x>
-     <y>662</y>
+     <x>1131</x>
+     <y>743</y>
     </hint>
     <hint type="destinationlabel">
      <x>979</x>
@@ -917,8 +886,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1008</x>
-     <y>653</y>
+     <x>1289</x>
+     <y>743</y>
     </hint>
     <hint type="destinationlabel">
      <x>1078</x>
@@ -933,8 +902,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>84</x>
-     <y>860</y>
+     <x>95</x>
+     <y>969</y>
     </hint>
     <hint type="destinationlabel">
      <x>130</x>
@@ -949,8 +918,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>213</x>
-     <y>863</y>
+     <x>340</x>
+     <y>969</y>
     </hint>
     <hint type="destinationlabel">
      <x>269</x>
@@ -965,8 +934,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>351</x>
-     <y>865</y>
+     <x>498</x>
+     <y>969</y>
     </hint>
     <hint type="destinationlabel">
      <x>366</x>
@@ -981,8 +950,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>501</x>
-     <y>860</y>
+     <x>657</x>
+     <y>969</y>
     </hint>
     <hint type="destinationlabel">
      <x>533</x>
@@ -997,8 +966,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>626</x>
-     <y>858</y>
+     <x>815</x>
+     <y>969</y>
     </hint>
     <hint type="destinationlabel">
      <x>656</x>
@@ -1013,8 +982,8 @@
    <slot>copy()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>771</x>
-     <y>863</y>
+     <x>973</x>
+     <y>969</y>
     </hint>
     <hint type="destinationlabel">
      <x>801</x>
@@ -1023,39 +992,24 @@
    </hints>
   </connection>
   <connection>
-   <sender>pushButton_32</sender>
+   <sender>pushButton</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>copy()</slot>
+   <slot>download()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>882</x>
-     <y>856</y>
+     <x>173</x>
+     <y>15</y>
     </hint>
     <hint type="destinationlabel">
-     <x>911</x>
-     <y>885</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_33</sender>
-   <signal>clicked()</signal>
-   <receiver>Form</receiver>
-   <slot>copy()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1011</x>
-     <y>856</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1053</x>
-     <y>885</y>
+     <x>170</x>
+     <y>39</y>
     </hint>
    </hints>
   </connection>
  </connections>
  <slots>
   <slot>copy()</slot>
+  <slot>download()</slot>
  </slots>
 </ui>
