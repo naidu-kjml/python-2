@@ -36,9 +36,9 @@ class Ye(object):
 			
 	
 	def get_urllist(self):
-		url_init=r'http://www.uuzyz002.com'
+		url_init=r'http://www.uuzyz003.com'
 		url_list=[]
-		url=r'http://www.uuzyz002.com/juru/index-%s.html'%self.pageIndex
+		url=r'http://www.uuzyz003.com/juru/index-%s.html'%self.pageIndex
 		header= {'User-Agent':'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'}
 		proxies={"http":"http//61.135.217.7", "https":"182.47.67.102"}
 		r=requests.get(url)
@@ -73,6 +73,7 @@ class Ye(object):
 				self.get_link(url,picname)
 			except:
 				print('第%d页面不存在'%picname)
+				sum = sum+1
 				continue
 			picname=picname+1
 				
