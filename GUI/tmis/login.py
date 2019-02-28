@@ -50,7 +50,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "一颗数据小白菜"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Tool by xjming"))
         self.lineEdit.setPlaceholderText(_translate("MainWindow", "请输入帐号"))
         self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "请输入密码"))
         self.label.setText(_translate("MainWindow", "帐号"))
@@ -61,7 +61,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def word_get(self):
         login_user = self.lineEdit.text()
         login_password = self.lineEdit_2.text()
-        if login_user == 'admin' and login_password == '123456':
+        if login_user == 'lyjie9' and login_password == 'jrjk2100':
             MyForm.show()
             MainWindow.close()
         else:

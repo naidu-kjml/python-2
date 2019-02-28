@@ -1,5 +1,7 @@
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
+from PyQt5.QtGui import QIcon
+from PyQt5 import QtCore, QtWidgets, Qt
 import sys, os, re, time
 import requests
 from untitled import Ui_Form
@@ -40,19 +42,19 @@ class Worker(QThread):
         file_str = '程序启动中。。。'
         self.sinOut.emit(file_str)
         cookies = {
-            'JSESSIONID': 'F2C7E168255E8A2BD325D2069AFD46DC',
+            'JSESSIONID': 'AA44EA56E2C53DA2733C9BC5B31CBE1C',
             'login': 'admin',
-            'dlxm': ''
+            'loginzh': 'undefined'
         }
 
-        respon = requests.post('http://10.1.34.82:8081/tmis/dllAction!datagrid.action', cookies=cookies)
+        respon = requests.post('http://183.60.124.39:51181/tmis/dllAction!datagrid.action', cookies=cookies)
 
         a = respon.json()['rows']
         oa_list = []
         for i in a:
             oa_list.append(i['dll6'])
 
-        respon = requests.post('http://10.1.34.82:8081/tmis/softAction!datagrid.action', cookies=cookies)
+        respon = requests.post('http://183.60.124.39:51181/tmis/softAction!datagrid.action', cookies=cookies)
         a = respon.json()['rows']
         for i in a:
             try:
@@ -66,7 +68,7 @@ class Worker(QThread):
         option = webdriver.ChromeOptions()
         option.add_argument('headless')
         browser = webdriver.Chrome(chrome_options=option)
-        #  browser = webdriver.Chrome()
+        #browser = webdriver.Chrome()
         browser.implicitly_wait(5)
         browser.get("http://voa.grgbanking.com/")
         browser.find_element_by_id('UserName').clear()
@@ -173,7 +175,7 @@ class Worker(QThread):
                 except:
                     cejg = ''
                 # 判断测试类型为驱动还是整机
-                list = ['张昕', '周坤章']
+                list = ['张昕', '周坤章', '陈丹鹏']
                 if tjry in list:
                     postData = {
                         "version": leibie,
@@ -192,13 +194,13 @@ class Worker(QThread):
                     }
 
                     cookies = {
-                        'JSESSIONID': '849271ABB41300EFFE03E1B0822CD06B',
+                        'JSESSIONID': 'AA44EA56E2C53DA2733C9BC5B31CBE1C',
                         'login': 'admin',
-                        'dlxm': ''
+                        'loginzh': 'undefined'
                     }
 
                     try:
-                        respon = requests.post('http://10.1.34.82:8081/tmis/dllAction!add.action', data=postData,
+                        respon = requests.post('http://183.60.124.39:51181/tmis/dllAction!add.action', data=postData,
                                                cookies=cookies)
                         print('【%s】添加成功' % leibie)
                         file_str = '【%s】添加成功' % leibie
@@ -222,12 +224,12 @@ class Worker(QThread):
                         'column20': '程序添加，需编辑！'
                     }
                     cookies = {
-                        'JSESSIONID': '849271ABB41300EFFE03E1B0822CD06B',
+                        'JSESSIONID': 'AA44EA56E2C53DA2733C9BC5B31CBE1C',
                         'login': 'admin',
-                        'dlxm': ''
+                        'loginzh': 'undefined'
                     }
                     try:
-                        respon = requests.post('http://10.1.34.82:8081/tmis/softAction!add.action', data=postData,
+                        respon = requests.post('http://183.60.124.39:51181/tmis/softAction!add.action', data=postData,
                                                cookies=cookies)
                         print('【%s】添加成功' % mokuai)
                         file_str = '【%s】添加成功' % mokuai
@@ -245,11 +247,79 @@ class Worker(QThread):
         self.sinOut.emit(file_str)
 
 
+class Ui_MainWindow(QtWidgets.QMainWindow):
+
+    def __init__(self):
+        super(Ui_MainWindow,self).__init__()
+        self.setupUi(self)
+        self.retranslateUi(self)
+
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(386, 127)
+        MainWindow.setWindowIcon(QIcon('logo.png'))
+        MainWindow.setStyleSheet("background-image:url(Background.jpg)")
+        self.centralWidget = QtWidgets.QWidget(MainWindow)
+        self.centralWidget.setObjectName("centralWidget")
+        self.lineEdit = QtWidgets.QLineEdit(self.centralWidget)
+        self.lineEdit.setGeometry(QtCore.QRect(250, 20, 100, 20))
+        self.lineEdit.setText("")
+        self.lineEdit.setObjectName("lineEdit")
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.centralWidget)
+        self.lineEdit_2.setGeometry(QtCore.QRect(250, 50, 100, 20))
+        self.lineEdit_2.setText("")
+        self.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.label = QtWidgets.QLabel(self.centralWidget)
+        self.label.setGeometry(QtCore.QRect(200, 24, 24, 12))
+        self.label.setTextFormat(QtCore.Qt.AutoText)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralWidget)
+        self.label_2.setGeometry(QtCore.QRect(200, 54, 24, 12))
+        self.label_2.setObjectName("label_2")
+        self.pushButton = QtWidgets.QPushButton(self.centralWidget)
+        self.pushButton.setGeometry(QtCore.QRect(190, 90, 75, 23))
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralWidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(290, 90, 75, 23))
+        self.pushButton_2.setObjectName("pushButton_2")
+        MainWindow.setCentralWidget(self.centralWidget)
+
+        self.pushButton.clicked.connect(self.word_get)
+        self.pushButton_2.clicked.connect(MainWindow.close)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Tool by xjming"))
+        self.lineEdit.setPlaceholderText(_translate("MainWindow", "请输入帐号"))
+        self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "请输入密码"))
+        self.label.setText(_translate("MainWindow", "帐号"))
+        self.label_2.setText(_translate("MainWindow", "密码"))
+        self.pushButton.setText(_translate("MainWindow", "确定"))
+        self.pushButton_2.setText(_translate("MainWindow", "取消"))
+
+    def word_get(self):
+        login_user = self.lineEdit.text()
+        login_password = self.lineEdit_2.text()
+        if login_user == 'lyjie9' and login_password == 'jrjk2100':
+            MyForm.show()
+            MainWindow.close()
+        else:
+            QMessageBox.warning(self,
+                    "警告",
+                    "用户名或密码错误！",
+                    QMessageBox.Yes)
+            self.lineEdit.setFocus()
 
 
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
     MyForm = MyForm()
-    MyForm.show()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
     sys.exit(app.exec_())
