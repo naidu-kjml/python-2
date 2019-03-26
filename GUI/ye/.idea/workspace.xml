@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c593c5-e359-4270-a0b2-185c959456d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../tmis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tmis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ye.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ye.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/10.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/11.jpg" afterDir="false" />
@@ -26,7 +29,6 @@
       <change beforePath="$PROJECT_DIR$/1/28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/28.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/29.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/30.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/6.jpg" afterDir="false" />
@@ -34,8 +36,20 @@
       <change beforePath="$PROJECT_DIR$/1/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/8.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1/9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ye321/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ye321/Analysis-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ye321/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ye321/EXE-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ye321/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/ye321/PKG-00.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ye321/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ye321/PKG-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ye321/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/ye321/PYZ-00.pyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ye321/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ye321/PYZ-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ye321/base_library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/ye321/base_library.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ye321/warn-ye321.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/ye321/warn-ye321.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ye321/xref-ye321.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/ye321/xref-ye321.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.ui" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ye.py" beforeDir="false" afterPath="$PROJECT_DIR$/ye.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ye321.py" beforeDir="false" afterPath="$PROJECT_DIR$/ye321.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ye321.spec" beforeDir="false" afterPath="$PROJECT_DIR$/ye321.spec" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,17 +62,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/untitled.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6232">
-              <caret line="328" selection-start-line="328" selection-end-line="328" />
+            <state relative-caret-position="436">
+              <caret line="234" column="21" selection-start-line="234" selection-start-column="8" selection-end-line="234" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ye321.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="104" column="33" lean-forward="true" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+            <state relative-caret-position="323">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -66,11 +80,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/url.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ye.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="380">
+              <caret line="73" column="57" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -91,12 +114,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/myQlable.py" />
-        <option value="$PROJECT_DIR$/ye321.py" />
+        <option value="$PROJECT_DIR$/url.txt" />
         <option value="$PROJECT_DIR$/ye.py" />
+        <option value="$PROJECT_DIR$/ye321.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="306" />
     <option name="y" value="30" />
     <option name="width" value="1400" />
@@ -108,6 +132,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,14 +140,19 @@
               <item name="ye" type="b2602c69:ProjectViewProjectNode" />
               <item name="ye" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ye" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -151,6 +181,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ye.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -172,6 +203,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ye321.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -198,73 +230,76 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548296133458</updated>
+      <workItem from="1552387924219" duration="4339000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4339000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="306" y="30" width="1400" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2496329" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24946696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32848233" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32848233" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/myQlable.py" />
-    <entry file="file://$PROJECT_DIR$/untitled.py">
+    <entry file="file://$PROJECT_DIR$/dist/url.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/url.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6232">
-          <caret line="328" selection-start-line="328" selection-end-line="328" />
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ye321.py">
+    <entry file="file://$PROJECT_DIR$/untitled.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="104" column="33" lean-forward="true" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="436">
+          <caret line="234" column="21" selection-start-line="234" selection-start-column="8" selection-end-line="234" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ye.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="380">
+          <caret line="73" column="57" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ye321.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,15 +2,17 @@
 
 # Form implementation generated from reading ui file 'untitled.ui'
 #
-# Created by: PyQt5 UI code generator 5.11.3
+# Created by: PyQt5 UI code generator 5.12
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
+        Form.resize(1321, 991)
         Form.setAutoFillBackground(False)
         self.groupBox = QtWidgets.QGroupBox(Form)
         self.groupBox.setGeometry(QtCore.QRect(10, 50, 1301, 931))
@@ -207,7 +209,7 @@ class Ui_Form(object):
         self.pushButton_9.setObjectName("pushButton_9")
         self.gridLayout.addWidget(self.pushButton_9, 1, 8, 1, 1)
         self.layoutWidget1 = QtWidgets.QWidget(Form)
-        self.layoutWidget1.setGeometry(QtCore.QRect(20, 10, 171, 25))
+        self.layoutWidget1.setGeometry(QtCore.QRect(460, 10, 171, 31))
         self.layoutWidget1.setObjectName("layoutWidget1")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget1)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
@@ -223,9 +225,15 @@ class Ui_Form(object):
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout.addWidget(self.pushButton)
         self.progressBar = QtWidgets.QProgressBar(Form)
-        self.progressBar.setGeometry(QtCore.QRect(210, 10, 901, 23))
-        self.progressBar.setProperty("value", 0)
+        self.progressBar.setGeometry(QtCore.QRect(670, 10, 611, 23))
+        self.progressBar.setProperty("value", 24)
         self.progressBar.setObjectName("progressBar")
+        self.lineEdit = QtWidgets.QLineEdit(Form)
+        self.lineEdit.setGeometry(QtCore.QRect(20, 10, 271, 31))
+        self.lineEdit.setObjectName("lineEdit")
+        self.comboBox = QtWidgets.QComboBox(Form)
+        self.comboBox.setGeometry(QtCore.QRect(320, 10, 81, 31))
+        self.comboBox.setObjectName("comboBox")
 
         self.retranslateUi(Form)
         self.pushButton_2.clicked.connect(Form.copy)
@@ -325,4 +333,5 @@ class Ui_Form(object):
         self.pushButton_9.setText(_translate("Form", "复制链接8"))
         self.label.setText(_translate("Form", "页数："))
         self.pushButton.setText(_translate("Form", "下载"))
+
 
