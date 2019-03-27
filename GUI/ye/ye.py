@@ -6,10 +6,12 @@ from urllib.request import urlretrieve
 
 
 class Ye(object):
-	def __init__(self,page):
-		self.pageIndex=page
+	def __init__(self, page, url, leibie):
+		self.pageIndex = page
+		self.url = url
+		self.leibie = leibie
 
-	def get_link(self,url,picname):
+	def get_link(self, url, picname):
 		socket.setdefaulttimeout(5.0)
 		header= {'User-Agent':'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'}
 		proxies={"http":"http//61.135.217.7", "https":"182.47.67.102"}
@@ -36,9 +38,10 @@ class Ye(object):
 			
 	
 	def get_urllist(self):
-		url_init=r'http://www.uuzyz003.com'
-		url_list=[]
-		url=r'http://www.uuzyz003.com/juru/index-%s.html'%self.pageIndex
+		url_init = self.url
+		url_list = []
+		url = r'%s/%s/index-%s.html' % (url_init, self.leibie, self.pageIndex)
+		#url = url_init
 		header= {'User-Agent':'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'}
 		proxies={"http":"http//61.135.217.7", "https":"182.47.67.102"}
 		r=requests.get(url)

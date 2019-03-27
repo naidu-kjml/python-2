@@ -9,6 +9,12 @@ class MyForm(QWidget, Ui_Form):
     def __init__(self):
         super(MyForm, self).__init__()
         self.setupUi(self)
+        self.progressBar.setProperty("value", 0)
+        lx = ['juru', 'qiangjian', 'nvtong', 'shaofu', 'zhifu', 'xuesheng', 'shaonv', 'zipai', 'mijian']
+        self.comboBox.addItems(lx)
+        with open('url.txt', 'r') as f:
+            url = f.read()
+        self.lineEdit.setText(url)
         self.links = []
         if not os.path.exists(r'D:\python\GUI\ye\1'):
             os.mkdir(r'D:\python\GUI\ye\1')
@@ -101,7 +107,11 @@ class MyForm(QWidget, Ui_Form):
     def download(self):
         self.pushButton.setDisabled(True)
         pages = self.spinBox.text()
-        y = Ye(pages)
+        url = self.lineEdit.text()
+        with open('url.txt', 'w') as f:
+            f.write(url)
+        leibie = self.comboBox.currentText()
+        y = Ye(pages, url, leibie)
         y.start(self.progressBar)
         with open(r'D:\python\GUI\ye\1\link.txt', 'r') as f:
             self.links = f.readlines()

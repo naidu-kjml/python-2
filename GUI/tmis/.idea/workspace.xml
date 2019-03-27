@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b213fe-264f-4154-a909-536b0f24090b" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../../selenium/cuiqingcai/cqc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../selenium/cuiqingcai/cqc.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../selenium/errcode/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../selenium/errcode/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../selenium/psn/psn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../selenium/psn/psn.txt" afterDir="false" />
@@ -15,6 +16,50 @@
       <change beforePath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/report/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/report/HTMLReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/runtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/runtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/test_case/test_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/test_case/test_search.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/1/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/1/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/build/ye321/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/build/ye321/Analysis-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/build/ye321/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/build/ye321/EXE-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/build/ye321/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/build/ye321/PKG-00.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/build/ye321/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/build/ye321/PKG-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/build/ye321/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/build/ye321/PYZ-00.pyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/build/ye321/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/build/ye321/PYZ-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/build/ye321/base_library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/build/ye321/base_library.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/build/ye321/warn-ye321.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/build/ye321/warn-ye321.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/build/ye321/xref-ye321.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/build/ye321/xref-ye321.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/ye.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/ye.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ye/ye321.spec" beforeDir="false" afterPath="$PROJECT_DIR$/../ye/ye321.spec" afterDir="false" />
+>>>>>>> 6da03ca2c472cbad02f612b793b61929ed54799e
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +68,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/tmis$tmis__1_.coverage" NAME="tmis (1) Coverage Results" MODIFIED="1551269670280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tmis$tmis__1_.coverage" NAME="tmis (1) Coverage Results" MODIFIED="1551849859843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tmis$login.coverage" NAME="login Coverage Results" MODIFIED="1551269455368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tmis$tmis.coverage" NAME="tmis Coverage Results" MODIFIED="1551266161528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -32,8 +77,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="855">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
+=======
+            <state relative-caret-position="57">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+>>>>>>> 6da03ca2c472cbad02f612b793b61929ed54799e
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -44,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tmis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+            <state relative-caret-position="438">
+              <caret line="323" column="14" selection-start-line="323" selection-start-column="4" selection-end-line="323" selection-end-column="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -65,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/untitled.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="228">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -130,7 +180,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ye" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -234,11 +284,14 @@
       <updated>1551265166411</updated>
       <workItem from="1551265167966" duration="4338000" />
       <workItem from="1551269645560" duration="212000" />
+      <workItem from="1551425896969" duration="44000" />
+      <workItem from="1551836668305" duration="3803000" />
+      <workItem from="1552387883866" duration="26000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4550000" />
+    <option name="totallyTimeSpent" value="8423000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -253,17 +306,22 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25237092" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.26172706" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.49841937" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5015806" side_tool="true" visible="true" weight="0.32936078" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49848714" weight="0.16693944" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5015129" side_tool="true" visible="true" weight="0.32827735" />
+>>>>>>> 6da03ca2c472cbad02f612b793b61929ed54799e
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" sideWeight="0.49947312" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49947312" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.49848714" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -281,8 +339,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/login.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="855">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
+=======
+        <state relative-caret-position="57">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+>>>>>>> 6da03ca2c472cbad02f612b793b61929ed54799e
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
@@ -298,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/untitled.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="228">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -312,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tmis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+        <state relative-caret-position="438">
+          <caret line="323" column="14" selection-start-line="323" selection-start-column="4" selection-end-line="323" selection-end-column="14" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
