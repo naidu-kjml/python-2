@@ -7,3 +7,35 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1546498636182,21,HTTP Request,200,OK,Thread Group 1-3,text,true,,2781,264,2,2,21,0,8
 1546498636022,569,HTTP Request,200,OK,Thread Group 1-4,text,true,,537,143,1,1,569,0,179
 1546498636592,51,HTTP Request,200,OK,Thread Group 1-4,text,true,,2781,264,1,1,51,0,8
+1552288770795,21694,HTTP Request,Non HTTP response code: java.net.ConnectException,Non HTTP response message: Connection timed out: connect,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.ConnectException]]]
+
+****** comparison: [[[200                                              ]]]
+
+/",2133,0,4,4,0,0,21694
+1552288770792,21698,HTTP Request,Non HTTP response code: java.net.ConnectException,Non HTTP response message: Connection timed out: connect,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.ConnectException]]]
+
+****** comparison: [[[200                                              ]]]
+
+/",2133,0,4,4,0,0,21698
+1552288770793,21696,HTTP Request,Non HTTP response code: java.net.ConnectException,Non HTTP response message: Connection timed out: connect,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.ConnectException]]]
+
+****** comparison: [[[200                                              ]]]
+
+/",2133,0,4,4,0,0,21696
+1552288770792,21698,HTTP Request,Non HTTP response code: java.net.ConnectException,Non HTTP response message: Connection timed out: connect,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.ConnectException]]]
+
+****** comparison: [[[200                                              ]]]
+
+/",2133,0,4,4,0,0,21698
+1552288792723,701,HTTP Request,200,OK,Thread Group 1-1,text,true,,2781,124,4,4,701,0,468
+1552288792726,698,HTTP Request,200,OK,Thread Group 1-4,text,true,,2781,124,3,3,698,0,464
+1552288792726,698,HTTP Request,200,OK,Thread Group 1-3,text,true,,2781,124,3,3,698,0,464
+1552288792728,697,HTTP Request,200,OK,Thread Group 1-2,text,true,,2781,124,1,1,697,0,463

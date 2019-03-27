@@ -1,0 +1,798 @@
+time,title,link,read
+2018-12-25,寒冬、裁员？！你想知道的真相都在这里,https://blog.51cto.com/xqtesting/2334858, 666
+2018-06-19,移动端学习笔记（小强测试品牌学员作品）,https://blog.51cto.com/xqtesting/2130438, 1752
+2017-10-30,测试工程师值得被尊重！不知你是否也有此共鸣！,https://blog.51cto.com/xqtesting/1977279, 10000+
+2017-07-13,送给那些有代码基础但仍旧不会学自动化测试的朋友们,https://blog.51cto.com/xqtesting/1946934, 10000+
+2017-02-27,10年手工测试的迷茫，值得每个人深思,https://blog.51cto.com/xqtesting/1901525, 10000+
+7 天前,Python基础学习篇-4-常用的正则表达式处理函数,https://blog.51cto.com/xqtesting/2365638, 46
+8 天前,聊聊如何在职场中快速成长【必看好文】,https://blog.51cto.com/xqtesting/2364639, 41
+13 天前,痛并快乐的面试记录,https://blog.51cto.com/xqtesting/2362721, 101
+15 天前,Python基础学习篇-3- 如何使用 各种占位符 和 %方式 Format方式 进行格式化输出？,https://blog.51cto.com/xqtesting/2361234, 27
+19 天前,Python基础学习篇-2-数值运算和字符串,https://blog.51cto.com/xqtesting/2359816, 33
+21 天前,Python基础学习篇-1-编码-交互模式-注释,https://blog.51cto.com/xqtesting/2358751, 49
+27 天前,零经验噩梦般的面试,https://blog.51cto.com/xqtesting/2355862, 135
+28 天前,jmeter学习指南之生成html性能结果报告（篇幅较长谨慎阅读）,https://blog.51cto.com/xqtesting/2355040, 428
+2019-02-23,jmeter学习指南之操作 mysql 数据库,https://blog.51cto.com/xqtesting/2353960, 125
+2019-02-20,jmeter学习指南之源码导入 IntelliJ IDEA,https://blog.51cto.com/xqtesting/2352626, 50
+2019-02-18,LoadRunner中文出现乱码的解决办法,https://blog.51cto.com/xqtesting/2351503, 41
+2019-02-17,一根老油条的面试记录,https://blog.51cto.com/xqtesting/2351017, 188
+2019-02-14,公开课视频-浅谈前端性能测试,https://blog.51cto.com/xqtesting/2350360, 69
+2019-02-14,jmeter学习指南之Beanshell 调用 java 代码的三种方式,https://blog.51cto.com/xqtesting/2350128, 76
+2019-02-12,jmeter学习指南之OOM和监听器使用,https://blog.51cto.com/xqtesting/2349498, 64
+2019-02-11,jmeter学习指南之中文乱码,https://blog.51cto.com/xqtesting/2349276, 66
+2019-02-10,jmeter学习指南之Beanshell Sampler 常用方法,https://blog.51cto.com/xqtesting/2349092, 90
+2019-02-09,jmeter学习指南之HTTP请求中自动重定向和跟随重定向的区别,https://blog.51cto.com/xqtesting/2349040, 92
+2019-02-08,jmeter学习指南之Boundary Extractor和正则表达式提取器,https://blog.51cto.com/xqtesting/2348966, 88
+2019-02-06,jmeter执行结束报错：The JVM should have exitted but did n,https://blog.51cto.com/xqtesting/2348822, 63
+2019-02-05,jmeter学习指南之优化脚本,https://blog.51cto.com/xqtesting/2348795, 94
+2019-01-28,jmeter学习指南之非GUI命令行运行详解,https://blog.51cto.com/xqtesting/2347422, 63
+2019-01-27,浅谈前端性能测试-测试帮日记公开课,https://blog.51cto.com/xqtesting/2347022, 93
+2019-01-24,jmeter学习指南之分布式测试的来龙去脉,https://blog.51cto.com/xqtesting/2346420, 75
+2019-01-24,测试人员如何安然度过寒冬？送上暖心良药,https://blog.51cto.com/xqtesting/2346409, 63
+2019-01-20,Offer一个候选人的正确姿势,https://blog.51cto.com/xqtesting/2344726, 125
+2019-01-18,redis监控工具之redis-live,https://blog.51cto.com/xqtesting/2344368, 70
+2019-01-15,jmeter学习指南之结果分析-图形图表,https://blog.51cto.com/xqtesting/2343124, 79
+2019-01-14,jmeter学习指南之聚合报告,https://blog.51cto.com/xqtesting/2342632, 58
+2019-01-13,jmeter学习指南之察看结果树，你知道都有哪些功能吗,https://blog.51cto.com/xqtesting/2342223, 72
+2019-01-08,jmeter学习指南之快速玩转16个逻辑控制器,https://blog.51cto.com/xqtesting/2340015, 390
+2019-01-06,jmeter学习指南之关联,https://blog.51cto.com/xqtesting/2339430, 327
+2019-01-03,jmeter学习指南之响应断言和beanshell断言,https://blog.51cto.com/xqtesting/2338464, 102
+2019-01-02,jmeter学习指南之深入分析跨域传递cookie,https://blog.51cto.com/xqtesting/2338048, 73
+2019-01-01,jmeter学习指南之管理Cookies,https://blog.51cto.com/xqtesting/2337599, 70
+2018-12-29,jmeter学习指南之参数化CSV Data Set Config,https://blog.51cto.com/xqtesting/2336802, 120
+2018-12-28,jmeter学习指南之详解jmeter线程组,https://blog.51cto.com/xqtesting/2336382, 98
+2018-12-27,jmeter学习指南之测试计划详解,https://blog.51cto.com/xqtesting/2335809, 147
+2018-12-26,性能测试工具JMeter的安装及环境配置--Windows和Linux,https://blog.51cto.com/xqtesting/2335372, 99
+2018-12-23,linux centos 如何查看操作系统版本信息？,https://blog.51cto.com/xqtesting/2334305, 71
+2018-12-21,使用ADB连接机顶盒并抓取设备操作日志,https://blog.51cto.com/xqtesting/2333691, 121
+2018-12-20,2018年的我是怎么活下来的，过于真实了哈哈哈哈,https://blog.51cto.com/xqtesting/2333183, 126
+2018-12-19,JMeter压力测试(流程骨架/抢红包举例实战/多场景多线程组混合并发),https://blog.51cto.com/xqtesting/2332669, 342
+2018-12-14,接口测试是什么&接口测试文档规范,https://blog.51cto.com/xqtesting/2330652, 268
+2018-12-10,TCPCopy 线上流量复制工具,https://blog.51cto.com/xqtesting/2328414, 172
+2018-12-05,薪资留人还是情感留人？,https://blog.51cto.com/xqtesting/2326253, 90
+2018-12-04,【毕业寄语】逆境中的成长更需要态度和方法（无鸡汤）,https://blog.51cto.com/xqtesting/2325697, 112
+2018-12-03,LoadRunner中多值关联的3种处理方式,https://blog.51cto.com/xqtesting/2325092, 107
+2018-11-30,人的差异在于业余时间,https://blog.51cto.com/xqtesting/2324123, 122
+2018-11-29,一次性能测试调优总结,https://blog.51cto.com/xqtesting/2323510, 172
+2018-11-28,深入理解Loadrunner中的Browser Emulation,https://blog.51cto.com/xqtesting/2322914, 86
+2018-11-27,JAVA + LR实现apache流媒体的性能测试,https://blog.51cto.com/xqtesting/2322457, 79
+2018-11-07,请不要做“奋斗逼”，戳中你的痛,https://blog.51cto.com/xqtesting/2313747, 141
+2018-11-01,什么事，是你做了领导后才明白的？,https://blog.51cto.com/xqtesting/2311717, 202
+2018-10-31,selenium3 webdriver启动火狐、chrome、edge、Safari浏览器的方法,https://blog.51cto.com/xqtesting/2310946, 483
+2018-10-28,对于新旧技术的争论，我很low的想法,https://blog.51cto.com/xqtesting/2309964, 96
+2018-10-17,你人再好有屁用？（火了）,https://blog.51cto.com/xqtesting/2300928, 179
+2018-10-09,为什么你有10年工作经验，却根本不值钱？（深度好文）,https://blog.51cto.com/xqtesting/2296516, 358
+2018-10-08,Dubbo 整合 Pinpoint 做分布式服务请求跟踪,https://blog.51cto.com/xqtesting/2296031, 181
+2018-09-25,在python中使用itchat发送微信消息,https://blog.51cto.com/xqtesting/2285340, 541
+2018-09-19,Android GT性能数据采集案例,https://blog.51cto.com/xqtesting/2176916, 189
+2018-09-17,性能测试初体验,https://blog.51cto.com/xqtesting/2176349, 731
+2018-09-17,大数据测试回放视频-小强测试内部学员技术分享,https://blog.51cto.com/xqtesting/2176108, 769
+2018-09-11,临门一脚有何惧，小心驶得万年船,https://blog.51cto.com/xqtesting/2173585, 200
+2018-09-10,如何聊离职原因，向面试官展示自己的忠诚,https://blog.51cto.com/xqtesting/2173057, 434
+2018-09-07,新个税法通过，起征点每月5000元，一图看清你能省多少钱,https://blog.51cto.com/xqtesting/2171459, 231
+2018-09-03,如何聊得机智又自然，向面试官展示你的诚意,https://blog.51cto.com/xqtesting/2169344, 276
+2018-08-30,"如何聊自己的软肋,向面试官展示自己的潜能",https://blog.51cto.com/xqtesting/2166258, 274
+2018-08-28,如何聊才能突出自己软实力，打动面试官,https://blog.51cto.com/xqtesting/2165186, 255
+2018-08-22,负载均衡环境搭建实战之nginx和tomcat,https://blog.51cto.com/xqtesting/2163066, 857
+2018-08-22,为什么很努力进步却不明显,https://blog.51cto.com/xqtesting/2162692, 354
+2018-08-18,你知道测试大牛怎么写测试计划的吗？,https://blog.51cto.com/xqtesting/2161502, 1356
+2018-08-16,Python里的17个“骚操作”好玩有趣,https://blog.51cto.com/xqtesting/2160757, 3588
+2018-08-16,负载均衡环境搭建实战之apache和tomcat,https://blog.51cto.com/xqtesting/2160560, 813
+2018-08-12,学霸装学渣,https://blog.51cto.com/xqtesting/2158537, 619
+2018-08-08,某度质量部测试开发面试题7（完结）,https://blog.51cto.com/xqtesting/2156002, 365
+2018-08-05,某度质量部测试开发面试题6（未完待续）,https://blog.51cto.com/xqtesting/2154990, 288
+2018-08-02,怀疑不如坚定，这个标题有点绕，哈哈,https://blog.51cto.com/xqtesting/2153546, 295
+2018-08-01,【毕业寄语】我们不缺少鼓励但却缺少了批评,https://blog.51cto.com/xqtesting/2153075, 279
+2018-07-30,某度质量部测试开发面试题5（未完待续）,https://blog.51cto.com/xqtesting/2152166, 279
+2018-07-29,面试送命题，你为什么从上家公司离职？,https://blog.51cto.com/xqtesting/2151660, 1435
+2018-07-26,关于性能测试的这点事，干货来袭,https://blog.51cto.com/xqtesting/2150244, 733
+2018-07-23,接口测试全流程扫盲,https://blog.51cto.com/xqtesting/2148822, 3591
+2018-07-18,SDK测试方法,https://blog.51cto.com/xqtesting/2146145, 510
+2018-07-17,某度质量部测试开发面试题4（未完待续）,https://blog.51cto.com/xqtesting/2145124, 534
+2018-07-13,selenium webdriver或Appium+testng+ant+jenkins的集成方法,https://blog.51cto.com/xqtesting/2141240, 950
+2018-07-12,关于page object（PO）模型的介绍,https://blog.51cto.com/xqtesting/2140686, 475
+2018-07-09,某度质量部测试开发面试题3（未完待续）,https://blog.51cto.com/xqtesting/2138947, 263
+2018-07-04,某度质量部测试开发面试题2（未完待续）,https://blog.51cto.com/xqtesting/2135832, 347
+2018-07-03,某度质量部测试开发面试题1（未完待续）,https://blog.51cto.com/xqtesting/2135286, 331
+2018-07-02,测试人员必会MySQL的简单查询语句,https://blog.51cto.com/xqtesting/2134920, 988
+2018-06-28,世界杯来了！谁能夺冠？让我们用数据说话,https://blog.51cto.com/xqtesting/2133489, 374
+2018-06-27,面试这么多人，发现越是没本事的人，自尊心越强,https://blog.51cto.com/xqtesting/2133009, 410
+2018-06-26,深度分析jmeter的两种录制模式,https://blog.51cto.com/xqtesting/2132684, 785
+2018-06-25,"用jmeter只能测试http？ No,今天咱们学一下jmeter的ftp下载文件",https://blog.51cto.com/xqtesting/2132316, 732
+2018-06-22,美团外卖服务端的测试面试题居然泄……泄……泄……泄密了,https://blog.51cto.com/xqtesting/2131583, 501
+2018-06-20,全新jmeter视频已经上架,https://blog.51cto.com/xqtesting/2131040, 2034
+2018-06-20,个税起征点调至5000，对月薪1.2W的IT人士来说，能少交多钱？,https://blog.51cto.com/xqtesting/2130779, 308
+2018-06-14,python云计算2,https://blog.51cto.com/xqtesting/2129149, 304
+2018-06-13,python云计算1,https://blog.51cto.com/xqtesting/2128707, 186
+2018-06-05,Kafka0.8性能测试报告,https://blog.51cto.com/xqtesting/2125289, 293
+2018-05-28,系统测试与质量管理组季报模板,https://blog.51cto.com/xqtesting/2120952, 259
+2018-05-23,运维工程师必会的109个Linux命令（5）,https://blog.51cto.com/xqtesting/2119351, 787
+2018-05-22,运维工程师必会的109个Linux命令（4）,https://blog.51cto.com/xqtesting/2118924, 381
+2018-05-21,运维工程师必会的109个Linux命令（3）,https://blog.51cto.com/xqtesting/2118569, 582
+2018-05-18,运维工程师必会的109个Linux命令（2）,https://blog.51cto.com/xqtesting/2117772, 537
+2018-05-17,代码质量管理的开源平台Sonar,https://blog.51cto.com/xqtesting/2117277, 265
+2018-05-17,学习产品型是否要满足人们的“懒”需求,https://blog.51cto.com/xqtesting/2117275, 198
+2018-05-14,运维工程师必会的109个Linux命令（1）,https://blog.51cto.com/xqtesting/2116334, 712
+2018-05-13,性能测试报告模板,https://blog.51cto.com/xqtesting/2115764, 485
+2018-05-11,jmeter3.x以上版本安装插件的方法,https://blog.51cto.com/xqtesting/2115094, 300
+2018-05-06,web安全测试总结,https://blog.51cto.com/xqtesting/2113335, 457
+2018-05-04,技术部员工绩效考核方案,https://blog.51cto.com/xqtesting/2112508, 9034
+2018-05-03,职场女性，如何平衡工作与怀孕？,https://blog.51cto.com/xqtesting/2111971, 544
+2018-04-30,VB实现自动生成统计图表,https://blog.51cto.com/xqtesting/2109297, 522
+2018-04-26,JMeter内存溢出解决办法,https://blog.51cto.com/xqtesting/2107927, 809
+2018-04-22,有关软件测试的五大谣言,https://blog.51cto.com/xqtesting/2106526, 441
+2018-04-21,fiddler抓取https的最终说明,https://blog.51cto.com/xqtesting/2106068, 522
+2018-04-20,高性能性能测试开发方法,https://blog.51cto.com/xqtesting/2105613, 316
+2018-04-19,无应答事务的性能测试方法,https://blog.51cto.com/xqtesting/2105182, 260
+2018-04-16,python开发工具pycharm快速入门,https://blog.51cto.com/xqtesting/2104169, 2495
+2018-04-16,使用 email-ext 替换 Jenkins 的默认邮件通知,https://blog.51cto.com/xqtesting/2103801, 449
+2018-04-12,性能测试的原则和方法,https://blog.51cto.com/xqtesting/2097598, 544
+2018-04-11,用python实现调用jar包,https://blog.51cto.com/xqtesting/2096900, 1570
+2018-04-09,大话测试与质量,https://blog.51cto.com/xqtesting/2096261, 489
+2018-04-08,某网站前端页面性能测试,https://blog.51cto.com/xqtesting/2095810, 3079
+2018-04-07,python中logging会重复写日志的问题分析,https://blog.51cto.com/xqtesting/2095422, 518
+2018-04-02,性能测试计划模板,https://blog.51cto.com/xqtesting/2093902, 3365
+2018-04-01,缺陷的JIRA管理文档,https://blog.51cto.com/xqtesting/2093576, 769
+2018-03-27,走马观花之bug预防,https://blog.51cto.com/xqtesting/2091776, 1432
+2018-03-26,测试组绩效考核表,https://blog.51cto.com/xqtesting/2091337, 969
+2018-03-26,JMeter正则表达式提取器,https://blog.51cto.com/xqtesting/2091068, 641
+2018-03-21,软件产品验收测试标准和流程,https://blog.51cto.com/xqtesting/2089370, 3523
+2018-03-19,性能测试推广手册,https://blog.51cto.com/xqtesting/2088734, 524
+2018-03-14,必看，经典sql面试题（学生表_课程表_成绩表_教师表）,https://blog.51cto.com/xqtesting/2086376, 870
+2018-03-12,从软件测试到产品经理,https://blog.51cto.com/xqtesting/2085376, 1054
+2018-03-10,自动化学习的正确姿势,https://blog.51cto.com/xqtesting/2084904, 493
+2018-03-07,LoadRunner性能测试基础知识问答,https://blog.51cto.com/xqtesting/2083685, 674
+2018-03-06,用存储过程&DataFactory准备测试数据,https://blog.51cto.com/xqtesting/2083272, 717
+2018-03-04,迟到的年度总结，我们应该收放自如,https://blog.51cto.com/xqtesting/2082847, 681
+2018-03-02,Tomcat监控利器Probe,https://blog.51cto.com/xqtesting/2074513, 2714
+2018-03-01,Jmeter3.x也可以搞出丰富的图形报告,https://blog.51cto.com/xqtesting/2074285, 3822
+2018-03-01,常用软件包汇总下载地址,https://blog.51cto.com/xqtesting/2074246, 1383
+2018-02-25,请投资自己，不会花钱的人没前途,https://blog.51cto.com/xqtesting/2072936, 602
+2018-02-23,Appium自动化测试之微信元素识别和代码实战,https://blog.51cto.com/xqtesting/2072278, 5977
+2018-02-22,职场中哪些人最欠打？,https://blog.51cto.com/xqtesting/2072176, 500
+2018-02-22,挨踢脱口秀精选集汇总,https://blog.51cto.com/xqtesting/2072107, 887
+2018-02-21,80后的继发性贫穷,https://blog.51cto.com/xqtesting/2072027, 299
+2018-02-21,一道产品面试题：小明要喝果汁，妈妈没空，怎么解决？,https://blog.51cto.com/xqtesting/2072026, 609
+2018-02-20,机器学习算法实战,https://blog.51cto.com/xqtesting/2071957, 651
+2018-02-19,使用Web Scraper 插件，不需要编程，也能爬网,https://blog.51cto.com/xqtesting/2071868, 2151
+2018-02-13,思考|自动化测试面试题第二波,https://blog.51cto.com/xqtesting/2071445, 850
+2018-02-12,思考|自动化测试面试题第一波,https://blog.51cto.com/xqtesting/2071247, 1648
+2018-02-11,性能测试loadrunner使用共性问题汇总,https://blog.51cto.com/xqtesting/2071012, 725
+2018-02-09,性能测试loadrunner场景问题之socket,https://blog.51cto.com/xqtesting/2070462, 918
+2018-02-08,性能测试loadrunner场景问题之HTTP,https://blog.51cto.com/xqtesting/2070040, 970
+2018-02-07,LoadRunner socket脚本开发问题合集,https://blog.51cto.com/xqtesting/2069652, 513
+2018-02-06,LoadRunner录制HTTP脚本问题合集,https://blog.51cto.com/xqtesting/2069232, 4483
+2018-02-04,利用 tcpcopy 引流做模拟在线测试,https://blog.51cto.com/xqtesting/2068703, 3270
+2018-02-04,小白学习大数据测试之hadoop hdfs和MapReduce小实战,https://blog.51cto.com/xqtesting/2068647, 1003
+2018-02-03,关于性能测试中“并发”的解释,https://blog.51cto.com/xqtesting/2068608, 1370
+2018-02-03,使用loadrunner进行报表导出下载的性能测试,https://blog.51cto.com/xqtesting/2068602, 351
+2018-02-03,性能基准自动化测试,https://blog.51cto.com/xqtesting/2068578, 653
+2018-02-03,Diffy：Twitter的开源自动化测试工具,https://blog.51cto.com/xqtesting/2068569, 10000+
+2018-02-03,技术大牛对程序员招聘的吐槽和建议,https://blog.51cto.com/xqtesting/2068495, 370
+2018-02-02,部门日报系统部署备忘录,https://blog.51cto.com/xqtesting/2068169, 421
+2018-02-01,小白学习大数据测试之ETL,https://blog.51cto.com/xqtesting/2067848, 4589
+2018-01-30,大数据测试之hadoop单机环境搭建(超级详细版),https://blog.51cto.com/xqtesting/2066724, 4786
+2018-01-30,各种测试用例简要模板,https://blog.51cto.com/xqtesting/2066647, 1892
+2018-01-28,loadrunner通过使用libmysql.dll完成mysql的测试,https://blog.51cto.com/xqtesting/2065920, 483
+2018-01-25,测试开始与结束通知邮件模板,https://blog.51cto.com/xqtesting/2064930, 650
+2018-01-23,关于selenium webdriver chromedriver下载的问题,https://blog.51cto.com/xqtesting/2064126, 3360
+2018-01-22,小白学习大数据测试之hadoop再次探索,https://blog.51cto.com/xqtesting/2063796, 873
+2018-01-19,使用adb devices命令无法识别夜神模拟器的解决方法,https://blog.51cto.com/xqtesting/2062695, 2114
+2018-01-17,小白学习大数据测试之hadoop初探,https://blog.51cto.com/xqtesting/2062189, 1716
+2018-01-16,python3.x操作csv文件的实战,https://blog.51cto.com/xqtesting/2061701, 997
+2018-01-16,Python Mock 的入门,https://blog.51cto.com/xqtesting/2061365, 383
+2018-01-15,小白学习大数据测试之主流程和关键步骤,https://blog.51cto.com/xqtesting/2060921, 8812
+2018-01-12,2018，写给每一个焦虑和迷茫着的互联网人,https://blog.51cto.com/xqtesting/2060072, 635
+2018-01-11,小白学习大数据测试 VS 传统数据库测试,https://blog.51cto.com/xqtesting/2059876, 2301
+2018-01-10,使用jmeter进行dubbo协议的测试方法,https://blog.51cto.com/xqtesting/2059424, 5748
+2018-01-09,小白学习大数据测试之揭秘大数据的背景与发展,https://blog.51cto.com/xqtesting/2059225, 6580
+2018-01-08,立项申请书模板,https://blog.51cto.com/xqtesting/2058826, 2157
+2018-01-07,"春运火车票今日开售, python让你抢票快人一步",https://blog.51cto.com/xqtesting/2058455, 5059
+2018-01-04,测试报告模板范例,https://blog.51cto.com/xqtesting/2057574, 10000+
+2018-01-02,无线 iphone客户端测试白皮书（三）,https://blog.51cto.com/xqtesting/2056753, 4389
+2018-01-01,无线 iphone客户端测试白皮书（二）,https://blog.51cto.com/xqtesting/2056471, 4386
+2017-12-29,jdk1.8下载全集，包括windows和linux版本,https://blog.51cto.com/xqtesting/2055831, 10000+
+2017-12-28,测试日报模板,https://blog.51cto.com/xqtesting/2055350, 5335
+2017-12-27,无线 iphone客户端测试白皮书（一）,https://blog.51cto.com/xqtesting/2054991, 5264
+2017-12-26,小议安全测试【测试帮日记公开课】,https://blog.51cto.com/xqtesting/2054851, 5229
+2017-12-26,大话java jvm之内存【测试帮日记公开课】,https://blog.51cto.com/xqtesting/2054846, 5128
+2017-12-25,APP测试流程和测试点,https://blog.51cto.com/xqtesting/2054570, 10000+
+2017-12-20,项目实施流程和规范模板（测试方向）,https://blog.51cto.com/xqtesting/2052312, 10000+
+2017-12-19,使用jmeter测试工具完成文件的下载,https://blog.51cto.com/xqtesting/2052003, 8132
+2017-12-19,使用jmeter测试工具完成文件的上传,https://blog.51cto.com/xqtesting/2051991, 10000+
+2017-12-18,编写python调用dubbo接口hessian协议的例子,https://blog.51cto.com/xqtesting/2051707, 10000+
+2017-12-15,互联网架构，为啥要前后端分离？,https://blog.51cto.com/xqtesting/2050893, 8816
+2017-12-14,玩转Android monkey之多参数实战,https://blog.51cto.com/xqtesting/2050469, 10000+
+2017-12-13,从功能测试角度谈大数据测试,https://blog.51cto.com/xqtesting/2050139, 8650
+2017-12-12,Python将被纳入高考，小学生都在学Python，你慌了吗？,https://blog.51cto.com/xqtesting/2049604, 5709
+2017-12-12,玩转Android monkey之monkey小实战,https://blog.51cto.com/xqtesting/2049603, 6305
+2017-12-11,玩转Android monkey之环境配置和ADB命令,https://blog.51cto.com/xqtesting/2049258, 5705
+2017-12-08,玩转Android monkey之monkey是啥？monkey=猴子？,https://blog.51cto.com/xqtesting/2048566, 5732
+2017-12-07,阿里云Redis读写分离典型场景：如何轻松搭建电商秒杀系统,https://blog.51cto.com/xqtesting/2048189, 5783
+2017-12-04,微信公众号朋友圈压力测试,https://blog.51cto.com/xqtesting/2047266, 6577
+2017-12-03,Python脚本分析CPU使用情况,https://blog.51cto.com/xqtesting/2046946, 6423
+2017-12-01,ETL大数据测试介绍,https://blog.51cto.com/xqtesting/2046289, 5965
+2017-11-30,从 Zero 到 Hero ，一文掌握 Python,https://blog.51cto.com/xqtesting/2045873, 6410
+2017-11-28,用python下载美剧《天蝎》,https://blog.51cto.com/xqtesting/2044937, 10000+
+2017-11-27,接口自动化测试PHPUnit-引入jenkins自动化执行,https://blog.51cto.com/xqtesting/2044563, 5295
+2017-11-22,我的友情链接,https://blog.51cto.com/xqtesting/2026178, 5045
+2017-11-22,接口自动化测试之PHPUnit-完结以及源码发放,https://blog.51cto.com/xqtesting/1984088, 5090
+2017-11-22,80后收入是怎样一个水平？看完网友工资单，对不起 拖大家内裤了,https://blog.51cto.com/xqtesting/1984010, 5466
+2017-11-22,"为什么经理、总监多是空降, 而不是从内部提拔?",https://blog.51cto.com/xqtesting/1983973, 5311
+2017-11-21,接口自动化测试PHPUnit-框架代码开发3,https://blog.51cto.com/xqtesting/1983654, 5134
+2017-11-19,接口自动化测试之PHPUnit-框架代码编写2,https://blog.51cto.com/xqtesting/1983345, 5179
+2017-11-17,接口自动化测试PHPUnit-框架代码开发1,https://blog.51cto.com/xqtesting/1982675, 5416
+2017-11-16,接口自动化测试系列之PHPUnit-框架设计构思,https://blog.51cto.com/xqtesting/1982221, 5223
+2017-11-14,书写「简历」时，需要规避的错误,https://blog.51cto.com/xqtesting/1981478, 5302
+2017-11-12,接口自动化测试系列之PHPUnit-POST请求接口测试方法,https://blog.51cto.com/xqtesting/1981004, 5390
+2017-11-09,接口自动化测试系列之PHPUnit-GET请求接口测试方法,https://blog.51cto.com/xqtesting/1980163, 5464
+2017-11-07,接口自动化测试系列之PHPUnit-第一次亲密接触,https://blog.51cto.com/xqtesting/1979522, 5308
+2017-11-05,接口自动化测试系列之PHPUnit介绍和环境搭建,https://blog.51cto.com/xqtesting/1979191, 5479
+2017-11-03,接口自动化测试系列之PHPUnit-接口测试的步骤,https://blog.51cto.com/xqtesting/1978615, 5221
+2017-11-01,jmeter测试工具应用场景【测试帮日记公开课】,https://blog.51cto.com/xqtesting/1978150, 5392
+2017-11-01,接口自动化测试系列之PHPUnit-接口测试基础,https://blog.51cto.com/xqtesting/1978013, 5446
+2017-10-31,利用python来解析html,https://blog.51cto.com/xqtesting/1977669, 5586
+2017-10-27,最全团队管理手册,https://blog.51cto.com/xqtesting/1976929, 5152
+2017-10-25,loadrunner另类玩法【测试帮日记公开课】,https://blog.51cto.com/xqtesting/1976211, 5235
+2017-10-25,python selenium webdriver启动chrome浏览器的方法,https://blog.51cto.com/xqtesting/1976078, 5619
+2017-10-24,python读写csv文件的实战,https://blog.51cto.com/xqtesting/1975472, 5832
+2017-10-22,JVM性能测试与内存溢出,https://blog.51cto.com/xqtesting/1975035, 5324
+2017-10-20,好程序员不去外包公司,https://blog.51cto.com/xqtesting/1974466, 5470
+2017-10-19,通过python读取ini配置文件,https://blog.51cto.com/xqtesting/1974086, 5567
+2017-10-17,mysql数据库Too many connections报错排查,https://blog.51cto.com/xqtesting/1973147, 5198
+2017-10-15,30-35岁职场规划深谈，字字戳心,https://blog.51cto.com/xqtesting/1972465, 10000+
+2017-10-13,程序员教你如何追女生,https://blog.51cto.com/xqtesting/1971920, 5107
+2017-10-12,通过 JVM 日志来进行安全点分析,https://blog.51cto.com/xqtesting/1971579, 5043
+2017-10-11,不爱说话？社交无能？或许你可以试试这种说话术,https://blog.51cto.com/xqtesting/1971340, 5063
+2017-10-10,mongodb快速入门,https://blog.51cto.com/xqtesting/1971079, 5774
+2017-10-08,VS code for python开发利器,https://blog.51cto.com/xqtesting/1970797, 5724
+2017-09-29,常见的八种导致 APP 内存泄漏的问题（下）,https://blog.51cto.com/xqtesting/1969869, 5377
+2017-09-24,扎心了！让测试人员心酸的五大谣传,https://blog.51cto.com/xqtesting/1968114, 5284
+2017-09-24,Jmeter接口测试项目实战,https://blog.51cto.com/xqtesting/1968106, 10000+
+2017-09-21,常见的八种导致 APP 内存泄漏的问题(上),https://blog.51cto.com/xqtesting/1967508, 5887
+2017-09-20,adb server version (31) doesn’t match this client (36); killing… 的解决方法,https://blog.51cto.com/xqtesting/1967049, 6019
+2017-09-20,Android Studio2.3正式版带SDK安装教程,https://blog.51cto.com/xqtesting/1967045, 5268
+2017-09-19,自动化测试到底是什么                            荐,https://blog.51cto.com/xqtesting/1966818, 10000+
+2017-09-19,Tsung压力测试介绍,https://blog.51cto.com/xqtesting/1966530, 5213
+2017-09-18,关键接口性能测试报告,https://blog.51cto.com/xqtesting/1966216, 5619
+2017-09-16,使用Postman完成接口测试,https://blog.51cto.com/xqtesting/1965959, 5757
+2017-09-16,小试牛刀chrome来调试APP,https://blog.51cto.com/xqtesting/1965839, 5549
+2017-09-15,IOS测试入门必看,https://blog.51cto.com/xqtesting/1965475, 5289
+2017-09-13,H5前端性能测试小结,https://blog.51cto.com/xqtesting/1964916, 5185
+2017-09-11,jmeter测试Oracle数据库,https://blog.51cto.com/xqtesting/1964224, 5334
+2017-09-08,jmeter tcp取样器使用方法,https://blog.51cto.com/xqtesting/1963574, 6572
+2017-09-07,利用HttpRequester进行接口测试,https://blog.51cto.com/xqtesting/1963312, 6572
+2017-09-04,接口性能测试实战小结（附点评）,https://blog.51cto.com/xqtesting/1962436, 5420
+2017-09-03,python+xlrd+xlwt操作excel,https://blog.51cto.com/xqtesting/1962252, 10000+
+2017-09-02,利用apache ab命令完成性能测试,https://blog.51cto.com/xqtesting/1962213, 10000+
+2017-08-28,利用pylot进行性能测试,https://blog.51cto.com/xqtesting/1959850, 3341
+2017-08-25,python+chrome+Selenium模拟手机浏览器,https://blog.51cto.com/xqtesting/1959220, 3084
+2017-08-22,python+selenium+autoit实现文件上传,https://blog.51cto.com/xqtesting/1958454, 10000+
+2017-08-18,jmeter企业内训简报,https://blog.51cto.com/xqtesting/1957355, 10000+
+2017-08-12,SOAP WebService接口功能自动化测试,https://blog.51cto.com/xqtesting/1955830, 3393
+2017-08-09,新版jmeter图形化报告解析,https://blog.51cto.com/xqtesting/1954950, 3793
+2017-08-01,SVN版本管理工具使用手册,https://blog.51cto.com/xqtesting/1952819, 3637
+2017-07-31,我们每个人其实都有周杰伦的“影子”,https://blog.51cto.com/xqtesting/1952255, 2794
+2017-07-28,外卖业务服务器端性能测试总结,https://blog.51cto.com/xqtesting/1951774, 2869
+2017-07-26,透过《我的前半生》悟出职场规则,https://blog.51cto.com/xqtesting/1951008, 2926
+2017-07-24,关于安装版JDK1.8或1.7更改多个JDK环境变量不生效的解决方法,https://blog.51cto.com/xqtesting/1950512, 4786
+2017-07-23,【必看】分析各大招聘网站,https://blog.51cto.com/xqtesting/1950155, 3127
+2017-07-20,【毕业寄语】迷茫无助终将过去，我们必会所向披靡,https://blog.51cto.com/xqtesting/1949151, 10000+
+2017-07-17,关于是否要从游戏测试行业跳出来的思考,https://blog.51cto.com/xqtesting/1948088, 10000+
+2017-07-14,别总想着房价了，好好想想35岁以后你还能干什么,https://blog.51cto.com/xqtesting/1947729, 3305
+2017-07-14,在Jmeter中使用Selenium WebDriver完成测试,https://blog.51cto.com/xqtesting/1947396, 7467
+2017-07-07,一只菜鸟的成长之路,https://blog.51cto.com/xqtesting/1945160, 10000+
+2017-07-06,源码解读腾讯 GT 的性能测试方案,https://blog.51cto.com/xqtesting/1944887, 4060
+2017-06-29,使用LoadRunner完成移动APP的脚本开发,https://blog.51cto.com/xqtesting/1942943, 10000+
+2017-06-27,cacti快速入门,https://blog.51cto.com/xqtesting/1942287, 3218
+2017-06-26,大数据时代的遨游,https://blog.51cto.com/xqtesting/1942135, 2937
+2017-06-20,奇葩说结束了，但带给我的思考却刚刚开始,https://blog.51cto.com/xqtesting/1940174, 3041
+2017-06-16,从功能测试到性能测试的转型之路,https://blog.51cto.com/xqtesting/1937485, 10000+
+2017-06-09,网站前端性能测试报告,https://blog.51cto.com/xqtesting/1933674, 10000+
+2017-05-25,危机！测试工程师真的要小心了,https://blog.51cto.com/xqtesting/1929556, 10000+
+2017-05-21,一次真实项目性能测试与调优的总结,https://blog.51cto.com/xqtesting/1927977, 3604
+2017-05-19,性能测试报告编写技巧,https://blog.51cto.com/xqtesting/1927512, 10000+
+2017-05-12,jmeter完成md5加密的接口请求参数,https://blog.51cto.com/xqtesting/1924977, 10000+
+2017-05-12,初学者如何选择学习哪种测试技术,https://blog.51cto.com/xqtesting/1924819, 10000+
+2017-05-05,性能测试分层模型,https://blog.51cto.com/xqtesting/1922288, 3431
+2017-05-03,使用dubbo时applicationContext.xml报错的解决办法,https://blog.51cto.com/xqtesting/1921691, 3686
+2017-04-25,linux下redmine3.3迁移、升级、插件备忘录,https://blog.51cto.com/xqtesting/1919253, 3238
+2017-04-25,loadrunner中错误为27796的一个解决方法,https://blog.51cto.com/xqtesting/1919233, 2950
+2017-04-25,IT人久坐的危害：从颈椎病到诱发猝死,https://blog.51cto.com/xqtesting/1919060, 2888
+2017-04-24,90后美女的全能测试蜕变之路,https://blog.51cto.com/xqtesting/1918713, 3487
+2017-04-19,关于使用badboy录制jmeter时报脚本错误的解决方法,https://blog.51cto.com/xqtesting/1917505, 10000+
+2017-04-14,数据建模在性能测试中的理解,https://blog.51cto.com/xqtesting/1916009, 3097
+2017-04-01,python自动化测试开发利器sublime环境搭建实战,https://blog.51cto.com/xqtesting/1912371, 3404
+2017-03-23,《小强软件测试疯狂讲义-性能及自动化》一书正式发布,https://blog.51cto.com/xqtesting/1909486, 3739
+2017-03-16,python自动化测试开发利器ulipad最佳实践（可写python测试代码也可编写selenium、Appium等）                            荐,https://blog.51cto.com/xqtesting/1907085, 8816
+2017-03-13,火狐访问HTTPS网站显示连接不安全的解决方法,https://blog.51cto.com/xqtesting/1906086, 3909
+2017-03-10,如何利用花生壳来搭建突破内网访问的服务器,https://blog.51cto.com/xqtesting/1905200, 3452
+2017-03-06,MySQL快速入门教程,https://blog.51cto.com/xqtesting/1903576, 3842
+2017-03-04,链接自动化测试工具xenu,https://blog.51cto.com/xqtesting/1903217, 3181
+2017-03-01,JMeter打开badboy保存的jmx文件报错的解决方法                            荐,https://blog.51cto.com/xqtesting/1902286, 10000+
+2017-02-20,【视频】IT人士健康指南,https://blog.51cto.com/xqtesting/1899344, 3393
+2017-02-08,残酷职场的生存法则的是什么？,https://blog.51cto.com/xqtesting/1895918, 3171
+2017-01-31,LoadRunner 调用Dll完成加密解密,https://blog.51cto.com/xqtesting/1894469, 3346
+2017-01-24,Appium Python API 汇总,https://blog.51cto.com/xqtesting/1894027, 5860
+2017-01-20,为什么老板不喜欢员工解释？,https://blog.51cto.com/xqtesting/1893290, 3665
+2017-01-06,从《亮剑》中学到的管理方法,https://blog.51cto.com/xqtesting/1889656, 3587
+2017-01-01,2016再见，2017再见,https://blog.51cto.com/xqtesting/1888171, 3746
+2016-12-31,都在议论的区块链到底是啥,https://blog.51cto.com/xqtesting/1887902, 4240
+2016-12-15,HR如何谈薪资,https://blog.51cto.com/xqtesting/1883102, 4910
+2016-12-01,美丽的海滨城市我们来啦-小强测试品牌,https://blog.51cto.com/xqtesting/1878368, 3910
+2016-10-18,Sysdig：Linux服务器监控和排障利器,https://blog.51cto.com/xqtesting/1862846, 4543
+2016-10-17,闲聊几种学习方式，选择比努力更重要,https://blog.51cto.com/xqtesting/1862508, 6082
+2016-10-08,开源mock server系统,https://blog.51cto.com/xqtesting/1859217, 4387
+2016-09-23,LoadRunner解决“服务器正在运行中”方法,https://blog.51cto.com/xqtesting/1855700, 6288
+2016-09-23,RPC框架性能基本比较测试,https://blog.51cto.com/xqtesting/1855689, 5284
+2016-09-22,loadrunner中参数化各种组合的举例,https://blog.51cto.com/xqtesting/1855307, 4949
+2016-09-21,使用loadrunner进行报表导出下载的性能测试,https://blog.51cto.com/xqtesting/1854783, 4131
+2016-09-12,使用JavaMelody监控tomcat以及jvm,https://blog.51cto.com/xqtesting/1851820, 3724
+2016-09-07,利用Twemperf测试Memcache的性能,https://blog.51cto.com/xqtesting/1847161, 4484
+2016-09-02,使用Apache自带的ab命令测试网站性能（小强性能测试班学员作品）,https://blog.51cto.com/xqtesting/1845431, 3619
+2016-08-30,Jmeter中使用循环如何保证数据不重复,https://blog.51cto.com/xqtesting/1844251, 4219
+2016-08-29,25台服务器怎样支撑世界第54大网站,https://blog.51cto.com/xqtesting/1843667, 3328
+2016-08-22,为何企业宁愿高薪招人 也不给老员工加薪？,https://blog.51cto.com/xqtesting/1840952, 4298
+2016-08-18,都说程序员是吃青春饭？老程序员最后都去哪儿了！,https://blog.51cto.com/xqtesting/1839784, 4197
+2016-08-10,LoadRunner如何和jenkins结合使用,https://blog.51cto.com/xqtesting/1836534, 5183
+2016-07-27,宅米网性能优化实践（内附小强点评）,https://blog.51cto.com/xqtesting/1830520, 3493
+2016-07-21,Cookie-free Domains(为什么将静态图片，js，css存放到单独的域名？),https://blog.51cto.com/xqtesting/1828499, 3703
+2016-07-19,H5网页App和纯原生的App差距在哪？,https://blog.51cto.com/xqtesting/1827788, 4979
+2016-07-11,那些做Android开发必须知道的ADB命令,https://blog.51cto.com/xqtesting/1825339, 4884
+2016-07-08,Windouws7 下提示您使用非管理权限登录，无法创建和修改系统DSN的解决方法,https://blog.51cto.com/xqtesting/1812543, 6242
+2016-07-06,Memcache需要注意的几点【小强测试班学员作品】,https://blog.51cto.com/xqtesting/1808218, 3350
+2016-07-06,Memcache的监控方法【小强测试班学员作品】,https://blog.51cto.com/xqtesting/1808159, 3353
+2016-07-06,Memcache的安装与启动【小强测试培训班学员作品】,https://blog.51cto.com/xqtesting/1808036, 3086
+2016-07-01,最强悍LoadRunner和浏览器兼容完美攻略,https://blog.51cto.com/xqtesting/1794853, 10000+
+2016-06-12,memcache的更新过程【小强性能培训班学员作品】,https://blog.51cto.com/xqtesting/1788212, 3186
+2016-06-12,Memcached是什么？【小强性能培训学员作品】,https://blog.51cto.com/xqtesting/1788094, 2991
+2016-06-06,职场潜规则：公司出现这三种信号，你必须果断辞职！,https://blog.51cto.com/xqtesting/1786490, 3418
+2016-06-03,小强IT游记之新疆行,https://blog.51cto.com/xqtesting/1785775, 2982
+2016-06-03,小强IT游记之大连行,https://blog.51cto.com/xqtesting/1785735, 2912
+2016-06-01,【毕业寄语】人生处处都是毕业季,https://blog.51cto.com/xqtesting/1785234, 10000+
+2016-05-23,闲聊自动化测试,https://blog.51cto.com/xqtesting/1782132, 3392
+2016-05-17,在linux中执行sysctl -p时的一个报错,https://blog.51cto.com/xqtesting/1774337, 3275
+2016-05-06,如何在Jmeter中使用Beanshell-小强性能测试培训班学生作品,https://blog.51cto.com/xqtesting/1770748, 3367
+2016-04-21,关于jmeter里的自动重定向的使用-小强性能测试培训班学生作品,https://blog.51cto.com/xqtesting/1766130, 10000+
+2016-04-20,MySQL 读写分离介绍及搭建,https://blog.51cto.com/xqtesting/1765766, 3166
+2016-04-18,关于LoadRunner压测过程中出现的error26601的解释,https://blog.51cto.com/xqtesting/1765010, 3388
+2016-04-09,LoadRunner使用odbc时报错can't get hostname for your address的解决方法,https://blog.51cto.com/xqtesting/1762144, 2992
+2016-04-01,再谈手工测试是否会消失,https://blog.51cto.com/xqtesting/1759066, 3663
+2016-03-26,理解RESTful架构,https://blog.51cto.com/xqtesting/1755513, 3292
+2016-03-14,如何用Fiddler对Android应用进行抓包,https://blog.51cto.com/xqtesting/1750916, 4246
+2016-03-10,Windows下搭建appium+python的测试开发环境,https://blog.51cto.com/xqtesting/1749529, 6069
+2016-02-29,使用Jmeter创建ActiveMQ JMS POINT TO POINT请求,https://blog.51cto.com/xqtesting/1745899, 4086
+2016-02-15,利用LoadRunner来进行文件下载的测试,https://blog.51cto.com/xqtesting/1742093, 6122
+2016-01-29,客观的聊聊看视频学习的方式到底如何,https://blog.51cto.com/xqtesting/1739713, 3496
+2016-01-29,恭喜小强系列高级测试课程获得国家版权认证保护,https://blog.51cto.com/xqtesting/1739712, 3430
+2016-01-27,在jmeter测试mysql中如何一次运行多条sql语句,https://blog.51cto.com/xqtesting/1738837, 4975
+2016-01-25,Chrome开发者工具插件,https://blog.51cto.com/xqtesting/1738129, 3346
+2016-01-22,利用 Android Studio 和 Gradle 打包多版本APK,https://blog.51cto.com/xqtesting/1737795, 2679
+2016-01-22,解决NGINX+PHP-FPM failed to ptrace(PEEKDATA) Input/output error出错问题,https://blog.51cto.com/xqtesting/1737581, 3586
+2016-01-21,手机APP测试之ADB常见问题解决方法,https://blog.51cto.com/xqtesting/1737085, 2912
+2016-01-07,【视频】Loadrunner和jmeter的视频教程,https://blog.51cto.com/xqtesting/1732400, 4896
+2016-01-07,【视频】各类接口测试大合集,https://blog.51cto.com/xqtesting/1732385, 4568
+2016-01-07,放出百度接口框架设计思路,https://blog.51cto.com/xqtesting/1732382, 2323
+2016-01-07,利用jenkins实现自动化测试的分布式执行,https://blog.51cto.com/xqtesting/1732381, 2534
+2016-01-07,【视频】安全测试各类视频,https://blog.51cto.com/xqtesting/1732375, 2192
+2016-01-07,【视频】测试经理必修课,https://blog.51cto.com/xqtesting/1732343, 2150
+2016-01-07,在jmeter测试mysql中如何一次运行多条sql语句,https://blog.51cto.com/xqtesting/1732317, 2156
+2016-01-01,小强不一样的2015总结，不煽情不装逼，只是很直白而已,https://blog.51cto.com/xqtesting/1730711, 2879
+2015-12-21,接口测试Fiddler实战,https://blog.51cto.com/xqtesting/1726817, 3935
+2015-12-18,Python中的编码问题,https://blog.51cto.com/xqtesting/1725939, 2384
+2015-12-11,什么叫目标，什么叫事业，写得让我失眠！也送给我自己,https://blog.51cto.com/xqtesting/1721881, 2044
+2015-12-03,为什么很多招聘信息都要求三年以上的工作经验？,https://blog.51cto.com/xqtesting/1719184, 2195
+2015-12-02,感恩大家让我获得最具人气讲师奖，这个奖不是我的，是我们一起的,https://blog.51cto.com/xqtesting/1718857, 1987
+2015-11-17,那些年让你吐血的面试题,https://blog.51cto.com/xqtesting/1713355, 2389
+2015-11-06,【案例】关于weblogic性能问题的分析和解决方法,https://blog.51cto.com/xqtesting/1710360, 2878
+2015-10-29,【干货】iOS9的新特性UI Tests,https://blog.51cto.com/xqtesting/1707572, 2678
+2015-10-26,【干货】移动APP安全测试要点解析,https://blog.51cto.com/xqtesting/1706184, 2826
+2015-10-23,【干货】zookeeper 运营经验分享,https://blog.51cto.com/xqtesting/1705502, 3200
+2015-10-22,【干货】前端工程与性能优化,https://blog.51cto.com/xqtesting/1705209, 2385
+2015-10-13,【干货】JMeter BeanShell 应用,https://blog.51cto.com/xqtesting/1702447, 5798
+2015-10-09,【干货】不同场景下 如何进行MySQL迁移,https://blog.51cto.com/xqtesting/1701158, 2572
+2015-09-01,QTP自动化测试自学手册V2.0版本,https://blog.51cto.com/xqtesting/1690380, 3389
+2015-08-28,高级软件测试自学手册V4.0版（基础、性能、手机APP、自动化）,https://blog.51cto.com/xqtesting/1689145, 10000+
+2015-08-20,Mongodb 请求处理流程,https://blog.51cto.com/xqtesting/1686265, 2325
+2015-08-19,有史以来最简单的MVC 例子--IT 攻城狮必看！,https://blog.51cto.com/xqtesting/1685768, 2214
+2015-08-19,性能测试中如何确定并发用户数,https://blog.51cto.com/xqtesting/1685757, 3733
+2015-08-18,JVM最多支持多少个线程？,https://blog.51cto.com/xqtesting/1685431, 2245
+2015-08-18,【干货】避免Android中Context引起的内存泄露,https://blog.51cto.com/xqtesting/1685429, 1860
+2015-08-17,【案例】小心，apc可能导致php-fpm罢工！,https://blog.51cto.com/xqtesting/1685267, 10000+
+2015-08-17,利用 Android Studio 和 Gradle 打包多版本APK,https://blog.51cto.com/xqtesting/1685124, 2246
+2015-08-14,Redis 的 5 个常见使用场景,https://blog.51cto.com/xqtesting/1684539, 2375
+2015-08-14,亿级用户下的新浪微博平台架构,https://blog.51cto.com/xqtesting/1684527, 2221
+2015-08-13,Android测试中被测应用挂了怎么办？,https://blog.51cto.com/xqtesting/1684209, 1888
+2015-08-13,单表60亿记录等大数据场景的MySQL优化和运维之道,https://blog.51cto.com/xqtesting/1684206, 2818
+2015-08-12,NGINX+PHP-FPM failed to ptrace Input/output error,https://blog.51cto.com/xqtesting/1684011, 4964
+2015-08-06,经验分享：如何构建亿级前端读服务,https://blog.51cto.com/xqtesting/1682117, 2262
+2015-08-06,分布式消息系统：Kafka,https://blog.51cto.com/xqtesting/1682105, 2376
+2015-08-05,【我的技术我做主】致那些奋斗在测试界挨踢人们--聊聊技术、发展,https://blog.51cto.com/xqtesting/1681786, 10000+
+2015-07-28,VisualSvn Server介绍,https://blog.51cto.com/xqtesting/1679067, 1911
+2015-07-17,挨踢（IT）脱口秀--全角度精彩电视剧大搜罗,https://blog.51cto.com/xqtesting/1675622, 1958
+2015-07-17,挨踢（IT）脱口秀--2014年&2015上半年特别“任性”的网络流行语大盘点,https://blog.51cto.com/xqtesting/1675620, 1881
+2015-07-17,12个Linux进程管理命令介绍,https://blog.51cto.com/xqtesting/1675516, 3054
+2015-07-10,成人网站有多大？,https://blog.51cto.com/xqtesting/1672744, 2212
+2015-07-08,奔跑中的2015——有时候我们需要慢下来,https://blog.51cto.com/xqtesting/1671972, 10000+
+2015-07-07,挨踢（IT）脱口秀介绍--给你的生活加点料,https://blog.51cto.com/xqtesting/1671833, 10000+
+2015-06-26,Shell 脚本面试问题大全,https://blog.51cto.com/xqtesting/1665885, 2437
+2015-06-26,一个Linux中用于监控的简易shell脚本,https://blog.51cto.com/xqtesting/1665876, 2484
+2015-06-25,IT圈的那些“蔡康永”们,https://blog.51cto.com/xqtesting/1665542, 2140
+2015-06-23,然而大部分期权并没有什么用,https://blog.51cto.com/xqtesting/1664275, 2188
+2015-06-11,寒门再难出贵子，决定你的也许是性格+环境,https://blog.51cto.com/xqtesting/1660775, 2200
+2015-06-09,我与学院的点点滴滴,https://blog.51cto.com/xqtesting/1660113, 2234
+2015-06-05,利用Hudson实现自动化测试的分布式执行,https://blog.51cto.com/xqtesting/1658859, 2201
+2015-06-05,开源mock server系统——moco简单好用,https://blog.51cto.com/xqtesting/1658856, 9224
+2015-06-05,为什么支付宝挂了那么久？支付宝技术真的无敌吗？,https://blog.51cto.com/xqtesting/1658787, 2422
+2015-06-05,mysql主从复制讲解,https://blog.51cto.com/xqtesting/1658780, 2019
+2015-06-05,关于工资的三个秘密,https://blog.51cto.com/xqtesting/1658736, 3756
+2015-05-27,Android NDK开发Crash错误定位,https://blog.51cto.com/xqtesting/1655707, 2224
+2015-05-27,Keepalived原理与实战精讲,https://blog.51cto.com/xqtesting/1655613, 2026
+2015-05-27,测试主管接手新团队的几件事,https://blog.51cto.com/xqtesting/1655569, 2547
+2015-05-27,MySQL 高可用浅析,https://blog.51cto.com/xqtesting/1655567, 1908
+2015-05-27,大话“自动化测试框架思想与构建”,https://blog.51cto.com/xqtesting/1655555, 2230
+2015-05-27,5步避免Java堆空间错误,https://blog.51cto.com/xqtesting/1655498, 1889
+2015-05-21,《引爆社群》读书笔记,https://blog.51cto.com/xqtesting/1653390, 2163
+2015-05-20,知乎大牛告诉你用户体验是啥？,https://blog.51cto.com/xqtesting/1653011, 2351
+2015-05-20,JVM内存死锁问题分析,https://blog.51cto.com/xqtesting/1653006, 7927
+2015-05-19,MySQL数据库常见的误解，居然连大牛都犯错误,https://blog.51cto.com/xqtesting/1652641, 2765
+2015-05-18,深挖BAT内部级别和薪资待遇,https://blog.51cto.com/xqtesting/1652182, 2597
+2015-05-14,andriod文件目录简述,https://blog.51cto.com/xqtesting/1651301, 1790
+2015-05-13,携程&去哪儿移动端产品分析报告,https://blog.51cto.com/xqtesting/1650937, 1913
+2015-05-13,80后生存状态揭露：月薪未过万了吗？,https://blog.51cto.com/xqtesting/1650861, 2098
+2015-05-13,Nginx中502和504错误详解,https://blog.51cto.com/xqtesting/1650832, 9324
+2015-05-12,利用LoadRunner实现加密测试，哇咔咔,https://blog.51cto.com/xqtesting/1650498, 2659
+2015-05-12,耗时一个月，我为拉勾设计的移动端,https://blog.51cto.com/xqtesting/1650484, 2874
+2015-05-11,减少GC开销的技巧,https://blog.51cto.com/xqtesting/1650149, 2199
+2015-05-07,如何写软件测试工程师求职简历？,https://blog.51cto.com/xqtesting/1643687, 3725
+2015-05-06,《人人都能看懂经济学》读书笔记,https://blog.51cto.com/xqtesting/1642604, 10000+
+2015-05-05,程序员必须知道的10大基础实用算法及其讲解,https://blog.51cto.com/xqtesting/1642093, 2281
+2015-05-05,80后的互联网北漂：你的未来在哪？,https://blog.51cto.com/xqtesting/1641937, 4837
+2015-05-04,java jvm 不同的垃圾回收器的比较,https://blog.51cto.com/xqtesting/1641874, 2211
+2015-05-04,Python基础技术问题总结,https://blog.51cto.com/xqtesting/1641727, 1966
+2015-05-04,产品经理在没有人带的情况下如何自我学习？,https://blog.51cto.com/xqtesting/1641711, 2632
+2015-05-04,新闻型产品列表设计分析,https://blog.51cto.com/xqtesting/1641707, 1920
+2015-05-04,mysql中的数据导入与导出                            荐,https://blog.51cto.com/xqtesting/1641688, 3607
+2015-05-03,loadrunner自学以及问题解答2,https://blog.51cto.com/xqtesting/1641456, 10000+
+2015-05-03,loadrunner自学以及问题解答1,https://blog.51cto.com/xqtesting/1641455, 2438
+2015-04-16,使用 chrome mobile emulation 来辅助 device 测试,https://blog.51cto.com/xqtesting/1633384, 2078
+2015-04-10,产品经理的麻烦地图,https://blog.51cto.com/xqtesting/1630898, 2014
+2015-04-07,APP发布测试流程,https://blog.51cto.com/xqtesting/1629605, 2555
+2015-04-07,如何建立高效的测试团队,https://blog.51cto.com/xqtesting/1629529, 2526
+2015-04-07,LoadRunner的Socket脚本关联小技巧,https://blog.51cto.com/xqtesting/1629412, 2529
+2015-04-07,Android APP性能优化技巧,https://blog.51cto.com/xqtesting/1629410, 2161
+2015-04-03,《丰田模式》读书笔记,https://blog.51cto.com/xqtesting/1628022, 2182
+2015-04-03,MySQL数据库集群进行正确配置步骤,https://blog.51cto.com/xqtesting/1627883, 1835
+2015-03-27,马化腾亲身分享：腾讯兵法教你做一款高口碑的产品,https://blog.51cto.com/xqtesting/1625260, 1823
+2015-03-25,国内互联网科技公司薪酬哪家强?,https://blog.51cto.com/xqtesting/1624197, 1929
+2015-03-24,用痛点切入，用痒点黏住,https://blog.51cto.com/xqtesting/1623815, 2056
+2015-03-24,Found 2 versions of android-support-v4.jar in the dependency list,https://blog.51cto.com/xqtesting/1623664, 1942
+2015-03-20,手机抓包方法,https://blog.51cto.com/xqtesting/1622548, 2489
+2015-03-19,团队正能量读书笔记,https://blog.51cto.com/xqtesting/1622065, 2103
+2015-03-18,产品体验报告-美团APP,https://blog.51cto.com/xqtesting/1621802, 2433
+2015-03-17,瞬间读懂什么是互联网思维、大数据、O2O、众筹、红海,https://blog.51cto.com/xqtesting/1621314, 2175
+2015-03-04,沈南鹏：从五大物理定律看新商业法则,https://blog.51cto.com/xqtesting/1617298, 1829
+2015-02-24,《气场》读书笔记,https://blog.51cto.com/xqtesting/1615118, 2034
+2015-02-11,拿到期权，就能一飞冲天？,https://blog.51cto.com/xqtesting/1613565, 2160
+2015-01-19,性能测试小案例分析,https://blog.51cto.com/xqtesting/1605519, 3018
+2015-01-17,番茄时间管理法——学会专注,https://blog.51cto.com/xqtesting/1605042, 2060
+2015-01-16,交易流程容灾及测试策略,https://blog.51cto.com/xqtesting/1604855, 1881
+2015-01-16,使用jmeter来造数据,https://blog.51cto.com/xqtesting/1604820, 3170
+2015-01-15,腾讯大规模Hadoop集群实践,https://blog.51cto.com/xqtesting/1604284, 1832
+2015-01-13,低成本和高性能的MySQL云数据库的实现,https://blog.51cto.com/xqtesting/1603109, 1880
+2015-01-11,《互联网思维》读后感与笔记,https://blog.51cto.com/xqtesting/1601823, 2211
+2015-01-08,别因为要学的太多反而压垮自己,https://blog.51cto.com/xqtesting/1600605, 2026
+2015-01-08,如何“治疗”问题员工？,https://blog.51cto.com/xqtesting/1600552, 1876
+2014-12-12,“互联网思维”这个词，就跟“小姐”一样，被大家用烂了。,https://blog.51cto.com/xqtesting/1589476, 1772
+2014-12-04,前淘宝工程师谈12306：做它比做淘宝难,https://blog.51cto.com/xqtesting/1586167, 2749
+2014-11-26,《谈判》读后感与笔记,https://blog.51cto.com/xqtesting/1582620, 2312
+2014-11-25,APP已死，服务永生,https://blog.51cto.com/xqtesting/1582355, 1703
+2014-11-24,让学习体系化，造福一大波上进青年,https://blog.51cto.com/xqtesting/1581769, 5231
+2014-11-18,小议性能测试中的曲线图,https://blog.51cto.com/xqtesting/1579038, 6258
+2014-11-14,向三星学如何开会,https://blog.51cto.com/xqtesting/1576550, 2008
+2014-11-10,如何学会独立思考？,https://blog.51cto.com/xqtesting/1574885, 10000+
+2014-11-03,如何解决WEB性能测试中的验证码问题,https://blog.51cto.com/xqtesting/1571209, 4449
+2014-10-03,安装loadrunner时出现”命令行选项语法错误键入命令 \?获得帮助“的解决方法,https://blog.51cto.com/xqtesting/1560530, 6833
+2014-09-10,ADB server didn't ACK,https://blog.51cto.com/xqtesting/1550478, 1475
+2014-08-29,linux 远程gui管理 webmin,https://blog.51cto.com/xqtesting/1546360, 1596
+2014-08-28,LoadRunner中90%响应时间的理解,https://blog.51cto.com/xqtesting/1546239, 3942
+2014-08-10,利用Loadrunner来监控Linux服务器,https://blog.51cto.com/xqtesting/1538123, 1832
+2014-08-10,LoadRunner同一个脚本运行两次结果相差很大的原因,https://blog.51cto.com/xqtesting/1538109, 1911
+2014-08-10,性能测试学习笔记-如何管理loadrunner的临时文件,https://blog.51cto.com/xqtesting/1538103, 1637
+2014-07-15,Android开发中ANR问题出现及解决,https://blog.51cto.com/xqtesting/1438553, 1766
+2014-07-13,linux下安装redmine2.5.1详细步骤,https://blog.51cto.com/xqtesting/1437534, 1910
+2014-06-25,Monkey基本用法与常用参数                            荐,https://blog.51cto.com/xqtesting/1430654, 8294
+2014-06-11,李嘉诚无锡演讲：骂到你成功,https://blog.51cto.com/xqtesting/1424880, 3902
+2014-05-27,关于线上与线下性能测试结果的差异,https://blog.51cto.com/xqtesting/1417488, 4471
+2014-05-23,致血气方刚的产品经理：如何不被程序员嫌弃,https://blog.51cto.com/xqtesting/1416132, 1730
+2014-05-21,LoadRunner启动自带例子Web Tours报错,https://blog.51cto.com/xqtesting/1414545, 2979
+2014-05-20,"别做操之过急的”无效将军”,做实实在在的”日拱一卒”",https://blog.51cto.com/xqtesting/1414052, 1497
+2014-05-20,给为工作而焦急迷茫的你,https://blog.51cto.com/xqtesting/1413958, 2203
+2014-05-19,Linux 实时流量监测(iptraf中文图解),https://blog.51cto.com/xqtesting/1413517, 1565
+2014-05-08,移动应用性能测试白皮书,https://blog.51cto.com/xqtesting/1408475, 1764
+2014-05-08,测试人员，你的价值不是你的工资,https://blog.51cto.com/xqtesting/1408288, 1848
+2014-04-20,2013手机App发展趋势预测：遇冷和洗牌,https://blog.51cto.com/xqtesting/1399155, 1799
+2014-04-03,关于测试团队的组织,https://blog.51cto.com/xqtesting/1389434, 1726
+2014-03-25,如何用敏捷方式来做事,https://blog.51cto.com/xqtesting/1383596, 1462
+2014-03-13,mysql query cache,https://blog.51cto.com/xqtesting/1376090, 1428
+2014-02-27,TCP长连接与短连接的区别,https://blog.51cto.com/xqtesting/1364128, 1916
+2014-02-19,80后注定是被牺牲的一代,https://blog.51cto.com/xqtesting/1360339, 1414
+2014-02-18,loadrunner如何监控linux与windows，以及重点指标分析,https://blog.51cto.com/xqtesting/1359977, 2571
+2014-01-22,小强系列之大话移动测试,https://blog.51cto.com/xqtesting/1353841, 2295
+2014-01-14,loadrunner 添加压力机,https://blog.51cto.com/xqtesting/1351431, 2578
+2014-01-06,Hadoop测试常见问题和测试方法,https://blog.51cto.com/xqtesting/1349097, 6501
+2014-01-05,一致性Hash与负载均衡,https://blog.51cto.com/xqtesting/1348769, 3046
+2013-12-16,记一次磁盘性能测试,https://blog.51cto.com/xqtesting/1341134, 1787
+2013-11-03,SVN的trunk branch tag,https://blog.51cto.com/xqtesting/1319698, 1456
+2013-10-29,Can't open the mysql.plugin table. Please run mysql,https://blog.51cto.com/xqtesting/1316525, 6186
+2013-10-28,Web安全测试FAQ,https://blog.51cto.com/xqtesting/1316091, 1915
+2013-10-19,常用安全测试用例,https://blog.51cto.com/xqtesting/1311169, 3821
+2013-10-14,与大师Jack Jarkv的交流分享后的思考,https://blog.51cto.com/xqtesting/1308559, 1962
+2013-10-03,大神，快来救救我，我搞不定啊,https://blog.51cto.com/xqtesting/1304285, 2088
+2013-09-19,TCP、UDP,https://blog.51cto.com/xqtesting/1299058, 1653
+2013-09-12,Linux下压力测试工具Webbench介绍,https://blog.51cto.com/xqtesting/1295110, 1422
+2013-09-12,性能测试之“Windows性能监视器”,https://blog.51cto.com/xqtesting/1295090, 1708
+2013-09-03,致那些徘徊在测试界的屌丝——也致给我自己这个苦逼屌丝                            荐,https://blog.51cto.com/xqtesting/1288045, 6179
+2013-08-28,mysql数据备份与还原命令,https://blog.51cto.com/xqtesting/1284298, 1323
+2013-08-28,在Centos中yum安装和卸载软件的使用方法,https://blog.51cto.com/xqtesting/1284296, 1353
+2013-08-28,SecureCRT上传bash: rz: command not found,https://blog.51cto.com/xqtesting/1284277, 1490
+2013-08-25,国内各大互联网公司相关技术站点2.0版,https://blog.51cto.com/xqtesting/1282445, 1418
+2013-08-23,Monkey的常见问题和解决办法,https://blog.51cto.com/xqtesting/1281212, 2914
+2013-08-21,linux下定时执行任务方法,https://blog.51cto.com/xqtesting/1279327, 1456
+2013-08-12,如何测试WEB应用程序防止SQL注入***,https://blog.51cto.com/xqtesting/1270637, 1992
+2013-08-08,jira4.4.5下载与汉化,https://blog.51cto.com/xqtesting/1266483, 1722
+2013-08-06,系统性能调优,https://blog.51cto.com/xqtesting/1264919, 1722
+2013-07-17,解决SecureCRT中文显示乱码,https://blog.51cto.com/xqtesting/1251140, 1310
+2013-07-03,软件测试员—-你的路在哪里--2,https://blog.51cto.com/xqtesting/1240688, 1969
+2013-07-03,软件测试员–你的路在哪里--1,https://blog.51cto.com/xqtesting/1240684, 1881
+2013-05-24,博弈论之大话测试行业现状,https://blog.51cto.com/xqtesting/1209289, 1746
+2013-05-24,selenium webdriver之eclipse java开发环境搭建,https://blog.51cto.com/xqtesting/1208964, 4337
+2013-05-24,【和小强学移动app测试5】Android虚拟机无法正常工作几例及解决办法,https://blog.51cto.com/xqtesting/1208593, 2137
+2013-05-21,性能测试培训总结-从远程机器打开TXT文件,https://blog.51cto.com/xqtesting/1205615, 1436
+2013-05-03,meta标签的另一个用法,https://blog.51cto.com/xqtesting/1192158, 1458
+2013-05-02,180多个web和desktop测试用例清单,https://blog.51cto.com/xqtesting/1191011, 2330
+2013-04-29,性能测试培训总结-IP欺骗,https://blog.51cto.com/xqtesting/1190075, 1783
+2013-04-23,你了解QA工作吗----解雇之前的五分钟,https://blog.51cto.com/xqtesting/1184403, 2046
+2013-04-19,点和圈的理论在软件测试中的思考,https://blog.51cto.com/xqtesting/1181287, 1386
+2013-04-10,追本溯源：勿忘质量之本,https://blog.51cto.com/xqtesting/1175713, 1299
+2013-04-03,产品观，来自微信张小龙的,https://blog.51cto.com/xqtesting/1169702, 1444
+2013-04-02,中西医诊疗与软件测试,https://blog.51cto.com/xqtesting/1169494, 1517
+2013-03-24,windows下常用命令,https://blog.51cto.com/xqtesting/1161441, 1591
+2013-03-22,改进qtp性能,https://blog.51cto.com/xqtesting/1160035, 1355
+2013-03-19,数据库锁表的分析与解决,https://blog.51cto.com/xqtesting/1157846, 1383
+2013-03-17,面试中如何谈工资问题,https://blog.51cto.com/xqtesting/1156662, 2370
+2013-03-15,DHTML快速入门,https://blog.51cto.com/xqtesting/1154908, 1546
+2013-03-07,【和小强学移动app测试4】monkey test使用与分析笔记,https://blog.51cto.com/xqtesting/1149026, 2955
+2013-03-06,【和小强学移动app测试3】adb命令使用汇总（持续更新）,https://blog.51cto.com/xqtesting/1148174, 2756
+2013-03-06,【和小强学移动app测试2】移动终端app测试点归纳（持续更新）,https://blog.51cto.com/xqtesting/1148074, 7057
+2013-03-05,【和小强学移动app测试1】android移动开发环境搭建与配置,https://blog.51cto.com/xqtesting/1147868, 3108
+2013-03-04,在线的图片、js、css压缩优化工具介绍（配合小强视频 前端性能分析精要）,https://blog.51cto.com/xqtesting/1144255, 1494
+2013-02-28,QQ聊天实录：本年度最动人的爱情故事,https://blog.51cto.com/xqtesting/1141955, 1420
+2013-02-25,linux下给php安装pdo_mysql和zlib以及测试模式的选择（禅道安装过程中遇到的问题）,https://blog.51cto.com/xqtesting/1139910, 1694
+2013-02-21,告诉你一个真实的北京,https://blog.51cto.com/xqtesting/1136884, 1977
+2013-02-21,页面缓存测试,https://blog.51cto.com/xqtesting/1136709, 1564
+2013-01-24,中央编译局博士常艳性爱日记里到底揭露了什么 ?,https://blog.51cto.com/xqtesting/1125422, 2251
+2013-01-18,博弈论之软件测试的价值,https://blog.51cto.com/xqtesting/1121877, 1748
+2013-01-11,产品经理利器之gui design studio,https://blog.51cto.com/xqtesting/1114231, 1331
+2013-01-11,产品经理利器之axure rp,https://blog.51cto.com/xqtesting/1114214, 1287
+2013-01-10,版本发布后软件测试人员要做的工作,https://blog.51cto.com/xqtesting/1113220, 1491
+2013-01-08,关于小强视频的特殊说明,https://blog.51cto.com/xqtesting/1111249, 2077
+2013-01-05,读《做单--成交的秘密》有感,https://blog.51cto.com/xqtesting/1108736, 1440
+2012-12-25,质量管理的误区——质量认证,https://blog.51cto.com/xqtesting/1098823, 1259
+2012-12-18,熊志男：写给一名测试工程师,https://blog.51cto.com/xqtesting/1092766, 1657
+2012-12-03,论测试的主要责任,https://blog.51cto.com/xqtesting/1076880, 1557
+2012-11-28,14年职场感悟：看看资深软件测试工程师怎样炼成的？,https://blog.51cto.com/xqtesting/1072625, 1751
+2012-11-22,Google Talk Testing（早期版本）                            荐,https://blog.51cto.com/xqtesting/1067602, 1980
+2012-11-19,自动化测试更适合缺陷预防，而不是提高测试效率,https://blog.51cto.com/xqtesting/1063787, 1636
+2012-11-09,大话测试之BT思维                            荐,https://blog.51cto.com/xqtesting/1054720, 9301
+2012-11-09,大话测试之基本功,https://blog.51cto.com/xqtesting/1054703, 9216
+2012-10-30,不好的测试实践——软件测试的尽早介入,https://blog.51cto.com/xqtesting/1043316, 1543
+2012-10-24,试析软件测试的错觉及发展方向,https://blog.51cto.com/xqtesting/1035467, 1443
+2012-10-06,linux下jdk1.7和tomcat7和mysql5.5安装步骤,https://blog.51cto.com/xqtesting/1015069, 2167
+2012-10-06,解决centos4不能使用yum的方法,https://blog.51cto.com/xqtesting/1015065, 1756
+2012-09-30,centos6的安装与配置,https://blog.51cto.com/xqtesting/1010959, 1347
+2012-09-27,mysqlsla快速入门                            荐,https://blog.51cto.com/xqtesting/1008279, 2147
+2012-09-21,《我的歌声里》程序员版,https://blog.51cto.com/xqtesting/1001719, 1265
+2012-09-13,白盒测试不是测试，更不高级,https://blog.51cto.com/xqtesting/989527, 2336
+2012-09-06,软件测试领域中的10个生存和发展技巧,https://blog.51cto.com/xqtesting/983663, 1647
+2012-08-30,软件测试工程师的角度看论证学问,https://blog.51cto.com/xqtesting/977346, 1365
+2012-08-13,软件测试的几大误区,https://blog.51cto.com/xqtesting/962176, 1592
+2012-08-10,谈开发同学的独立性和测试同学的独立性,https://blog.51cto.com/xqtesting/959824, 1415
+2012-08-08,项目的质量控制与质量保证的区别与联系,https://blog.51cto.com/xqtesting/958384, 1492
+2012-08-06,SHOW OPEN TABLES语法,https://blog.51cto.com/xqtesting/956418, 1368
+2012-07-31,效率是做好软件测试工作的灵魂,https://blog.51cto.com/xqtesting/949331, 3350
+2012-07-29,性能测试培训总结-loadrunner测试mysql                            荐,https://blog.51cto.com/xqtesting/947018, 3225
+2012-07-19,那些关于《浮沉》经典语录,https://blog.51cto.com/xqtesting/935366, 1334
+2012-07-07,linux下搭建java环境,https://blog.51cto.com/xqtesting/923623, 1612
+2012-07-07,分享几款一键搭建php本地测试环境工具,https://blog.51cto.com/xqtesting/923425, 1423
+2012-06-30,MYSQL异常处理日志：主从库同步延迟时间过长的分析,https://blog.51cto.com/xqtesting/914451, 1433
+2012-06-29,性能测试培训笔记-无法安装.net framework3.5的解决办法,https://blog.51cto.com/xqtesting/912363, 1703
+2012-06-26,linux下安装redmine1.2.1全记录,https://blog.51cto.com/xqtesting/909355, 1840
+2012-06-22,BUG平台应该是一个知识库,https://blog.51cto.com/xqtesting/906118, 1525
+2012-06-19,selenium webdirver之rdoc使用,https://blog.51cto.com/xqtesting/903209, 1657
+2012-06-18,根据status信息对MySQL服务器进行优化-2,https://blog.51cto.com/xqtesting/901743, 1276
+2012-06-18,根据status信息对MySQL服务器进行优化-1,https://blog.51cto.com/xqtesting/901707, 1407
+2012-06-17,华为boss力荐公司高层看的一篇文章，很长很经典,https://blog.51cto.com/xqtesting/900743, 2051
+2012-06-13,redmine全记录（更新）,https://blog.51cto.com/xqtesting/897782, 2035
+2012-06-11,js和css在线压缩工具,https://blog.51cto.com/xqtesting/895694, 1774
+2012-06-10,三种东西永远不要放到数据库里,https://blog.51cto.com/xqtesting/894595, 1487
+2012-06-06,关键的十个MySQL性能优化技巧,https://blog.51cto.com/xqtesting/889912, 1395
+2012-06-02,三十以后的醒悟(早看早醒悟),https://blog.51cto.com/xqtesting/885728, 1409
+2012-05-30,JavaCore/HeapDump文件及其分析方法,https://blog.51cto.com/xqtesting/882893, 1519
+2012-05-30,windows下php5.3链接ms sql 2008,https://blog.51cto.com/xqtesting/882813, 1464
+2012-05-25,网页级在线性能测试网站汇总,https://blog.51cto.com/xqtesting/877995, 1445
+2012-05-23,软件测试质量和效率评价之我见,https://blog.51cto.com/xqtesting/874623, 1591
+2012-05-23,Nginx + PHP mysql_pconnect = Database errors (Too many connections),https://blog.51cto.com/xqtesting/874027, 1661
+2012-05-23,autobench快速入门                            荐,https://blog.51cto.com/xqtesting/873919, 2823
+2012-05-16,我们奔三了，说好了，只能看，不许哭。 谨此献给“1982～1986”出生的人,https://blog.51cto.com/xqtesting/864770, 1649
+2012-05-15,PHP code coverage QuickStart,https://blog.51cto.com/xqtesting/864215, 2061
+2012-05-11,mysql innodb死锁情况分析,https://blog.51cto.com/xqtesting/860544, 1592
+2012-05-10,"性能测试培训总结-Abnormal termination, caused by mdrv process termination",https://blog.51cto.com/xqtesting/860143, 4947
+2012-05-08,宽带服务价值链之：ISP，ICP，ASP，IDC，CDN,https://blog.51cto.com/xqtesting/856847, 1672
+2012-05-02,反测试无用论之帮你接盘子的人,https://blog.51cto.com/xqtesting/850165, 1343
+2012-05-01,冷眼看世界之浮躁论,https://blog.51cto.com/xqtesting/849511, 1580
+2012-04-28,Quality Center引发的测试管理思考                            荐,https://blog.51cto.com/xqtesting/846926, 2957
+2012-04-28,yslow V2 准则详细讲解,https://blog.51cto.com/xqtesting/846908, 2982
+2012-04-28,测试常用辅助工具汇总,https://blog.51cto.com/xqtesting/846898, 2696
+2012-04-24,httpwatch详解,https://blog.51cto.com/xqtesting/843319, 3021
+2012-04-23,mysql数据库性能优化（包括SQL、表结构、索引和缓存参数）,https://blog.51cto.com/xqtesting/842079, 1370
+2012-04-19,页面级别性能测试分析                            荐,https://blog.51cto.com/xqtesting/838898, 2304
+2012-04-18,yslow各个指标含义,https://blog.51cto.com/xqtesting/837766, 2082
+2012-04-18,web前端性能优化指南,https://blog.51cto.com/xqtesting/837657, 1413
+2012-04-18,原来还有cookie-free domain这么回事,https://blog.51cto.com/xqtesting/837613, 2534
+2012-04-17,如何给Python的MySQL模块加功能,https://blog.51cto.com/xqtesting/836469, 1475
+2012-04-11,数据库调优要点随记,https://blog.51cto.com/xqtesting/831663, 1372
+2012-04-06,11步教你选择最稳定的MySQL版本,https://blog.51cto.com/xqtesting/827741, 1318
+2012-04-06,端到端测试 VS 单元测试,https://blog.51cto.com/xqtesting/827739, 1359
+2012-04-01,性能测试培训总结-利用LoadRunner来制造数据,https://blog.51cto.com/xqtesting/823126, 2263
+2012-03-31,关于putty的ftp功能,https://blog.51cto.com/xqtesting/822082, 3168
+2012-03-31,网上几种RPM转DEB的方法,https://blog.51cto.com/xqtesting/822077, 1329
+2012-03-30,深入理解Loadrunner中的Browser Emulation,https://blog.51cto.com/xqtesting/821579, 1455
+2012-03-30,性能测试培训笔记-关于windows下无法增加更多的虚拟用户,https://blog.51cto.com/xqtesting/821511, 1565
+2012-03-25,性能测试培训总结-强大的nmon监控,https://blog.51cto.com/xqtesting/816532, 2905
+2012-03-25,性能测试培训总结-spotlight on mysql,https://blog.51cto.com/xqtesting/816504, 3135
+2012-03-22,性能测试培训笔记-安装与破解,https://blog.51cto.com/xqtesting/814156, 1779
+2012-03-22,性能测试培训笔记-全局变量和局部变量,https://blog.51cto.com/xqtesting/813928, 1587
+2012-03-22,微信为什么会成功？,https://blog.51cto.com/xqtesting/813616, 1359
+2012-03-22,用户体验：别让我想，别让我停！,https://blog.51cto.com/xqtesting/813561, 1396
+2012-03-21,20款Notepad++插件下载和介绍,https://blog.51cto.com/xqtesting/812572, 1681
+2012-03-21,【LoadRunner技术讲座3】如何监控Linux系统资源,https://blog.51cto.com/xqtesting/812321, 1524
+2012-03-21,PuTTY/PSCP、PSFTP介绍及使用,https://blog.51cto.com/xqtesting/812312, 1430
+2012-03-20,性能测试培训总结-message函数,https://blog.51cto.com/xqtesting/811454, 1553
+2012-03-20,性能测试培训总结-axwin frame window:thumbprocess.exe 解决方法,https://blog.51cto.com/xqtesting/811176, 1712
+2012-03-19,关于测试行业的零星思考,https://blog.51cto.com/xqtesting/810775, 1742
+2012-03-19,mysql的show status详解,https://blog.51cto.com/xqtesting/810772, 1309
+2012-03-19,【LoadRunner技术讲座4】利用sitescope监测监控mysql,https://blog.51cto.com/xqtesting/810767, 1467
+2012-03-17,memcached 常见问题 翻译,https://blog.51cto.com/xqtesting/808788, 1425
+2012-03-17,有关C语言程序内存问题的5条规则,https://blog.51cto.com/xqtesting/808787, 1368
+2012-03-17,MyEclipse6.5下struts2+spring2+hibernate3 整合,https://blog.51cto.com/xqtesting/808786, 1520
+2012-03-17,jsp开发环境的搭建,https://blog.51cto.com/xqtesting/808785, 1167
+2012-03-17,j2ee学习方法摘要,https://blog.51cto.com/xqtesting/808784, 1217
+2012-03-17,c++最基础的20条规则,https://blog.51cto.com/xqtesting/808783, 1222
+2012-03-17,一句话理解同步异步,https://blog.51cto.com/xqtesting/808781, 1559
+2012-03-17,如何结合使用 Subversion 和 Eclipse,https://blog.51cto.com/xqtesting/808780, 1360
+2012-03-17,Eclipse插件开发之FindBugs插件,https://blog.51cto.com/xqtesting/808770, 1365
+2012-03-17,"Eclipse europa 更新时 Error retrieving ""feature.xml"". [error in opening zip file]的解决",https://blog.51cto.com/xqtesting/808768, 1389
+2012-03-17,如何修改MyEclipse的默认工作路径Workplace,https://blog.51cto.com/xqtesting/808767, 1451
+2012-03-17,ShowSlow+Yslow页面前端性能测试环境搭建,https://blog.51cto.com/xqtesting/808765, 2967
+2012-03-17,LoadRunner levels of integration with web pages,https://blog.51cto.com/xqtesting/808764, 1274
+2012-03-17,【LoadRunner技术讲座12】使用LoadRunner监测MySQL数据库的性能-方法二,https://blog.51cto.com/xqtesting/808761, 1414
+2012-03-17,【LoadRunner技术讲座11】使用LoadRunner监测MySQL数据库的性能-方法一,https://blog.51cto.com/xqtesting/808760, 1564
+2012-03-17,LR对Tuxedo/Weblogic/websphere/Apache/MQ的性能监控,https://blog.51cto.com/xqtesting/808755, 1627
+2012-03-17,负载均衡技术应用介绍,https://blog.51cto.com/xqtesting/808744, 1225
+2012-03-17,loadrunner中关于Failed to connect to server错误,https://blog.51cto.com/xqtesting/808737, 3557
+2012-03-17,性能测试培训总结-关联后如何使用该值？lr_save_string帮你,https://blog.51cto.com/xqtesting/808734, 1766
+2012-03-17,性能测试培训笔记-安装loadrunner出现vc2005_sp1_with_atl_fix_redist,https://blog.51cto.com/xqtesting/808732, 3046
+2012-03-17,【LoadRunner技术讲座8】LoadRunner函数中的几个陷阱,https://blog.51cto.com/xqtesting/808729, 1535
+2012-03-17,开源性能测试工具Curl-Loader,https://blog.51cto.com/xqtesting/808727, 1336
+2012-03-17,性能测试计算公式 供参考,https://blog.51cto.com/xqtesting/808724, 1290
+2012-03-17,【LoadRunner技术讲座7】使用windows socket协议,https://blog.51cto.com/xqtesting/808723, 1404
+2012-03-17,防火墙性能测试浅析,https://blog.51cto.com/xqtesting/808718, 1358
+2012-03-17,性能测试实战总结,https://blog.51cto.com/xqtesting/808717, 1507
+2012-03-17,各角色眼中的性能测试,https://blog.51cto.com/xqtesting/808715, 1430
+2012-03-17,PHP程序调用java类的两种方法,https://blog.51cto.com/xqtesting/808569, 1187
+2012-03-17,软件自动化测试框架,https://blog.51cto.com/xqtesting/808563, 1759
+2012-03-17,韩寒的经典格言有哪些？,https://blog.51cto.com/xqtesting/808562, 1292
+2012-03-17,应该知道的自动化测试陷阱2,https://blog.51cto.com/xqtesting/808561, 1333
+2012-03-17,应该知道的自动化测试陷阱1,https://blog.51cto.com/xqtesting/808560, 1283
+2012-03-17,方便的实体机与虚拟机之间传送文件的方法,https://blog.51cto.com/xqtesting/808558, 1549
+2012-03-17,ISTQB，QAI，软件评测师软件测试认证特点对比,https://blog.51cto.com/xqtesting/808556, 1622
+2012-03-17,浅谈cs与bs的结构测试,https://blog.51cto.com/xqtesting/808553, 2208
+2012-03-17,也谈测试的核心技术,https://blog.51cto.com/xqtesting/808552, 1425
+2012-03-17,大家来找茬：谁降低了游戏研发的品质,https://blog.51cto.com/xqtesting/808551, 1283
+2012-03-17,我谈Web程序难测试,https://blog.51cto.com/xqtesting/808549, 1259
+2012-03-17,内存管理知识,https://blog.51cto.com/xqtesting/808548, 1526
+2012-03-17,Xenu介绍,https://blog.51cto.com/xqtesting/808547, 1628
+2012-03-17,在敏捷测试中如何设计用例,https://blog.51cto.com/xqtesting/808546, 1327
+2012-03-17,翻页功能测用例设计,https://blog.51cto.com/xqtesting/808545, 1304
+2012-03-17,软件测试计划编写注意事项,https://blog.51cto.com/xqtesting/808544, 1469
+2012-03-17,一名合格的测试员应具备的素质,https://blog.51cto.com/xqtesting/808542, 1361
+2012-03-17,IT 架构和应用程序的端到端测试,https://blog.51cto.com/xqtesting/808541, 1275
+2012-03-17,设计功能和界面测试用例,https://blog.51cto.com/xqtesting/808540, 1509
+2012-03-17,用户界面测试注意点,https://blog.51cto.com/xqtesting/808539, 1508
+2012-03-17,搜索引擎测试指南,https://blog.51cto.com/xqtesting/808538, 1537
+2012-03-17,Python辅助安全测试常用代码示例,https://blog.51cto.com/xqtesting/808533, 1654
+2012-03-17,python链接mysql常见问题汇总,https://blog.51cto.com/xqtesting/808532, 1545
+2012-03-17,python开发环境搭建,https://blog.51cto.com/xqtesting/808523, 1729
+2012-03-17,Selenium 对表格的验证,https://blog.51cto.com/xqtesting/808522, 2092
+2012-03-17,selenium webdirver之ruby-关于grid的一些说明,https://blog.51cto.com/xqtesting/808519, 1353
+2012-03-17,selenium webdirver之ruby-grid使用步骤,https://blog.51cto.com/xqtesting/808518, 1556
+2012-03-17,献给所有八零年代出生的笨小孩,https://blog.51cto.com/xqtesting/808515, 1396
+2012-03-17,关于测试行业的零星思考,https://blog.51cto.com/xqtesting/808513, 1317
+2012-03-17,团购网站商业浅析,https://blog.51cto.com/xqtesting/808510, 1190
+2012-03-17,趣文：如何成为Google软件工程师？（二）,https://blog.51cto.com/xqtesting/808507, 1228
+2012-03-17,趣文：如何成为Google软件工程师？（一）,https://blog.51cto.com/xqtesting/808506, 1261
+2012-03-17,你应该得到的福利,https://blog.51cto.com/xqtesting/808503, 1306
+2012-03-17,测试浮躁论,https://blog.51cto.com/xqtesting/808500, 1332
+2012-03-17,软件测试工程师的职业生涯规划,https://blog.51cto.com/xqtesting/808499, 1624
+2012-03-17,测试培训引发的感想,https://blog.51cto.com/xqtesting/808497, 1571
+2012-03-17,selenium webdirver之ruby-开发ide乱码解决方案,https://blog.51cto.com/xqtesting/808489, 1529
+2012-03-17,selenium webdirver之ruby-开发ide安装,https://blog.51cto.com/xqtesting/808488, 1516
+2012-03-17,selenium webdirver之ruby-安装与配置环境,https://blog.51cto.com/xqtesting/808485, 2094
+2012-03-17,nginx的安装与配置小结,https://blog.51cto.com/xqtesting/808481, 1454
+2012-03-17,LAMP优化策略,https://blog.51cto.com/xqtesting/808478, 1433
+2012-03-17,Centos5 系统配置DNS服务器配置详解,https://blog.51cto.com/xqtesting/808471, 1304
+2012-03-17,新浪xweibo代码架构分析(二次开发),https://blog.51cto.com/xqtesting/808470, 1354
+2012-03-17,mysql建表-主键-索引-外键,https://blog.51cto.com/xqtesting/808468, 1698
+2012-03-17,VertrigoServ 2.21配置phpmyadmin,https://blog.51cto.com/xqtesting/808464, 1487
+2012-03-17,如何提高Linux系统应对短连接的负载能力,https://blog.51cto.com/xqtesting/808460, 1872
+2012-03-17,新手用Linux做代理服务器 三招搞定,https://blog.51cto.com/xqtesting/808457, 1291
+2012-03-17,Linux内核源代码分析-第四章 系统初始化-3,https://blog.51cto.com/xqtesting/808452, 1233
+2012-03-17,Linux内核源代码分析-第四章 系统初始化-2,https://blog.51cto.com/xqtesting/808448, 1342
+2012-03-17,Linux内核源代码分析-第四章 系统初始化-1,https://blog.51cto.com/xqtesting/808446, 1314
+2012-03-17,Linux内核源代码分析-第三章 内核体系结构概述-3,https://blog.51cto.com/xqtesting/808445, 1353
+2012-03-17,Linux内核源代码分析-第三章 内核体系结构概述-2,https://blog.51cto.com/xqtesting/808444, 1267
+2012-03-17,Linux内核源代码分析-第三章 内核体系结构概述-1,https://blog.51cto.com/xqtesting/808443, 1312
+2012-03-17,Linux内核源代码分析-第二章 代码初识-5,https://blog.51cto.com/xqtesting/808435, 1463
+2012-03-17,Linux内核源代码分析-第二章 代码初识-4,https://blog.51cto.com/xqtesting/808434, 1241
+2012-03-17,Linux内核源代码分析-第二章 代码初识-3,https://blog.51cto.com/xqtesting/808432, 1273
+2012-03-17,Linux内核源代码分析-第二章 代码初识-2,https://blog.51cto.com/xqtesting/808431, 1654
+2012-03-17,Linux内核源代码分析-第二章 代码初识-1,https://blog.51cto.com/xqtesting/808430, 1386
+2012-03-17,Linux内核源代码分析-第一章 linux介绍,https://blog.51cto.com/xqtesting/808428, 1299
+2012-03-17,Linux内核源代码分析-目录,https://blog.51cto.com/xqtesting/808427, 1414
+2012-03-17,解决Linux中文乱码,https://blog.51cto.com/xqtesting/808425, 1592
+2012-03-17,linux之nohup命令,https://blog.51cto.com/xqtesting/808423, 1373
+2012-03-17,Unix整理笔记——基本shell脚本编程——里程碑M14,https://blog.51cto.com/xqtesting/808422, 1351
+2012-03-17,Unix整理笔记——安全性——里程碑M13,https://blog.51cto.com/xqtesting/808421, 1278
+2012-03-17,Unix整理笔记——在指定时间运行程序——里程碑M12,https://blog.51cto.com/xqtesting/808420, 1369
+2012-03-17,Unix整理笔记——作业控制和进程管理——里程碑M11,https://blog.51cto.com/xqtesting/808419, 1384
+2012-03-17,Unix整理笔记——高级命令sed和awk——里程碑M10,https://blog.51cto.com/xqtesting/808418, 1453
+2012-03-17,Unix整理笔记——高级工具——里程碑M9,https://blog.51cto.com/xqtesting/808417, 1442
+2012-03-17,Unix整理笔记-vi简介-里程碑M8,https://blog.51cto.com/xqtesting/808415, 1283
+2012-03-17,Unix整理笔记-vi简介-里程碑M8,https://blog.51cto.com/xqtesting/808414, 1229
+2012-03-17,Unix整理笔记-超级无敌常用命令杂谈2-里程碑M7,https://blog.51cto.com/xqtesting/808412, 1269
+2012-03-17,Unix整理笔记-超级无敌常用命令杂谈1-里程碑M6,https://blog.51cto.com/xqtesting/808411, 1327
+2012-03-17,Unix整理笔记-shell介绍1-里程碑M5,https://blog.51cto.com/xqtesting/808407, 1357
+2012-03-17,Unix整理笔记——文件系统——里程碑M4,https://blog.51cto.com/xqtesting/808406, 1358
+2012-03-17,Unix整理笔记——用户和组——里程碑M3,https://blog.51cto.com/xqtesting/808405, 1272
+2012-03-17,Unix整理笔记——起步——里程碑M2,https://blog.51cto.com/xqtesting/808403, 1330
+2012-03-17,Unix整理笔记——Unix基础——里程碑M1,https://blog.51cto.com/xqtesting/808401, 1330
+2012-03-17,Apache源码分析,https://blog.51cto.com/xqtesting/808400, 1245
+2012-03-17,LAMP环境搭建,https://blog.51cto.com/xqtesting/808399, 1495
+2012-03-17,PHP入门指导：如何学习PHP？,https://blog.51cto.com/xqtesting/808398, 1256
+2012-03-17,linux下的apache、mysql自启动,https://blog.51cto.com/xqtesting/808395, 1294
+2012-03-16,Eclipse插件大全 挑选最牛的TOP30,https://blog.51cto.com/xqtesting/808054, 1142
+2012-03-16,让loadrunner走下神坛(全）,https://blog.51cto.com/xqtesting/807665, 1974
+2012-03-16,性能测试技术提高的门槛,https://blog.51cto.com/xqtesting/807624, 1477
+2012-03-16,性能测试环境方案,https://blog.51cto.com/xqtesting/807622, 1631
+2012-03-16,软件测试原则,https://blog.51cto.com/xqtesting/807619, 1769
+2012-03-16,用例设计大全（整理）,https://blog.51cto.com/xqtesting/807618, 2386
+2012-03-16,"你真的了解分层架构吗？——写给被PetShop""毒害""的朋友",https://blog.51cto.com/xqtesting/807616, 1333
+2012-03-16,征服Perl——哈希——里程碑M7,https://blog.51cto.com/xqtesting/807614, 1316
+2012-03-16,征服Perl——输入输出相关知识——里程碑M6,https://blog.51cto.com/xqtesting/807613, 1289
+2012-03-16,征服Perl——子程序等相关知识——里程碑M5,https://blog.51cto.com/xqtesting/807612, 1311
+2012-03-16,征服Perl——基础知识——里程碑M4,https://blog.51cto.com/xqtesting/807611, 1350
+2012-03-16,征服Perl——基础知识——里程碑M3,https://blog.51cto.com/xqtesting/807609, 1384
+2012-03-16,征服Perl——Linux下安装Perl——里程碑M2,https://blog.51cto.com/xqtesting/807606, 1334
+2012-03-16,征服Perl——初识Perl——里程碑M1,https://blog.51cto.com/xqtesting/807601, 1390
+2012-03-15,自动化测试体系整体解决方案探讨,https://blog.51cto.com/xqtesting/807124, 1283
+2012-03-15,关于自动化测试的思考,https://blog.51cto.com/xqtesting/807123, 1572
+2012-03-15,微博feed系统推拉模式和时间分区拉模式架构探讨,https://blog.51cto.com/xqtesting/807101, 1397
+2012-03-15,PHP开发规范之性能优化分享,https://blog.51cto.com/xqtesting/807095, 1242
+2012-03-15,PHP开发规范分享,https://blog.51cto.com/xqtesting/807094, 1786
+2012-03-15,解决ExcuteFile执行命令时出现“无效字符”的问题,https://blog.51cto.com/xqtesting/807086, 1435
+2012-03-15,在 QTP 中遭遇 General run error,https://blog.51cto.com/xqtesting/807084, 1947
+2012-03-15,QTP11补丁下载 – 完美支持FIREFOX 9~10,https://blog.51cto.com/xqtesting/807078, 1662
+2012-03-15,scrum之旅读书笔记,https://blog.51cto.com/xqtesting/807072, 1313
+2012-03-15,初识OPPM一页纸项目管理,https://blog.51cto.com/xqtesting/807070, 1905
+2012-03-15,如何从测试员转型为管理人员,https://blog.51cto.com/xqtesting/807067, 1636

@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b213fe-264f-4154-a909-536b0f24090b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tmis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tmis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tmis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../selenium/cuiqingcai/cqc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../selenium/cuiqingcai/cqc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../selenium/errcode/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../selenium/errcode/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../selenium/psn/psn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../selenium/psn/psn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spider/DebugTalk/index.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../spider/DebugTalk/index.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spider/bing/bing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../spider/bing/bing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spider/chonshi/index.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../spider/chonshi/index.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spider/tmis/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../spider/tmis/get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/log/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/log/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/log/test.log.2018-11-28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/pic/test_case1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/pic/test_case1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/report/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/report/HTMLReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/runtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/runtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/test_case/test_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../unittest/errcodeWeb_test/test_case/test_search.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="855">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
@@ -249,8 +256,8 @@
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25237092" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.49894625" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50105375" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.49841937" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5015806" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" sideWeight="0.49947312" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
@@ -272,17 +279,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/get.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -293,13 +303,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.py">
+    <entry file="file://$PROJECT_DIR$/hello.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="494">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>

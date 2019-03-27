@@ -2,7 +2,7 @@
 
 import unittest
 
-from test_case.test_search import TestEc
+from test_case.testbyrequests import TestEc
 from utils.HTMLTestRunner import HTMLTestRunner
 from utils.mail import Email
 
@@ -17,5 +17,5 @@ if __name__ == '__main__':
 								verbosity=2
 								)
 		runner.run(suite)
-	e = Email('smtp.qq.com','981805032@qq.com','nmfavcrgtlfsbdeb','13250790293@163.com','网页运行正常')
+	e = Email('smtp.qq.com','981805032@qq.com','nmfavcrgtlfsbdeb','13250790293@163.com','errcode网页测试')
 	e.send()

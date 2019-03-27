@@ -1,22 +1,23 @@
 import requests
 import re,os
 import time
+from bs4 import BeautifulSoup
 # 导入requests_toolbelt库使用MultipartEncoder
 from requests_toolbelt import MultipartEncoder
 local = time.strftime("%Y-%m-%d")
 url = 'http://cn.bing.com/'
 con = requests.get(url)
 content = con.text
-reg = r"(az/hprichbg/rb/.*?.jpg)"
-a = re.findall(reg, content, re.S)[0]
-print(a)
+a = BeautifulSoup(content,'lxml').find('link',id='bgLink')['href']
 picUrl = url + a
+print(picUrl)
 read = requests.get(picUrl)
 if not os.path.exists('pic'):
 	os.mkdir('pic')
 f = open('D:/bing/pic/%s.jpg' % local, 'wb')
 f.write(read.content)
 f.close()
+'''
 time.sleep(3)
 url = 'http://ftp09.host.me0.cn:3312/vhost/index.php?c=webftp&a=upsave'
 headers = {
@@ -32,4 +33,4 @@ m = MultipartEncoder(file_payload)
 # 自动生成Content-Type类型和随机码
 headers['Content-Type'] = m.content_type
 # 使用data上传文件
-html = requests.post(url, headers=headers, data=m)
+html = requests.post(url, headers=headers, data=m)'''

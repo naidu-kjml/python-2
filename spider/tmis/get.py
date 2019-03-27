@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
-
 __author__='xjming'
+
 import time,re,requests
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
-from mail import Email
 
 cookies = {
 	'JSESSIONID':'F2C7E168255E8A2BD325D2069AFD46DC',
@@ -186,6 +185,3 @@ for i in range(0,20):
 		browser.switch_to.frame('menu_main')
 browser.quit()
 print('程序结束，完成添加%d条记录'%sum)
-if sum !=0:
-	e = Email('smtp.grgbanking.com','xjming9@grgbanking.com','grg7792042','13250790293@163.com','测试流程自动添加程序')
-	e.send('完成添加%d条记录！'%sum)
