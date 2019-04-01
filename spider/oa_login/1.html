@@ -1,0 +1,214 @@
+<link rel="stylesheet" type="text/css" href="/theme/2/style.css">
+<script src="/inc/js/ccorrect_btn.js"></script>
+
+<html>
+<head>
+
+
+<title>表单打印 - 2019年03月软件测试部赖雅洁【运通智能】员工月度考核(1636338)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" type="text/css" href="/theme/2/dialog.css">
+<link rel="stylesheet" type="text/css" href="/inc/js/jquery/tooltip/jquery.tooltip.css" />
+<script src="/inc/js/dialog.js"></script>
+<style type="text/css">
+<!--
+.title {  font-family: "宋体"; font-size: 18pt; font-weight: bold}
+/*用户自定义样式表*/
+-->
+</style>
+<script type="text/javascript" src="/inc/js_lang.php"></script>
+<script type="text/javascript" src="/inc/js/attach.js"></script>
+<script src="/inc/js/jquery/jquery.min.js"></script>
+<script language="javascript" src="/inc/js/jquery/tooltip/jquery.tooltip.min.js"></script>
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function(){
+   jQuery("[title][type!='hidden']").tooltip();
+});
+//定义全局变量
+var g_run_id = "1636338";       //流水号
+var g_flow_id = "2224";     //流程ID
+var g_prcs_id = "3";     //实际流程步骤序号
+var g_form_view = 2;                 //打印表单
+var doPrint = "";
+var printView = "";
+
+//用户自定义js脚本
+
+var sign_info_object="";
+var cursor = "";
+function LoadSignDataSign(data,count,content,version)
+{
+    var oDWebSignSeal=document.getElementById("DWebSignSeal");
+	if(!oDWebSignSeal)
+	   return;
+     oDWebSignSeal.SetStoreData(data);
+
+    var strObjectName ;
+    strObjectName = oDWebSignSeal.FindSeal(cursor,0);
+	while(strObjectName  != "")
+	{
+		if(strObjectName.indexOf("SIGN_INFO")>=0)
+		{
+		   oDWebSignSeal.MoveSealPosition(strObjectName,0, -30, "personal_sign"+count);
+		   break;
+		}
+	    strObjectName = oDWebSignSeal.FindSeal(strObjectName,0);
+	}
+
+	oDWebSignSeal.ShowWebSeals();
+    if(version==0)
+        oDWebSignSeal.SetSealSignData (strObjectName,"中国兵器工业信息中心");
+    else
+        oDWebSignSeal.SetSealSignData (strObjectName,content);
+    oDWebSignSeal.SetMenuItem(strObjectName,4);
+    sign_info_object += strObjectName+",";
+    strObjectName = oDWebSignSeal.FindSeal(strObjectName,0);
+}
+
+function print_view()
+{
+	 window.focus();
+	 try{
+	    document.getElementById("WebBrowser").ExecWB(7,1);
+	  }catch(e)
+	  {
+	  	alert("如不能打印预览，请调整安全级别！具体方法如下：\n根据当前页面所属安全区域，自定义安全设置，找到设置项“对未标记为可安全执行的脚本的Activex控件进行初始化并执行脚本”，将其设置为“提示”即可。");
+	  }
+}
+</script>
+</head>
+
+<body style="background:none;margin: 0;" topmargin="5">
+<div  id='bodyScroll' >
+<style type="text/css">
+<!--
+.title {  font-family: "宋体"; font-size: 18pt; font-weight: bold}
+/*用户自定义样式表*/
+-->
+</style>
+<form name="form1" method="post" action=""><style type="text/css"></style><!--{13992582945650}--><style type="text/css"></style><!--{13992582945651}--><style type="text/css"></style><!--{13992582945652}-->&#13;<p class="MsoNormal" align="center" style="margin: 0cm 0cm 0pt"><b style="mso-bidi-font-weight: normal"><span times="" new="" style="font-family: 宋体; font-size: 14pt; mso-ascii-font-family: ">2019<input type=hidden name=DATA_898 value='2019' title='年宏'>年3<input type=hidden name=DATA_2 value='3' title='月'>月【运通智能】员工月度考核表 <br />&#13;<font size="2" face="Times New Roman">流水号:1636338　</font><br />&#13;</span></b>姓名：赖雅洁<input type=hidden name=DATA_3 value='赖雅洁' title='员工姓名'> 工号：G0108228<input type=hidden name=DATA_626 value='G0108228' title='员工工号'> 职位：软件测试工程师<input type=hidden name=DATA_628 value='软件测试工程师' title='员工职位'><span lang="EN-US"><font face="Times New Roman"><font size="2"> 部门：运通智能/软件测试部<input type=hidden name=DATA_5 value='运通智能/软件测试部' title='所在部门'> <br />&#13;<table border="1" cellspacing="0" bordercolor="#000000" cellpadding="0" width="920" align="center" style="border-collapse: collapse; font-size: 12px">&#13;    <tbody>&#13;        <tr height="20">&#13;            <td height="20" rowspan="2" width="227" x:str="" style="text-align: center">考核评分：0.0<input type=hidden name=DATA_1076 value='0.0' title='综合得分计算'></td>&#13;            <td height="20" width="243" x:str="">工作绩效：0.0<input type=hidden name=DATA_1075 value='0.0' title='工作绩效计算'></td>&#13;            <td height="20" width="246" x:str="">项目建议等级：<input type=hidden name=DATA_1068 value='' title='项目经理等级下拉'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="243" x:str="">特别加减分： 0.0<input type=hidden name=DATA_1074 value='0.0' title='加减分计算'></td>&#13;            <td height="20" width="246" x:str="">部门经理评分等级：<input type=hidden name=DATA_1069 value='' title='部门经理等级'></td>&#13;        </tr>&#13;    </tbody>&#13;</table>&#13;<table border="1" cellspacing="0" bordercolor="#000000" cellpadding="0" width="920" align="center" style="border-collapse: collapse; font-size: 12px">&#13;    <tbody>&#13;        <tr height="20">&#13;            <td height="20" width="660" x:str=""><strong><span style="color: #0000ff">说明：<br />&#13;            1.填写工作计划需填写工作汇报对象，工作汇报对象作为该项工作的考核人（工作谁指派，谁考核）；<br />&#13;            2.如果工作汇报对象存在多人，则被考核人在填写完工作完成情况后将流程转给权重值占比最大的汇报对象进行考核，被考核人的工作汇报对象原则上只有部门经理、项目经理或非部门经理的直接上级，工作汇报对象建议最多不要超过4人； <br />&#13;            3.如需主任评分，则主任评分系数请选择0.6/0.4；不需主任评分的，经理评分系数请选择1；<br />&#13;            4.出现工作中途终止需要在完成情况栏写明原因，新工作在新增工作栏填写；<br />&#13;            5.综合得分＝业务评价总分±特别加减分。</span></strong></td>&#13;            <td height="20" width="257" x:str="" style="text-align: center"><span style="color: #00ccff"><span style="font-family: 新宋体"><strong><span style="font-size: 26px">【<a target="_blank" href="/general/workflow/query/yt2224_flow_report.php">提交部门汇总</a>】</span></strong></span></span><span style="color: #ff00ff"><span style="font-family: 幼圆"><strong><span style="font-size: 26px"><br />&#13;            </span></strong></span></span></td>&#13;        </tr>&#13;    </tbody>&#13;</table>&#13;<table border="1" cellspacing="0" bordercolor="#000000" cellpadding="0" width="920" align="center" style="border-collapse: collapse; font-size: 12px">&#13;    <tbody>&#13;        <tr height="20">&#13;            <td height="40" rowspan="2" width="13" x:str="">类别</td>&#13;            <td height="40" rowspan="2" width="162" x:str="" style="text-align: center">指标</td>&#13;            <td height="20" width="424" colspan="3" x:str="" style="text-align: center">目标</td>&#13;            <td height="40" rowspan="2" width="38" x:str="" style="text-align: center">权重值</td>&#13;            <td height="20" width="161" x:str="" style="text-align: center">完成情况</td>&#13;            <td height="40" rowspan="2" width="58" x:str="" style="text-align: center">主任评分<span times="" new="" style="font-family: 宋体; mso-ascii-font-family: ">0.0<input type=hidden name=DATA_1072 value='0.0' title='主任评分计算'></span></td>&#13;            <td height="40" rowspan="2" width="54" x:str="" style="text-align: center">经理评分0.0<input type=hidden name=DATA_1073 value='0.0' title='经理评分计算'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="178" x:str="">行动计划(必填)（要求具备明确的时间节点、行动计划、责任分明等要素）</td>&#13;            <td height="20" width="165" x:str="">拟输出结果(必填)(使用精确语言，须具备可衡量、有时间要求等要素)</td>&#13;            <td height="20" width="81" x:str="" style="text-align: center">工作汇报对象</td>&#13;            <td height="20" width="161" x:str="">（目标完成质量、及时性等）</td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="160" rowspan="8" width="13" x:str="">专项工作</td>&#13;            <td height="20" width="162" x:str=""><span style="color: #808080">例：**项目开发</span></td>&#13;            <td height="20" width="178" x:str=""><span style="color: #808080">第一二周进行程序开发；第三周进行自测，第四周编写并提交详细开发文档</span></td>&#13;            <td height="20" width="165" x:str=""><span style="color: #808080">6月20前完成研发和自测，6月30前提交详细的开发文档，文档形式合格率100%、无错漏等</span></td>&#13;            <td height="20" width="81" x:str="" style="text-align: center"><span style="color: #808080">工作汇报对象</span></td>&#13;            <td height="20" width="38" x:num="1" style="text-align: center"><span style="color: #c0c0c0">100.0<input type=hidden name=DATA_979 value='100.0' title='权总总计算'></span></td>&#13;            <td height="20" width="161" x:str=""><span style="color: #808080">6月20前完成研发和自测，6月30前提交详细的开发文档，文档形式合格率100%、无错漏等</span></td>&#13;            <td height="20" width="58" x:num="1" style="text-align: center">系数<input type=hidden name=DATA_1013 value='' title='主任评分系数下拉'></td>&#13;            <td height="20" width="54" x:num="1" style="text-align: center">系数<input type=hidden name=DATA_1067 value='' title='经理评分下拉'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:str="">1<p style="width:153">软件质量管理之配置管理</p><input type=hidden name=DATA_906 value='软件质量管理之配置管理' title='专项指标1多行'></td>&#13;            <td height="20" width="178" x:num="1">&#13;            <div><p style="width:177">1、实施java配置管理新方案，部署好相关编译环境。<br>2、将2018年svn项目归档至VSS。<br>3、将保密网常用的驱动输出到everything中，方便后续取用。<br>4、建立项目常用驱动对应的最新版本对应表。</p><input type=hidden name=DATA_929 value='1、实施java配置管理新方案，部署好相关编译环境。
+2、将2018年svn项目归档至VSS。
+3、将保密网常用的驱动输出到everything中，方便后续取用。
+4、建立项目常用驱动对应的最新版本对应表。' title='专项行动1多行'></div>&#13;            </td>&#13;            <td height="20" width="165" x:num="1"><p style="width:164">3月15前部署好相关编译环境，将2018年svn项目归档至VSS。3月30前建立项目常用驱动对应的最新版本对应表，将保密网常用的驱动输出到everything中。</p><input type=hidden name=DATA_947 value='3月15前部署好相关编译环境，将2018年svn项目归档至VSS。3月30前建立项目常用驱动对应的最新版本对应表，将保密网常用的驱动输出到everything中。' title='专项输出1多行'></td>&#13;            <td height="20" width="81" x:num="1">余雷<input type=hidden name=DATA_963 value='余雷' title='专项汇报对象1单行'></td>&#13;            <td height="20" width="38" x:num="2">30<input type=hidden name=DATA_980 value='30' title='专项权重1单行'></td>&#13;            <td height="20" width="161" x:num="1"><input type=hidden name=DATA_997 value='' title='专项完成情况1多行'></td>&#13;            <td height="20" width="58" x:num="2"><input type=hidden name=DATA_1014 value='' title='专项主任评分1单行'></td>&#13;            <td height="20" width="54" x:num="2"><input type=hidden name=DATA_1034 value='' title='专项经理评分1单行'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="2">2<p style="width:152">各项目的进度跟踪</p><input type=hidden name=DATA_907 value='各项目的进度跟踪' title='专项指标2多行'></td>&#13;            <td height="20" width="178" x:num="2"><p style="width:177">第一二周收集项目经理针对项目进度跟踪表反馈，第三四周对项目进度跟踪方案进行优化。</p><input type=hidden name=DATA_930 value='第一二周收集项目经理针对项目进度跟踪表反馈，第三四周对项目进度跟踪方案进行优化。' title='专项行动2多行'></td>&#13;            <td height="20" width="165" x:num="2"><p style="width:164">3月15前收集项目经理针对项目进度跟踪表反馈，3月30日前对项目进度跟踪方案完成优化。</p><input type=hidden name=DATA_948 value='3月15前收集项目经理针对项目进度跟踪表反馈，3月30日前对项目进度跟踪方案完成优化。' title='专项输出2多行'></td>&#13;            <td height="20" width="81" x:num="2">余雷<input type=hidden name=DATA_964 value='余雷' title='专项汇报对象2单行'></td>&#13;            <td height="20" width="38" x:num="3">10<input type=hidden name=DATA_981 value='10' title='专项权重2单行'></td>&#13;            <td height="20" width="161" x:num="2"><input type=hidden name=DATA_998 value='' title='专项完成情况2多行'></td>&#13;            <td height="20" width="58" x:num="3"><input type=hidden name=DATA_1015 value='' title='专项主任评分2单行'></td>&#13;            <td height="20" width="54" x:num="3"><input type=hidden name=DATA_1035 value='' title='专项经理评分2单行'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="3">3<p style="width:152">质量管理培训</p><input type=hidden name=DATA_908 value='质量管理培训' title='专项指标3多行'></td>&#13;            <td height="20" width="178" x:num="3"><p style="width:177">第二周完成<br>1、各部门配置管理相关工具使用的培训。<br>2、各种类型项目提测、测试流程培训。<br>3、测试系统统计项目进度培训。</p><input type=hidden name=DATA_931 value='第二周完成
+1、各部门配置管理相关工具使用的培训。
+2、各种类型项目提测、测试流程培训。
+3、测试系统统计项目进度培训。' title='专项行动3多行'></td>&#13;            <td height="20" width="165" x:num="3"><p style="width:164">3月15前完成<br>1、各部门配置管理相关工具使用的培训。<br>2、各种类型项目提测、测试流程培训。<br>3、测试系统统计项目进度培训。</p><input type=hidden name=DATA_949 value='3月15前完成
+1、各部门配置管理相关工具使用的培训。
+2、各种类型项目提测、测试流程培训。
+3、测试系统统计项目进度培训。' title='专项输出3多行'></td>&#13;            <td height="20" width="81" x:num="3">余雷<input type=hidden name=DATA_965 value='余雷' title='专项汇报对象3单行'></td>&#13;            <td height="20" width="38" x:num="4">30<input type=hidden name=DATA_982 value='30' title='专项权重3单行'></td>&#13;            <td height="20" width="161" x:num="3"><input type=hidden name=DATA_999 value='' title='专项完成情况3多行'></td>&#13;            <td height="20" width="58" x:num="4"><input type=hidden name=DATA_1016 value='' title='专项主任评分3单行'></td>&#13;            <td height="20" width="54" x:num="4"><input type=hidden name=DATA_1036 value='' title='专项经理评分3单行'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="4">4<input type=hidden name=DATA_910 value='' title='专项指标4多行'></td>&#13;            <td height="20" width="178" x:num="4"><input type=hidden name=DATA_934 value='' title='专项行动4多行'></td>&#13;            <td height="20" width="165" x:num="4"><input type=hidden name=DATA_950 value='' title='专项输出4多行'></td>&#13;            <td height="20" width="81" x:num="4"><input type=hidden name=DATA_966 value='' title='专项汇报对象4单行'></td>&#13;            <td height="20" width="38" x:num="5"><input type=hidden name=DATA_983 value='' title='专项权重4单行'></td>&#13;            <td height="20" width="161" x:num="4"><input type=hidden name=DATA_1000 value='' title='专项完成情况4多行'></td>&#13;            <td height="20" width="58" x:num="5"><input type=hidden name=DATA_1017 value='' title='专项主任评分4单行'></td>&#13;            <td height="20" width="54" x:num="5"><input type=hidden name=DATA_1037 value='' title='专项经理评分4单行'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="5">5<input type=hidden name=DATA_911 value='' title='专项指标5多行'></td>&#13;            <td height="20" width="178" x:num="5"><input type=hidden name=DATA_935 value='' title='专项行动5多行'></td>&#13;            <td height="20" width="165" x:num="5"><input type=hidden name=DATA_951 value='' title='专项输出5多行'></td>&#13;            <td height="20" width="81" x:num="5"><input type=hidden name=DATA_967 value='' title='专项汇报对象5单行'></td>&#13;            <td height="20" width="38" x:num="6"><input type=hidden name=DATA_984 value='' title='专项权重5单行'></td>&#13;            <td height="20" width="161" x:num="5"><input type=hidden name=DATA_1001 value='' title='专项完成情况5多行'></td>&#13;            <td height="20" width="58" x:num="6">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1019 value='' title='专项主任评分5单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="6">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1038 value='' title='专项经理评分5单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="6">6<input type=hidden name=DATA_912 value='' title='专项指标6多行'></td>&#13;            <td height="20" width="178" x:num="6"><input type=hidden name=DATA_936 value='' title='专项行动6多行'></td>&#13;            <td height="20" width="165" x:num="6"><input type=hidden name=DATA_952 value='' title='专项输出6多行'></td>&#13;            <td height="20" width="81" x:num="6"><input type=hidden name=DATA_968 value='' title='专项汇报对象6单行'></td>&#13;            <td height="20" width="38" x:num="7"><input type=hidden name=DATA_985 value='' title='专项权重6单行'></td>&#13;            <td height="20" width="161" x:num="6"><input type=hidden name=DATA_1002 value='' title='专项完成情况6多行'></td>&#13;            <td height="20" width="58" x:num="7">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1020 value='' title='专项主任评分6单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="7">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1039 value='' title='专项经理评分6单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="7">7<input type=hidden name=DATA_913 value='' title='专项指标7多行'></td>&#13;            <td height="20" width="178" x:num="7"><input type=hidden name=DATA_937 value='' title='专项行动7多行'></td>&#13;            <td height="20" width="165" x:num="7"><input type=hidden name=DATA_953 value='' title='专项输出7多行'></td>&#13;            <td height="20" width="81" x:num="7"><input type=hidden name=DATA_969 value='' title='专项汇报对象7单行'></td>&#13;            <td height="20" width="38" x:num="8"><input type=hidden name=DATA_986 value='' title='专项权重7单行'></td>&#13;            <td height="20" width="161" x:num="7"><input type=hidden name=DATA_1003 value='' title='专项完成情况7多行'></td>&#13;            <td height="20" width="58" x:num="8"><input type=hidden name=DATA_1021 value='' title='专项主任评分7单行'></td>&#13;            <td height="20" width="54" x:num="8"><input type=hidden name=DATA_1040 value='' title='专项经理评分7单行'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="120" rowspan="6" width="13" x:str="">日常工作</td>&#13;            <td height="20" width="162" x:num="1">1<p style="width:154">软件质量管理之配置管理</p><input type=hidden name=DATA_914 value='软件质量管理之配置管理' title='日常指标1多行'></td>&#13;            <td height="20" width="178" x:num="8"><p style="width:177">1、及时完成oa流程各项目配置管理工作，及时登记至测试系统。</p><input type=hidden name=DATA_938 value='1、及时完成oa流程各项目配置管理工作，及时登记至测试系统。' title='日常行动1多行'></td>&#13;            <td height="20" width="165" x:num="8"><p style="width:164">全月及时完成oa流程各项目配置管理工作，及时登记至测试系统。<br></p><input type=hidden name=DATA_954 value='全月及时完成oa流程各项目配置管理工作，及时登记至测试系统。
+' title='日常输出1多行'></td>&#13;            <td height="20" width="81" x:num="8">余雷<input type=hidden name=DATA_970 value='余雷' title='日常汇报对象1单行'></td>&#13;            <td height="20" width="38" x:num="9">20<input type=hidden name=DATA_987 value='20' title='日常权重1单行'></td>&#13;            <td height="20" width="161" x:num="8"><input type=hidden name=DATA_1004 value='' title='日常完成情况1多行'></td>&#13;            <td height="20" width="58" x:num="9"><input type=hidden name=DATA_1022 value='' title='日常主任评分1单行'></td>&#13;            <td height="20" width="54" x:num="9"><input type=hidden name=DATA_1041 value='' title='日常经理评分1单行'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="2">2<p style="width:154">各项目的进度跟踪</p><input type=hidden name=DATA_915 value='各项目的进度跟踪' title='日常指标2多行'></td>&#13;            <td height="20" width="178" x:num="9"><p style="width:177">每周进行周报及项目进度跟踪表汇总填写，每月进行月报整理。</p><input type=hidden name=DATA_939 value='每周进行周报及项目进度跟踪表汇总填写，每月进行月报整理。' title='日常行动2多行'></td>&#13;            <td height="20" width="165" x:num="9"><p style="width:164">全月每周进行周报及项目进度跟踪表汇总填写，每月进行月报整理。</p><input type=hidden name=DATA_955 value='全月每周进行周报及项目进度跟踪表汇总填写，每月进行月报整理。' title='日常输出2多行'></td>&#13;            <td height="20" width="81" x:num="9">余雷<input type=hidden name=DATA_971 value='余雷' title='日常汇报对象2单行'></td>&#13;            <td height="20" width="38" x:num="10">10<input type=hidden name=DATA_988 value='10' title='日常权重2单行'></td>&#13;            <td height="20" width="161" x:num="9"><input type=hidden name=DATA_1005 value='' title='日常完成情况2多行'></td>&#13;            <td height="20" width="58" x:num="10"><input type=hidden name=DATA_1023 value='' title='日常主任评分2单行'></td>&#13;            <td height="20" width="54" x:num="10"><input type=hidden name=DATA_1042 value='' title='日常经理评分2单行'></td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="3">3<input type=hidden name=DATA_916 value='' title='日常指标3多行'></td>&#13;            <td height="20" width="178" x:num="10"><input type=hidden name=DATA_940 value='' title='日常行动3多行'></td>&#13;            <td height="20" width="165" x:num="10"><input type=hidden name=DATA_956 value='' title='日常输出3多行'></td>&#13;            <td height="20" width="81" x:num="10"><input type=hidden name=DATA_972 value='' title='日常汇报对象3单行'></td>&#13;            <td height="20" width="38" x:num="11"><input type=hidden name=DATA_989 value='' title='日常权重3单行'></td>&#13;            <td height="20" width="161" x:num="10"><input type=hidden name=DATA_1006 value='' title='日常完成情况3多行'></td>&#13;            <td height="20" width="58" x:num="11">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1024 value='' title='日常主任评分3单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="11">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1043 value='' title='日常经理评分3单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="4">4<input type=hidden name=DATA_917 value='' title='日常指标4多行'></td>&#13;            <td height="20" width="178" x:num="11"><input type=hidden name=DATA_941 value='' title='日常行动4多行'></td>&#13;            <td height="20" width="165" x:num="11"><input type=hidden name=DATA_957 value='' title='日常输出4多行'></td>&#13;            <td height="20" width="81" x:num="11"><input type=hidden name=DATA_973 value='' title='日常汇报对象4单行'></td>&#13;            <td height="20" width="38" x:num="12"><input type=hidden name=DATA_990 value='' title='日常权重4单行'></td>&#13;            <td height="20" width="161" x:num="11"><input type=hidden name=DATA_1007 value='' title='日常完成情况4多行'></td>&#13;            <td height="20" width="58" x:num="12">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1025 value='' title='日常主任评分4单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="12">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1044 value='' title='日常经理评分4单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="5">5<input type=hidden name=DATA_918 value='' title='日常指标5多行'></td>&#13;            <td height="20" width="178" x:num="12"><input type=hidden name=DATA_942 value='' title='日常行动5多行'></td>&#13;            <td height="20" width="165" x:num="12"><input type=hidden name=DATA_958 value='' title='日常输出5多行'></td>&#13;            <td height="20" width="81" x:num="12"><input type=hidden name=DATA_974 value='' title='日常汇报对象5单行'></td>&#13;            <td height="20" width="38" x:num="13"><input type=hidden name=DATA_991 value='' title='日常权重5单行'></td>&#13;            <td height="20" width="161" x:num="12"><input type=hidden name=DATA_1008 value='' title='日常完成情况5多行'></td>&#13;            <td height="20" width="58" x:num="13">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1026 value='' title='日常主任评分5单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="13">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1045 value='' title='日常经理评分5单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="6">6<input type=hidden name=DATA_919 value='' title='日常指标6多行'></td>&#13;            <td height="20" width="178" x:num="13"><input type=hidden name=DATA_943 value='' title='日常行动6多行'></td>&#13;            <td height="20" width="165" x:num="13"><input type=hidden name=DATA_959 value='' title='日常输出6多行'></td>&#13;            <td height="20" width="81" x:num="13"><input type=hidden name=DATA_975 value='' title='日常汇报对象6单行'></td>&#13;            <td height="20" width="38" x:num="14"><input type=hidden name=DATA_992 value='' title='日常权重6单行'></td>&#13;            <td height="20" width="161" x:num="13"><input type=hidden name=DATA_1009 value='' title='日常完成情况6多行'></td>&#13;            <td height="20" width="58" x:num="14">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1027 value='' title='日常主任评分6单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="14">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1046 value='' title='日常经理评分6单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="60" rowspan="3" width="13" x:str="">新增工作</td>&#13;            <td height="20" width="162" x:num="1">1<input type=hidden name=DATA_920 value='' title='新增指标1多行'></td>&#13;            <td height="20" width="178" x:num="14"><input type=hidden name=DATA_944 value='' title='新增行动1多行'></td>&#13;            <td height="20" width="165" x:num="14"><input type=hidden name=DATA_960 value='' title='新增输出1多行'></td>&#13;            <td height="20" width="81" x:num="14"><input type=hidden name=DATA_976 value='' title='新增汇报对象1单行'></td>&#13;            <td height="20" width="38" x:num="15"><input type=hidden name=DATA_993 value='' title='新增权重1单行'></td>&#13;            <td height="20" width="161" x:num="14"><input type=hidden name=DATA_1010 value='' title='新增完成情况1多行'></td>&#13;            <td height="20" width="58" x:num="15">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1028 value='' title='新增主任评分1单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="15">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1047 value='' title='新增经理评分1单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="2">2<input type=hidden name=DATA_921 value='' title='新增指标2多行'></td>&#13;            <td height="20" width="178" x:num="15"><input type=hidden name=DATA_945 value='' title='新增行动2多行'></td>&#13;            <td height="20" width="165" x:num="15"><input type=hidden name=DATA_961 value='' title='新增输出2多行'></td>&#13;            <td height="20" width="81" x:num="15"><input type=hidden name=DATA_977 value='' title='新增汇报对象2单行'></td>&#13;            <td height="20" width="38" x:num="16"><input type=hidden name=DATA_994 value='' title='新增权重2单行'></td>&#13;            <td height="20" width="161" x:num="15"><input type=hidden name=DATA_1011 value='' title='新增完成情况2多行'></td>&#13;            <td height="20" width="58" x:num="16">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1029 value='' title='新增主任评分2单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="16">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1048 value='' title='新增经理评分2单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="3">3<input type=hidden name=DATA_922 value='' title='新增指标3多行'></td>&#13;            <td height="20" width="178" x:num="16"><input type=hidden name=DATA_946 value='' title='新增行动3多行'></td>&#13;            <td height="20" width="165" x:num="16"><input type=hidden name=DATA_962 value='' title='新增输出3多行'></td>&#13;            <td height="20" width="81" x:num="16"><input type=hidden name=DATA_978 value='' title='新增汇报对象3单行'></td>&#13;            <td height="20" width="38" x:num="17"><input type=hidden name=DATA_995 value='' title='新增权重3单行'></td>&#13;            <td height="20" width="161" x:num="16"><input type=hidden name=DATA_1012 value='' title='新增完成情况3多行'></td>&#13;            <td height="20" width="58" x:num="17">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1030 value='' title='新增主任评分3单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="17">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1049 value='' title='新增经理评分3单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="60" rowspan="3" width="13" x:str="">特别加减分</td>&#13;            <td height="20" width="162" x:num="1">1<input type=hidden name=DATA_923 value='' title='特别减分指标1多行'></td>&#13;            <td height="20" width="623" colspan="5" x:num="1"><input type=hidden name=DATA_926 value='' title='特别减分1多行'></td>&#13;            <td height="20" width="58" x:num="18">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1031 value='' title='减分主任评分1单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="18">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1050 value='' title='减分经理评分1单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="2">2<input type=hidden name=DATA_924 value='' title='特别减分指标2多行'></td>&#13;            <td height="20" width="623" colspan="5" x:num="1"><input type=hidden name=DATA_927 value='' title='特别减分2多行'></td>&#13;            <td height="20" width="58" x:num="19">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1032 value='' title='减分主任评分2单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="19">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1051 value='' title='减分经理评分2单行'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="20">&#13;            <td height="20" width="162" x:num="3">3<input type=hidden name=DATA_925 value='' title='特别减分指标3多行'></td>&#13;            <td height="20" width="623" colspan="5" x:num="1"><input type=hidden name=DATA_928 value='' title='特别减分3多行'></td>&#13;            <td height="20" width="58" x:num="20">&#13;            <div style="text-align: center"><input type=hidden name=DATA_1033 value='' title='减分主任评分3单行'></div>&#13;            </td>&#13;            <td height="20" width="54" x:num="20"><input type=hidden name=DATA_1052 value='' title='减分经理评分3单行'></td>&#13;        </tr>&#13;    </tbody>&#13;</table>&#13;<table border="1" cellspacing="0" bordercolor="#000000" cellpadding="0" width="920" align="center" style="border-collapse: collapse; font-size: 12px">&#13;    <tbody>&#13;        <tr height="26">&#13;            <td height="26" width="81" x:str="" style="text-align: center"><strong>计划审核</strong></td>&#13;            <td height="26" width="789" colspan="8" x:str=""><span style="color: #ff0000"><strong>注：务必填写目标审校意见</strong></span><br />&#13;            <strong></strong><br />&#13;            同意计划<input type=hidden name=DATA_1054 value='同意计划' title='计划审核下拉'>余雷 2019-03-08 09:29:48<input type=hidden name=DATA_1055 value='余雷 2019-03-08 09:29:48' title='计划审核宏'></td>&#13;        </tr>&#13;        <tr height="26">&#13;            <td height="26" width="81" x:str="" style="text-align: center"><strong>项目经理/产品经理考核</strong></td>&#13;            <td height="26" width="789" colspan="8" x:str=""><span style="color: #ff0000"><strong>注：务必填写指导建议，否则不予提交</strong></span><br />&#13;            <input type=hidden name=DATA_1056 value='' title='项目经理考核多行'><br />&#13;            <input type=hidden name=DATA_1058 value='' title='项目经理考核宏'></td>&#13;        </tr>&#13;        <tr height="26">&#13;            <td height="26" width="81" x:str="" style="text-align: center"><strong>主任考核</strong></td>&#13;            <td height="26" width="789" colspan="8" x:str=""><span style="color: #ff0000"><strong>注：务必填写指导建议，否则不予提交</strong></span><br />&#13;            <input type=hidden name=DATA_1059 value='' title='主人考核多行'><br />&#13;            <input type=hidden name=DATA_1061 value='' title='主人考核宏'></td>&#13;        </tr>&#13;        <tr height="26">&#13;            <td height="26" width="81" x:str="" style="text-align: center"><strong>部门经理考核</strong></td>&#13;            <td height="26" width="789" colspan="8" x:str=""><span style="color: #ff0000"><strong>注：务必填写指导建议，否则不予提交</strong></span><br />&#13;            综合评价:<br />&#13;            <input type=hidden name=DATA_1062 value='' title='部门经理考核综合评价多行'>&#13;            <div>绩效改进及个人能力提升建议：<br />&#13;            <input type=hidden name=DATA_1063 value='' title='部门经理考核建议多行'><br />&#13;            <input type=hidden name=DATA_1064 value='' title='部门经理考核宏'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="26">&#13;            <td height="26" width="81" x:str="" style="text-align: center"><strong>绩效反馈</strong></td>&#13;            <td height="26" width="789" colspan="8" x:str="">员工意见：<br />&#13;            <input type=hidden name=DATA_1065 value='' title='员工意见多行'>&#13;            <div>被考核人确认：<input type=hidden name=DATA_1070 value='' title='考核人确认'><input type=hidden name=DATA_1071 value='' title='员工反馈宏'></div>&#13;            </td>&#13;        </tr>&#13;        <tr height="26">&#13;            <td height="26" width="81" x:str="" style="text-align: center"><strong>版本信息</strong></td>&#13;            <td height="26" width="789" colspan="8" x:str="">当前版本 <a href="http://oa.grgbanking.com/general/workflow/list/print.php&#63;RUN_ID=838389&amp;FLOW_ID=385&amp;FLOW_VIEW=12345&amp;PRCS_ID=4&amp;archive_time=">V1.0</a></td>&#13;        </tr>&#13;    </tbody>&#13;</table>&#13;<br />&#13;</font></font></span></p>&#13;<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 0pt"><span lang="EN-US"><font face="Times New Roman"><font size="2">&#13;<tbody>&#13;</tbody>&#13;<table>&#13;    <tbody>&#13;    </tbody>&#13;</table>&#13;</font></font></span></p>&#13;<br /></form>
+<br></table>
+<script>
+	function show_hidden(src_obj, src_id){
+		var hidden_obj = document.getElementById(src_id);
+		if(hidden_obj.style.display == "none"){
+			src_obj.className = "show_pic";
+			hidden_obj.style.display = "block";
+		}else if(hidden_obj.style.display == "block"){
+			src_obj.className = "hidden_pic";
+			hidden_obj.style.display = "none";
+		}
+	}
+</script><br><script>
+function showSign(feed_id)
+{
+	$("sign_body").innerHTML='<iframe frameborder=0 width="100%" height="400px" id="fra_sign" src="./input_form/sing_info.php?RUN_ID=1636338&FEED_ID='+feed_id+'"></iframe>';
+	ShowDialog("personal_sign");
+}
+</script>
+<div id="overlay"></div>
+<div id="personal_sign" class="ModalDialog" style="width:600px;">
+  <div class="header"><span id="title" style="padding: 2px 3px;  float: left; font-weight: bold;line-height:20px;">会签意见(手写或签章)</span><a class="operation" href="javascript:HideDialog('personal_sign');"><img src="/images/close.png"/></a></div>
+  <div id="sign_body" class="body">
+  </div>
+  <div id="footer" class="footer">
+    <input class="BigButton" onclick="HideDialog('personal_sign')" type="button" value="关闭"/>
+  </div>
+</div>
+<br>    <table style='border-collapse:collapse' border=1 cellspacing=0 cellpadding=3 bordercolor='#b8d1e2' width="95%" align="center" class="TableList">
+          
+        <tr class="TableHeader"><td nowrap align="center" colspan="3" class="TableHeader"><b>流程开始（流水号：1636338）</b><br></td></tr>
+        
+<tr class="TableLine2">
+    <td nowrap align="center" rowspan="1">第<b><span class='Big4'>1</span></b>步    </td>
+
+   <td><span >
+            <img border=0 src="/images/arrow_down.gif"> 序号1：申请人填写表单</span>
+</td>   
+   <td id="1_1"><img src="/images/flow_next.gif" align="absmiddle"> <span class='big4'><u title='<b>主办人</b> <br>部门：运通智能/软件测试部 <br> ' style='cursor:pointer'><b>赖雅洁 主办</b></u></span>[<font color=green>已办结,用时：12分钟59秒</font>
+                <img src='/images/calendar.png' width='16' height='16' align='absmiddle' style='position:relative;top:-1px;' title='已用时：12分钟59秒<br/>说明：此步骤每日24小时可办理，公休日不可办理&#10;（不可办理时段不记入时长）'>]<br> 开始于：2019-03-07 15:15:04<br> 结束于：2019-03-07 15:28:03<br></td>
+ </tr>
+          
+        
+<tr class="TableLine1">
+    <td nowrap align="center" rowspan="1">第<b><span class='Big4'>2</span></b>步    </td>
+
+   <td><span title='上一步骤序号：1'>
+            <img border=0 src="/images/arrow_down.gif"> 序号5：计划审核</span>
+</td>   
+   <td id="2_5"><img src="/images/flow_next.gif" align="absmiddle"> <span class='big4'><u title='<b>主办人</b> <br>部门：运通智能/软件测试部 <br> ' style='cursor:pointer'><b>余雷 主办</b></u></span>[<font color=green>已办结,用时：2分钟44秒</font>
+                <img src='/images/calendar.png' width='16' height='16' align='absmiddle' style='position:relative;top:-1px;' title='已用时：2分钟44秒<br/>说明：此步骤每日24小时可办理，公休日不可办理&#10;（不可办理时段不记入时长）'>]<br> 开始于：2019-03-08 09:04:34<br> 结束于：2019-03-08 09:07:18<br></td>
+ </tr>
+          
+        
+<tr class="TableLine2">
+    <td nowrap align="center" rowspan="1">第<b><span class='Big4'>3</span></b>步    </td>
+
+   <td><span title='上一步骤序号：5'>
+            <img border=0 src="/images/arrow_down.gif"> 序号1：申请人填写表单</span>
+</td>   
+   <td id="3_1"><img src="/images/flow_next.gif" align="absmiddle"> <span class='big4'><u title='<b>主办人</b> <br>部门：运通智能/软件测试部 <br> ' style='cursor:pointer'><b>赖雅洁 主办</b></u></span>[<font color=green>已办结,用时：8分钟30秒</font>
+                <img src='/images/calendar.png' width='16' height='16' align='absmiddle' style='position:relative;top:-1px;' title='已用时：8分钟30秒<br/>说明：此步骤每日24小时可办理，公休日不可办理&#10;（不可办理时段不记入时长）'>]<br> 开始于：2019-03-08 09:08:41<br> 结束于：2019-03-08 09:17:11<br></td>
+ </tr>
+          
+        
+<tr class="TableLine1">
+    <td nowrap align="center" rowspan="1">第<b><span class='Big4'>4</span></b>步    </td>
+
+   <td><span title='上一步骤序号：1'>
+            <img border=0 src="/images/arrow_down.gif"> 序号5：计划审核</span>
+</td>   
+   <td id="4_5"><img src="/images/flow_next.gif" align="absmiddle"> <span class='big4'><u title='<b>主办人</b> <br>部门：运通智能/软件测试部 <br> ' style='cursor:pointer'><b>余雷 主办</b></u></span>[<font color=green>已办结,用时：36秒</font>
+                <img src='/images/calendar.png' width='16' height='16' align='absmiddle' style='position:relative;top:-1px;' title='已用时：36秒<br/>说明：此步骤每日24小时可办理，公休日不可办理&#10;（不可办理时段不记入时长）'>]<br> 开始于：2019-03-08 09:29:48<br> 结束于：2019-03-08 09:30:24<br></td>
+ </tr>
+          
+        
+<tr class="TableContent">
+    <td nowrap align="center" rowspan="1">第<b><span class='Big4'>5</span></b>步    </td>
+
+   <td><span title='上一步骤序号：5'>
+            <img border=0 src="/images/arrow_down.gif"> 序号10：申请人填写完成情况</span>
+</td>   
+   <td id="5_10"><img src="/images/email_open.gif" align="absmiddle"> <span class='big4'><u title='<b>主办人</b> <br>部门：运通智能/软件测试部 <br> ' style='cursor:pointer'><b>赖雅洁 主办</b></u></span>[<font color=green>办理中,已用时：16天11小时2分钟17秒</font>
+                <img src='/images/calendar.png' width='16' height='16' align='absmiddle' style='position:relative;top:-1px;' title='已用时：16天11小时2分钟17秒<br/>说明：此步骤每日24小时可办理，公休日不可办理&#10;（不可办理时段不记入时长）'>]<br> 开始于：2019-03-14 10:54:53<br></td>
+ </tr>
+<input type="hidden" value="" id="time_to_id">
+</table>
+<br>
+</body>
+</html><br><div id=MyWebBrowser><OBJECT id=WebBrowser classid=CLSID:8856F961-340A-11D0-A96B-00C04FD705A2 height=0 width=0 VIEWASTEXT></OBJECT></div>
+<script>
+function LoadSignData()
+{
+  return;
+}
+</script>
+<script>
+window.onload = function(){
+LoadSignData();  if(printView == "1")
+    window.setTimeout(print_view,1000);
+
+  try {
+		document.createEvent("TouchEvent")
+		var container = document.getElementById('bodyScroll');
+		container.style.height = "100%";
+		container.style.overflow = "auto";
+  } catch(e) {
+
+  }
+}
+</script>
+</div>
+</body>
+</html>

@@ -3,7 +3,7 @@ import re,os
 import time
 from bs4 import BeautifulSoup
 # 导入requests_toolbelt库使用MultipartEncoder
-from requests_toolbelt import MultipartEncoder
+#from requests_toolbelt import MultipartEncoder
 local = time.strftime("%Y-%m-%d")
 url = 'http://cn.bing.com/'
 con = requests.get(url)
@@ -12,8 +12,8 @@ a = BeautifulSoup(content,'lxml').find('link',id='bgLink')['href']
 picUrl = url + a
 print(picUrl)
 read = requests.get(picUrl)
-if not os.path.exists('pic'):
-	os.mkdir('pic')
+if not os.path.exists('D:/bing/pic'):
+	os.makedirs('D:/bing/pic')
 f = open('D:/bing/pic/%s.jpg' % local, 'wb')
 f.write(read.content)
 f.close()

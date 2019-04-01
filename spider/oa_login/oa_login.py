@@ -1,8 +1,12 @@
 # coding=utf-8
 import base64, requests
-import rsa, urllib
+import rsa, urllib, time, json
 from bs4 import BeautifulSoup
 
+
+UserID = 'G0108228'
+USER_ID = 'lyjie9'
+USER_NAME = '赖雅洁'
 
 __all__ = ['rsa_encrypt']
 
@@ -49,9 +53,10 @@ def rsa_encrypt(s, pubkey_str):
 
  
 if __name__ == "__main__":
+	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'}
 	s = requests.session()
 	bash_url = 'http://voa.grgbanking.com/'
-	response = s.get(bash_url)
+	response = s.get(bash_url, headers=headers)
 	'''soup = BeautifulSoup(response.text,'lxml')
 	pubkey = soup.find('input',id='tra')['value'] 
 	#key = urllib.parse.quote(rsa_encrypt('grg7792042', pubkey)).replace('+', '%2B')
@@ -69,21 +74,59 @@ if __name__ == "__main__":
 	#print(response.json())
 	url = response.json()['data']
 	resultData = s.get(url).json()['resultData']'''
+	#只需工号和姓名即可登录
 	payload = {
 	'method': 'GoToIndex',
-	'USER_ID': 'lping12',
-	'EMPID': 'G0108535',
-	'USER_NAME': '罗苹'
+	'USER_ID': USER_ID,
+	'EMPID': UserID,
+	'USER_NAME': USER_NAME
 	}
 	url = 'http://voa.grgbanking.com/HandlerGoToIndex.ashx'
-	response = s.post(url, data=payload)
+	response = s.post(url, data=payload, headers=headers)
 	url = 'http://voa.grgbanking.com/Index.aspx'
-	response = s.get(url)
-	soup = BeautifulSoup(response.text, 'lxml')
+	response = s.get(url, headers=headers)
+	#  获取首页的待办工作
+	'''soup = BeautifulSoup(response.text, 'lxml')
 	CheckString = soup.find('input', id='CheckString')['value']
-	print(CheckString)
+	#print(CheckString)
 	sFlowURL = 'http://oa.grgbanking.com'+"/interface2/workflow_list2.php?"+CheckString+"&f=portal&type=0&size=5"
-	print(sFlowURL)
-	data = s.get(sFlowURL)
-	print(data.json())
+	#print(sFlowURL)
+	data = s.get(sFlowURL, headers=headers)
+	print(data.json())'''
+	#  获取工作流程里的已办结
+	url = 'http://voa.grgbanking.com/HandlerGRGPortal.ashx'
+	payload = {
+	'method': 'getTDURL',
+	'UserID': UserID
+	}
+	response = s.post(url, data=payload, headers=headers)
+	url = response.json()['data']+'&url=%2Fgeneral%2Fworkflow%2Flist%2F'
+	#print(url)
+	s.get(url, headers=headers)
+	cookie = s.cookies.get_dict()
+	nd = str(int(time.time()))
+	url = 'http://oa.grgbanking.com/general/workflow/list/getdata_over.php?TYPE=OVER&RUN_ID=&RUN_NAME=&FLOW_ID=null&TIME_OUT_FLAG=undefined&_search=false&nd=%s&rows=100&page=1&sidx=DELIVER_TIME&sord=desc'%nd
+	workflow = s.get(url,cookies=cookie, headers=headers).json()
+	with open('workflow.json', 'w') as f:
+		f.write(json.dumps(workflow))
+	
+	# 查看流程详情
+	'''RUN_ID = '' #流程号
+	FLOW_ID = '' #流水号
+	PRCS_ID = '' #步骤
+	url = 'http://oa.grgbanking.com/general/workflow/list/print.php?RUN_ID=%s&FLOW_ID=%s&FLOW_VIEW=12345&PRCS_ID=%s&archive_time='%(RUN_ID, FLOW_ID, PRCS_ID)
+	response = s.get(url,cookies=cookie, headers=headers)
+	with open('work.html', 'w') as f:
+		f.write(response.text.replace(u'\xa0', u''))'''
+	filenanme = 1	
+	while True:
+		RUN_ID = input('输入工作流程号：')
+		FLOW_ID = input('输入流水号：')
+		PRCS_ID = input('输入步骤：')
+		url = 'http://oa.grgbanking.com/general/workflow/list/print.php?RUN_ID=%s&FLOW_ID=%s&FLOW_VIEW=12345&PRCS_ID=%s&archive_time='%(RUN_ID, FLOW_ID, PRCS_ID)
+		response = s.get(url,cookies=cookie, headers=headers)
+		with open('%d.html'%filenanme, 'w') as f:
+			f.write(response.text.replace(u'\xa0', u''))
+		filenanme = filenanme+1
+	
 	
