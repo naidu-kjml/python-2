@@ -1,5 +1,5 @@
 # coding=utf-8
-import base64, requests
+import base64, requests, re
 import rsa, urllib, time, json
 from bs4 import BeautifulSoup
 
@@ -52,9 +52,7 @@ def rsa_encrypt(s, pubkey_str):
     return base64.b64encode(rsa.encrypt(s.encode(), pubkey)).decode()
 
  
-if __name__ == "__main__":
-	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'}
-	s = requests.session()
+def login(s):
 	bash_url = 'http://voa.grgbanking.com/'
 	response = s.get(bash_url, headers=headers)
 	'''soup = BeautifulSoup(response.text,'lxml')
@@ -94,6 +92,7 @@ if __name__ == "__main__":
 	data = s.get(sFlowURL, headers=headers)
 	print(data.json())'''
 	#  获取工作流程里的已办结
+def get_workflows(s):
 	url = 'http://voa.grgbanking.com/HandlerGRGPortal.ashx'
 	payload = {
 	'method': 'getTDURL',
@@ -107,8 +106,18 @@ if __name__ == "__main__":
 	nd = str(int(time.time()))
 	url = 'http://oa.grgbanking.com/general/workflow/list/getdata_over.php?TYPE=OVER&RUN_ID=&RUN_NAME=&FLOW_ID=null&TIME_OUT_FLAG=undefined&_search=false&nd=%s&rows=100&page=1&sidx=DELIVER_TIME&sord=desc'%nd
 	workflow = s.get(url,cookies=cookie, headers=headers).json()
-	with open('workflow.json', 'w') as f:
-		f.write(json.dumps(workflow))
+	workflows = workflow['rows']
+	print(type(workflows))
+	for wf in workflows:
+		RUN_ID = wf['cell'][0]
+		FLOW_ID = '2292'
+		s = wf['cell'][2]
+		res = re.match('.*?title=\"(.*?)\">',s)
+		title = res.group(1)
+		s = wf['cell'][4]
+		res = re.match('.*?第(\d)步',s)
+		PRCS_ID = res.group(1)
+		print(title)
 	
 	# 查看流程详情
 	'''RUN_ID = '' #流程号
@@ -118,7 +127,7 @@ if __name__ == "__main__":
 	response = s.get(url,cookies=cookie, headers=headers)
 	with open('work.html', 'w') as f:
 		f.write(response.text.replace(u'\xa0', u''))'''
-	filenanme = 1	
+	'''filenanme = 1	
 	while True:
 		RUN_ID = input('输入工作流程号：')
 		FLOW_ID = input('输入流水号：')
@@ -127,6 +136,17 @@ if __name__ == "__main__":
 		response = s.get(url,cookies=cookie, headers=headers)
 		with open('%d.html'%filenanme, 'w') as f:
 			f.write(response.text.replace(u'\xa0', u''))
-		filenanme = filenanme+1
+		filenanme = filenanme+1'''
+	
+if __name__=='__main__':
+	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'}
+	s = requests.session()
+	login(s)
+	#防止重认证
+	try:
+		get_workflows(s)
+	except:
+		login(s)
+		get_workflows(s)
 	
 	
