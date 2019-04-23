@@ -25,10 +25,13 @@ def request(url):
 			writer.writerow(l)
 		
 if __name__=='__main__':
+	start = time.time()
 	for i in range(1,22):
 		print('catching %dth page'%i)
 		url = bash_url+str(i)
 		request(url)
+	end = time.time()
+	print('cost time:%s'%str(end-start))
 
 	
 	

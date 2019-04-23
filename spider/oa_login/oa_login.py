@@ -4,9 +4,18 @@ import rsa, urllib, time, json
 from bs4 import BeautifulSoup
 
 
-UserID = 'G0108228'
+'''UserID = 'G0108228'
 USER_ID = 'lyjie9'
-USER_NAME = '赖雅洁'
+USER_NAME = '赖雅洁'''
+
+'''UserID = 'G0107805'
+USER_ID = 'xjming9'
+USER_NAME = '肖佳明'''
+
+UserID = 'G1300048'
+USER_ID = 'lwhang'
+USER_NAME = '刘伟航'
+
 
 __all__ = ['rsa_encrypt']
 
@@ -108,16 +117,27 @@ def get_workflows(s):
 	workflow = s.get(url,cookies=cookie, headers=headers).json()
 	workflows = workflow['rows']
 	print(type(workflows))
+	list = []
+	index = 0
 	for wf in workflows:
 		RUN_ID = wf['cell'][0]
-		FLOW_ID = '2292'
+		s = wf['cell'][1]
+		res = re.match('.*?(\d{1,5})',s)
+		FLOW_ID = res.group(1)
+		s = wf['cell'][4]
+		res = re.match('.*?第(\d{1,3})步',s)
+		PRCS_ID = res.group(1)
 		s = wf['cell'][2]
 		res = re.match('.*?title=\"(.*?)\">',s)
 		title = res.group(1)
-		s = wf['cell'][4]
-		res = re.match('.*?第(\d)步',s)
-		PRCS_ID = res.group(1)
-		print(title)
+		dit = {}
+		dit['RUN_ID']=RUN_ID
+		dit['FLOW_ID']=FLOW_ID
+		dit['PRCS_ID']=PRCS_ID
+		list.append(dit)
+		print('%d:%s'%(index, title))
+		index = index+1
+	return list
 	
 	# 查看流程详情
 	'''RUN_ID = '' #流程号
@@ -144,9 +164,20 @@ if __name__=='__main__':
 	login(s)
 	#防止重认证
 	try:
-		get_workflows(s)
+		list = get_workflows(s)
 	except:
 		login(s)
-		get_workflows(s)
+		list = get_workflows(s)
+	while True:
+		index = input('输入流水号：')
+		wf = list[int(index)]
+		RUN_ID = wf['RUN_ID']
+		FLOW_ID = wf['FLOW_ID']
+		PRCS_ID = wf['PRCS_ID']
+		url = 'http://oa.grgbanking.com/general/workflow/list/print.php?RUN_ID=%s&FLOW_ID=%s&FLOW_VIEW=12345&PRCS_ID=%s&archive_time='%(RUN_ID, FLOW_ID, PRCS_ID)
+		response = s.get(url, headers=headers)
+		with open('%s.html'%RUN_ID, 'w') as f:
+			f.write(response.text.replace(u'\xa0', u''))
+		
 	
 	
