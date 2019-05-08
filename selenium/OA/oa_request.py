@@ -92,8 +92,18 @@ def HandlerAddressList(s,UserID,POSITION_ID):
 	}
 	url = 'http://voa.grgbanking.com/HandlerAddressList.ashx'
 	response = s.post(url, data=data, headers=headers)
-	print(response.json()['data']['EMPLOYEE_NAME'])
-	
+	data = response.json()['data']
+	print(data['EMPLOYEE_NAME'])
+	EMPLOYEE_NAME=data['EMPLOYEE_NAME']
+	EMPLOYEE_NO=data['EMPLOYEE_NO']
+	GENDER=data['GENDER']
+	IN_DATE=data['IN_DATE']
+	ATTRIBUTE6=data['ATTRIBUTE6']
+	OEMAIL=data['OEMAIL']
+	MOBILE_NO=data['MOBILE_NO']
+	POSITION_NAME=data['POSITION_NAME']
+	DEPT_FULL_NAME=data['DEPT_FULL_NAME']
+	insert_oa(EMPLOYEE_NAME,EMPLOYEE_NO,GENDER,IN_DATE,ATTRIBUTE6,OEMAIL,MOBILE_NO,POSITION_NAME,DEPT_FULL_NAME)
 	
 if __name__=='__main__':
 	s = login()
