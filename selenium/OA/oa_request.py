@@ -1,5 +1,5 @@
-import requests
-#import time,mysql.connector
+import requests,time
+import time,mysql.connector
 
 MYSQL_HOSTS = '127.0.0.1'
 MYSQL_USER = 'root'
@@ -14,7 +14,7 @@ USER_NAME = '肖佳明'
 def insert_oa(EMPLOYEE_NAME,EMPLOYEE_NO,GENDER,IN_DATE,ATTRIBUTE6,OEMAIL,MOBILE_NO,POSITION_NAME,DEPT_FULL_NAME):
 	cnx = mysql.connector.connect(user=MYSQL_USER,password=MYSQL_PASSWORD,host=MYSQL_HOSTS,database=MYSQL_DB)
 	cur = cnx.cursor(buffered=True)
-	sql = 'INSERT INTO oa(EMPLOYEE_NAME,EMPLOYEE_NO,GENDER,IN_DATE,ATTRIBUTE6,OEMAIL,MOBILE_NO,POSITION_NAME,DEPT_FULL_NAME) VALUES (%(EMPLOYEE_NAME)s,%(EMPLOYEE_NO)s,%(GENDER)s,%(IN_DATE)s,%(ATTRIBUTE6)s,%(OEMAIL)s,%(MOBILE_NO)s,%(POSITION_NAME)s,%(DEPT_FULL_NAME)s)'
+	sql = 'INSERT INTO oa_list(EMPLOYEE_NAME,EMPLOYEE_NO,GENDER,IN_DATE,ATTRIBUTE6,OEMAIL,MOBILE_NO,POSITION_NAME,DEPT_FULL_NAME) VALUES (%(EMPLOYEE_NAME)s,%(EMPLOYEE_NO)s,%(GENDER)s,%(IN_DATE)s,%(ATTRIBUTE6)s,%(OEMAIL)s,%(MOBILE_NO)s,%(POSITION_NAME)s,%(DEPT_FULL_NAME)s)'
 	value = {
 		'EMPLOYEE_NAME':EMPLOYEE_NAME,
 		'EMPLOYEE_NO':EMPLOYEE_NO,
@@ -79,6 +79,7 @@ def getDeptAsyncTree(s,id,name):
 	list = response.json()['rows']
 	for i in list:
 		if i['beiyong'] != None:
+			time.sleep(1)
 			HandlerAddressList(s,i['id'],i['beiyong'])
 		else:
 			getDeptAsyncTree(s,i['id'],i['name'])
@@ -107,5 +108,12 @@ def HandlerAddressList(s,UserID,POSITION_ID):
 	
 if __name__=='__main__':
 	s = login()
-	getDeptAsyncTree(s,2471,'运通智能')
-		
+	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'}
+	url = 'http://voa.grgbanking.com/HandlerAddressList.ashx'
+	data = {
+		'method': 'getDeptAsyncTree'
+	}
+	response = s.post(url, data=data, headers=headers)
+	list = response.json()['rows']
+	for i in list:
+			getDeptAsyncTree(s,i['id'],i['name'])

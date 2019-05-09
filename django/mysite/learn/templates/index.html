@@ -1,0 +1,216 @@
+﻿﻿
+<html>
+
+<head>
+<title>错误码查询</title>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<style type="text/css" >
+.a{
+position:absolute;
+   left:42%;
+      bottom:0;}
+.search{
+border-width: 0px;
+border-style: solid;
+  border-color: #EEEEEE;
+width:320px;
+height：50px;
+padding:0;
+}  
+
+.input-group{width:320px;
+height：70px;
+font-size:20px;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<script type="text/javascript" language="javascript" src="JavaScript/jquery-1.6.1.min.js" ></script>
+<script type="text/javascript">
+
+var xmlHttp
+
+function showUser()
+{
+//判断是否输入为空
+var s=document.getElementById("ErrCode").value;
+if(s==""){
+alert("请输入错误码");
+return;
+}
+
+xmlHttp=GetXmlHttpObject()
+if (xmlHttp==null)
+ {
+ alert ("Browser does not support HTTP Request")
+ return
+ }
+var url="errcode.php"
+var str=document.getElementById("ErrCode").value
+url=url+"?ErrCode="+str
+//url=url+Math.random()
+xmlHttp.onreadystatechange=stateChanged 
+xmlHttp.open("GET",url,true)
+xmlHttp.send(null)
+}
+
+function stateChanged() 
+{ 
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+ { 
+ document.getElementById("txtHint").innerHTML=xmlHttp.responseText 
+ } 
+}
+
+function GetXmlHttpObject()
+{
+var xmlHttp=null;
+try
+ {
+ // Firefox, Opera 8.0+, Safari
+ xmlHttp=new XMLHttpRequest();
+ }
+catch (e)
+ {
+ //Internet Explorer
+ try
+  {
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+  }
+ catch (e)
+  {
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+ }
+return xmlHttp;
+}
+
+function feedback(){
+xmlHttp=GetXmlHttpObject()
+if (xmlHttp==null)
+ {
+ alert ("Browser does not support HTTP Request")
+ return
+ }
+var url="test.php"
+xmlHttp.onreadystatechange=stateChanged1
+xmlHttp.open("GET",url,true)
+xmlHttp.send(null)
+}
+
+function stateChanged1() 
+{ 
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+ { 
+ document.getElementById("total").innerHTML=xmlHttp.responseText 
+ } 
+}
+
+//*******************************************************************test.php调用的接口
+/*function insert1()
+{ 
+xmlHttp=GetXmlHttpObject1();
+if (xmlHttp==null)
+ {
+ alert ("Browser does not support HTTP Request");
+ return;
+ }
+
+var url2="feedback.php";
+
+var str1="wdw";
+
+url2=url2+"?fbType="+str1;
+var str3=document.getElementById("description").val();
+alert(str3);
+url2=url2+"&description="+str3;
+
+
+xmlHttp.onreadystatechange=stateChanged2;
+xmlHttp.open("GET",url2,true);
+xmlHttp.send(null);
+}
+
+function stateChanged2() 
+{ 
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+ { 
+ alert("提交成功");
+ //document.getElementById("txtHint").innerHTML=xmlHttp.responseText 
+ } 
+ else{alert("fail");}
+}
+
+function GetXmlHttpObject1()
+{
+var xmlHttp=null;
+try
+ {
+ // Firefox, Opera 8.0+, Safari
+ xmlHttp=new XMLHttpRequest();
+ }
+catch (e)
+ {
+ //Internet Explorer
+ try
+  {
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+  }
+ catch (e)
+  {
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+ }
+return xmlHttp;
+}
+*/
+
+
+</script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+<div class="container-fluid">
+<div id="total">
+<div align="center" >
+<br><br>
+<h2>错误码查询</h2>
+<br />
+<div class="input-group input-group-lg">
+					<input type="search" class="form-control" placeholder="请输入错误码" id="ErrCode" required maxlength="7" pattern="[0-9]*" autofocus>
+					<span class="input-group-btn">
+						<button class="btn btn-default"  onclick="showUser()" type="button" style="background-color:DodgerBlue;color:white;" >
+							搜索
+						</button>
+					</span>
+				</div><!-- /input-group -->
+<br /><br /><br />
+<div id="txtHint"><a class="a" href="feedback.html?errcode=null">意见反馈</a></div>
+</p>
+
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

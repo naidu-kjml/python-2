@@ -1,7 +1,7 @@
 # coding:utf-8
+from django.http import HttpResponse
 from django.shortcuts import render
- 
- 
-def home(request):
-    TutorialList = ["HTML", "CSS", "jQuery", "Python", "Django"]
-    return render(request, 'home.html', {'TutorialList': TutorialList})
+
+
+def index(request):
+    return render(request, 'index.html')
