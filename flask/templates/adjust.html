@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+	<meta charset="UTF-8">
+	<script type = "text/javascript" src = "{{ url_for('static', filename = 'ajax.js') }}" ></script>
+	<script>
+		document.onkeydown = function onkeydown() { 
+			if(event.keyCode == 13) { 
+				document.getElementById("submit").click(); 
+				return false; 
+			} 
+		} 
+		function run()
+		{
+		var phone = document.getElementById("phone").value
+		var env = document.getElementById("env").value
+		if (phone =="请输入账号"){alert('请输入账号');return}
+		$.ajax({
+				url: "/adjust1",   //对应flask中的路由
+				type: "POST", //请求方法
+				data: {'phone':phone, 'env':env},	 //传送的数据
+				dataType: "json", //传送的数据类型
+				success: function (res) {	//成功得到返回数据后回调的函数
+					code = res["code"]
+					orderId = res['orderId']
+					if (code == '0'){
+						mes = "订单："+orderId+'\n改价成功！'
+					}
+					else {
+						mes = '无待支付订单'
+					}
+					alert(mes)
+				}
+			})
+		}
+</script>
+<style>
+
+body{text-align:center;zoom:1.5; }
+</style>
+	</head>
+
+	<body>
+		 <h2>订单改价</h2> 
+		 <p>
+		 <input required maxlength="11" pattern="[0-9]*" id="phone" type="text" value= {{result}} onfocus="this.value = '';" onblur="if (this.value == '') {this.value = {{result}};}"}" style="width:100px;height:18px"/>
+		 <select id = 'env' style="width:80px;height:24px">
+		 <option value="0">测试环境</option>
+		 <option value="1">开发环境</option>
+		 </select>
+		 <input id = "submit" type = "submit" value = "改价" onclick = "run()"/>
+		 </p>
+   </body>
+</html>

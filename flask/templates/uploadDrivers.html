@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+	<meta charset="UTF-8">
+	<script type = "text/javascript" src = "{{ url_for('static', filename = 'ajax.js') }}" ></script>
+	<script>
+		function run()
+		{
+		var name = document.getElementById("name").value
+		var phone = document.getElementById("phone").value
+		var city = document.getElementById("city").value
+		var env = document.getElementById("env").value
+		if (name=="请输入姓名"){alert("请输入姓名");return}
+		if (phone=="请输入手机号"){alert("请输入手机号");return}
+		$.ajax({
+				url: "/submit",   //对应flask中的路由
+				type: "POST", //请求方法
+				data: {'name':name, 'phone':phone, 'city':city, 'env':env},	 //传送的数据
+				dataType: "json", //传送的数据类型
+				success: function (res) {	//成功得到返回数据后回调的函数
+					code = res["code"]
+					if (code == '0'){
+						mes = name+"录入成功!\n司机ID为："+res["driver_id"]
+					}
+					else {
+						mes = name+"录入失败!请联系15989104405"
+					}
+					alert(mes)
+				}
+			})
+		}
+</script>
+<style>
+body{text-align:center;zoom:1.5; }
+</style>
+	</head>
+	<body>
+	  
+		 <h3>司机录入</h3>
+		 <p><input required maxlength="11" id="name" type="text" value="请输入姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入姓名';}"}"/></p>
+		 <p><input required maxlength="11" pattern="[0-9]*" id="phone" type="text" value="请输入手机号" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入手机号';}"}" /></p>
+		 <select id = 'city'>
+		 <option value="440100">广州</option>
+		 <option value="440300">深圳</option>
+		 <option value="110000">北京</option>
+		 <option value="441900">东莞</option>
+		 </select>
+		 <select id = 'env'>
+		 <option value="0">测试环境</option>
+		 <option value="1">开发环境</option>
+		 </select>
+		 <p><input type = "submit" value = "提交" onclick = "run()"/></p>
+	  
+   </body>
+</html>

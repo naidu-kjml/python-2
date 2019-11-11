@@ -1,3 +1,4 @@
+#-*-coding:utf-8 -*-
 import re
 import smtplib
 from email.mime.multipart import MIMEMultipart
@@ -26,3 +27,7 @@ class Email:
         smtp_server.login(self.sender,self.password)
         smtp_server.sendmail(self.sender,self.receiver,self.msg.as_string())
         smtp_server.close()
+
+if __name__=="__main__":
+	e = Email('smtp.qq.com','981805032@qq.com','nmfavcrgtlfsbdeb','13250790293@163.com','PSN更新')
+	e.send("PSN有最新更新：\n时间：\n版本")
