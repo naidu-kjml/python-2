@@ -1,8 +1,23 @@
 <!DOCTYPE html>
-<html>
-	<head> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-	<meta charset="UTF-8">
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>订单退款</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{{ url_for('static', filename = 'ie10-viewport-bug-workaround.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = 'signin.css')}}" rel="stylesheet">
 	<script type = "text/javascript" src = "{{ url_for('static', filename = 'ajax.js') }}" ></script>
 	<script>
 		document.onkeydown = function onkeydown() { 
@@ -14,7 +29,7 @@
 		function run()
 		{
 		var phone = document.getElementById("phone").value
-		var env = document.getElementById("env").value
+		var env = $('input[name="env"]:checked').val()
 		if (phone =="请输入账号"){alert('请输入账号');return}
 		$.ajax({
 				url: "/refund1",   //对应flask中的路由
@@ -36,20 +51,31 @@
 			})
 		}
 </script>
-<style>
-body{text-align:center;zoom:1.5; }
 
-</style>
-	</head>
+  </head>
 
-	<body>
-		 <h2>订单退款</h2>
-		 <p><input required maxlength="11" pattern="[0-9]*" id="phone" type="text" value= {{result}} onfocus="this.value = '';" onblur="if (this.value == '') {this.value = {{result}};}"}" style="width:100px;height:18px"/>
-		 <select id = 'env' style="width:80px;height:24px">
-		 <option value="0">测试环境</option>
-		 <option value="1">开发环境</option>
-		 </select>
-		 <input id = "submit" type = "submit" value = "退款" onclick = "run()"/>
-		 </p>
-   </body>
+  <body>
+
+    <div class="container">
+
+      <div class="form-signin">
+        <h2 class="form-signin-heading">订单退款</h2>
+        <label  class="sr-only">订单账号</label>
+        <input required maxlength="11" pattern="[0-9]*" id="phone" type="text" value= {{result}} onfocus="this.value = '';" onblur="if (this.value == '') {this.value = {{result}};}"}" class="form-control" required >
+        <div class="radio">
+          <label>
+            <input type="radio" value="0" name="env" checked> 测试环境
+          </label>
+          <label>
+            <input type="radio" value="1" name="env"> 开发环境
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="run()">退款</button>
+      </div>
+
+    </div> <!-- /container -->
+
+
+
+  </body>
 </html>

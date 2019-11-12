@@ -24,7 +24,7 @@ def adjust():
 			phone = data[ip]
 		except:
 			phone = "请输入账号"
-	return render_template('adjust.html',result=phone)
+	return render_template('adjust.html', result=phone)
 
 @app.route('/refund',methods=['POST','GET'])
 def refund():
@@ -80,7 +80,7 @@ def adjust1():
 		adjust2(session,orderId,env)
 		return {
 			"code": "0",
-			"orderId":orderId
+			"orderId": orderId
 		}
 	except:
 		return {

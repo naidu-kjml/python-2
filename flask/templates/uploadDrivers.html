@@ -1,8 +1,23 @@
 <!DOCTYPE html>
-<html>
-	<head> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-	<meta charset="UTF-8">
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>司机录入</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{{ url_for('static', filename = 'ie10-viewport-bug-workaround.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = 'signin.css')}}" rel="stylesheet">
 	<script type = "text/javascript" src = "{{ url_for('static', filename = 'ajax.js') }}" ></script>
 	<script>
 		function run()
@@ -10,7 +25,7 @@
 		var name = document.getElementById("name").value
 		var phone = document.getElementById("phone").value
 		var city = document.getElementById("city").value
-		var env = document.getElementById("env").value
+		var env = $('input[name="env"]:checked').val()
 		if (name=="请输入姓名"){alert("请输入姓名");return}
 		if (phone=="请输入手机号"){alert("请输入手机号");return}
 		$.ajax({
@@ -31,26 +46,41 @@
 			})
 		}
 </script>
-<style>
-body{text-align:center;zoom:1.5; }
-</style>
-	</head>
-	<body>
-	  
-		 <h3>司机录入</h3>
-		 <p><input required maxlength="11" id="name" type="text" value="请输入姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入姓名';}"}"/></p>
-		 <p><input required maxlength="11" pattern="[0-9]*" id="phone" type="text" value="请输入手机号" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入手机号';}"}" /></p>
-		 <select id = 'city'>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="form-signin">
+        <h2 class="form-signin-heading">司机录入</h2>
+        <label  class="sr-only">司机姓名</label>
+        <input required maxlength="11" id="name" type="text" value="请输入姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入姓名';}"}" class="form-control" >
+        <label  class="sr-only">订单账号</label>
+        <input input required maxlength="11" pattern="[0-9]*" id="phone" type="text" value="请输入手机号" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入手机号';}"}" class="form-control" >
+		<p>
+        <div class="radio">
+          <label>
+            <input type="radio" value="0" name="env" checked> 测试环境
+          </label>
+          <label>
+            <input type="radio" value="1" name="env"> 开发环境
+          </label>
+        </div>
+		<select id = 'city'>
 		 <option value="440100">广州</option>
 		 <option value="440300">深圳</option>
 		 <option value="110000">北京</option>
 		 <option value="441900">东莞</option>
 		 </select>
-		 <select id = 'env'>
-		 <option value="0">测试环境</option>
-		 <option value="1">开发环境</option>
-		 </select>
-		 <p><input type = "submit" value = "提交" onclick = "run()"/></p>
-	  
-   </body>
+		 </p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="run()">提交</button>
+      </div>
+
+    </div> <!-- /container -->
+
+
+
+  </body>
 </html>

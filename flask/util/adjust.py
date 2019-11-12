@@ -57,5 +57,4 @@ def getOrderId(session,userPhone,env):
 	url = envs[env]+'/management/v1/orderinfo/queryListByFilter'
 	response = session.post(url, data=json.dumps(payload), headers=headers)
 	orderId = response.json()['content']['data'][0]['orderId']
-	logger.info(orderId)
 	return orderId

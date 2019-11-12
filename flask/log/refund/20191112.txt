@@ -1,0 +1,19 @@
+2019-11-12 08:37:58,460 - util.refund - INFO - ENV：test PHONE：15989104405
+2019-11-12 08:37:58,461 - util.refund - INFO - login ZT
+2019-11-12 08:37:58,740 - util.refund - INFO - {"code":0,"message":"成功"}
+2019-11-12 08:44:15,087 - util.refund - INFO - ENV：test PHONE：15989104405
+2019-11-12 08:44:15,087 - util.refund - INFO - login ZT
+2019-11-12 08:44:15,330 - util.refund - INFO - {"code":0,"message":"成功"}
+2019-11-12 08:44:15,333 - util.refund - INFO - ****nomal refund****
+2019-11-12 08:44:15,445 - util.refund - INFO - nomal refund done!!!
+2019-11-12 08:44:15,451 - util.refund - INFO - ****cancelcost refund****
+2019-11-12 08:44:15,517 - util.refund - INFO - cancelcost refund done!!!
+2019-11-12 08:44:30,147 - util.refund - INFO - ENV：test PHONE：15989104405
+2019-11-12 08:44:30,153 - util.refund - INFO - login ZT
+2019-11-12 08:44:30,283 - util.refund - INFO - {"code":0,"message":"成功"}
+2019-11-12 08:44:30,289 - util.refund - INFO - ****nomal refund****
+2019-11-12 08:44:30,492 - util.refund - INFO - nomal refund done!!!
+2019-11-12 08:44:30,495 - util.refund - INFO - ****cancelcost refund****
+2019-11-12 08:44:30,565 - util.refund - INFO - cancelcost refund done!!!
+2019-11-12 08:56:47,842 - util.refund - INFO - login ZT
+2019-11-12 08:56:48,199 - util.refund - INFO - {"code":0,"message":"成功"}
