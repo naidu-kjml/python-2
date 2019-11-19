@@ -1,19 +1,19 @@
-#-*-coding:utf-8 -*-
+# -*-coding:utf-8 -*-
+# author:xiaojiaming
 import time
 import requests
-import os
 import json
 import random
 import logging
 from faker import Faker
 
-#*********配置信息********
-#citys = {'广州':'440100', '深圳':'440300', '北京':'110000','东莞':'441900'}
-envs = {'0':'https://managetest.ruqimobility.com','1':'http://111.230.118.77'}
-rentCompanyIds = {'440100':'608','440300':'625','110000':'637','441900':'639'}
+# *********配置信息********
+# citys = {'广州':'440100', '深圳':'440300', '北京':'110000','东莞':'441900'}
+envs = {'0': 'https://managetest.ruqimobility.com', '1': 'http://111.230.118.77'}
+rentCompanyIds = {'440100': '608', '440300': '625', '110000': '637', '441900': '639'}
 faker = Faker('zh_CN')
 address = faker.address()
-headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36', "Content-Type":"application/json"}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36', "Content-Type":"application/json"}
 logger = logging.getLogger(__name__)
 logger.setLevel(level = logging.INFO)
 day = time.strftime("%Y%m%d")
@@ -27,9 +27,8 @@ logger.addHandler(handler)
 logger.addHandler(console)
 
 
-
 class UD():
-	def __init__(self,session,name,phone,idCardNumber,city, env):
+	def __init__(self, session, name, phone, idCardNumber, city, env):
 		self.session = session
 		self.name = name
 		self.phone = phone
@@ -259,7 +258,7 @@ class UD():
 		response = self.session.post(url, data=json.dumps(payload), headers=headers)
 		logger.info(response.text)
 		rentCompanyId = response.json()['content']['data'][0]['rentCompanyId']'''
-		
+		logger.info("新建车辆")
 		rentCompanyId = rentCompanyIds[self.city]
 		carNumber = '粤AB'+str(random.randint(10000,99999))
 		engineNumber = str(random.randint(1111111111,9999999999))
@@ -270,7 +269,7 @@ class UD():
 		response = self.session.post(url, data=json.dumps(payload), headers=headers)
 		logger.info(response.text)
 		self.carId = response.json()['content']['carId']
-		payload = {"carId":self.carId,"vehicleType":"2","ownerName":"1","transAgency":"1","transDateStart":1570665600,"transDateStop":1665360000,"certifyDateB":1570665600,"fixState":1,"nextFixDate":1665360000,"checkDate":1665360000,"checkState":2,"feelogger.infoid":"1","gpsBrand":"1","gpsModel":"1","gpsImei":"1","commercialType":3,"fareType":"1","vehicleTec":"1","gpsInstallDate":1570665600,"vehicleSafe":"1","certifyDateA":1570665600}
+		payload = {"carId":self.carId,"vehicleType":"2","ownerName":"1","transAgency":"1","transDateStart":1570665600,"transDateStop":1665360000,"certifyDateB":1570665600,"fixState":1,"nextFixDate":1665360000,"checkDate":1665360000,"checkState":2,"feelogger.infoid":"1","feePrintid":"1111111","gpsBrand":"1","gpsModel":"1","gpsImei":"1","commercialType":3,"fareType":"1","vehicleTec":"1","gpsInstallDate":1570665600,"vehicleSafe":"1","certifyDateA":1570665600}
 		url = self.env+'/management/v1/vehicle/ext/create'
 		response = self.session.post(url, data=json.dumps(payload), headers=headers)
 		logger.info(response.text)

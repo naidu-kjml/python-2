@@ -1,8 +1,8 @@
-__author__='xjming'
-#-*-coding:utf-08-*-
+#-*-coding:utf-8 -*-
 from mail import Email
 import time, requests, re
 from bs4 import BeautifulSoup
+
 
 class PSN():
 	def __init__(self):
@@ -33,4 +33,4 @@ if __name__=='__main__':
 		print(mes,date)
 	except:
 		e = Email('smtp.qq.com','981805032@qq.com','nmfavcrgtlfsbdeb','13250790293@163.com','PSN更新')
-		e.send("脚本异常")		
+		e.send("脚本异常")

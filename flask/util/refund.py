@@ -1,5 +1,6 @@
-#-*-coding:utf-8 -*-
-#author:xiaojiaming
+# -*-coding:utf-8 -*-
+# author:xiaojiaming
+
 import requests,json,time,logging
 from decimal import Decimal, ROUND_HALF_UP
 

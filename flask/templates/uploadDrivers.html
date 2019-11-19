@@ -1,3 +1,4 @@
+<!--author:xiaojiaming -->
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -29,19 +30,13 @@
 		if (name=="请输入姓名"){alert("请输入姓名");return}
 		if (phone=="请输入手机号"){alert("请输入手机号");return}
 		$.ajax({
-				url: "/submit",   //对应flask中的路由
+				url: "/testutil/uploadDrivers/submit",   //对应flask中的路由
 				type: "POST", //请求方法
 				data: {'name':name, 'phone':phone, 'city':city, 'env':env},	 //传送的数据
 				dataType: "json", //传送的数据类型
 				success: function (res) {	//成功得到返回数据后回调的函数
-					code = res["code"]
-					if (code == '0'){
-						mes = name+"录入成功!\n司机ID为："+res["driver_id"]
-					}
-					else {
-						mes = name+"录入失败!请联系15989104405"
-					}
-					alert(mes)
+					msg = res["msg"]
+					alert(msg)
 				}
 			})
 		}

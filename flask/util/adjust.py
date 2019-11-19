@@ -1,4 +1,5 @@
-#-*-coding:utf-8 -*-
+# -*-coding:utf-8 -*-
+# author:xiaojiaming
 import requests,json,time,logging
 
 logger = logging.getLogger(__name__)
