@@ -1,190 +1,146 @@
 # -*-coding:utf-8 -*-
 # author:xiaojiaming
+from importlib import reload
+import requests
+import json
+import time
+import re
+import sys
 
-import requests,json,time,logging
-from decimal import Decimal, ROUND_HALF_UP
+if 'linux' in sys.platform:
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+USER_PHONE = ['13250790293', '15989104405']
+envs = {'0': 'https://managetest.ruqimobility.com', '1': 'http://111.230.118.77'}
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                  'Chrome/62.0.3202.89 Safari/537.36',
+    "Content-Type": "application/json"}
 
-logger = logging.getLogger(__name__)
-logger.setLevel(level = logging.INFO)
-day = time.strftime("%Y%m%d")
-handler = logging.FileHandler("log/refund/%s.txt"%day)
-handler.setLevel(logging.INFO)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-console = logging.StreamHandler()
-console.setLevel(logging.INFO)
-logger.addHandler(handler)
-logger.addHandler(console)
-envs = {'0':'https://managetest.ruqimobility.com','1':'http://111.230.118.77'}
 
-headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36', "Content-Type":"application/json"}
+class Refund:
+    def __init__(self, env='0', refund_days=1, user_phone=None):
+        self.url_top = envs[env]
+        self.user_phone = user_phone
+        self.session = requests.session()
+        self.login()
+        self.timestamp = int(time.time())
+        self.refund_days = refund_days
+        self.refund_success_times = 0
+        self.orders = []
+        self.message = ''
 
-def round(x):
-	return Decimal(x).quantize(Decimal('.01'), ROUND_HALF_UP)
+    def login(self):
+        print('Login ruqimobility')
+        headers1 = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+                          '62.0.3202.89 Safari/537.36',
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"}
+        url = '%s/management/v1/login/web' % self.url_top
+        print(url)
+        data = {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+        response = self.session.post(url, data=data, headers=headers1)
+        print(response.text)
 
-def login(env):
-	logger.info('login ZT')
-	headers1 = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36', "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"}
-	session = requests.session()
-	url = envs[env]+'/management/v1/login/web'
-	if env == '0':
-		data = {'username':'gactravel1','password':'ruqi123456','token':'123'}
-	else:
-		data = {'username':'gactravel','password':'qwe123!@#web','token':'123'}
-	response = session.post(url, data=data, headers=headers1)
-	logger.info(response.text)
-	return session
+    def get_orders(self, pageIndex=1):
+        if self.user_phone:
+            payload = {"pageIndex": pageIndex,
+                       "pageSize": 10,
+                       "userPhone": self.user_phone.strip(),
+                       "statusPay": '3',
+                       "startTime": 'null',
+                       "endTime": 'null',
+                       "source": 'null'}
+        else:
+            payload = {"pageIndex": pageIndex,
+                       "pageSize": 10,
+                       "statusPay": '3',
+                       "startTime": 'null',
+                       "endTime": 'null',
+                       "source": 'null'}
+        url = '%s/management/v1/orderinfo/queryListByFilter' % self.url_top
+        response = self.session.post(url, data=json.dumps(payload), headers=headers)
+        orders = response.json()['content']['data']
+        self.orders = self.orders + orders
+        createTime = int(time.mktime(time.strptime(orders[-1]['createTime'], "%Y-%m-%d %H:%M:%S")))  # 订单创建时间
+        if self.timestamp - createTime < 86400 * self.refund_days:  # 判断订单时间
+            self.get_orders(pageIndex + 1)
 
-def refund2(session,orderId,refundBaseAmount,refundExtraAmount,env):
-	status = 0
-	timestamp = int(time.time())
-	payload = {"orderId":orderId,
-	"comment":"网页脚本退款",
-	"operator":"gactravel1",
-	"timestamp":timestamp,
-	"source":0,
-	"payAmount":"7.1",
-	"refundExtraAmount":refundExtraAmount,
-	"refundBaseAmount":refundBaseAmount,
-	"oid":'null'
-	}
-	url = envs[env]+'/management/v1/orderinfo/refund'
-	logger.info('refund url:%s'%url)
-	response = session.post(url, data=json.dumps(payload), headers=headers)
-	if response.json()['code']==0:
-		status = 1
-	if response.json()['code']==110019:
-		payload = {"orderId":orderId,
-		"comment":"网页脚本退款",
-		"operator":"gactravel1",
-		"timestamp":timestamp,
-		"source":0,
-		"payAmount":"7.1",
-		"refundExtraAmount":'0',
-		"refundBaseAmount":'0.01',
-		"oid":'null'
-		}
-		response = session.post(url, data=json.dumps(payload), headers=headers)
-		if response.json()['code']==0:
-			status = 2
-	logger.info(response.text)
-	return status
-	
-def getOrderId1(session,pageIndex,refundDays,userPhone,env):
-	mes = '订单退款：\n'
-	success_times = 0
-	timestamp = int(time.time())
-	#logger.info('**********pageIndex:%s************'%pageIndex)
-	logger.info('****nomal refund****')
-	createTime = 0
-	payload = {"pageIndex":pageIndex,
-		"pageSize":10,
-		"userPhone":userPhone.strip(),
-		"status":'9',
-		"startTime":'null',
-		"endTime":'null',
-		"source":'null'}
-	url = envs[env]+'/management/v1/orderinfo/queryListByFilter'
-	logging.info('获取订单列表url:%s'%url)
-	response = session.post(url, data=json.dumps(payload), headers=headers)
-	if response.json()['code']!=0:
-		logging.info(logger.info(response.text))
-	orders = response.json()['content']['data']
-	for order in orders:
-		orderId = order['orderId']
-		payDoneAmount = order['payDoneAmount'] #总支付
-		refundBaseAmount = order['invoiceAmount'] #非附加费
-		refundAmount = order['refundAmount'] #已退款金额
-		createTime = int(time.mktime(time.strptime(order['createTime'], "%Y-%m-%d %H:%M:%S")))#创建时间
-		#timePay = int(order['timePay']) # 支付时间
-		refundExtraAmount = str(round(float(payDoneAmount))-round(float(refundBaseAmount))) #附加费
-		if refundAmount==payDoneAmount:
-			continue
-		elif refundAmount<payDoneAmount:
-			url = envs[env]+'/management/v1/orderinfo/query/%s?_=%d'%(orderId,timestamp)
-			response = session.get(url, headers=headers)
-			try:
-				refundBaseAmount = response.json()['content']['showBaseAmount']
-			except:
-				logger.info(response.text)
-			refundExtraAmount = response.json()['content']['showExtraAmount']
-			logger.info('orderId：%s'%orderId)
-			logger.info('payDoneAmount：%s refundBaseAmount：%s refundExtraAmount：%s'%(payDoneAmount,refundBaseAmount,refundExtraAmount))
-			status = refund2(session,orderId,refundBaseAmount,refundExtraAmount,env)
-			if status == 1:
-				success_times = success_times+1
-				mes = mes+'订单号：%s\n总费用：%s 非附加费：%s 附加费：%s\n'%(orderId,payDoneAmount,refundBaseAmount,refundExtraAmount)
-			elif status == 2:
-				success_times = success_times+1
-				mes = mes+"订单号：%s\n订单费用：0.01\n"%orderId
-		else:
-			refundExtraAmount = str(round(float(payDoneAmount))-round(float(refundBaseAmount))) #附加费
-			logger.info(orderId,payDoneAmount,refundBaseAmount,refundExtraAmount)
-			status = refund2(session,orderId,refundBaseAmount,refundExtraAmount,env)
-			if status == 1:
-				success_times = success_times+1
-				mes = mes+'订单号：%s\n总费用：%s 非附加费：%s 附加费：%s\n'%(orderId,payDoneAmount,refundBaseAmount,refundExtraAmount)
-			elif status == 2:
-				success_times = success_times+1
-				mes = mes+"订单号：%s\n总费用：0.01\n"%orderId
-	if timestamp-createTime<86400*refundDays:#判断订单时间
-		getOrderId1(session,pageIndex+1,refundDays,userPhone,env)
-	else:
-		logger.info('nomal refund done!!!')
-		print(success_times)
-		if success_times==0:
-			logging.info('No order need to be refunded')
-			return "暂无订单需要退款"
-		else:
-			return mes
+    def get_order_info(self, orderId):
+        print('Get order info')
+        url = '%s/management/v1/orderinfo/query/%s?_=%d' % (self.url_top, orderId, self.timestamp)
+        print(url)
+        response = self.session.get(url, headers=headers)
+        refundBaseAmount = response.json()['content']['showBaseAmount']
+        refundExtraAmount = response.json()['content']['showExtraAmount']
+        return refundBaseAmount, refundExtraAmount
 
-def getOrderId2(session,pageIndex,refundDays,userPhone,env):
-	success_times = 0
-	mes = '取消费退款：\n'
-	timestamp = int(time.time())
-	#logger.info('**********pageIndex:%s************'%pageIndex)
-	logger.info('****cancelcost refund****')
-	createTime = 0
-	payload = {"pageIndex":pageIndex,
-		"pageSize":10,
-		"userPhone":userPhone.strip(),
-		"status":'10',
-		"startTime":'null',
-		"endTime":'null',
-		"source":'null'}
-	url = envs[env]+'/management/v1/orderinfo/queryListByFilter'
-	logging.info('url:%s'%url)
-	response = session.post(url, data=json.dumps(payload), headers=headers)
-	if response.json()['code']!=0:
-		logging.info(logger.info(response.text))
-	orders = response.json()['content']['data']
-	for order in orders:
-		orderId = order['orderId']
-		payDoneAmount = order['payDoneAmount'] #总支付
-		refundAmount = order['refundAmount'] #已退款金额
-		createTime = int(time.mktime(time.strptime(order['createTime'], "%Y-%m-%d %H:%M:%S")))#创建时间
-		#timePay = int(order['timePay']) # 支付时间
-		refundBaseAmount = str(round(float(payDoneAmount))-round(float(refundAmount))) #附加费
-		if refundAmount==payDoneAmount:
-			continue
-		else:
-			logger.info('订单号：%s'%orderId)
-			logger.info('支付费用：%s 退款取消费用：%s'%(payDoneAmount,refundBaseAmount))
-			status = refund2(session,orderId,refundBaseAmount,0,env)
-			if status == 1: 
-				mes = mes+'订单号：%s\n订单费用：%s 退款取消费用：%s\n'%(orderId,payDoneAmount,refundBaseAmount)
-				success_times = success_times+1
-				logging.info("refund success times:%d"%success_times)
-			elif status == 2:
-				mes = mes+"订单号：%s\n订单费用：0.01\n"%orderId
-				success_times = success_times+1
-	if timestamp-createTime<86400*refundDays:#判断订单时间
-		getOrderId2(session,pageIndex+1,refundDays,userPhone,env)
-	else:
-		logger.info('cancelcost refund done!!!')
-		print(mes)
-		if success_times==0:
-			logging.info('No order need to be refunded')
-			return "暂无取消费需要退款"
-		else:
-			return mes
+    def refund(self, orderId, payDoneAmount, refundBaseAmount, refundExtraAmount):
+        print('Commit refund')
+        payload = {"orderId": orderId,
+                   "comment": "网页脚本退款",
+                   "operator": "gactravel1",
+                   "timestamp": self.timestamp,
+                   "source": 0,
+                   "payAmount": payDoneAmount,
+                   "refundExtraAmount": refundExtraAmount,
+                   "refundBaseAmount": refundBaseAmount,
+                   "oid": 'null'
+                   }
+        url = '%s/management/v1/orderinfo/refund' % self.url_top
+        print(url)
+        response = self.session.post(url, data=json.dumps(payload), headers=headers)
+        print(response.text)
+        if response.json()['code'] == 0:
+            self.refund_success_times += 1
+            self.message = self.message + '订单ID:%s\n 支付金额:%s 非附加费:%s 附加费:%s\n' % (
+                    orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
+            print("Refund Success!!!")
+        if response.json()['code'] == 110019 and response.json()['message'] != '退款失败：订单号不存在':  # 兼容预付费情况
+            try:
+                res = re.match('.*?支付记录1:(.*?):支付记录2:(.*?)元', response.json()['message'])
+                print(res.group(1), res.group(2))
+                if int(refundBaseAmount) == 0:
+                    self.refund(orderId, payDoneAmount, '0', res.group(1))
+                    self.refund(orderId, payDoneAmount, '0', res.group(2))
+                elif int(refundExtraAmount) == 0:
+                    self.refund(orderId, payDoneAmount, res.group(1), '0')
+                    self.refund(orderId, payDoneAmount, res.group(2), '0')
+                else:
+                    print('%s Refund fail!!!' % orderId)
+            except:
+                self.message += '订单ID:%s\n退款失败' % orderId
+                print('%s Refund fail!!!' % orderId)
+
+    def commit(self):
+        if self.user_phone:
+            print("Refund phone:%s" % self.user_phone)
+        print('Refund days:%s' % self.refund_days)
+        self.get_orders()
+        print('Order_Numbers:%d' % len(self.orders))
+        for order in self.orders:
+            orderId = order['orderId']
+            payDoneAmount = order['payDoneAmount']  # 总支付
+            if order['statusRefund'] != 3:  # 非完全退款
+                refundBaseAmount, refundExtraAmount = self.get_order_info(orderId)
+                print('OrderID：%s\n payDoneAmount:%s refundBaseAmount:%s refundExtraAmount:%s' % (
+                    orderId, payDoneAmount, refundBaseAmount, refundExtraAmount))
+                if int(refundBaseAmount) != 0 or int(refundExtraAmount) != 0:  # 非改价订单
+                    self.refund(orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
+                else:
+                    print('Order has been adjusted to 0')  # 改价订单，无需退款
+            else:
+                pass  # 完全退款订单
+            time.sleep(0.1)
+        if self.refund_success_times == 0:
+            self.message = "暂无订单需退款"
+        print("Refund %d orders" % self.refund_success_times)
+        print("Done!!!")
+
+
+if __name__ == "__main__":
+    for phone in USER_PHONE:
+        RF = Refund(user_phone=phone)
+        RF.commit()
+        print(RF.message)
+    time.sleep(5)

@@ -1,176 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c7aad88-a473-4237-ac5c-a64b3dbf1cd6" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="0c7aad88-a473-4237-ac5c-a64b3dbf1cd6" name="Default Changelist" comment="..">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/adjust/20191213.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/refund/20191213.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/uploadDrivers/20191213.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/refund_bak.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/uploadDrivers/20191109.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/uploadDrivers/20191111.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/uploadDrivers/20191112.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/uploadDrivers/20191114.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/uploadDrivers/20191119.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/adjust.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adjust.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/refund.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/refund.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/uploadDrivers.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/uploadDrivers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../itchat/itchat.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../itchat/itchat.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../selenium/kuaidi/kuaidi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../selenium/kuaidi/kuaidi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spider/psn/psn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../spider/psn/psn.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="122" column="22" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="22" />
-              <folding>
-                <element signature="e#41#90#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/adjust.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/refund.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/uploadDrivers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/adjust.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/mail.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/refund.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1254">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/uploadDrivers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-779">
-              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-              <folding>
-                <element signature="e#21#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/uploadDrivers.py" />
-        <option value="$PROJECT_DIR$/util/adjust.py" />
-        <option value="$PROJECT_DIR$/util/mail.py" />
-        <option value="$PROJECT_DIR$/util/refund.py" />
-        <option value="$PROJECT_DIR$/util/uploadDrivers.py" />
-        <option value="$PROJECT_DIR$/templates/adjust.html" />
-        <option value="$PROJECT_DIR$/templates/refund.html" />
-        <option value="$PROJECT_DIR$/templates/uploadDrivers.html" />
-        <option value="$PROJECT_DIR$/app.py" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1UuVtHEixTY6q8HhFPuRkGCCoVq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="189" />
-    <option name="y" value="189" />
-    <option name="width" value="1617" />
-    <option name="height" value="717" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ruqi_web-master-11895b64fb7c18899850f057d2d3246ed5402c03" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.refund">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,11 +75,67 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="refund" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/refund.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rufund" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\python\flask\util\refund.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.refund" />
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.rufund" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -211,95 +150,79 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3283582" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/uploadDrivers.py" />
-    <entry file="file://$PROJECT_DIR$/templates/adjust1.html" />
-    <entry file="file://$PROJECT_DIR$/data.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/adjust.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/uploadDrivers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-779">
-          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding>
-            <element signature="e#21#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/refund.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1254">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="122" column="22" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="22" />
-          <folding>
-            <element signature="e#41#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/adjust.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/refund.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/uploadDrivers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="233" y="22" key="#Inspections" timestamp="1576207066102">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="22" key="#Inspections/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576207066102" />
+    <state x="520" y="63" key="#xdebugger.evaluate" timestamp="1576232828306">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="520" y="63" key="#xdebugger.evaluate/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576232828306" />
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1576230668158">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1576230668158" />
+    <state x="420" y="102" key="FileChooserDialogImpl" timestamp="1576219523435">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="420" y="102" key="FileChooserDialogImpl/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576219523435" />
+    <state width="1259" height="118" key="GridCell.Tab.0.bottom" timestamp="1576252468155">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="162" key="GridCell.Tab.0.bottom/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576234255149" />
+    <state width="1259" height="118" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1576252468155" />
+    <state width="1259" height="118" key="GridCell.Tab.0.center" timestamp="1576252468154">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="162" key="GridCell.Tab.0.center/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576234255148" />
+    <state width="1259" height="118" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1576252468154" />
+    <state width="1259" height="118" key="GridCell.Tab.0.left" timestamp="1576252468153">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="162" key="GridCell.Tab.0.left/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576234255148" />
+    <state width="1259" height="118" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1576252468153" />
+    <state width="1259" height="118" key="GridCell.Tab.0.right" timestamp="1576252468155">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="162" key="GridCell.Tab.0.right/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576234255149" />
+    <state width="1259" height="118" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1576252468155" />
+    <state width="1259" height="220" key="GridCell.Tab.1.bottom" timestamp="1576233322889">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="220" key="GridCell.Tab.1.bottom/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576233322889" />
+    <state width="1259" height="220" key="GridCell.Tab.1.center" timestamp="1576233322889">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="220" key="GridCell.Tab.1.center/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576233322889" />
+    <state width="1259" height="220" key="GridCell.Tab.1.left" timestamp="1576233322889">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="220" key="GridCell.Tab.1.left/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576233322889" />
+    <state width="1259" height="220" key="GridCell.Tab.1.right" timestamp="1576233322889">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="220" key="GridCell.Tab.1.right/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576233322889" />
+    <state x="503" y="74" key="RollbackChangesDialog" timestamp="1576207308784">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="503" y="74" key="RollbackChangesDialog/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576207308784" />
+    <state x="135" y="-18" key="SettingsEditor" timestamp="1576219533733">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="135" y="-18" key="SettingsEditor/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576219533733" />
+    <state x="488" y="275" key="VCS.ChangelistChooser" timestamp="1576218005701">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="488" y="275" key="VCS.ChangelistChooser/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576218005701" />
+    <state x="589" y="54" width="672" height="678" key="search.everywhere.popup" timestamp="1576231844573">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="589" y="54" width="672" height="678" key="search.everywhere.popup/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576231844573" />
   </component>
 </project>

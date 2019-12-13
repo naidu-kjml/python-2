@@ -40,8 +40,8 @@ class UD():
 		logger.info('新建司机账号')
 		url = self.env+'/management/v1/driver/recruit/create'
 		payload = {
-		'city': self.city,
-		'currentResidentialAddress':address,
+        'city': self.city,
+	    'currentResidentialAddress':address,
 		'drivingAge':'0',
 		'gender':'1',
 		'idCardNumber':self.idCardNumber,

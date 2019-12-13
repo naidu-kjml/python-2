@@ -1,0 +1,10 @@
+2019-12-13 11:22:13,527 - util.refund - INFO - ENV：test PHONE：15989104405
+2019-12-13 11:22:13,527 - util.refund - INFO - login ZT
+2019-12-13 11:22:13,667 - util.refund - INFO - {"code":0,"message":"成功"}
+2019-12-13 11:22:30,382 - util.refund - INFO - ENV：test PHONE：15989104405
+2019-12-13 11:22:30,383 - util.refund - INFO - login ZT
+2019-12-13 11:22:30,600 - util.refund - INFO - {"code":0,"message":"成功"}
+2019-12-13 11:22:30,601 - util.refund - INFO - ****nomal refund****
+2019-12-13 11:22:30,680 - util.refund - INFO - nomal refund done!!!
+2019-12-13 11:22:30,681 - util.refund - INFO - ****cancelcost refund****
+2019-12-13 11:22:30,733 - util.refund - INFO - cancelcost refund done!!!
