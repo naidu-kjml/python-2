@@ -1,61 +1,91 @@
-# -*-coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # author:xiaojiaming
-import requests,json,time,logging
 
-logger = logging.getLogger(__name__)
-logger.setLevel(level = logging.INFO)
-day = time.strftime("%Y%m%d")
-handler = logging.FileHandler("log/adjust/%s.txt"%day)
-handler.setLevel(logging.INFO)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-console = logging.StreamHandler()
-console.setLevel(logging.INFO)
-logger.addHandler(handler)
-logger.addHandler(console)
-envs = {'0':'https://managetest.ruqimobility.com','1':'http://111.230.118.77'}
+import requests
+import json
+import time
 
-def login(env):
-	logger.info('登录中台')
-	headers1 = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36', "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"}
-	session = requests.session()
-	url = envs[env]+'/management/v1/login/web'
-	if env == '0':
-		data = {'username':'gactravel1','password':'ruqi123456','token':'123'}
-	else:
-		data = {'username':'gactravel','password':'qwe123!@#web','token':'123'}
-	response = session.post(url, data=data, headers=headers1)
-	logger.info(response.text)
-	return session
+USER_PHONE = ['1325079029', '15989104405']
+envs = {'0': 'https://managetest.ruqimobility.com', '1': 'http://111.230.118.77'}
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                  'Chrome/62.0.3202.89 Safari/537.36',
+    "Content-Type": "application/json"}
 
 
-def adjust2(session,orderId,env):
-	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36', "Content-Type":"application/json"}
-	logger.info('改价')
-	timestamp = int(time.time())
-	payload = {"adjustBaseAmount":0,
-		"adjustExtraAmount":0,
-		"adjustComment":"网页脚本改价",
-		"operator":"gactravel1",
-		"orderId":orderId.strip(),
-		"timestamp":timestamp,
-		"source":0}
-	url = envs[env]+'/management/v1/adjust/charge'
-	response = session.post(url, data=json.dumps(payload), headers=headers)
-	logger.info(response.text)
-	logger.info('改价成功！！！')
-	
-def getOrderId(session,userPhone,env):
-	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36', "Content-Type":"application/json"}
-	logger.info('获取待支付订单')
-	payload = {"pageIndex":1,
-		"pageSize":10,
-		"userPhone":userPhone.strip(),
-		"status":'8',
-		"startTime":'null',
-		"endTime":'null',
-		"source":'null'}
-	url = envs[env]+'/management/v1/orderinfo/queryListByFilter'
-	response = session.post(url, data=json.dumps(payload), headers=headers)
-	orderId = response.json()['content']['data'][0]['orderId']
-	return orderId
+class Adjust:
+    def __init__(self, user_phone, env='0', logger=None):
+        self.log = logger
+        self.url_top = envs[env]
+        self.user_phone = user_phone
+        self.session = requests.session()
+        self.login()
+        self.orders = []
+        self.message = ''
+
+    def login(self):
+        self.log.logger.info('Login ruqimobility')
+        headers1 = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+                          '62.0.3202.89 Safari/537.36',
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"}
+        url = '%s/management/v1/login/web' % self.url_top
+        self.log.logger.debug(url)
+        data = {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+        response = self.session.post(url, data=data, headers=headers1)
+        self.log.logger.info(response.text)
+
+    def get_orders(self):
+        self.log.logger.info('Get adjust orders')
+        payload = {"pageIndex": 1,
+                   "pageSize": 10,
+                   "userPhone": self.user_phone.strip(),
+                   "statusPay": "1",
+                   "startTime": 'null',
+                   "endTime": 'null',
+                   "source": 'null'}
+        url = '%s/management/v1/orderinfo/queryListByFilter' % self.url_top
+        self.log.logger.debug(url)
+        response = self.session.post(url, data=json.dumps(payload), headers=headers)
+        self.orders = response.json()['content']['data']
+
+    def adjust(self, orderId):
+        self.log.logger.info('Adjust order:%s' % orderId)
+        timestamp = int(time.time())
+        payload = {"adjustBaseAmount": 0,
+                   "adjustExtraAmount": 0,
+                   "adjustComment": "网页脚本改价",
+                   "operator": "gactravel1",
+                   "orderId": orderId,
+                   "timestamp": timestamp,
+                   "source": 0}
+        url = '%s/management/v1/adjust/charge' % self.url_top
+        response = self.session.post(url, data=json.dumps(payload), headers=headers)
+        self.log.logger.info(response.text)
+        if response.json()['code'] == 0:
+            self.message += "订单ID：%s 改价成功\n" % orderId
+        else:
+            self.message += "订单：%s 改价失败\n" % orderId
+
+    def commit(self):
+        self.get_orders()
+        self.log.logger.info("待支付订单数:%s" % len(self.orders))
+        if len(self.orders) == 0:
+            self.log.logger.info('无待支付订单')
+            self.message = "无待支付订单"
+        for order in self.orders:
+            orderId = order['orderId']
+            try:
+                self.adjust(orderId)
+            except:
+                self.message += "订单：%s 改价失败\n" % orderId
+        self.log.logger.info("Done!!!\n")
+
+
+if __name__ == "__main__":
+    import logger
+    log = logger.Loggers(filename="%s.log" % time.strftime("%Y%m%d"), level='info', log_dir='log\\adjust', dir_par_or_abs='par')
+    for phone in USER_PHONE:
+        AJ = Adjust(phone, logger=log)
+        AJ.commit()
+    time.sleep(5)

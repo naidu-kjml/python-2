@@ -1,10 +1,14 @@
-# -*-coding:utf-8 -*-
-# author:xiaojiaming
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+__author__ = 'xiaojiaming'
+
+from importlib import reload
 from flask import Flask, request, render_template
 from util.mail import Email
 from util.uploadDrivers import *
-from util.adjust import *
+from util.adjust import Adjust
 from util.refund import Refund
+from util.logger import Loggers
 import sys
 import json
 
@@ -75,46 +79,48 @@ def submit():
 
 @app.route('/testutil/adjust/submit', methods=['POST'])
 def adjust1():
+    log = Loggers(filename="%s.log" % time.strftime("%Y%m%d"), level='debug', log_dir='flask\\log\\adjust',
+                  dir_par_or_abs='par')
     ip = request.remote_addr
     phone = request.form.get('phone')
     env = request.form.get('env')
-    logger.info('ENV：%s PHONE：%s' % ({'0': 'test', "1": "dev"}[env], phone))
-    session = login(env)
+    log.logger.info('ENV：%s PHONE：%s' % ({'0': 'test', "1": "dev"}[env], phone))
     with open('data.json') as f:
         data = json.loads(f.read())
         data[ip] = phone
     with open('data.json', 'w') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     try:
-        orderId = getOrderId(session, phone, env)
-        adjust2(session, orderId, env)
-        msg = '改价成功\n订单ID：' + orderId
-        return {
-            "code": "0",
-            "msg": msg
-        }
+        A = Adjust(phone, env, logger=log)
+        A.commit()
     except:
         return {
             "code": "1",
-            "msg": "暂无待支付订单"
+            "msg": "改价失败"
         }
+    return {
+        "code": "0",
+        "msg": A.message
+    }
 
 
 @app.route('/testutil/refund/submit', methods=['POST'])
 def refund1():
+    log = Loggers(filename="%s.log" % time.strftime("%Y%m%d"), level='debug', log_dir='flask\\log\\refund',
+                  dir_par_or_abs='par')
     ip = request.remote_addr
     phone = request.form.get('phone')
     env = request.form.get('env')
     if env == '1':
         return {'code': "1", "msg": "退款功能暂不支持开发环境"}
-    logger.info('ENV：%s PHONE：%s' % ({'0': 'test', "1": "dev"}[env], phone))
+    log.logger.info('ENV：%s PHONE：%s' % ({'0': 'test', "1": "dev"}[env], phone))
     with open('data.json', 'r') as f:
         data = json.loads(f.read())
         data[ip] = phone
     with open('data.json', 'w') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     try:
-        RF: Refund = Refund(env=env, user_phone=phone)
+        RF: Refund = Refund(env=env, user_phone=phone, logger=log)
         RF.commit()
     except:
         return {

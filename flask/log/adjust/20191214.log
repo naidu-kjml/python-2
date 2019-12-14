@@ -1,0 +1,46 @@
+2019-12-14 18:31:33,762 - app.py[line:87] - INFO: ENV：test PHONE：15989104405
+2019-12-14 18:31:33,763 - adjust.py[line:28] - INFO: Login ruqimobility
+2019-12-14 18:31:34,022 - adjust.py[line:37] - INFO: {"code":0,"message":"成功"}
+2019-12-14 18:31:34,022 - adjust.py[line:40] - INFO: Get adjust orders
+2019-12-14 18:31:34,124 - adjust.py[line:73] - INFO: 待支付订单数:0
+2019-12-14 18:31:34,124 - adjust.py[line:75] - INFO: 无待支付订单
+2019-12-14 18:31:34,124 - adjust.py[line:83] - INFO: Done!!!
+
+2019-12-14 18:38:52,204 - app.py[line:87] - INFO: ENV：test PHONE：15989104405
+2019-12-14 18:38:52,205 - adjust.py[line:28] - INFO: Login ruqimobility
+2019-12-14 18:38:52,205 - adjust.py[line:34] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-14 18:38:52,493 - adjust.py[line:37] - INFO: {"code":0,"message":"成功"}
+2019-12-14 18:38:52,494 - adjust.py[line:40] - INFO: Get adjust orders
+2019-12-14 18:38:52,494 - adjust.py[line:49] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-14 18:38:52,625 - adjust.py[line:73] - INFO: 待支付订单数:0
+2019-12-14 18:38:52,626 - adjust.py[line:75] - INFO: 无待支付订单
+2019-12-14 18:38:52,626 - adjust.py[line:83] - INFO: Done!!!
+
+2019-12-14 20:04:21,238 - adjust.py[line:27] - INFO: Login ruqimobility
+2019-12-14 20:04:21,601 - adjust.py[line:36] - INFO: {"code":0,"message":"成功"}
+2019-12-14 20:04:21,601 - adjust.py[line:39] - INFO: Get adjust orders
+2019-12-14 20:04:21,711 - adjust.py[line:72] - INFO: 待支付订单数:0
+2019-12-14 20:04:21,711 - adjust.py[line:74] - INFO: 无待支付订单
+2019-12-14 20:04:21,711 - adjust.py[line:82] - INFO: Done!!!
+
+2019-12-14 20:04:21,711 - adjust.py[line:27] - INFO: Login ruqimobility
+2019-12-14 20:04:21,895 - adjust.py[line:36] - INFO: {"code":0,"message":"成功"}
+2019-12-14 20:04:21,896 - adjust.py[line:39] - INFO: Get adjust orders
+2019-12-14 20:04:21,966 - adjust.py[line:72] - INFO: 待支付订单数:0
+2019-12-14 20:04:21,966 - adjust.py[line:74] - INFO: 无待支付订单
+2019-12-14 20:04:21,966 - adjust.py[line:82] - INFO: Done!!!
+
+2019-12-14 20:06:39,662 - adjust.py[line:27] - INFO: Login ruqimobility
+2019-12-14 20:06:40,036 - adjust.py[line:36] - INFO: {"code":0,"message":"成功"}
+2019-12-14 20:06:40,036 - adjust.py[line:39] - INFO: Get adjust orders
+2019-12-14 20:06:40,175 - adjust.py[line:72] - INFO: 待支付订单数:0
+2019-12-14 20:06:40,175 - adjust.py[line:74] - INFO: 无待支付订单
+2019-12-14 20:06:40,175 - adjust.py[line:82] - INFO: Done!!!
+
+2019-12-14 20:06:40,175 - adjust.py[line:27] - INFO: Login ruqimobility
+2019-12-14 20:06:40,359 - adjust.py[line:36] - INFO: {"code":0,"message":"成功"}
+2019-12-14 20:06:40,360 - adjust.py[line:39] - INFO: Get adjust orders
+2019-12-14 20:06:40,417 - adjust.py[line:72] - INFO: 待支付订单数:0
+2019-12-14 20:06:40,417 - adjust.py[line:74] - INFO: 无待支付订单
+2019-12-14 20:06:40,417 - adjust.py[line:82] - INFO: Done!!!
+
