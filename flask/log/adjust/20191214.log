@@ -1,46 +1,31 @@
-2019-12-14 18:31:33,762 - app.py[line:87] - INFO: ENV：test PHONE：15989104405
-2019-12-14 18:31:33,763 - adjust.py[line:28] - INFO: Login ruqimobility
-2019-12-14 18:31:34,022 - adjust.py[line:37] - INFO: {"code":0,"message":"成功"}
-2019-12-14 18:31:34,022 - adjust.py[line:40] - INFO: Get adjust orders
-2019-12-14 18:31:34,124 - adjust.py[line:73] - INFO: 待支付订单数:0
-2019-12-14 18:31:34,124 - adjust.py[line:75] - INFO: 无待支付订单
-2019-12-14 18:31:34,124 - adjust.py[line:83] - INFO: Done!!!
+2019-12-14 23:51:13,902 - app.py[line:90] - INFO: ENV:test PHONE:13250790292 IP:127.0.0.1
+2019-12-14 23:51:13,903 - adjust.py[line:26] - INFO: Login RUQIMobility
+2019-12-14 23:51:13,903 - adjust.py[line:32] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-14 23:51:14,185 - adjust.py[line:35] - DEBUG: {"code":0,"message":"成功"}
+2019-12-14 23:51:14,185 - adjust.py[line:37] - INFO: Login success
+2019-12-14 23:51:14,185 - adjust.py[line:44] - INFO: Get adjust orders
+2019-12-14 23:51:14,185 - adjust.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-14 23:51:14,301 - adjust.py[line:56] - INFO: Success
+2019-12-14 23:51:14,301 - adjust.py[line:86] - INFO: The numbers of orders:0
+2019-12-14 23:51:14,304 - adjust.py[line:88] - INFO: No orders to be adjusted
+2019-12-14 23:51:14,304 - adjust.py[line:96] - INFO: Done!!!
 
-2019-12-14 18:38:52,204 - app.py[line:87] - INFO: ENV：test PHONE：15989104405
-2019-12-14 18:38:52,205 - adjust.py[line:28] - INFO: Login ruqimobility
-2019-12-14 18:38:52,205 - adjust.py[line:34] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
-2019-12-14 18:38:52,493 - adjust.py[line:37] - INFO: {"code":0,"message":"成功"}
-2019-12-14 18:38:52,494 - adjust.py[line:40] - INFO: Get adjust orders
-2019-12-14 18:38:52,494 - adjust.py[line:49] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
-2019-12-14 18:38:52,625 - adjust.py[line:73] - INFO: 待支付订单数:0
-2019-12-14 18:38:52,626 - adjust.py[line:75] - INFO: 无待支付订单
-2019-12-14 18:38:52,626 - adjust.py[line:83] - INFO: Done!!!
-
-2019-12-14 20:04:21,238 - adjust.py[line:27] - INFO: Login ruqimobility
-2019-12-14 20:04:21,601 - adjust.py[line:36] - INFO: {"code":0,"message":"成功"}
-2019-12-14 20:04:21,601 - adjust.py[line:39] - INFO: Get adjust orders
-2019-12-14 20:04:21,711 - adjust.py[line:72] - INFO: 待支付订单数:0
-2019-12-14 20:04:21,711 - adjust.py[line:74] - INFO: 无待支付订单
-2019-12-14 20:04:21,711 - adjust.py[line:82] - INFO: Done!!!
-
-2019-12-14 20:04:21,711 - adjust.py[line:27] - INFO: Login ruqimobility
-2019-12-14 20:04:21,895 - adjust.py[line:36] - INFO: {"code":0,"message":"成功"}
-2019-12-14 20:04:21,896 - adjust.py[line:39] - INFO: Get adjust orders
-2019-12-14 20:04:21,966 - adjust.py[line:72] - INFO: 待支付订单数:0
-2019-12-14 20:04:21,966 - adjust.py[line:74] - INFO: 无待支付订单
-2019-12-14 20:04:21,966 - adjust.py[line:82] - INFO: Done!!!
-
-2019-12-14 20:06:39,662 - adjust.py[line:27] - INFO: Login ruqimobility
-2019-12-14 20:06:40,036 - adjust.py[line:36] - INFO: {"code":0,"message":"成功"}
-2019-12-14 20:06:40,036 - adjust.py[line:39] - INFO: Get adjust orders
-2019-12-14 20:06:40,175 - adjust.py[line:72] - INFO: 待支付订单数:0
-2019-12-14 20:06:40,175 - adjust.py[line:74] - INFO: 无待支付订单
-2019-12-14 20:06:40,175 - adjust.py[line:82] - INFO: Done!!!
-
-2019-12-14 20:06:40,175 - adjust.py[line:27] - INFO: Login ruqimobility
-2019-12-14 20:06:40,359 - adjust.py[line:36] - INFO: {"code":0,"message":"成功"}
-2019-12-14 20:06:40,360 - adjust.py[line:39] - INFO: Get adjust orders
-2019-12-14 20:06:40,417 - adjust.py[line:72] - INFO: 待支付订单数:0
-2019-12-14 20:06:40,417 - adjust.py[line:74] - INFO: 无待支付订单
-2019-12-14 20:06:40,417 - adjust.py[line:82] - INFO: Done!!!
-
+2019-12-14 23:51:41,697 - app.py[line:117] - INFO: ENV:test PHONE:13250790292 IP:127.0.0.1
+2019-12-14 23:51:41,699 - refund.py[line:37] - INFO: Login RUQIMobility
+2019-12-14 23:51:41,699 - refund.py[line:43] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-14 23:51:41,996 - refund.py[line:46] - DEBUG: {"code":0,"message":"成功"}
+2019-12-14 23:51:41,997 - refund.py[line:48] - INFO: Login success
+2019-12-14 23:51:41,997 - refund.py[line:149] - INFO: Refund phone:13250790292
+2019-12-14 23:51:41,997 - refund.py[line:150] - INFO: Refund days:1
+2019-12-14 23:51:41,997 - refund.py[line:55] - INFO: Get refund orders
+2019-12-14 23:51:41,997 - refund.py[line:56] - DEBUG: Page 1
+2019-12-14 23:51:41,997 - refund.py[line:73] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-14 23:51:42,112 - refund.py[line:76] - INFO: Success
+2019-12-14 23:51:42,114 - refund.py[line:84] - DEBUG: 1576259077
+2019-12-14 23:51:42,114 - refund.py[line:86] - DEBUG: Get next page
+2019-12-14 23:51:42,114 - refund.py[line:55] - INFO: Get refund orders
+2019-12-14 23:51:42,114 - refund.py[line:56] - DEBUG: Page 2
+2019-12-14 23:51:42,114 - refund.py[line:73] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-14 23:51:42,146 - refund.py[line:76] - INFO: Success
+2019-12-14 23:51:42,146 - refund.py[line:155] - ERROR: list index out of range
+2019-12-14 23:51:42,146 - refund.py[line:156] - ERROR: No order to refunded
