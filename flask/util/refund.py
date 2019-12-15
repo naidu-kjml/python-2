@@ -173,7 +173,7 @@ class Refund:
                 refundBaseAmount, refundExtraAmount = self.get_order_info(orderId)
                 logger.debug('OrderID：%s\n payDoneAmount:%s refundBaseAmount:%s refundExtraAmount:%s' % (
                     orderId, payDoneAmount, refundBaseAmount, refundExtraAmount))
-                if int(refundBaseAmount) != 0 or int(refundExtraAmount) != 0:
+                if float(refundBaseAmount) != 0 or float(refundExtraAmount) != 0:
                     logger.info('OrderID：%s\n payDoneAmount:%s refundBaseAmount:%s refundExtraAmount:%s' % (
                         orderId, payDoneAmount, refundBaseAmount, refundExtraAmount))
                     self.refund(orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
