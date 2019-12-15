@@ -1,0 +1,148 @@
+2019-12-15 14:09:32,032 - uploadDrivers.py[line:46] - INFO: Login RUQIMobility
+2019-12-15 14:09:32,032 - uploadDrivers.py[line:52] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-15 14:09:32,230 - uploadDrivers.py[line:55] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:09:32,230 - uploadDrivers.py[line:57] - INFO: Login success
+2019-12-15 14:09:32,230 - uploadDrivers.py[line:64] - INFO: Generate new account
+2019-12-15 14:09:32,230 - uploadDrivers.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-15 14:09:32,332 - uploadDrivers.py[line:82] - DEBUG: {"code":150001,"message":"登录名、身份证号或手机号已注册"}
+2019-12-15 14:09:32,337 - uploadDrivers.py[line:88] - INFO: Driver ID exist!!!
+2019-12-15 14:09:32,337 - uploadDrivers.py[line:89] - INFO: Get driver ID
+2019-12-15 14:09:32,337 - uploadDrivers.py[line:91] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/list
+2019-12-15 14:09:32,372 - uploadDrivers.py[line:96] - DEBUG: {"code":0,"message":"成功","content":{"pageIndex":"1","pageSize":"10","total":"1","data":[{"driverId":6834326,"loginName":null,"phone":"15989104405","email":"","name":"小师傅","gender":1,"birthDate":"1992-01-01 00:00:00","city":"440100","nationality":null,"nation":"汉","areaCode":"+86","headImg":"https://travel-driverdev-driverpub-1258234669.cos.ap-guangzhou.myqcloud.com/6834282/c14358e9-babb-41a3-bebf-6d9cfb0560c11570786304009.png","description":null,"driverImg":"6834396/55b3910d-695a-495e-8dfb-e38968d963811569405148143.png","idCardNumber":"529914199201010140","idCardImgFront":"6834396/02b1d99e-7245-4fad-a267-1076d7f29d5c1569405154540.png","idCardImgBack":"6834396/ac648cb1-5ff7-4aa6-84e4-6825075aefa91569405158969.png","idCardImgHold":"6834396/bb7f3494-3103-487b-9d9e-9ef4c675920e1569405162164.png","licenseNumber":"529914199201010140","licenseStartDate":"1569340800","licenseEndDate":"1664121600","licenseType":"C2","licenseImg":"6834396/a1893c64-bf6b-4751-87ce-51216abb41221569405166250.png","licenseImgBack":"6834396/4c6f8fa4-8067-47e0-91aa-b696e1ef0f871569405171499.png","bankName":null,"bankCode":"","bankCardNumber":null,"rentCompanyId":null,"labourCompanyId":327,"managerId":null,"carId":80801661,"comment":null,"driverType":0,"listenCarTypes":"1","status":1,"carNumber":null,"carBrandId":null,"carModelId":null,"carAttributeId":null,"carBrand":null,"carModel":null,"carAttribute":null,"color":null,"driverScore":100,"driverStar":4.7,"carCertNo":null,"plateColor":null,"driverCertNo":null,"carVerifyCode":null,"engineNumber":null,"flag":2,"createTime":"2019-06-06 10:32:31","updateTime":"2019-12-15 13:03:38","drivingAge":0,"recruitmentChannels":1,"auditStatus":6,"isCertificateA":true,"disablesDateStart":null,"disablesDateEnd":null,"nativePlace":null,"currentResidentialAddress":null,"certificateAImgFront":null,"certificateAImgBack":null,"residencePermitImgFront":null,"residencePermitImgBack":null,"backgroundCheck":0,"appointmentOrderStatus":1}]}}
+2019-12-15 14:09:32,372 - uploadDrivers.py[line:99] - INFO: Driver ID：6834326
+2019-12-15 14:09:32,372 - uploadDrivers.py[line:108] - INFO: Interview
+2019-12-15 14:09:32,372 - uploadDrivers.py[line:110] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834326?_=1569383098574
+2019-12-15 14:09:32,413 - uploadDrivers.py[line:112] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-15 14:09:32,413 - uploadDrivers.py[line:116] - INFO: Has been interviewed before
+2019-12-15 14:09:32,413 - uploadDrivers.py[line:117] - ERROR: 招募状态流转错误
+2019-12-15 14:09:32,413 - uploadDrivers.py[line:148] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-15 14:09:32,444 - uploadDrivers.py[line:153] - INFO: Has been interviewed before
+2019-12-15 14:09:32,444 - uploadDrivers.py[line:154] - ERROR: 招募状态流转错误
+2019-12-15 14:09:32,444 - uploadDrivers.py[line:160] - INFO: Road test
+2019-12-15 14:09:32,444 - uploadDrivers.py[line:162] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab3&status=3
+2019-12-15 14:09:32,499 - uploadDrivers.py[line:172] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-15 14:09:32,530 - uploadDrivers.py[line:174] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-15 14:09:32,531 - uploadDrivers.py[line:178] - INFO: Has been tested before
+2019-12-15 14:09:32,531 - uploadDrivers.py[line:184] - INFO: Train
+2019-12-15 14:09:32,531 - uploadDrivers.py[line:186] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab4&status=4
+2019-12-15 14:09:32,566 - uploadDrivers.py[line:196] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-15 14:09:32,604 - uploadDrivers.py[line:198] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-15 14:09:32,605 - uploadDrivers.py[line:202] - INFO: Has been trained before
+2019-12-15 14:09:32,605 - uploadDrivers.py[line:208] - INFO: Recruit
+2019-12-15 14:09:32,605 - uploadDrivers.py[line:210] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab5&status=5
+2019-12-15 14:09:32,651 - uploadDrivers.py[line:223] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-15 14:09:32,684 - uploadDrivers.py[line:225] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-15 14:09:32,685 - uploadDrivers.py[line:229] - INFO: Has been recruited before
+2019-12-15 14:09:32,685 - uploadDrivers.py[line:230] - ERROR: 招募状态流转错误
+2019-12-15 14:09:32,685 - uploadDrivers.py[line:236] - INFO: Upload driver img
+2019-12-15 14:09:32,685 - uploadDrivers.py[line:246] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-15 14:09:32,718 - uploadDrivers.py[line:248] - DEBUG: {"code":150000,"message":"失败"}
+2019-12-15 14:09:32,719 - uploadDrivers.py[line:252] - ERROR: Fail!!!
+2019-12-15 14:09:32,719 - uploadDrivers.py[line:253] - ERROR: 失败
+2019-12-15 14:09:32,719 - uploadDrivers.py[line:256] - INFO: Contract
+2019-12-15 14:09:32,719 - uploadDrivers.py[line:262] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-15 14:09:32,782 - uploadDrivers.py[line:264] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:09:32,782 - uploadDrivers.py[line:266] - DEBUG: Success
+2019-12-15 14:09:32,782 - uploadDrivers.py[line:272] - INFO: Cource
+2019-12-15 14:09:32,782 - uploadDrivers.py[line:278] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-15 14:09:32,837 - uploadDrivers.py[line:280] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:09:32,837 - uploadDrivers.py[line:282] - DEBUG: Success
+2019-12-15 14:09:32,837 - uploadDrivers.py[line:288] - INFO: Upload all driver message
+2019-12-15 14:09:32,837 - uploadDrivers.py[line:332] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-15 14:09:32,876 - uploadDrivers.py[line:334] - DEBUG: {"code":150000,"message":"失败"}
+2019-12-15 14:09:32,876 - uploadDrivers.py[line:338] - ERROR: Fail!!!
+2019-12-15 14:09:32,876 - uploadDrivers.py[line:339] - ERROR: 失败
+2019-12-15 14:09:32,876 - uploadDrivers.py[line:365] - INFO: Create car
+2019-12-15 14:09:32,880 - uploadDrivers.py[line:377] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-15 14:09:32,990 - uploadDrivers.py[line:379] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801664}}
+2019-12-15 14:09:32,990 - uploadDrivers.py[line:381] - INFO: Success
+2019-12-15 14:09:32,990 - uploadDrivers.py[line:393] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-15 14:09:33,024 - uploadDrivers.py[line:395] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:09:33,024 - uploadDrivers.py[line:397] - INFO: Success
+2019-12-15 14:09:33,025 - uploadDrivers.py[line:343] - INFO: Set car
+2019-12-15 14:09:33,025 - uploadDrivers.py[line:345] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-15 14:09:33,057 - uploadDrivers.py[line:348] - DEBUG: {"code":180005,"message":"司机未设置所属管理区域"}
+2019-12-15 14:09:33,058 - uploadDrivers.py[line:352] - ERROR: Fail!!!
+2019-12-15 14:09:33,058 - uploadDrivers.py[line:353] - ERROR: 司机未设置所属管理区域
+2019-12-15 14:14:15,901 - uploadDrivers.py[line:46] - INFO: Login RUQIMobility
+2019-12-15 14:14:15,902 - uploadDrivers.py[line:52] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-15 14:14:16,175 - uploadDrivers.py[line:55] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:14:16,175 - uploadDrivers.py[line:57] - INFO: Login success
+2019-12-15 14:14:16,175 - uploadDrivers.py[line:64] - INFO: Generate new account
+2019-12-15 14:14:16,175 - uploadDrivers.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-15 14:14:16,319 - uploadDrivers.py[line:82] - DEBUG: {"code":0,"message":"成功","content":{"driverId":6834488}}
+2019-12-15 14:14:16,319 - uploadDrivers.py[line:84] - INFO: Success
+2019-12-15 14:14:16,319 - app.py[line:68] - ERROR: Failed to open sklearn.txt from logger.exception
+Traceback (most recent call last):
+  File "D:\python\flask\app.py", line 59, in submit
+    u.commit()
+  File "D:\python\flask\util\uploadDrivers.py", line 404, in commit
+    self.upload()
+  File "D:\python\flask\util\uploadDrivers.py", line 86, in upload
+    logger.info('Driver id:%s' % self.driverID)
+AttributeError: 'UD' object has no attribute 'driverID'
+2019-12-15 14:15:14,197 - uploadDrivers.py[line:46] - INFO: Login RUQIMobility
+2019-12-15 14:15:14,197 - uploadDrivers.py[line:52] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-15 14:15:14,979 - uploadDrivers.py[line:55] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:15:14,979 - uploadDrivers.py[line:57] - INFO: Login success
+2019-12-15 14:15:14,980 - uploadDrivers.py[line:64] - INFO: Generate new account
+2019-12-15 14:15:14,980 - uploadDrivers.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-15 14:15:15,102 - uploadDrivers.py[line:82] - DEBUG: {"code":150001,"message":"登录名、身份证号或手机号已注册"}
+2019-12-15 14:15:15,102 - uploadDrivers.py[line:88] - INFO: Drtiver ID exis!!!
+2019-12-15 14:15:15,102 - uploadDrivers.py[line:89] - INFO: Get driver ID
+2019-12-15 14:15:15,102 - uploadDrivers.py[line:91] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/list
+2019-12-15 14:15:15,159 - uploadDrivers.py[line:96] - DEBUG: {"code":0,"message":"成功","content":{"pageIndex":"1","pageSize":"10","total":"1","data":[{"driverId":6834488,"loginName":null,"phone":"15989104400","email":null,"name":"测试","gender":1,"birthDate":null,"city":"440100","nationality":null,"nation":null,"areaCode":"+86","headImg":"","description":null,"driverImg":null,"idCardNumber":"193347199201010140","idCardImgFront":null,"idCardImgBack":null,"idCardImgHold":null,"licenseNumber":null,"licenseStartDate":"0","licenseEndDate":"0","licenseType":"C2","licenseImg":null,"licenseImgBack":null,"bankName":null,"bankCode":"","bankCardNumber":null,"rentCompanyId":null,"labourCompanyId":0,"managerId":null,"carId":0,"comment":null,"driverType":0,"listenCarTypes":"","status":0,"carNumber":null,"carBrandId":null,"carModelId":null,"carAttributeId":null,"carBrand":null,"carModel":null,"carAttribute":null,"color":null,"driverScore":100,"driverStar":5.0,"carCertNo":null,"plateColor":null,"driverCertNo":null,"carVerifyCode":null,"engineNumber":null,"flag":1,"createTime":"2019-12-15 14:14:17","updateTime":"2019-12-15 14:14:17","drivingAge":0,"recruitmentChannels":1,"auditStatus":1,"isCertificateA":true,"disablesDateStart":null,"disablesDateEnd":null,"nativePlace":null,"currentResidentialAddress":null,"certificateAImgFront":null,"certificateAImgBack":null,"residencePermitImgFront":null,"residencePermitImgBack":null,"backgroundCheck":0,"appointmentOrderStatus":2}]}}
+2019-12-15 14:15:15,159 - uploadDrivers.py[line:99] - INFO: Driver ID：6834488
+2019-12-15 14:15:15,159 - uploadDrivers.py[line:108] - INFO: Interview
+2019-12-15 14:15:15,159 - uploadDrivers.py[line:110] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834488?_=1569383098574
+2019-12-15 14:15:15,220 - uploadDrivers.py[line:112] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:15:15,220 - uploadDrivers.py[line:114] - INFO: Success
+2019-12-15 14:15:15,220 - uploadDrivers.py[line:148] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-15 14:15:15,257 - uploadDrivers.py[line:156] - ERROR: Fail!!!
+2019-12-15 14:15:15,257 - uploadDrivers.py[line:157] - ERROR: 失败
+2019-12-15 14:15:15,257 - uploadDrivers.py[line:160] - INFO: Road test
+2019-12-15 14:15:15,257 - uploadDrivers.py[line:162] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834488&tabId=tab3&status=3
+2019-12-15 14:15:15,309 - uploadDrivers.py[line:172] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-15 14:15:15,342 - uploadDrivers.py[line:174] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-15 14:15:15,342 - uploadDrivers.py[line:178] - INFO: Has been tested before
+2019-12-15 14:15:15,342 - uploadDrivers.py[line:184] - INFO: Train
+2019-12-15 14:15:15,342 - uploadDrivers.py[line:186] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834488&tabId=tab4&status=4
+2019-12-15 14:15:15,391 - uploadDrivers.py[line:196] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-15 14:15:15,422 - uploadDrivers.py[line:198] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-15 14:15:15,422 - uploadDrivers.py[line:202] - INFO: Has been trained before
+2019-12-15 14:15:15,422 - uploadDrivers.py[line:208] - INFO: Recruit
+2019-12-15 14:15:15,422 - uploadDrivers.py[line:210] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834488&tabId=tab5&status=5
+2019-12-15 14:15:15,458 - uploadDrivers.py[line:223] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-15 14:15:15,503 - uploadDrivers.py[line:225] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-15 14:15:15,504 - uploadDrivers.py[line:229] - INFO: Has been recruited before
+2019-12-15 14:15:15,504 - uploadDrivers.py[line:230] - ERROR: 招募状态流转错误
+2019-12-15 14:15:15,504 - uploadDrivers.py[line:236] - INFO: Upload driver img
+2019-12-15 14:15:15,504 - uploadDrivers.py[line:246] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-15 14:15:15,549 - uploadDrivers.py[line:248] - DEBUG: {"code":150000,"message":"失败"}
+2019-12-15 14:15:15,549 - uploadDrivers.py[line:252] - ERROR: Fail!!!
+2019-12-15 14:15:15,549 - uploadDrivers.py[line:253] - ERROR: 失败
+2019-12-15 14:15:15,549 - uploadDrivers.py[line:256] - INFO: Contract
+2019-12-15 14:15:15,549 - uploadDrivers.py[line:262] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-15 14:15:15,673 - uploadDrivers.py[line:264] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:15:15,673 - uploadDrivers.py[line:266] - DEBUG: Success
+2019-12-15 14:15:15,673 - uploadDrivers.py[line:272] - INFO: Cource
+2019-12-15 14:15:15,674 - uploadDrivers.py[line:278] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-15 14:15:15,724 - uploadDrivers.py[line:280] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:15:15,724 - uploadDrivers.py[line:282] - DEBUG: Success
+2019-12-15 14:15:15,724 - uploadDrivers.py[line:288] - INFO: Upload all driver message
+2019-12-15 14:15:15,724 - uploadDrivers.py[line:332] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-15 14:15:15,760 - uploadDrivers.py[line:334] - DEBUG: {"code":150000,"message":"失败"}
+2019-12-15 14:15:15,760 - uploadDrivers.py[line:338] - ERROR: Fail!!!
+2019-12-15 14:15:15,760 - uploadDrivers.py[line:339] - ERROR: 失败
+2019-12-15 14:15:15,760 - uploadDrivers.py[line:365] - INFO: Create car
+2019-12-15 14:15:15,763 - uploadDrivers.py[line:377] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-15 14:15:15,887 - uploadDrivers.py[line:379] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801665}}
+2019-12-15 14:15:15,887 - uploadDrivers.py[line:381] - INFO: Success
+2019-12-15 14:15:15,887 - uploadDrivers.py[line:393] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-15 14:15:15,929 - uploadDrivers.py[line:395] - DEBUG: {"code":0,"message":"成功"}
+2019-12-15 14:15:15,929 - uploadDrivers.py[line:397] - INFO: Success
+2019-12-15 14:15:15,929 - uploadDrivers.py[line:343] - INFO: Set car
+2019-12-15 14:15:15,929 - uploadDrivers.py[line:345] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-15 14:15:15,961 - uploadDrivers.py[line:348] - DEBUG: {"code":180005,"message":"司机未设置所属管理区域"}
+2019-12-15 14:15:15,961 - uploadDrivers.py[line:352] - ERROR: Fail!!!
+2019-12-15 14:15:15,961 - uploadDrivers.py[line:353] - ERROR: 司机未设置所属管理区域
