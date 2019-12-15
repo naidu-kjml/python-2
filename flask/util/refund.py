@@ -169,7 +169,7 @@ class Refund:
         for order in self.orders:
             orderId = order['orderId']
             payDoneAmount = order['payDoneAmount']  # 总支付
-            if order['statusRefund'] != 3:  # 非完全退款
+            if order['statusRefund'] != 3 and float(payDoneAmount) != 0:  # 非完全退款
                 refundBaseAmount, refundExtraAmount = self.get_order_info(orderId)
                 logger.debug('OrderID：%s\n payDoneAmount:%s refundBaseAmount:%s refundExtraAmount:%s' % (
                     orderId, payDoneAmount, refundBaseAmount, refundExtraAmount))
@@ -180,8 +180,7 @@ class Refund:
                 else:
                     logger.debug('Order has been adjusted to 0')  # 改价订单，无需退款
             else:
-                logger.debug("Order has been refunded")  # 完全退款订单
-            time.sleep(0.1)
+                logger.debug("Order has been refunded or adjusted to 0")  # 完全退款订单
         if self.refund_success_times == 0:
             self.message = "暂无订单需退款"
         logger.info("Refund %d orders" % self.refund_success_times)
