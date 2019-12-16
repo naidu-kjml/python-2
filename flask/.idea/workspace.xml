@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c7aad88-a473-4237-ac5c-a64b3dbf1cd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/log/adjust/20191216.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/refund/20191216.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/uploadDrivers/20191216.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/log/refund/20191215.log" beforeDir="false" afterPath="$PROJECT_DIR$/util/log/refund/20191215.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/uploadDrivers.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/uploadDrivers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576396765870</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="司机录入接口优化">
+      <created>1576465370945</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576465370945</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -240,7 +240,8 @@
     <MESSAGE value="更新退款、改价接口" />
     <MESSAGE value="修复退款bug" />
     <MESSAGE value="优化退款接口性能" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化退款接口性能" />
+    <MESSAGE value="司机录入接口优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="司机录入接口优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="22" key="#Inspections" timestamp="1576207066102">
@@ -255,9 +256,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="520" y="63" key="#xdebugger.evaluate/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576232828306" />
-    <state x="2203" y="0" key="CommitChangelistDialog2" timestamp="1576396765134">
-      <screen x="1920" y="0" width="1280" height="720" />
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1576465370206">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576465370206" />
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1576340117136" />
     <state x="2203" y="0" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1280.720@1920.0.1280.720" timestamp="1576396765134" />
     <state x="420" y="102" key="FileChooserDialogImpl" timestamp="1576219523435">

@@ -94,6 +94,7 @@ class Adjust:
             raise Exception
 
     def commit(self):
+        logger.info("User phone:%s" % self.user_phone)
         self.login()
         self.get_orders()
         logger.info("The numbers of orders:%s" % len(self.orders))
@@ -111,6 +112,9 @@ class Adjust:
 
 if __name__ == "__main__":
     for phone in USER_PHONE:
-        AJ = Adjust(phone)
-        AJ.commit()
+        try:
+            AJ = Adjust(phone)
+            AJ.commit()
+        except:
+            logger.error("Fail!!!")
     time.sleep(5)

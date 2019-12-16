@@ -12,7 +12,7 @@ import logging
 if 'linux' in sys.platform:
     reload(sys)
     sys.setdefaultencoding('utf8')
-USER_PHONE = ['13250790292', '15989104405']
+USER_PHONE = ['13250790293', '15989104405']
 envs = {'0': 'https://managetest.ruqimobility.com', '1': 'http://111.230.118.77'}
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -125,7 +125,7 @@ class Refund:
                    "oid": 'null'
                    }
         url = '%s/management/v1/orderinfo/refund' % self.url_top
-        logger.info(url)
+        logger.debug(url)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -189,6 +189,7 @@ class Refund:
 
 if __name__ == "__main__":
     for phone in USER_PHONE:
+        logger.info("user phone:%s" % phone)
         try:
             RF = Refund(user_phone=phone)
             RF.commit()
