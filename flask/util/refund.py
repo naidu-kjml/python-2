@@ -136,7 +136,7 @@ class Refund:
         elif response.json()['code'] == 110019 and response.json()['message'] != '退款失败：订单号不存在':  # 兼容预付费情况
             try:
                 res = re.match('.*?支付记录1:(.*?):支付记录2:(.*?)元', response.json()['message'])
-                logger.debug(res.group(1), res.group(2))
+                logger.debug('%s,%s' % (res.group(1), res.group(2)))
                 if int(refundBaseAmount) == 0:
                     self.refund(orderId, payDoneAmount, '0', res.group(1))
                     self.refund(orderId, payDoneAmount, '0', res.group(2))
@@ -151,12 +151,9 @@ class Refund:
                 self.logger.error('%s Refund fail!!!' % orderId)
         else:
             logger.error(response.json()['message'])
-            raise Exception
 
     def commit(self):
         self.login()
-        if self.user_phone:
-            logger.info("Refund phone:%s" % self.user_phone)
         logger.info('Refund days:%s' % self.refund_days)
         try:
             self.get_orders()
@@ -183,6 +180,8 @@ class Refund:
                 logger.debug("Order has been refunded or adjusted to 0")  # 完全退款订单
         if self.refund_success_times == 0:
             self.message = "暂无订单需退款"
+        else:
+            self.message += "\n\n退款完成"
         logger.info("Refund %d orders" % self.refund_success_times)
         logger.info("Done!!!\n")
 

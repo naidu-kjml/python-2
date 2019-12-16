@@ -467,3 +467,254 @@
 2019-12-16 15:16:55,698 - refund.py[line:186] - INFO: Refund 0 orders
 2019-12-16 15:16:55,699 - refund.py[line:187] - INFO: Done!!!
 
+2019-12-16 16:08:46,185 - refund.py[line:192] - INFO: user phone:13250790293
+2019-12-16 16:08:46,186 - refund.py[line:47] - INFO: Login RUQIMobility
+2019-12-16 16:08:46,186 - refund.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-16 16:08:46,427 - refund.py[line:56] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 16:08:46,427 - refund.py[line:58] - INFO: Login success
+2019-12-16 16:08:46,427 - refund.py[line:159] - INFO: Refund phone:13250790293
+2019-12-16 16:08:46,428 - refund.py[line:160] - INFO: Refund days:1
+2019-12-16 16:08:46,428 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 16:08:46,429 - refund.py[line:66] - DEBUG: Page 1
+2019-12-16 16:08:46,429 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 16:08:46,501 - refund.py[line:86] - INFO: Success
+2019-12-16 16:08:46,504 - refund.py[line:94] - DEBUG: 1576234314
+2019-12-16 16:08:46,504 - refund.py[line:99] - DEBUG: Finish
+2019-12-16 16:08:46,504 - refund.py[line:168] - INFO: Order_Numbers:10
+2019-12-16 16:08:46,504 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,504 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,504 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,504 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,504 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,504 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,504 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,504 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,504 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,505 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,505 - refund.py[line:186] - INFO: Refund 0 orders
+2019-12-16 16:08:46,505 - refund.py[line:187] - INFO: Done!!!
+
+2019-12-16 16:08:46,505 - refund.py[line:192] - INFO: user phone:15989104405
+2019-12-16 16:08:46,506 - refund.py[line:47] - INFO: Login RUQIMobility
+2019-12-16 16:08:46,506 - refund.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-16 16:08:46,690 - refund.py[line:56] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 16:08:46,690 - refund.py[line:58] - INFO: Login success
+2019-12-16 16:08:46,690 - refund.py[line:159] - INFO: Refund phone:15989104405
+2019-12-16 16:08:46,691 - refund.py[line:160] - INFO: Refund days:1
+2019-12-16 16:08:46,691 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 16:08:46,691 - refund.py[line:66] - DEBUG: Page 1
+2019-12-16 16:08:46,691 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 16:08:46,761 - refund.py[line:86] - INFO: Success
+2019-12-16 16:08:46,761 - refund.py[line:94] - DEBUG: 1575513928
+2019-12-16 16:08:46,761 - refund.py[line:99] - DEBUG: Finish
+2019-12-16 16:08:46,761 - refund.py[line:168] - INFO: Order_Numbers:10
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 16:08:46,762 - refund.py[line:186] - INFO: Refund 0 orders
+2019-12-16 16:08:46,762 - refund.py[line:187] - INFO: Done!!!
+
+2019-12-16 18:42:13,811 - refund.py[line:192] - INFO: user phone:13250790293
+2019-12-16 18:42:13,812 - refund.py[line:47] - INFO: Login RUQIMobility
+2019-12-16 18:42:13,813 - refund.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-16 18:42:14,193 - refund.py[line:56] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 18:42:14,193 - refund.py[line:58] - INFO: Login success
+2019-12-16 18:42:14,193 - refund.py[line:159] - INFO: Refund phone:13250790293
+2019-12-16 18:42:14,193 - refund.py[line:160] - INFO: Refund days:1
+2019-12-16 18:42:14,194 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 18:42:14,194 - refund.py[line:66] - DEBUG: Page 1
+2019-12-16 18:42:14,194 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 18:42:14,253 - refund.py[line:86] - INFO: Success
+2019-12-16 18:42:14,256 - refund.py[line:94] - DEBUG: 1576481601
+2019-12-16 18:42:14,256 - refund.py[line:96] - DEBUG: Get next page
+2019-12-16 18:42:14,256 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 18:42:14,256 - refund.py[line:66] - DEBUG: Page 2
+2019-12-16 18:42:14,256 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 18:42:14,321 - refund.py[line:86] - INFO: Success
+2019-12-16 18:42:14,321 - refund.py[line:94] - DEBUG: 1575858587
+2019-12-16 18:42:14,322 - refund.py[line:99] - DEBUG: Finish
+2019-12-16 18:42:14,322 - refund.py[line:168] - INFO: Order_Numbers:20
+2019-12-16 18:42:14,322 - refund.py[line:102] - DEBUG: Get order info
+2019-12-16 18:42:14,322 - refund.py[line:104] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/query/6770985156623728678?_=1576492933
+2019-12-16 18:42:14,546 - refund.py[line:106] - DEBUG: {"code":0,"message":"成功","content":{"orderInfo":{"orderId":"6770985156623728678","productTypeId":"2","businessType":0,"carTypeId":"1","carTypeIds":"1","carTypeName":"经济型","source":0,"platform":4,"status":9,"statusRc":0,"statusMapSync":6,"statusForceEnd":0,"statusAbnormal":0,"statusDispatch":0,"flag":"0","userAccountId":"0","userId":"1682389166","userPhone":"13250790293","userName":"ASDm","userCompanyId":"0","userCompanyDeptId":"0","userFlightNumber":"","carId":"80801661","rentCompanyId":608,"carModel":"甲壳虫","carModelId":"0","carBrand":"广汽传褀2","carNumber":"粤AB43021","carColor":1,"driverId":"6834326","driverPhone":"15989104405","driverName":"小师傅","dispatchTimeLength":0,"timeInit":"1576492832","timeDispatchStart":"0","timeDispatchDone":"1576492846","timeArrival":"1576492853","timeStart":"1576492855","timeEnd":"1576492858","timeConfirm":"1576492863","timeCancel":"0","timeRefund":"0","timeRefundCoupon":"0","couponId":"0","refundCouponId":"0","refundAmount":0.00,"timeAccept":"1576492843","expectStartTime":"1576497000","expectEndTime":"1576498740","startLatitude":23.106943,"startLongitude":113.336467,"startCity":"440100","startCityName":"广州市","startPosition":"广州报业文化中心","startAddress":"广东省广州市海珠区阅江西路","startPoiid":"11551261150005944509","endLatitude":23.150586915,"endLongitude":113.324587196,"endCity":"440100","endCityName":"广州市","endPosition":"广州东站","endAddress":"广东省广州市天河区东站路1号","endPoiid":"12788636810215378369","cancelSource":0,"cancelReasonId":"0","cancelAmount":0.00,"otherCancelReason":"","cancelBeforeStatus":0,"realStartLatitude":23.106666,"realStartLongitude":113.336791,"realEndLatitude":23.106666,"realEndLongitude":113.336791,"discount":10.00,"driverHighwayAmount":0.00,"driverParkingAmount":5.00,"driverBridgeAmount":0.00,"driverTipAmount":0.00,"driverOtherAmount":0.00,"driverOtherAmountReason":"","driverInputDistance":0.00,"driverInputRuntime":"0","clientSystemDistance":0.00,"chargeTimeLength":0,"chargeDistance":0.07,"chargeLongDistance":0.00,"chargeTimeAmount":0.00,"chargeDistanceAmount":0.00,"chargeLongDistanceAmount":0.00,"chargeTotalAmount":5.05,"chargeOriginTotalAmount":5.05,"chargeDriverAmount":0.00,"chargeOriginDriverAmount":0.00,"payChannel":1,"payDoneAmount":5.05,"payLeftAmount":0.00,"invoiceAmount":0.05,"payMinAmount":0.00,"payPreMethod":1,"payPreChannel":1,"payPreAuthStatus":2,"payPreCredit":1.12,"payFirstTransactionId":"0","payFirstAmount":0.00,"payAllow":1,"statusPay":3,"statusRefund":0,"statusSettlement":0,"statusInvoice":0,"statusComment":0,"operator":"","createTime":"2019-12-16 18:40:39","updateTime":"2019-12-16 18:41:26","timePay":"1576492885","startAdCode":"440105","endAdCode":"440106","couponAmount":0.00,"discountAmount":0.00,"pointEndLatitude":0.0,"pointEndLongitude":0.0},"orderRefundRecords":[],"chargeSnapshot":{"orderId":"6770985156623728678","userType":1,"formula":null,"chargeData":{"bridgeAmount":"0","highwayAmount":"0","orderId":"6770985156623728678","city":"440100","cancelAmount":"0","fromLat":23.106943,"discount":"0","fromLng":113.336467,"createOrderTime":1576492832,"carTypeIds":[],"chargeDriverActionType":2,"startTime":1576492855,"productType":2,"orderSource":0,"tipAmount":"0","carTypeId":1,"addPrice":"0","payPreCreditAmount":"0","userId":"1682389166","carId":80801661,"parkingAmount":"5.00","otherAmount":"0","toLat":23.150586915,"estimateType":0,"limitAmount":"0","_class":"com.tencent.travel.charge.model.ChargeData","userType":1,"endTime":1576492858,"toLng":113.324587196},"couponData":null,"chargePrice":null,"chargeResult":{"startAmount":0.05,"feeMin":0.02,"feeMinFlag":2,"startDistance":5.0,"startTimeLength":10,"timeLength":0,"distance":0.07,"chargeTimeLength":0,"chargeDistance":0.00,"longDistance":0,"timeAmount":0.00,"distanceAmount":0.00,"longDistanceAmount":0,"highwayAmount":0.00,"parkingAmount":5.00,"bridgeAmount":0.00,"tipAmount":0.00,"otherAmount":0.00,"addPrice":0,"discount":10.00,"discountMaxFee":20.00,"basicAmount":0.05,"originTotalAmount":5.05,"couponAmount":0,"discountAmount":0.00,"totalAmount":5.05,"userTotalAmount":5.05,"beforeAdjustmentUserAmount":0,"payPreCreditAmount":0,"cancelAmount":0,"segPriceInfoMap":{"0-0":{"isSegment":true,"startTime":"0","endTime":"0","actualStartTime":"","actualEndTime":"","feePerMinute":0.05,"feePerKilometer":0.05,"timeLength":0,"distance":0,"timeAmount":0.00,"distanceAmount":0.00,"feeStart":0,"commonSegmentKey":"0-0","segmentName":"平峰"}},"longDistanceList":[],"addFeeStart":0,"distanceBeforeMakeUp":-3},"createTime":"576492858","updateTime":null,"chargePriceInfo":{"chargePkgId":"199","chargePriceId":"199","title":"模拟正式预约单-2","status":1,"city":"440100","userType":1,"productTypeId":2,"carTypeId":1,"feeStart":0.05,"feePerMinute":0.05,"feePerKilometer":0.05,"freeDistance":5.0,"freeTime":10,"orderId":"6770985156623728678","segPriceInfoMap":{"23:00-00:00":{"chargePriceId":199,"title":"夜间","isSegment":1,"segmentTimeStart":"23:00","segmentTimeEnd":"00:00","feePerMinute":0.05,"feePerKilometer":0.05,"discount":10.0,"discountMaxFee":40.0},"00:00-05:00":{"chargePriceId":199,"title":"夜间","isSegment":1,"segmentTimeStart":"00:00","segmentTimeEnd":"05:00","feePerMinute":0.05,"feePerKilometer":0.05,"discount":10.0,"discountMaxFee":40.0},"0-0":{"chargePriceId":199,"title":"平峰","isSegment":1,"feePerMinute":0.05,"feePerKilometer":0.05,"discount":10.0,"discountMaxFee":100.0}},"longDistanceList":[{"longDistancePriceId":"520","chargePkgId":"199","feeLongPerKilometer":0.05,"freeLongDistance":15.0,"status":1,"founder":"gactravel","modifier":"gactravel","createTime":"2019-12-16 15:35:13","updateTime":"2019-12-16 15:35:13"}],"discountInfoVoMap":{"23:00-00:00":{"discountId":"80","segmentId":"4","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"夜间","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"23:00","endTime":"00:00"},"00:00-05:00":{"discountId":"80","segmentId":"4","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"夜间","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"00:00","endTime":"05:00"},"07:00-10:00":{"discountId":"77","segmentId":"1","discountBasicId":"29","discount":10.0,"discountMaxFee":99.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"早高峰7-10","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"07:00","endTime":"10:00"},"16:41-17:35":{"discountId":"82","segmentId":"3","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"16-19（暂不使用）","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"16:41","endTime":"17:35"},"0-0":{"discountId":"76","segmentId":"5","discountBasicId":"29","discount":10.0,"discountMaxFee":100.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"平峰","segmentType":0,"cityName":"广州","cityCode":"440100"},"11:25-14:00":{"discountId":"138","segmentId":"22","discountBasicId":"29","discount":10.0,"discountMaxFee":22.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-11-13 10:04:25","updateTime":"2019-11-27 12:51:17","segmentName":"恒大","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"11:25","endTime":"14:00"},"17:50-19:00":{"discountId":"78","segmentId":"16","discountBasicId":"29","discount":10.0,"discountMaxFee":20.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"晚高峰16-19","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"17:50","endTime":"19:00"},"11:00-16:00":{"discountId":"139","segmentId":"32","discountBasicId":"29","discount":10.0,"discountMaxFee":22.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-11-13 10:04:25","updateTime":"2019-11-27 12:51:17","segmentName":"中午高峰期","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"11:00","endTime":"16:00"},"20:22-23:00":{"discountId":"79","segmentId":"2","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"晚上","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"20:22","endTime":"23:00"},"05:00-06:00":{"discountId":"81","segmentId":"17","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"5-6","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"05:00","endTime":"06:00"}}},"estimateSnapData":{"estimateId":"6770985185884176616","orderId":"6770985156623728678","createTime":"1576492839","estimateInfo":{"1":{"startAmount":0.05,"feeMin":0.02,"feeMinFlag":2,"startDistance":5.0,"startTimeLength":10,"timeLength":29,"distance":7.46,"chargeTimeLength":19,"chargeDistance":2.47,"longDistance":0,"timeAmount":0.95,"distanceAmount":0.12,"longDistanceAmount":0,"highwayAmount":0.0,"parkingAmount":0.0,"bridgeAmount":0.0,"tipAmount":0.0,"otherAmount":0.0,"addPrice":0,"discount":10.0,"discountMaxFee":20.0,"basicAmount":1.12,"originTotalAmount":1.12,"couponAmount":0,"discountAmount":0.0,"totalAmount":1.12,"userTotalAmount":1.12,"beforeAdjustmentUserAmount":0,"payPreCreditAmount":0,"cancelAmount":0,"segPriceInfoMap":{"0-0":{"isSegment":true,"startTime":"0","endTime":"0","actualStartTime":"","actualEndTime":"","feePerMinute":0.05,"feePerKilometer":0.05,"timeLength":19,"distance":2.47,"timeAmount":0.95,"distanceAmount":0.12,"feeStart":0.05,"commonSegmentKey":"0-0","segmentName":"平峰"}},"longDistanceList":[],"addFeeStart":0.05}}},"adjustmentTimes":0,"adjustmentLimitTimes":-1,"payPreCreditAmount":1.12},"orderInfoExt":{"createOrderPosition":"海珠区琶洲广州报业文化中心(阅江西路南)","createOrderAddress":"广东省广州市海珠区阅江西路","createOrderLongitude":113.336678,"createOrderLatitude":23.106767,"confirmLatitude":23.106734,"confirmLongitude":113.336714,"arriveLatitude":23.106666,"arriveLongitude":113.336791,"dispatchDriverIds":"","changeDriverReasonId":"0","adjustPassengerAmount":0.00,"adjustDriverAmount":0.00,"adjustPassengerReason":"","adjustDriverReason":"","adjustAmount":0.00,"estimateSnap":"{\"carModelId\":\"1\",\"custName\":\"ASDm\",\"deviceId\":\"357594090368649\",\"deviceType\":\"samsung-SM-N9600\",\"dispatchDuration\":false,\"estimatedKm\":\"0\",\"estimatedTime\":\"0\",\"expectStartTime\":1576497000,\"fromAdCode\":\"440105\",\"fromAddDtl\":\"广东省广州市海珠区阅江西路\",\"fromAddress\":\"广州报业文化中心\",\"fromCityCode\":\"440100\",\"fromCityName\":\"广州市\",\"fromLat\":23.106943,\"fromLng\":113.336467,\"fromPoiId\":\"11551261150005944509\",\"imei\":\"357594090368649\",\"imsi\":\"460029020750751\",\"mac\":\"44:91:60:9B:31:2E\",\"mobile\":\"13250790293\",\"orderSource\":0,\"platform\":\"Android\",\"pointEndLatitude\":0.0,\"pointEndLongitude\":0.0,\"priorityContact\":1,\"prodType\":\"2\",\"submitAddDtl\":\"广东省广州市海珠区阅江西路\",\"submitAddress\":\"海珠区琶洲广州报业文化中心(阅江西路南)\",\"submitLat\":23.106767,\"submitLng\":113.336678,\"timestamp\":1576492831910,\"toAdCode\":\"440106\",\"toAddDtl\":\"广东省广州市天河区东站路1号\",\"toAddress\":\"广州东站\",\"toCityCode\":\"440100\",\"toCityName\":\"广州市\",\"toLat\":23.150586915,\"toLng\":113.324587196,\"toPoiId\":\"12788636810215378369\",\"token\":\"AAAAENra7csNIgCMmJlL7nFYWQwR_JDVwj3Bu-NNkHq9UuAoLv7L-bKm-805ayEDbn1rkuzhSr57oixZxQBMs7QJtt8udfcaEraW5IKq6COA8dQNlae4H4TVyyIaZfgdx1WapqpfiaEqoKMy9__lWvf6phYWSudKzJ9Q8a5K0mswOlUsmmnlb1F6YiJTT9kQD7fIILAzmeUOKh6vdcTucUnKV5QFS3X67NLmtJmeFD52Es1BCZtQOKcBytQhKy_bQFxdmEC4M6KxBj55LuNS6CG5HuX0LxdXkjuCW7qO8YaOzPeMIYmUNAWKyRRUAjVKkw==\",\"type\":\"0\",\"userDev\":\"357594090368649\",\"version\":\"100000180\"}","estimateBasicAmount":1.12,"estimateOriginTotalAmount":1.12,"estimateTotalAmount":1.12,"estimateDistance":7.46,"estimateCostTime":29,"estimateDriverAmount":0.00,"pickEstimateDistance":699.00,"pickEstimateCostTime":120},"showBalanceAmount":5.05,"showBaseAmount":0.05,"showExtraAmount":5.00,"payRecords":[{"payAmount":1.12,"payStatus":2,"channel":1,"recordTime":"1576492838"},{"payAmount":3.93,"payStatus":2,"channel":1,"recordTime":"1576492885"}]}}
+2019-12-16 18:42:14,547 - refund.py[line:175] - DEBUG: OrderID：6770985156623728678
+ payDoneAmount:5.05 refundBaseAmount:0.05 refundExtraAmount:5.0
+2019-12-16 18:42:14,547 - refund.py[line:178] - INFO: OrderID：6770985156623728678
+ payDoneAmount:5.05 refundBaseAmount:0.05 refundExtraAmount:5.0
+2019-12-16 18:42:14,549 - refund.py[line:116] - INFO: Commit refund
+2019-12-16 18:42:14,549 - refund.py[line:128] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2019-12-16 18:42:14,735 - refund.py[line:130] - DEBUG: {"code":110019,"message":"退款失败：退款金额有误，当前可退金额为:支付记录1:3.93:支付记录2:1.12元"}
+2019-12-16 18:42:14,739 - refund.py[line:116] - INFO: Commit refund
+2019-12-16 18:42:14,739 - refund.py[line:128] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2019-12-16 18:42:16,431 - refund.py[line:130] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 18:42:16,431 - refund.py[line:135] - INFO: Refund Success!!!
+2019-12-16 18:42:16,431 - refund.py[line:116] - INFO: Commit refund
+2019-12-16 18:42:16,433 - refund.py[line:128] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2019-12-16 18:42:16,558 - refund.py[line:130] - DEBUG: {"code":180033,"message":"附加费退款金额不能大于现有的附加费金额"}
+2019-12-16 18:42:16,558 - refund.py[line:153] - ERROR: 附加费退款金额不能大于现有的附加费金额
+2019-12-16 18:42:16,562 - refund.py[line:192] - INFO: user phone:15989104405
+2019-12-16 18:42:16,568 - refund.py[line:47] - INFO: Login RUQIMobility
+2019-12-16 18:42:16,568 - refund.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-16 18:42:16,718 - refund.py[line:56] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 18:42:16,718 - refund.py[line:58] - INFO: Login success
+2019-12-16 18:42:16,718 - refund.py[line:159] - INFO: Refund phone:15989104405
+2019-12-16 18:42:16,720 - refund.py[line:160] - INFO: Refund days:1
+2019-12-16 18:42:16,724 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 18:42:16,725 - refund.py[line:66] - DEBUG: Page 1
+2019-12-16 18:42:16,725 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 18:42:16,852 - refund.py[line:86] - INFO: Success
+2019-12-16 18:42:16,852 - refund.py[line:94] - DEBUG: 1575515152
+2019-12-16 18:42:16,852 - refund.py[line:99] - DEBUG: Finish
+2019-12-16 18:42:16,853 - refund.py[line:168] - INFO: Order_Numbers:10
+2019-12-16 18:42:16,853 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,853 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,853 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,853 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,853 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,853 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,853 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,853 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,853 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,854 - refund.py[line:183] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 18:42:16,854 - refund.py[line:186] - INFO: Refund 0 orders
+2019-12-16 18:42:16,858 - refund.py[line:187] - INFO: Done!!!
+
+2019-12-16 19:02:19,077 - refund.py[line:192] - INFO: user phone:13250790293
+2019-12-16 19:02:19,077 - refund.py[line:47] - INFO: Login RUQIMobility
+2019-12-16 19:02:19,077 - refund.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-16 19:02:19,197 - refund.py[line:56] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 19:02:19,197 - refund.py[line:58] - INFO: Login success
+2019-12-16 19:02:19,198 - refund.py[line:158] - INFO: Refund days:1
+2019-12-16 19:02:19,198 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 19:02:19,198 - refund.py[line:66] - DEBUG: Page 1
+2019-12-16 19:02:19,198 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 19:02:19,262 - refund.py[line:86] - INFO: Success
+2019-12-16 19:02:19,265 - refund.py[line:94] - DEBUG: 1576481782
+2019-12-16 19:02:19,265 - refund.py[line:96] - DEBUG: Get next page
+2019-12-16 19:02:19,265 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 19:02:19,265 - refund.py[line:66] - DEBUG: Page 2
+2019-12-16 19:02:19,265 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 19:02:19,324 - refund.py[line:86] - INFO: Success
+2019-12-16 19:02:19,325 - refund.py[line:94] - DEBUG: 1576225518
+2019-12-16 19:02:19,325 - refund.py[line:99] - DEBUG: Finish
+2019-12-16 19:02:19,325 - refund.py[line:166] - INFO: Order_Numbers:20
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,325 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,326 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,326 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,326 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,326 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,326 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,326 - refund.py[line:186] - INFO: Refund 0 orders
+2019-12-16 19:02:19,326 - refund.py[line:187] - INFO: Done!!!
+
+2019-12-16 19:02:19,326 - refund.py[line:192] - INFO: user phone:15989104405
+2019-12-16 19:02:19,327 - refund.py[line:47] - INFO: Login RUQIMobility
+2019-12-16 19:02:19,327 - refund.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-16 19:02:19,462 - refund.py[line:56] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 19:02:19,462 - refund.py[line:58] - INFO: Login success
+2019-12-16 19:02:19,462 - refund.py[line:158] - INFO: Refund days:1
+2019-12-16 19:02:19,462 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 19:02:19,462 - refund.py[line:66] - DEBUG: Page 1
+2019-12-16 19:02:19,462 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 19:02:19,779 - refund.py[line:86] - INFO: Success
+2019-12-16 19:02:19,780 - refund.py[line:94] - DEBUG: 1575515152
+2019-12-16 19:02:19,780 - refund.py[line:99] - DEBUG: Finish
+2019-12-16 19:02:19,780 - refund.py[line:166] - INFO: Order_Numbers:10
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:02:19,780 - refund.py[line:186] - INFO: Refund 0 orders
+2019-12-16 19:02:19,780 - refund.py[line:187] - INFO: Done!!!
+
+2019-12-16 19:04:01,940 - refund.py[line:192] - INFO: user phone:13250790293
+2019-12-16 19:04:01,940 - refund.py[line:47] - INFO: Login RUQIMobility
+2019-12-16 19:04:01,940 - refund.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-16 19:04:02,134 - refund.py[line:56] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 19:04:02,134 - refund.py[line:58] - INFO: Login success
+2019-12-16 19:04:02,134 - refund.py[line:158] - INFO: Refund days:1
+2019-12-16 19:04:02,134 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 19:04:02,134 - refund.py[line:66] - DEBUG: Page 1
+2019-12-16 19:04:02,134 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 19:04:02,198 - refund.py[line:86] - INFO: Success
+2019-12-16 19:04:02,201 - refund.py[line:94] - DEBUG: 1576483573
+2019-12-16 19:04:02,201 - refund.py[line:96] - DEBUG: Get next page
+2019-12-16 19:04:02,201 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 19:04:02,201 - refund.py[line:66] - DEBUG: Page 2
+2019-12-16 19:04:02,201 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 19:04:02,282 - refund.py[line:86] - INFO: Success
+2019-12-16 19:04:02,283 - refund.py[line:94] - DEBUG: 1576234124
+2019-12-16 19:04:02,283 - refund.py[line:99] - DEBUG: Finish
+2019-12-16 19:04:02,283 - refund.py[line:166] - INFO: Order_Numbers:20
+2019-12-16 19:04:02,283 - refund.py[line:102] - DEBUG: Get order info
+2019-12-16 19:04:02,283 - refund.py[line:104] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/query/6770990847455395899?_=1576494241
+2019-12-16 19:04:03,221 - refund.py[line:106] - DEBUG: {"code":0,"message":"成功","content":{"orderInfo":{"orderId":"6770990847455395899","productTypeId":"2","businessType":0,"carTypeId":"1","carTypeIds":"1","carTypeName":"经济型","source":0,"platform":4,"status":9,"statusRc":0,"statusMapSync":6,"statusForceEnd":0,"statusAbnormal":0,"statusDispatch":0,"flag":"0","userAccountId":"0","userId":"1682389166","userPhone":"13250790293","userName":"ASDm","userCompanyId":"0","userCompanyDeptId":"0","userFlightNumber":"","carId":"80801661","rentCompanyId":608,"carModel":"甲壳虫","carModelId":"0","carBrand":"广汽传褀2","carNumber":"粤AB43021","carColor":1,"driverId":"6834326","driverPhone":"15989104405","driverName":"小师傅","dispatchTimeLength":0,"timeInit":"1576494157","timeDispatchStart":"0","timeDispatchDone":"1576494178","timeArrival":"1576494186","timeStart":"1576494188","timeEnd":"1576494192","timeConfirm":"1576494215","timeCancel":"0","timeRefund":"0","timeRefundCoupon":"0","couponId":"0","refundCouponId":"0","refundAmount":0.00,"timeAccept":"1576494176","expectStartTime":"1576500000","expectEndTime":"1576502460","startLatitude":23.106697,"startLongitude":113.336756,"startCity":"440100","startCityName":"广州市","startPosition":"广州报业文化中心","startAddress":"广东省广州市海珠区阅江西路","startPoiid":"11551261150005944509","endLatitude":22.988558425,"endLongitude":113.269322777,"endCity":"440100","endCityName":"广州市","endPosition":"广州南站","endAddress":"广东省广州市番禺区石壁街","endPoiid":"5590598431056816962","cancelSource":0,"cancelReasonId":"0","cancelAmount":0.00,"otherCancelReason":"","cancelBeforeStatus":0,"realStartLatitude":23.106769,"realStartLongitude":113.336608,"realEndLatitude":23.106769,"realEndLongitude":113.336608,"discount":10.00,"driverHighwayAmount":0.00,"driverParkingAmount":0.00,"driverBridgeAmount":10.00,"driverTipAmount":0.00,"driverOtherAmount":0.00,"driverOtherAmountReason":"","driverInputDistance":0.00,"driverInputRuntime":"0","clientSystemDistance":0.00,"chargeTimeLength":0,"chargeDistance":0.05,"chargeLongDistance":0.00,"chargeTimeAmount":0.00,"chargeDistanceAmount":0.00,"chargeLongDistanceAmount":0.00,"chargeTotalAmount":10.05,"chargeOriginTotalAmount":10.05,"chargeDriverAmount":0.00,"chargeOriginDriverAmount":0.00,"payChannel":1,"payDoneAmount":10.05,"payLeftAmount":0.00,"invoiceAmount":0.05,"payMinAmount":0.00,"payPreMethod":1,"payPreChannel":1,"payPreAuthStatus":2,"payPreCredit":2.64,"payFirstTransactionId":"0","payFirstAmount":0.00,"payAllow":1,"statusPay":3,"statusRefund":0,"statusSettlement":0,"statusInvoice":0,"statusComment":0,"operator":"","createTime":"2019-12-16 19:02:51","updateTime":"2019-12-16 19:03:59","timePay":"1576494238","startAdCode":"440105","endAdCode":"440113","couponAmount":0.00,"discountAmount":0.00,"pointEndLatitude":0.0,"pointEndLongitude":0.0},"orderRefundRecords":[],"chargeSnapshot":{"orderId":"6770990847455395899","userType":1,"formula":null,"chargeData":{"bridgeAmount":"10.00","highwayAmount":"0","orderId":"6770990847455395899","city":"440100","cancelAmount":"0","fromLat":23.106697,"discount":"0","fromLng":113.336756,"createOrderTime":1576494157,"carTypeIds":[],"chargeDriverActionType":2,"startTime":1576494188,"productType":2,"orderSource":0,"tipAmount":"0","carTypeId":1,"addPrice":"0","payPreCreditAmount":"0","userId":"1682389166","carId":80801661,"parkingAmount":"0","otherAmount":"0","toLat":22.988558425,"estimateType":0,"limitAmount":"0","_class":"com.tencent.travel.charge.model.ChargeData","userType":1,"endTime":1576494192,"toLng":113.269322777},"couponData":null,"chargePrice":null,"chargeResult":{"startAmount":0.05,"feeMin":0.02,"feeMinFlag":2,"startDistance":5.0,"startTimeLength":10,"timeLength":0,"distance":0.05,"chargeTimeLength":0,"chargeDistance":0.00,"longDistance":0,"timeAmount":0.00,"distanceAmount":0.00,"longDistanceAmount":0,"highwayAmount":0.00,"parkingAmount":0.00,"bridgeAmount":10.00,"tipAmount":0.00,"otherAmount":0.00,"addPrice":0,"discount":10.00,"discountMaxFee":100.00,"basicAmount":0.05,"originTotalAmount":10.05,"couponAmount":0,"discountAmount":0.00,"totalAmount":10.05,"userTotalAmount":10.05,"beforeAdjustmentUserAmount":0,"payPreCreditAmount":0,"cancelAmount":0,"segPriceInfoMap":{"0-0":{"isSegment":true,"startTime":"0","endTime":"0","actualStartTime":"","actualEndTime":"","feePerMinute":0.05,"feePerKilometer":0.05,"timeLength":0,"distance":0,"timeAmount":0.00,"distanceAmount":0.00,"feeStart":0,"commonSegmentKey":"0-0","segmentName":"平峰"}},"longDistanceList":[],"addFeeStart":0,"distanceBeforeMakeUp":-3},"createTime":"576494192","updateTime":null,"chargePriceInfo":{"chargePkgId":"199","chargePriceId":"199","title":"模拟正式预约单-2","status":1,"city":"440100","userType":1,"productTypeId":2,"carTypeId":1,"feeStart":0.05,"feePerMinute":0.05,"feePerKilometer":0.05,"freeDistance":5.0,"freeTime":10,"orderId":"6770990847455395899","segPriceInfoMap":{"23:00-00:00":{"chargePriceId":199,"title":"夜间","isSegment":1,"segmentTimeStart":"23:00","segmentTimeEnd":"00:00","feePerMinute":0.05,"feePerKilometer":0.05,"discount":10.0,"discountMaxFee":40.0},"00:00-05:00":{"chargePriceId":199,"title":"夜间","isSegment":1,"segmentTimeStart":"00:00","segmentTimeEnd":"05:00","feePerMinute":0.05,"feePerKilometer":0.05,"discount":10.0,"discountMaxFee":40.0},"0-0":{"chargePriceId":199,"title":"平峰","isSegment":1,"feePerMinute":0.05,"feePerKilometer":0.05,"discount":10.0,"discountMaxFee":100.0}},"longDistanceList":[{"longDistancePriceId":"520","chargePkgId":"199","feeLongPerKilometer":0.05,"freeLongDistance":15.0,"status":1,"founder":"gactravel","modifier":"gactravel","createTime":"2019-12-16 15:35:13","updateTime":"2019-12-16 15:35:13"}],"discountInfoVoMap":{"23:00-00:00":{"discountId":"80","segmentId":"4","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"夜间","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"23:00","endTime":"00:00"},"00:00-05:00":{"discountId":"80","segmentId":"4","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"夜间","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"00:00","endTime":"05:00"},"07:00-10:00":{"discountId":"77","segmentId":"1","discountBasicId":"29","discount":10.0,"discountMaxFee":99.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"早高峰7-10","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"07:00","endTime":"10:00"},"16:41-17:35":{"discountId":"82","segmentId":"3","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"16-19（暂不使用）","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"16:41","endTime":"17:35"},"0-0":{"discountId":"76","segmentId":"5","discountBasicId":"29","discount":10.0,"discountMaxFee":100.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"平峰","segmentType":0,"cityName":"广州","cityCode":"440100"},"11:25-14:00":{"discountId":"138","segmentId":"22","discountBasicId":"29","discount":10.0,"discountMaxFee":22.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-11-13 10:04:25","updateTime":"2019-11-27 12:51:17","segmentName":"恒大","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"11:25","endTime":"14:00"},"17:50-19:00":{"discountId":"78","segmentId":"16","discountBasicId":"29","discount":10.0,"discountMaxFee":20.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"晚高峰16-19","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"17:50","endTime":"19:00"},"11:00-16:00":{"discountId":"139","segmentId":"32","discountBasicId":"29","discount":10.0,"discountMaxFee":22.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-11-13 10:04:25","updateTime":"2019-11-27 12:51:17","segmentName":"中午高峰期","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"11:00","endTime":"16:00"},"20:22-23:00":{"discountId":"79","segmentId":"2","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"晚上","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"20:22","endTime":"23:00"},"05:00-06:00":{"discountId":"81","segmentId":"17","discountBasicId":"29","discount":10.0,"discountMaxFee":40.0,"founder":"gactravel","modifier":"gactravel","createTime":"2019-08-29 11:08:15","updateTime":"2019-11-27 12:51:17","segmentName":"5-6","segmentType":0,"cityName":"广州","cityCode":"440100","startTime":"05:00","endTime":"06:00"}}},"estimateSnapData":{"estimateId":"6770990902485647595","orderId":"6770990847455395899","createTime":"1576494171","estimateInfo":{"1":{"startAmount":0.05,"feeMin":0.02,"feeMinFlag":2,"startDistance":5.0,"startTimeLength":10,"timeLength":41,"distance":20.34,"chargeTimeLength":31,"chargeDistance":15.34,"longDistance":5.34,"timeAmount":1.55,"distanceAmount":0.77,"longDistanceAmount":0.27,"highwayAmount":0.0,"parkingAmount":0.0,"bridgeAmount":0.0,"tipAmount":0.0,"otherAmount":0.0,"addPrice":0,"discount":10.0,"discountMaxFee":100.0,"basicAmount":2.64,"originTotalAmount":2.64,"couponAmount":0,"discountAmount":0.0,"totalAmount":2.64,"userTotalAmount":2.64,"beforeAdjustmentUserAmount":0,"payPreCreditAmount":0,"cancelAmount":0,"segPriceInfoMap":{"0-0":{"isSegment":true,"startTime":"0","endTime":"0","actualStartTime":"","actualEndTime":"","feePerMinute":0.05,"feePerKilometer":0.05,"timeLength":31,"distance":15.34,"timeAmount":1.55,"distanceAmount":0.77,"feeStart":0.05,"commonSegmentKey":"0-0","segmentName":"平峰"}},"longDistanceList":[{"feeLongPerKilometer":0.05,"freeLongDistance":15.0,"actualLongDistance":5.34,"actualAmount":0.27}],"addFeeStart":0.05}}},"adjustmentTimes":0,"adjustmentLimitTimes":-1,"payPreCreditAmount":2.64},"orderInfoExt":{"createOrderPosition":"海珠区琶洲广州报业文化中心(阅江西路南)","createOrderAddress":"广东省广州市海珠区阅江西路","createOrderLongitude":113.336711,"createOrderLatitude":23.106741,"confirmLatitude":23.106769,"confirmLongitude":113.336608,"arriveLatitude":23.106769,"arriveLongitude":113.336608,"dispatchDriverIds":"","changeDriverReasonId":"0","adjustPassengerAmount":0.00,"adjustDriverAmount":0.00,"adjustPassengerReason":"","adjustDriverReason":"","adjustAmount":0.00,"estimateSnap":"{\"carModelId\":\"1\",\"custName\":\"ASDm\",\"deviceId\":\"357594090368649\",\"deviceType\":\"samsung-SM-N9600\",\"dispatchDuration\":false,\"estimatedKm\":\"0\",\"estimatedTime\":\"0\",\"expectStartTime\":1576500000,\"fromAdCode\":\"440105\",\"fromAddDtl\":\"广东省广州市海珠区阅江西路\",\"fromAddress\":\"广州报业文化中心\",\"fromCityCode\":\"440100\",\"fromCityName\":\"广州市\",\"fromLat\":23.106697,\"fromLng\":113.336756,\"fromPoiId\":\"11551261150005944509\",\"imei\":\"357594090368649\",\"imsi\":\"460029020750751\",\"mac\":\"44:91:60:9B:31:2E\",\"mobile\":\"13250790293\",\"orderSource\":0,\"platform\":\"Android\",\"pointEndLatitude\":0.0,\"pointEndLongitude\":0.0,\"priorityContact\":1,\"prodType\":\"2\",\"submitAddDtl\":\"广东省广州市海珠区阅江西路\",\"submitAddress\":\"海珠区琶洲广州报业文化中心(阅江西路南)\",\"submitLat\":23.106741,\"submitLng\":113.336711,\"timestamp\":1576494156772,\"toAdCode\":\"440113\",\"toAddDtl\":\"广东省广州市番禺区石壁街\",\"toAddress\":\"广州南站\",\"toCityCode\":\"440100\",\"toCityName\":\"广州市\",\"toLat\":22.988558425,\"toLng\":113.269322777,\"toPoiId\":\"5590598431056816962\",\"token\":\"AAAAENra7csNIgCMmJlL7nFYWQwR_JDVwj3Bu-NNkHq9UuAoLv7L-bKm-805ayEDbn1rkuzhSr57oixZxQBMs7QJtt8udfcaEraW5IKq6COA8dQNlae4H4TVyyIaZfgdx1WapqpfiaEqoKMy9__lWvf6phYWSudKzJ9Q8a5K0mswOlUsmmnlb1F6YiJTT9kQD7fIILAzmeUOKh6vdcTucUnKV5QFS3X67NLmtJmeFD52Es1BCZtQOKcBytQhKy_bQFxdmEC4M6KxBj55LuNS6CG5HuX0LxdXkjuCW7qO8YaOzPeMIYmUNAWKyRRUAjVKkw==\",\"type\":\"0\",\"userDev\":\"357594090368649\",\"version\":\"100000180\"}","estimateBasicAmount":2.64,"estimateOriginTotalAmount":2.64,"estimateTotalAmount":2.64,"estimateDistance":20.34,"estimateCostTime":41,"estimateDriverAmount":0.00,"pickEstimateDistance":217.00,"pickEstimateCostTime":60},"showBalanceAmount":10.05,"showBaseAmount":0.05,"showExtraAmount":10.00,"payRecords":[{"payAmount":2.64,"payStatus":2,"channel":1,"recordTime":"1576494169"},{"payAmount":7.41,"payStatus":2,"channel":1,"recordTime":"1576494238"}]}}
+2019-12-16 19:04:03,222 - refund.py[line:173] - DEBUG: OrderID：6770990847455395899
+ payDoneAmount:10.05 refundBaseAmount:0.05 refundExtraAmount:10.0
+2019-12-16 19:04:03,222 - refund.py[line:176] - INFO: OrderID：6770990847455395899
+ payDoneAmount:10.05 refundBaseAmount:0.05 refundExtraAmount:10.0
+2019-12-16 19:04:03,222 - refund.py[line:116] - INFO: Commit refund
+2019-12-16 19:04:03,222 - refund.py[line:128] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2019-12-16 19:04:03,402 - refund.py[line:130] - DEBUG: {"code":110019,"message":"退款失败：退款金额有误，当前可退金额为:支付记录1:7.41:支付记录2:2.64元"}
+2019-12-16 19:04:03,403 - refund.py[line:139] - DEBUG: 7.41,2.64
+2019-12-16 19:04:03,403 - refund.py[line:116] - INFO: Commit refund
+2019-12-16 19:04:03,403 - refund.py[line:128] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2019-12-16 19:04:04,561 - refund.py[line:130] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 19:04:04,561 - refund.py[line:135] - INFO: Refund Success!!!
+2019-12-16 19:04:04,561 - refund.py[line:116] - INFO: Commit refund
+2019-12-16 19:04:04,561 - refund.py[line:128] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2019-12-16 19:04:04,663 - refund.py[line:130] - DEBUG: {"code":180033,"message":"附加费退款金额不能大于现有的附加费金额"}
+2019-12-16 19:04:04,663 - refund.py[line:153] - ERROR: 附加费退款金额不能大于现有的附加费金额
+2019-12-16 19:04:04,663 - refund.py[line:192] - INFO: user phone:15989104405
+2019-12-16 19:04:04,666 - refund.py[line:47] - INFO: Login RUQIMobility
+2019-12-16 19:04:04,666 - refund.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-16 19:04:04,793 - refund.py[line:56] - DEBUG: {"code":0,"message":"成功"}
+2019-12-16 19:04:04,794 - refund.py[line:58] - INFO: Login success
+2019-12-16 19:04:04,794 - refund.py[line:158] - INFO: Refund days:1
+2019-12-16 19:04:04,794 - refund.py[line:65] - INFO: Get refund orders
+2019-12-16 19:04:04,794 - refund.py[line:66] - DEBUG: Page 1
+2019-12-16 19:04:04,794 - refund.py[line:83] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-16 19:04:04,858 - refund.py[line:86] - INFO: Success
+2019-12-16 19:04:04,859 - refund.py[line:94] - DEBUG: 1575515152
+2019-12-16 19:04:04,859 - refund.py[line:99] - DEBUG: Finish
+2019-12-16 19:04:04,859 - refund.py[line:166] - INFO: Order_Numbers:10
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:181] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-16 19:04:04,859 - refund.py[line:186] - INFO: Refund 0 orders
+2019-12-16 19:04:04,859 - refund.py[line:187] - INFO: Done!!!
+
