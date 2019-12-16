@@ -56,15 +56,13 @@ def submit():
     try:
         u = UD(name, phone, city, env)
         u.commit()
-        msg = "录入成功\n司机ID:%d" % u.driverId
         e = Email('smtp.qq.com', '981805032@qq.com', 'nmfavcrgtlfsbdeb', '13250790293@163.com', '司机录入')
-        e.send("姓名：%s\n手机号：%s\n环境：%s\nIP：%s" % (name, phone, {'0': '测试环境', "1": "开发环境"}[env], ip))
+        e.send("姓名：%s\n手机号：%s\n环境：%s\nIP：%s\n%s" % (name, phone, {'0': '测试环境', "1": "开发环境"}[env], ip, u.message))
         return {
             "code": "0",
-            "msg": msg
+            "msg": u.message
         }
     except:
-        logger.exception("Failed to open sklearn.txt from logger.exception")
         e = Email('smtp.qq.com', '981805032@qq.com', 'nmfavcrgtlfsbdeb', '13250790293@163.com', '司机录入')
         e.send("录入失败！！！\n姓名：%s\n手机号：%s\n环境：%s\nIP：%s" % (name, phone, {'0': '测试环境', "1": "开发环境"}[env], ip))
         return {

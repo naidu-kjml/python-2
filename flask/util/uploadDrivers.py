@@ -41,6 +41,7 @@ class UD:
         self.city = city
         self.env = envs[env]
         self.driverId = ''
+        self.message = ''
 
     def login(self):
         logger.info('Login RUQIMobility')
@@ -51,6 +52,7 @@ class UD:
         url = '%s/management/v1/login/web' % self.url_top
         logger.debug(url)
         data = {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+        logger.debug(data)
         response = self.session.post(url, data=data, headers=headers1)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -62,6 +64,7 @@ class UD:
 
     def upload(self):
         logger.info('Generate new account')
+        logger.info(self.phone)
         url = self.env + '/management/v1/driver/recruit/create'
         logger.debug(url)
         payload = {
@@ -78,6 +81,7 @@ class UD:
             'recruitComment': '123',
             'recruitmentChannels': '1'
         }
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -146,6 +150,7 @@ class UD:
                    "interviewData": "6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png"}
         url = self.env + '/management/v1/driver/recruit/interview/create'
         logger.debug(url)
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         if response.json()['code'] == 0:
             logger.info("Success")
@@ -170,6 +175,7 @@ class UD:
                    }
         url = self.env + '/management/v1/driver/recruit/roadTest/create'
         logger.debug(url)
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -194,6 +200,7 @@ class UD:
                    }
         url = self.env + '/management/v1/driver/recruit/train/create'
         logger.debug(url)
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -221,6 +228,7 @@ class UD:
                    }
         url = self.env + '/management/v1/driver/recruit/sign/create'
         logger.debug(url)
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -260,6 +268,7 @@ class UD:
                    "signTime": 1569340800, "type": "ZC", "validTime": 1569340800}
         url = self.env + '/management/v1/driver/contract/update'
         logger.debug(url)
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -276,6 +285,7 @@ class UD:
                    "trainerName": "测试"}
         url = self.env + '/management/v1/driver/cource/create'
         logger.debug(url)
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -330,20 +340,7 @@ class UD:
                    "informationArchives": "6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip"}
         url = self.env + '/management/v1/driver/base/info/update'
         logger.debug(url)
-        response = self.session.post(url, data=json.dumps(payload), headers=headers)
-        logger.debug(response.text)
-        if response.json()['code'] == 0:
-            logger.info("Success")
-        else:
-            logger.error('Fail!!!')
-            logger.error(response.json()['message'])
-
-    def setcar(self):
-        # 获取车辆列表
-        logger.info('Set car')
-        url = self.env + '/management/v1/driver/setCar'
-        logger.debug(url)
-        payload = {"driverId": self.driverId, "carId": self.carId, "listenCarTypes": "1", "operator": "gactravel1"}
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -368,13 +365,14 @@ class UD:
         engineNumber = str(random.randint(1111111111, 9999999999))
         carVerifyCode = str(random.randint(11111111111111111, 99999999999999999))
         carCertNo = str(random.randint(1111111111, 9999999999))
-        logger.debug(rentCompanyId, carNumber, engineNumber, carCertNo, carVerifyCode)
+        logger.debug('Car message:%s,%s,%s,%s,%s' % (rentCompanyId, carNumber, engineNumber, carCertNo, carVerifyCode))
         payload = {"carAttributeId": "300027", "carLicenseImg": "", "carImgs": "", "carNumber": carNumber,
                    "carNumberImg": "", "carVerifyCode": carVerifyCode, "city": self.city, "engineNumber": engineNumber,
                    "oilWear": "6", "rentCompanyId": rentCompanyId, "variableBox": "1", "totalMileage": "12121",
                    "plateColor": "3", "carCertNo": carCertNo}
         url = self.env + '/management/v1/vehicle/create'
         logger.debug(url)
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -391,6 +389,7 @@ class UD:
                    "certifyDateA": 1570665600}
         url = self.env + '/management/v1/vehicle/ext/create'
         logger.debug(url)
+        logger.debug(payload)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
@@ -398,6 +397,23 @@ class UD:
         else:
             logger.error('Fail!!!')
             logger.error(response.json()['message'])
+
+    def setcar(self):
+        # 获取车辆列表
+        logger.info('Set car')
+        url = self.env + '/management/v1/driver/setCar'
+        logger.debug(url)
+        payload = {"driverId": self.driverId, "carId": self.carId, "listenCarTypes": "1", "operator": "gactravel1"}
+        logger.debug(payload)
+        response = self.session.post(url, data=json.dumps(payload), headers=headers)
+        logger.debug(response.text)
+        if response.json()['code'] == 0:
+            logger.info("Success")
+            self.message = '录入成功\n司机ID:%s' % self.driverId
+        else:
+            logger.error('Fail!!!')
+            logger.error(response.json()['message'])
+            self.message = "录入失败!!!"
 
     def commit(self):
         self.login()
