@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 __author__ = 'xiaojiaming'
 
+from decimal import Decimal, ROUND_HALF_UP
 import requests
 import json
 import time
@@ -30,6 +31,10 @@ console.setLevel(logging.INFO)
 console.setFormatter(formatter)
 logger.addHandler(handler)
 logger.addHandler(console)
+
+
+def round(x):
+    return Decimal(x).quantize(Decimal('.01'), ROUND_HALF_UP)
 
 
 class Refund:
@@ -107,13 +112,15 @@ class Refund:
         if response.json()['code'] == 0:
             refundBaseAmount = response.json()['content']['showBaseAmount']
             refundExtraAmount = response.json()['content']['showExtraAmount']
-            return refundBaseAmount, refundExtraAmount
+            payRecords = response.json()['content']['payRecords']
+            return refundBaseAmount, refundExtraAmount, payRecords
         else:
             logger.error(response.json()['message'])
             raise Exception
 
     def refund(self, orderId, payDoneAmount, refundBaseAmount, refundExtraAmount):
         logger.info('Commit refund')
+        logger.info('refundBaseAmount:%s,refundExtraAmount:%s' % (refundBaseAmount, refundExtraAmount))
         payload = {"orderId": orderId,
                    "comment": "网页脚本退款",
                    "operator": "gactravel1",
@@ -127,28 +134,29 @@ class Refund:
         url = '%s/management/v1/orderinfo/refund' % self.url_top
         logger.debug(url)
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
-        logger.debug(response.text)
+        logger.info(response.text)
         if response.json()['code'] == 0:
             self.refund_success_times += 1
             self.message = self.message + '订单ID:%s\n 支付金额:%s 非附加费:%s 附加费:%s\n' % (
                 orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
             logger.info("Refund Success!!!")
-        elif response.json()['code'] == 110019 and response.json()['message'] != '退款失败：订单号不存在':  # 兼容预付费情况
-            try:
-                res = re.match('.*?支付记录1:(.*?):支付记录2:(.*?)元', response.json()['message'])
-                logger.debug('%s,%s' % (res.group(1), res.group(2)))
-                if int(refundBaseAmount) == 0:
-                    self.refund(orderId, payDoneAmount, '0', res.group(1))
-                    self.refund(orderId, payDoneAmount, '0', res.group(2))
-                elif int(refundExtraAmount) == 0:
-                    self.refund(orderId, payDoneAmount, res.group(1), '0')
-                    self.refund(orderId, payDoneAmount, res.group(2), '0')
-                else:
-                    self.logger.error('%s Refund fail!!!' % orderId)
-                    self.message += '订单ID:%s\n退款失败\n' % orderId
-            except:
-                self.message += '订单ID:%s\n退款失败\n' % orderId
-                self.logger.error('%s Refund fail!!!' % orderId)
+        # elif response.json()['code'] == 110019 and response.json()['message'] != '退款失败：订单号不存在':  # 兼容预付费情况
+        #     try:
+        #         res = re.match('.*?支付记录1:(.*?):支付记录2:(.*?)元', response.json()['message'])
+        #         logger.debug('%s,%s' % (res.group(1), res.group(2)))
+        #         if float(res.group(1)) < float(refundBaseAmount):
+        #             self.refund(orderId, payDoneAmount, res.group(1), '0')
+        #             self.refund(orderId, payDoneAmount,
+        #                         str(round(float(refundBaseAmount)) - round(float(res.group(1)))), refundExtraAmount)
+        #         else:
+        #             self.refund(orderId, payDoneAmount, refundBaseAmount,
+        #                         str(round(float(res.group(1))) - round(float(refundBaseAmount))))
+        #             self.refund(orderId, payDoneAmount, '0', str(round(float(refundExtraAmount)) - (
+        #                         round(float(res.group(1))) - round(float(refundBaseAmount)))))
+        #     except:
+        #         self.message += '订单ID:%s\n退款失败\n' % orderId
+        #         logger.error('%s Refund fail!!!' % orderId)
+        #         self.refund_success_times += 1
         else:
             logger.error(response.json()['message'])
 
@@ -167,13 +175,46 @@ class Refund:
             orderId = order['orderId']
             payDoneAmount = order['payDoneAmount']  # 总支付
             if order['statusRefund'] != 3 and float(payDoneAmount) != 0:  # 非完全退款
-                refundBaseAmount, refundExtraAmount = self.get_order_info(orderId)
+                refundBaseAmount, refundExtraAmount, payRecords = self.get_order_info(orderId)
                 logger.debug('OrderID：%s\n payDoneAmount:%s refundBaseAmount:%s refundExtraAmount:%s' % (
                     orderId, payDoneAmount, refundBaseAmount, refundExtraAmount))
+                logger.debug(payRecords)
                 if float(refundBaseAmount) != 0 or float(refundExtraAmount) != 0:
-                    logger.info('OrderID：%s\n payDoneAmount:%s refundBaseAmount:%s refundExtraAmount:%s' % (
-                        orderId, payDoneAmount, refundBaseAmount, refundExtraAmount))
-                    self.refund(orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
+                    pay_times = 0
+                    pay_amount = []
+                    refund_sum = 0
+                    for pay_record in payRecords:
+                        logger.debug(pay_record['payStatus'])
+                        logger.debug(pay_record['payAmount'])
+                        if pay_record['payStatus'] == 2:  # 支付记录
+                            pay_times += 1
+                            pay_amount.append(pay_record['payAmount'])
+                        elif pay_record['payStatus'] == 3:  # 退款记录
+                            refund_sum += round(float(pay_record['payAmount']))
+                    logger.debug('pay_times: %s' % pay_times)
+                    logger.debug(str(refund_sum))
+                    if pay_times == 1:  # 普通订单
+                        logger.info('OrderID：%s\n payDoneAmount:%s refundBaseAmount:%s refundExtraAmount:%s' % (
+                            orderId, payDoneAmount, refundBaseAmount, refundExtraAmount))
+                        self.refund(orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
+                    elif pay_times == 0:  # 对公订单
+                        logger.info('订单ID；%s 对公订单无需退款\n')
+                    else:  # 预支付订单
+                        pay1 = pay_amount[1]
+                        if refund_sum < pay1:
+                            pay1 = round(pay1) - refund_sum
+                            if float(refundBaseAmount) >= pay1:
+                                self.refund(orderId, payDoneAmount, str(pay1), '0')
+                                self.refund(orderId, payDoneAmount,
+                                            str(round(float(refundBaseAmount)) - pay1),
+                                            refundExtraAmount)
+                            else:
+                                self.refund(orderId, payDoneAmount, refundBaseAmount,
+                                            str(pay1 - round(float(refundBaseAmount))))
+                                self.refund(orderId, payDoneAmount, '0', str(round(float(refundExtraAmount)) - (
+                                        pay1 - round(float(refundBaseAmount)))))
+                        else:
+                            self.refund(orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
                 else:
                     logger.debug('Order has been adjusted to 0')  # 改价订单，无需退款
             else:
@@ -181,7 +222,7 @@ class Refund:
         if self.refund_success_times == 0:
             self.message = "暂无订单需退款"
         else:
-            self.message += "\n\n退款完成"
+            self.message += "\n退款完成"
         logger.info("Refund %d orders" % self.refund_success_times)
         logger.info("Done!!!\n")
 
