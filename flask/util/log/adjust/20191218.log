@@ -49,3 +49,381 @@
 2019-12-18 10:21:27,867 - adjust.py[line:102] - INFO: No orders to be adjusted
 2019-12-18 10:21:27,867 - adjust.py[line:110] - INFO: Done!!!
 
+2019-12-18 15:07:59,672 - adjust.py[line:97] - INFO: User phone:13250790291
+2019-12-18 15:07:59,673 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:07:59,676 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:07:59,893 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:07:59,893 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:07:59,894 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:07:59,894 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:07:59,938 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:07:59,938 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 15:07:59,938 - adjust.py[line:76] - INFO: Adjust order:6751654307688350027
+2019-12-18 15:07:59,938 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 15:08:00,072 - adjust.py[line:88] - DEBUG: {"code":110000,"message":"失败"}
+2019-12-18 15:08:00,072 - adjust.py[line:93] - ERROR: 失败
+2019-12-18 15:08:00,072 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 15:08:00,074 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 15:08:00,074 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:08:00,074 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:08:00,491 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:08:00,491 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:08:00,491 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:08:00,491 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:08:00,537 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:08:00,538 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 15:08:00,538 - adjust.py[line:76] - INFO: Adjust order:6771671535347302469
+2019-12-18 15:08:00,538 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 15:08:00,762 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:08:00,762 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 15:39:43,507 - adjust.py[line:97] - INFO: User phone:13250790291
+2019-12-18 15:39:43,507 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:39:43,508 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:39:43,707 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:39:43,707 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:39:43,707 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:39:43,707 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:39:43,749 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:39:43,749 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 15:39:43,749 - adjust.py[line:76] - INFO: Adjust order:6751654307688350027
+2019-12-18 15:39:43,749 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 15:39:43,828 - adjust.py[line:88] - DEBUG: {"code":110000,"message":"失败"}
+2019-12-18 15:39:43,828 - adjust.py[line:93] - ERROR: 失败
+2019-12-18 15:39:43,828 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 15:39:43,830 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 15:39:43,830 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:39:43,830 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:39:44,078 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:39:44,078 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:39:44,078 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:39:44,079 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:39:44,132 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:39:44,132 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 15:39:44,132 - adjust.py[line:76] - INFO: Adjust order:6771672871082131529
+2019-12-18 15:39:44,133 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 15:39:44,309 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:39:44,310 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 15:39:53,923 - adjust.py[line:97] - INFO: User phone:13250790291
+2019-12-18 15:39:53,924 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:39:53,924 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:39:54,202 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:39:54,202 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:39:54,203 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:39:54,203 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:39:54,246 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:39:54,246 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 15:39:54,246 - adjust.py[line:76] - INFO: Adjust order:6751654307688350027
+2019-12-18 15:39:54,246 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 15:39:54,316 - adjust.py[line:88] - DEBUG: {"code":110000,"message":"失败"}
+2019-12-18 15:39:54,316 - adjust.py[line:93] - ERROR: 失败
+2019-12-18 15:39:54,316 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 15:39:54,318 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 15:39:54,318 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:39:54,318 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:39:54,470 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:39:54,470 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:39:54,470 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:39:54,471 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:39:54,511 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:39:54,512 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 15:39:54,512 - adjust.py[line:76] - INFO: Adjust order:6771672871082131529
+2019-12-18 15:39:54,512 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 15:39:54,725 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:39:54,725 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 15:40:33,973 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 15:40:33,973 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:40:33,974 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:40:34,203 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:40:34,203 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:40:34,203 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:40:34,204 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:40:34,239 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:40:34,239 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 15:40:34,240 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 15:40:34,240 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 15:40:34,242 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 15:40:34,242 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:40:34,242 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:40:34,369 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:40:34,369 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:40:34,369 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:40:34,369 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:40:34,405 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:40:34,405 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 15:40:34,405 - adjust.py[line:76] - INFO: Adjust order:6771672871082131529
+2019-12-18 15:40:34,406 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 15:40:34,440 - adjust.py[line:88] - DEBUG: {"code":110029,"message":"订单费用调整次数超限"}
+2019-12-18 15:40:34,440 - adjust.py[line:93] - ERROR: 订单费用调整次数超限
+2019-12-18 15:40:34,440 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 15:51:34,974 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 15:51:34,974 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:51:34,974 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:51:35,389 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:51:35,389 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:51:35,389 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:51:35,389 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:51:35,870 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:51:35,871 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 15:51:35,871 - adjust.py[line:76] - INFO: Adjust order:6771682663607566419
+2019-12-18 15:51:35,871 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 15:51:36,518 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:51:36,518 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 15:51:36,520 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 15:51:36,520 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 15:51:36,520 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 15:51:36,681 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 15:51:36,681 - adjust.py[line:50] - INFO: Login success
+2019-12-18 15:51:36,681 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 15:51:36,682 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 15:51:36,712 - adjust.py[line:69] - INFO: Success
+2019-12-18 15:51:36,712 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 15:51:36,712 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 15:51:36,713 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:01:15,900 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 16:01:15,900 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:01:15,901 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:01:16,134 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:01:16,134 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:01:16,134 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:01:16,134 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:01:16,169 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:01:16,169 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 16:01:16,169 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 16:01:16,169 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:01:16,171 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 16:01:16,171 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:01:16,171 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:01:16,307 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:01:16,307 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:01:16,307 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:01:16,307 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:01:16,353 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:01:16,353 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 16:01:16,353 - adjust.py[line:76] - INFO: Adjust order:6771685446746374236
+2019-12-18 16:01:16,354 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 16:01:16,638 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:01:16,638 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:28:36,319 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 16:28:36,319 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:28:36,320 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:28:36,579 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:28:36,579 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:28:36,579 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:28:36,580 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:28:36,630 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:28:36,630 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 16:28:36,631 - adjust.py[line:76] - INFO: Adjust order:6771692773960581131
+2019-12-18 16:28:36,631 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 16:28:36,917 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:28:36,917 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:28:36,919 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 16:28:36,919 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:28:36,919 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:28:37,038 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:28:37,038 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:28:37,038 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:28:37,039 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:28:37,070 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:28:37,070 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 16:28:37,071 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 16:28:37,071 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:38:42,049 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 16:38:42,050 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:38:42,050 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:38:42,293 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:38:42,293 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:38:42,294 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:38:42,294 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:38:42,365 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:38:42,365 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 16:38:42,365 - adjust.py[line:76] - INFO: Adjust order:6771695522739650576
+2019-12-18 16:38:42,366 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 16:38:42,446 - adjust.py[line:88] - DEBUG: {"code":110026,"message":"对此订单进行的本次操作不合法"}
+2019-12-18 16:38:42,446 - adjust.py[line:93] - ERROR: 对此订单进行的本次操作不合法
+2019-12-18 16:38:42,446 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:38:42,450 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 16:38:42,450 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:38:42,450 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:38:42,604 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:38:42,604 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:38:42,604 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:38:42,605 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:38:42,636 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:38:42,636 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 16:38:42,636 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 16:38:42,637 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:38:49,466 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 16:38:49,467 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:38:49,467 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:38:49,598 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:38:49,598 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:38:49,598 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:38:49,599 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:38:49,680 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:38:49,680 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 16:38:49,680 - adjust.py[line:76] - INFO: Adjust order:6771695522739650576
+2019-12-18 16:38:49,680 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 16:38:49,870 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:38:49,870 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:38:49,872 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 16:38:49,872 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:38:49,872 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:38:50,026 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:38:50,026 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:38:50,027 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:38:50,027 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:38:50,059 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:38:50,060 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 16:38:50,060 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 16:38:50,060 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:54:54,953 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 16:54:54,953 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:54:54,953 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:54:55,231 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:54:55,231 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:54:55,231 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:54:55,232 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:54:55,278 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:54:55,278 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 16:54:55,279 - adjust.py[line:76] - INFO: Adjust order:6771697816252186642
+2019-12-18 16:54:55,279 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 16:54:55,598 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:54:55,598 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 16:54:55,600 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 16:54:55,600 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 16:54:55,601 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 16:54:55,712 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 16:54:55,712 - adjust.py[line:50] - INFO: Login success
+2019-12-18 16:54:55,712 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 16:54:55,712 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 16:54:55,802 - adjust.py[line:69] - INFO: Success
+2019-12-18 16:54:55,802 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 16:54:55,802 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 16:54:55,802 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 17:27:11,722 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 17:27:11,722 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 17:27:11,722 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 17:27:12,023 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 17:27:12,023 - adjust.py[line:50] - INFO: Login success
+2019-12-18 17:27:12,023 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 17:27:12,023 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 17:27:12,081 - adjust.py[line:69] - INFO: Success
+2019-12-18 17:27:12,081 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 17:27:12,081 - adjust.py[line:76] - INFO: Adjust order:6771700328808054803
+2019-12-18 17:27:12,081 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 17:27:12,121 - adjust.py[line:88] - DEBUG: {"code":110026,"message":"对此订单进行的本次操作不合法"}
+2019-12-18 17:27:12,121 - adjust.py[line:93] - ERROR: 对此订单进行的本次操作不合法
+2019-12-18 17:27:12,121 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 17:27:12,124 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 17:27:12,124 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 17:27:12,124 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 17:27:12,274 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 17:27:12,274 - adjust.py[line:50] - INFO: Login success
+2019-12-18 17:27:12,275 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 17:27:12,275 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 17:27:12,312 - adjust.py[line:69] - INFO: Success
+2019-12-18 17:27:12,313 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 17:27:12,313 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 17:27:12,313 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 17:39:06,705 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 17:39:06,705 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 17:39:06,705 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 17:39:07,044 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 17:39:07,044 - adjust.py[line:50] - INFO: Login success
+2019-12-18 17:39:07,044 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 17:39:07,044 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 17:39:07,178 - adjust.py[line:69] - INFO: Success
+2019-12-18 17:39:07,178 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 17:39:07,179 - adjust.py[line:76] - INFO: Adjust order:6771700328808054803
+2019-12-18 17:39:07,179 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 17:39:07,246 - adjust.py[line:88] - DEBUG: {"code":110026,"message":"对此订单进行的本次操作不合法"}
+2019-12-18 17:39:07,246 - adjust.py[line:93] - ERROR: 对此订单进行的本次操作不合法
+2019-12-18 17:39:07,246 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 17:39:07,248 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 17:39:07,248 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 17:39:07,248 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 17:39:07,392 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 17:39:07,392 - adjust.py[line:50] - INFO: Login success
+2019-12-18 17:39:07,392 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 17:39:07,393 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 17:39:07,427 - adjust.py[line:69] - INFO: Success
+2019-12-18 17:39:07,427 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 17:39:07,427 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 17:39:07,427 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 18:57:52,372 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 18:57:52,372 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 18:57:52,372 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 18:57:52,491 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 18:57:52,491 - adjust.py[line:50] - INFO: Login success
+2019-12-18 18:57:52,492 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 18:57:52,492 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 18:57:52,540 - adjust.py[line:69] - INFO: Success
+2019-12-18 18:57:52,540 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 18:57:52,541 - adjust.py[line:76] - INFO: Adjust order:6771700328808054803
+2019-12-18 18:57:52,541 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 18:57:52,865 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 18:57:52,865 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 18:57:52,868 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 18:57:52,868 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 18:57:52,868 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 18:57:52,975 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 18:57:52,975 - adjust.py[line:50] - INFO: Login success
+2019-12-18 18:57:52,976 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 18:57:52,976 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 18:57:53,006 - adjust.py[line:69] - INFO: Success
+2019-12-18 18:57:53,007 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 18:57:53,007 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 18:57:53,007 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 20:09:32,104 - adjust.py[line:97] - INFO: User phone:13250790293
+2019-12-18 20:09:32,104 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 20:09:32,104 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 20:09:32,399 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 20:09:32,399 - adjust.py[line:50] - INFO: Login success
+2019-12-18 20:09:32,399 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 20:09:32,399 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 20:09:32,445 - adjust.py[line:69] - INFO: Success
+2019-12-18 20:09:32,445 - adjust.py[line:100] - INFO: The numbers of orders:1
+2019-12-18 20:09:32,445 - adjust.py[line:76] - INFO: Adjust order:6771700328808054803
+2019-12-18 20:09:32,445 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2019-12-18 20:09:32,485 - adjust.py[line:88] - DEBUG: {"code":110029,"message":"订单费用调整次数超限"}
+2019-12-18 20:09:32,485 - adjust.py[line:93] - ERROR: 订单费用调整次数超限
+2019-12-18 20:09:32,485 - adjust.py[line:110] - INFO: Done!!!
+
+2019-12-18 20:09:32,486 - adjust.py[line:97] - INFO: User phone:15989104405
+2019-12-18 20:09:32,486 - adjust.py[line:39] - INFO: Login RUQIMobility
+2019-12-18 20:09:32,486 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-18 20:09:32,631 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2019-12-18 20:09:32,631 - adjust.py[line:50] - INFO: Login success
+2019-12-18 20:09:32,631 - adjust.py[line:57] - INFO: Get adjust orders
+2019-12-18 20:09:32,631 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-18 20:09:32,663 - adjust.py[line:69] - INFO: Success
+2019-12-18 20:09:32,663 - adjust.py[line:100] - INFO: The numbers of orders:0
+2019-12-18 20:09:32,663 - adjust.py[line:102] - INFO: No orders to be adjusted
+2019-12-18 20:09:32,663 - adjust.py[line:110] - INFO: Done!!!
+
