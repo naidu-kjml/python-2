@@ -180,14 +180,15 @@ class Refund:
                 logger.debug(payRecords)
                 if float(refundBaseAmount) != 0 or float(refundExtraAmount) != 0:
                     pay_times = 0
-                    pay_amount = []
+                    pay_amount = 0
                     refund_sum = 0
                     for pay_record in payRecords:
                         logger.debug(pay_record['payStatus'])
                         logger.debug(pay_record['payAmount'])
                         if pay_record['payStatus'] == 2:  # 支付记录
                             pay_times += 1
-                            pay_amount.append(pay_record['payAmount'])
+                            if pay_amount <= pay_record['payAmount']:
+                                pay_amount = pay_record['payAmount']
                         elif pay_record['payStatus'] == 3:  # 退款记录
                             refund_sum += round(float(pay_record['payAmount']))
                     logger.debug('pay_times: %s' % pay_times)
@@ -199,19 +200,18 @@ class Refund:
                     elif pay_times == 0:  # 对公订单
                         logger.debug('订单ID；%s 对公订单无需退款\n' % orderId)
                     else:  # 预支付订单
-                        pay1 = pay_amount[1]
-                        if refund_sum < pay1:
-                            pay1 = round(pay1) - refund_sum
-                            if float(refundBaseAmount) >= pay1:
-                                self.refund(orderId, payDoneAmount, str(pay1), '0')
+                        if refund_sum < pay_amount:
+                            pay_amount = round(pay_amount) - refund_sum
+                            if float(refundBaseAmount) >= pay_amount:
+                                self.refund(orderId, payDoneAmount, str(pay_amount), '0')
                                 self.refund(orderId, payDoneAmount,
-                                            str(round(float(refundBaseAmount)) - pay1),
+                                            str(round(float(refundBaseAmount)) - pay_amount),
                                             refundExtraAmount)
                             else:
                                 self.refund(orderId, payDoneAmount, refundBaseAmount,
-                                            str(pay1 - round(float(refundBaseAmount))))
+                                            str(pay_amount - round(float(refundBaseAmount))))
                                 self.refund(orderId, payDoneAmount, '0', str(round(float(refundExtraAmount)) - (
-                                        pay1 - round(float(refundBaseAmount)))))
+                                        pay_amount - round(float(refundBaseAmount)))))
                         else:
                             self.refund(orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
                 else:

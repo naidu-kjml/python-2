@@ -7,7 +7,7 @@ import json
 import time
 import logging
 
-USER_PHONE = ['13250790293', '15989104405']
+USER_PHONE = ['13250790291', '15989104405']
 envs = {'0': 'https://managetest.ruqimobility.com', '1': 'http://111.230.118.77'}
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
