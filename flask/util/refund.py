@@ -108,7 +108,6 @@ class Refund:
         url = '%s/management/v1/orderinfo/query/%s?_=%d' % (self.url_top, orderId, self.timestamp)
         logger.debug(url)
         response = self.session.get(url, headers=headers)
-        logger.debug(response.text)
         if response.json()['code'] == 0:
             refundBaseAmount = response.json()['content']['showBaseAmount']
             refundExtraAmount = response.json()['content']['showExtraAmount']
@@ -198,7 +197,7 @@ class Refund:
                             orderId, payDoneAmount, refundBaseAmount, refundExtraAmount))
                         self.refund(orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
                     elif pay_times == 0:  # 对公订单
-                        logger.info('订单ID；%s 对公订单无需退款\n')
+                        logger.debug('订单ID；%s 对公订单无需退款\n' % orderId)
                     else:  # 预支付订单
                         pay1 = pay_amount[1]
                         if refund_sum < pay1:
