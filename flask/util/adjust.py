@@ -90,6 +90,7 @@ class Adjust:
             self.message += "订单：%s\n改价成功\n" % orderId
         elif response.json()['code'] == 110029:
             self.message += "订单：%s\n%s\n" % (orderId, response.json()['message'])
+            logger.info(response.json()['message'])
         else:
             self.message += "订单：%s\n改价失败\n" % orderId
             logger.error(response.json()['message'])
