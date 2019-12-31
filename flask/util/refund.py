@@ -6,7 +6,6 @@ from decimal import Decimal, ROUND_HALF_UP
 import requests
 import json
 import time
-import re
 import sys
 import logging
 
@@ -160,6 +159,7 @@ class Refund:
             logger.error(response.json()['message'])
 
     def commit(self):
+        starts_time = time.time()
         self.login()
         logger.info('Refund days:%s' % self.refund_days)
         try:
@@ -221,12 +221,14 @@ class Refund:
         if self.refund_success_times == 0:
             self.message = "暂无订单需退款"
         else:
-            self.message += "\n退款完成"
+            costs_time = time.time() - starts_time
+            self.message += "\n退款完成，耗时：%.2fs" % costs_time
         logger.info("Refund %d orders" % self.refund_success_times)
         logger.info("Done!!!\n")
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     for phone in USER_PHONE:
         logger.info("user phone:%s" % phone)
         try:
@@ -234,4 +236,6 @@ if __name__ == "__main__":
             RF.commit()
         except:
             print('Refund fail')
-    time.sleep(5)
+    cost_time = time.time() - start_time
+    logger.info('Cost time:%.2fs' % cost_time)
+    time.sleep(3)

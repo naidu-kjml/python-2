@@ -87,7 +87,7 @@ class Adjust:
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
-            self.message += "订单：%s\n改价成功\n" % orderId
+            self.message += "订单：%s\n" % orderId
         elif response.json()['code'] == 110029:
             self.message += "订单：%s\n%s\n" % (orderId, response.json()['message'])
             logger.info(response.json()['message'])
@@ -97,27 +97,34 @@ class Adjust:
             raise Exception
 
     def commit(self):
+        start_times = time.time()
         logger.info("User phone:%s" % self.user_phone)
         self.login()
         self.get_orders()
         logger.info("The numbers of orders:%s" % len(self.orders))
-        if len(self.orders) == 0:
-            logger.info('No orders to be adjusted')
-            self.message = "无待支付订单"
         for order in self.orders:
             orderId = order['orderId']
             try:
                 self.adjust(orderId)
             except:
                 self.message += "订单：%s\n改价失败\n" % orderId
+        if len(self.orders) == 0:
+            logger.info('No orders to be adjusted')
+            self.message = "无待支付订单"
+        else:
+            costs_time = time.time() - start_times
+            self.message += '\n改价完成，耗时：%.2fs' % costs_time
         logger.info("Done!!!\n")
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     for phone in USER_PHONE:
         try:
             AJ = Adjust(phone)
             AJ.commit()
         except:
             logger.error("Fail!!!")
-    time.sleep(5)
+    cost_time = time.time() - start_time
+    logger.info("Cost time:%.2fs" % cost_time)
+    time.sleep(3)

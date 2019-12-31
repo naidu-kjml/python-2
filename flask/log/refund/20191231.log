@@ -1,0 +1,75 @@
+2019-12-31 14:49:59,928 - refund.py[line:51] - INFO: Login RUQIMobility
+2019-12-31 14:49:59,928 - refund.py[line:57] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 14:50:00,069 - refund.py[line:60] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:50:00,069 - refund.py[line:62] - INFO: Login success
+2019-12-31 14:50:00,069 - refund.py[line:164] - INFO: Refund days:1
+2019-12-31 14:50:00,070 - refund.py[line:69] - INFO: Get refund orders
+2019-12-31 14:50:00,070 - refund.py[line:70] - DEBUG: Page 1
+2019-12-31 14:50:00,070 - refund.py[line:87] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-31 14:50:00,111 - refund.py[line:92] - ERROR: Fail!!!
+2019-12-31 14:50:00,114 - refund.py[line:93] - ERROR: 内部服务错误
+2019-12-31 14:50:45,772 - refund.py[line:51] - INFO: Login RUQIMobility
+2019-12-31 14:50:45,772 - refund.py[line:57] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 14:50:46,062 - refund.py[line:60] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:50:46,062 - refund.py[line:62] - INFO: Login success
+2019-12-31 14:50:46,062 - refund.py[line:164] - INFO: Refund days:1
+2019-12-31 14:50:46,062 - refund.py[line:69] - INFO: Get refund orders
+2019-12-31 14:50:46,062 - refund.py[line:70] - DEBUG: Page 1
+2019-12-31 14:50:46,062 - refund.py[line:87] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-31 14:50:46,363 - refund.py[line:90] - INFO: Success
+2019-12-31 14:50:46,375 - refund.py[line:98] - DEBUG: 1577434961
+2019-12-31 14:50:46,375 - refund.py[line:103] - DEBUG: Finish
+2019-12-31 14:50:46,375 - refund.py[line:172] - INFO: Order_Numbers:10
+2019-12-31 14:50:46,375 - refund.py[line:106] - DEBUG: Get order info
+2019-12-31 14:50:46,375 - refund.py[line:108] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/query/6776491768553669112?_=1577775045
+2019-12-31 14:50:46,731 - refund.py[line:179] - DEBUG: OrderID：6776491768553669112
+ payDoneAmount:0.09 refundBaseAmount:0.09 refundExtraAmount:0.0
+2019-12-31 14:50:46,731 - refund.py[line:180] - DEBUG: [{'payAmount': 0.09, 'payStatus': 2, 'channel': 2, 'recordTime': '1577774984'}]
+2019-12-31 14:50:46,731 - refund.py[line:186] - DEBUG: 2
+2019-12-31 14:50:46,731 - refund.py[line:187] - DEBUG: 0.09
+2019-12-31 14:50:46,731 - refund.py[line:194] - DEBUG: pay_times: 1
+2019-12-31 14:50:46,731 - refund.py[line:195] - DEBUG: 0
+2019-12-31 14:50:46,731 - refund.py[line:198] - INFO: OrderID：6776491768553669112
+ payDoneAmount:0.09 refundBaseAmount:0.09 refundExtraAmount:0.0
+2019-12-31 14:50:46,732 - refund.py[line:120] - INFO: Commit refund
+2019-12-31 14:50:46,732 - refund.py[line:121] - INFO: refundBaseAmount:0.09,refundExtraAmount:0.0
+2019-12-31 14:50:46,732 - refund.py[line:133] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2019-12-31 14:50:49,296 - refund.py[line:135] - INFO: {"code":0,"message":"成功"}
+2019-12-31 14:50:49,296 - refund.py[line:140] - INFO: Refund Success!!!
+2019-12-31 14:50:49,296 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 14:50:49,296 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 14:50:49,296 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 14:50:49,296 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 14:50:49,296 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 14:50:49,297 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 14:50:49,297 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 14:50:49,297 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 14:50:49,297 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 14:50:49,297 - refund.py[line:226] - INFO: Refund 1 orders
+2019-12-31 14:50:49,297 - refund.py[line:227] - INFO: Done!!!
+
+2019-12-31 15:14:31,519 - refund.py[line:51] - INFO: Login RUQIMobility
+2019-12-31 15:14:31,519 - refund.py[line:57] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 15:14:31,774 - refund.py[line:60] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:14:31,775 - refund.py[line:62] - INFO: Login success
+2019-12-31 15:14:31,775 - refund.py[line:164] - INFO: Refund days:1
+2019-12-31 15:14:31,775 - refund.py[line:69] - INFO: Get refund orders
+2019-12-31 15:14:31,775 - refund.py[line:70] - DEBUG: Page 1
+2019-12-31 15:14:31,775 - refund.py[line:87] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2019-12-31 15:14:31,855 - refund.py[line:90] - INFO: Success
+2019-12-31 15:14:31,858 - refund.py[line:98] - DEBUG: 1577434961
+2019-12-31 15:14:31,858 - refund.py[line:103] - DEBUG: Finish
+2019-12-31 15:14:31,858 - refund.py[line:172] - INFO: Order_Numbers:10
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2019-12-31 15:14:31,858 - refund.py[line:226] - INFO: Refund 0 orders
+2019-12-31 15:14:31,858 - refund.py[line:227] - INFO: Done!!!
+

@@ -1,0 +1,675 @@
+2019-12-31 14:40:25,143 - uploadDrivers.py[line:47] - INFO: Login RUQIMobility
+2019-12-31 14:40:25,143 - uploadDrivers.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 14:40:25,144 - uploadDrivers.py[line:55] - DEBUG: {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+2019-12-31 14:40:25,311 - uploadDrivers.py[line:57] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:40:25,311 - uploadDrivers.py[line:59] - INFO: Login success
+2019-12-31 14:40:25,311 - uploadDrivers.py[line:66] - INFO: Generate new account
+2019-12-31 14:40:25,311 - uploadDrivers.py[line:67] - INFO: 15989104405
+2019-12-31 14:40:25,311 - uploadDrivers.py[line:69] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-31 14:40:25,316 - uploadDrivers.py[line:84] - DEBUG: {'city': '440100', 'currentResidentialAddress': '山西省秀芳市普陀刘路c座 630379', 'drivingAge': '0', 'gender': '1', 'idCardNumber': '698646199201010140', 'isCertificateA': 'True', 'licenseType': 'C2', 'name': '测试', 'nativePlace': '上海市颖市孝南通辽路I座 137956', 'phone': '15989104405', 'recruitComment': '123', 'recruitmentChannels': '1'}
+2019-12-31 14:40:25,409 - uploadDrivers.py[line:86] - DEBUG: {"code":150001,"message":"登录名、身份证号或手机号已注册"}
+2019-12-31 14:40:25,409 - uploadDrivers.py[line:92] - INFO: Driver ID exist!!!
+2019-12-31 14:40:25,409 - uploadDrivers.py[line:93] - INFO: Get driver ID
+2019-12-31 14:40:25,409 - uploadDrivers.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/list
+2019-12-31 14:40:25,452 - uploadDrivers.py[line:100] - DEBUG: {"code":0,"message":"成功","content":{"pageIndex":"1","pageSize":"10","total":"1","data":[{"driverId":6834326,"loginName":null,"phone":"15989104405","email":"","name":"小师傅","gender":1,"birthDate":"1992-01-01 00:00:00","city":"440100","nationality":null,"nation":"汉","areaCode":"+86","headImg":"https://travel-driverdev-driverpub-1258234669.cos.ap-guangzhou.myqcloud.com/6834282/c14358e9-babb-41a3-bebf-6d9cfb0560c11570786304009.png","description":null,"driverImg":"6834396/55b3910d-695a-495e-8dfb-e38968d963811569405148143.png","idCardNumber":"529914199201010140","idCardImgFront":"6834396/02b1d99e-7245-4fad-a267-1076d7f29d5c1569405154540.png","idCardImgBack":"6834396/ac648cb1-5ff7-4aa6-84e4-6825075aefa91569405158969.png","idCardImgHold":"6834396/bb7f3494-3103-487b-9d9e-9ef4c675920e1569405162164.png","licenseNumber":"529914199201010140","licenseStartDate":"1569340800","licenseEndDate":"1664121600","licenseType":"C2","licenseImg":"6834396/a1893c64-bf6b-4751-87ce-51216abb41221569405166250.png","licenseImgBack":"6834396/4c6f8fa4-8067-47e0-91aa-b696e1ef0f871569405171499.png","bankName":null,"bankCode":"","bankCardNumber":null,"rentCompanyId":null,"labourCompanyId":327,"managerId":null,"carId":80801661,"comment":null,"driverType":0,"listenCarTypes":"1","status":1,"carNumber":null,"carBrandId":null,"carModelId":null,"carAttributeId":null,"carBrand":null,"carModel":null,"carAttribute":null,"color":null,"driverScore":100,"driverStar":4.7,"carCertNo":null,"plateColor":null,"driverCertNo":null,"carVerifyCode":null,"engineNumber":null,"flag":2,"createTime":"2019-06-06 10:32:31","updateTime":"2019-12-27 15:09:19","drivingAge":0,"recruitmentChannels":0,"auditStatus":6,"isCertificateA":true,"disablesDateStart":null,"disablesDateEnd":null,"nativePlace":null,"currentResidentialAddress":null,"certificateAImgFront":null,"certificateAImgBack":null,"residencePermitImgFront":null,"residencePermitImgBack":null,"backgroundCheck":0,"appointmentOrderStatus":2,"acceptHomeOrder":2,"homeOrderAddr":null,"homeOrderLatLng":null,"approveStatus":3}]}}
+2019-12-31 14:40:25,452 - uploadDrivers.py[line:103] - INFO: Driver ID：6834326
+2019-12-31 14:40:25,452 - uploadDrivers.py[line:112] - INFO: Interview
+2019-12-31 14:40:25,452 - uploadDrivers.py[line:114] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834326?_=1569383098574
+2019-12-31 14:40:25,479 - uploadDrivers.py[line:116] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 14:40:25,479 - uploadDrivers.py[line:120] - INFO: Has been interviewed before
+2019-12-31 14:40:25,479 - uploadDrivers.py[line:121] - ERROR: 招募状态流转错误
+2019-12-31 14:40:25,480 - uploadDrivers.py[line:152] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-31 14:40:25,480 - uploadDrivers.py[line:153] - DEBUG: {'driverId': 6834326, 'driverAddress': '使用测试脚本添加', 'nation': '汉', 'driverHeight': '111', 'driverWeight': '123', 'driverEducation': '高中', 'driverResidentType': '1', 'driverMaritalStatus': '已婚', 'presentFamilyAddress': '', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'licenseNumber': '112121', 'getDriverLicenseDate': 1569340800, 'licenseStartDate': 1569340800, 'licenseEndDate': 1664121600, 'certificateA': '698646199201010140', 'networkCarIssueDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'networkCarProofOn': 1569340800, 'networkCarProofOff': 1664121600, 'email': '', 'result': 'true', 'interviewDate': 1569340800, 'interviewComment': '备注', 'interviewData': '6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png'}
+2019-12-31 14:40:25,507 - uploadDrivers.py[line:158] - INFO: Has been interviewed before
+2019-12-31 14:40:25,508 - uploadDrivers.py[line:159] - ERROR: 招募状态流转错误
+2019-12-31 14:40:25,508 - uploadDrivers.py[line:165] - INFO: Road test
+2019-12-31 14:40:25,508 - uploadDrivers.py[line:167] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab3&status=3
+2019-12-31 14:40:25,561 - uploadDrivers.py[line:177] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-31 14:40:25,561 - uploadDrivers.py[line:178] - DEBUG: {'driverId': 6834326, 'result': 'true', 'roadTestDate': 1569340800, 'roadTestComment': '备注', 'roadTestData': '6834388/549335f2-8a0d-4964-b05f-8336078e96ce1569396922197.png'}
+2019-12-31 14:40:25,597 - uploadDrivers.py[line:180] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 14:40:25,597 - uploadDrivers.py[line:184] - INFO: Has been tested before
+2019-12-31 14:40:25,597 - uploadDrivers.py[line:190] - INFO: Train
+2019-12-31 14:40:25,597 - uploadDrivers.py[line:192] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab4&status=4
+2019-12-31 14:40:25,666 - uploadDrivers.py[line:202] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-31 14:40:25,666 - uploadDrivers.py[line:203] - DEBUG: {'driverId': 6834326, 'result': 'true', 'courseDate': 1569340800, 'trainComment': '备注', 'courseData': '6834389/3ce2d860-fdf1-4f78-bd67-523cf69497661569397241370.png'}
+2019-12-31 14:40:25,702 - uploadDrivers.py[line:205] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 14:40:25,702 - uploadDrivers.py[line:209] - INFO: Has been trained before
+2019-12-31 14:40:25,702 - uploadDrivers.py[line:215] - INFO: Recruit
+2019-12-31 14:40:25,702 - uploadDrivers.py[line:217] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab5&status=5
+2019-12-31 14:40:25,775 - uploadDrivers.py[line:230] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-31 14:40:25,775 - uploadDrivers.py[line:231] - DEBUG: {'driverId': 6834326, 'isPayDeposit': 1, 'depositPayDate': 1569340800, 'depositPayAmt': '100', 'depositPayType': 1, 'signDate': 1569340800, 'materialReceivingInstructions': '说明', 'informationArchives': '6834388/1078de38-8752-45fd-aba0-4fdfb66746a51569397594363.zip'}
+2019-12-31 14:40:25,804 - uploadDrivers.py[line:233] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 14:40:25,804 - uploadDrivers.py[line:237] - INFO: Has been recruited before
+2019-12-31 14:40:25,804 - uploadDrivers.py[line:238] - ERROR: 招募状态流转错误
+2019-12-31 14:40:25,804 - uploadDrivers.py[line:244] - INFO: Upload driver img
+2019-12-31 14:40:25,804 - uploadDrivers.py[line:254] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-31 14:40:25,862 - uploadDrivers.py[line:256] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:40:25,863 - uploadDrivers.py[line:258] - DEBUG: Success
+2019-12-31 14:40:25,863 - uploadDrivers.py[line:264] - INFO: Contract
+2019-12-31 14:40:25,863 - uploadDrivers.py[line:270] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-31 14:40:25,863 - uploadDrivers.py[line:271] - DEBUG: {'driverId': 6834326, 'contractPhoto': '6834396/fdb895e1-77a9-4a6c-83d7-6fa9e7a17d501569405655930.pdf', 'operator': 'gactravel1', 'contractStatus': 'YX', 'contractType': 'HT', 'invalidTime': 1569427200, 'signTime': 1569340800, 'type': 'ZC', 'validTime': 1569340800}
+2019-12-31 14:40:25,908 - uploadDrivers.py[line:273] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:40:25,908 - uploadDrivers.py[line:275] - DEBUG: Success
+2019-12-31 14:40:25,908 - uploadDrivers.py[line:281] - INFO: Cource
+2019-12-31 14:40:25,908 - uploadDrivers.py[line:287] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-31 14:40:25,908 - uploadDrivers.py[line:288] - DEBUG: {'courseDate': 1569340800, 'courseName': '测试', 'driverId': 6834326, 'duration': 86400, 'operator': 'gactravel1', 'type': 'GQ', 'startTime': 1569340800, 'stopTime': 1569427200, 'trainingAccountInfo': '6834396/9e82e1ab-df17-42ec-922f-18abff91e4c01569405966360.png', 'trainerName': '测试'}
+2019-12-31 14:40:25,952 - uploadDrivers.py[line:290] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:40:25,952 - uploadDrivers.py[line:292] - DEBUG: Success
+2019-12-31 14:40:25,953 - uploadDrivers.py[line:298] - INFO: Upload all driver message
+2019-12-31 14:40:25,953 - uploadDrivers.py[line:342] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-31 14:40:25,953 - uploadDrivers.py[line:343] - DEBUG: {'driverId': 6834326, 'idCardNumber': '698646199201010140', 'licenseNumber': '698646199201010140', 'driverType': '', 'licenseType': 'C2', 'email': '981805021@qq.com', 'name': '测试', 'gender': '1', 'city': '440100', 'licenseEndDate': 1664121600, 'licenseStartDate': 1569340800, 'labourCompanyId': '327', 'birthDate': 694198800000, 'nation': '汉', 'driverHeight': '180', 'driverWeight': '70', 'appVersion': '1.6', 'commercialType': '1', 'driverAddress': '该司机使用脚本添加!!!', 'driverResidentType': '1', 'driverContactAddress': '广州市', 'driverEducation': '本科', 'nativePlace': '新疆维吾尔自治区娜市西峰辛集街f座 462282', 'licensePhotoId': '111111', 'recruitmentChannels': '1', 'driverMaritalStatus': '已婚', 'certificateA': '698646199201010140', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'getDriverLicenseDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'mobileModel': 'Android', 'mapType': '1', 'netType': '3', 'presentFamilyAddress': '', 'networkCarIssueDate': 1664121600, 'networkCarIssueOrganization': '1312213231', 'networkCarProofOff': 1569427200, 'networkCarProofOn': 1569340800, 'operator': 'gactravel1', 'taxiDriver': '1', 'informationArchives': '6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip'}
+2019-12-31 14:40:26,005 - uploadDrivers.py[line:345] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:40:26,005 - uploadDrivers.py[line:347] - INFO: Success
+2019-12-31 14:40:26,005 - uploadDrivers.py[line:362] - INFO: Create car
+2019-12-31 14:40:26,005 - uploadDrivers.py[line:368] - DEBUG: Car message:608,粤AB60457,8865862745,9130857457,49342349500791008
+2019-12-31 14:40:26,005 - uploadDrivers.py[line:374] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-31 14:40:26,005 - uploadDrivers.py[line:375] - DEBUG: {'carAttributeId': '300027', 'carLicenseImg': '', 'carImgs': '', 'carNumber': '粤AB60457', 'carNumberImg': '', 'carVerifyCode': '49342349500791008', 'city': '440100', 'engineNumber': '8865862745', 'oilWear': '6', 'rentCompanyId': '608', 'variableBox': '1', 'totalMileage': '12121', 'plateColor': '3', 'carCertNo': '9130857457'}
+2019-12-31 14:40:26,124 - uploadDrivers.py[line:377] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801726}}
+2019-12-31 14:40:26,125 - uploadDrivers.py[line:379] - INFO: Success
+2019-12-31 14:40:26,125 - uploadDrivers.py[line:391] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-31 14:40:26,125 - uploadDrivers.py[line:392] - DEBUG: {'carId': 80801726, 'vehicleType': '2', 'ownerName': '1', 'transAgency': '1', 'transDateStart': 1570665600, 'transDateStop': 1665360000, 'certifyDateB': 1570665600, 'fixState': 1, 'nextFixDate': 1665360000, 'checkDate': 1665360000, 'checkState': 2, 'feelogger.infoid': '1', 'feePrintid': '1111111', 'gpsBrand': '1', 'gpsModel': '1', 'gpsImei': '1', 'commercialType': 3, 'fareType': '1', 'vehicleTec': '1', 'gpsInstallDate': 1570665600, 'vehicleSafe': '1', 'certifyDateA': 1570665600}
+2019-12-31 14:40:26,174 - uploadDrivers.py[line:394] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:40:26,174 - uploadDrivers.py[line:396] - INFO: Success
+2019-12-31 14:40:26,174 - uploadDrivers.py[line:403] - INFO: Set car
+2019-12-31 14:40:26,174 - uploadDrivers.py[line:405] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-31 14:40:26,174 - uploadDrivers.py[line:407] - DEBUG: {'driverId': 6834326, 'carId': 80801726, 'listenCarTypes': '1', 'operator': 'gactravel1'}
+2019-12-31 14:40:26,252 - uploadDrivers.py[line:409] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:40:26,252 - uploadDrivers.py[line:411] - INFO: Success
+2019-12-31 14:41:17,344 - uploadDrivers.py[line:47] - INFO: Login RUQIMobility
+2019-12-31 14:41:17,344 - uploadDrivers.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 14:41:17,344 - uploadDrivers.py[line:55] - DEBUG: {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+2019-12-31 14:41:17,519 - uploadDrivers.py[line:57] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:41:17,519 - uploadDrivers.py[line:59] - INFO: Login success
+2019-12-31 14:41:17,519 - uploadDrivers.py[line:66] - INFO: Generate new account
+2019-12-31 14:41:17,520 - uploadDrivers.py[line:67] - INFO: 15989104405
+2019-12-31 14:41:17,520 - uploadDrivers.py[line:69] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-31 14:41:17,520 - uploadDrivers.py[line:84] - DEBUG: {'city': '440100', 'currentResidentialAddress': '河北省合山县锡山彭路L座 465243', 'drivingAge': '0', 'gender': '1', 'idCardNumber': '646531199201010140', 'isCertificateA': 'True', 'licenseType': 'C2', 'name': '老师傅', 'nativePlace': '浙江省金凤市大兴辛集路l座 463545', 'phone': '15989104405', 'recruitComment': '123', 'recruitmentChannels': '1'}
+2019-12-31 14:41:17,617 - uploadDrivers.py[line:86] - DEBUG: {"code":150001,"message":"登录名、身份证号或手机号已注册"}
+2019-12-31 14:41:17,617 - uploadDrivers.py[line:92] - INFO: Driver ID exist!!!
+2019-12-31 14:41:17,617 - uploadDrivers.py[line:93] - INFO: Get driver ID
+2019-12-31 14:41:17,617 - uploadDrivers.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/list
+2019-12-31 14:41:17,649 - uploadDrivers.py[line:100] - DEBUG: {"code":0,"message":"成功","content":{"pageIndex":"1","pageSize":"10","total":"1","data":[{"driverId":6834326,"loginName":null,"phone":"15989104405","email":"981805021@qq.com","name":"测试","gender":1,"birthDate":"1992-01-01 00:00:00","city":"440100","nationality":null,"nation":"汉","areaCode":"+86","headImg":"https://travel-driverdev-driverpub-1258234669.cos.ap-guangzhou.myqcloud.com/6834282/c14358e9-babb-41a3-bebf-6d9cfb0560c11570786304009.png","description":null,"driverImg":"6834396/55b3910d-695a-495e-8dfb-e38968d963811569405148143.png","idCardNumber":"698646199201010140","idCardImgFront":"6834396/02b1d99e-7245-4fad-a267-1076d7f29d5c1569405154540.png","idCardImgBack":"6834396/ac648cb1-5ff7-4aa6-84e4-6825075aefa91569405158969.png","idCardImgHold":"6834396/bb7f3494-3103-487b-9d9e-9ef4c675920e1569405162164.png","licenseNumber":"698646199201010140","licenseStartDate":"1569340800","licenseEndDate":"1664121600","licenseType":"C2","licenseImg":"6834396/a1893c64-bf6b-4751-87ce-51216abb41221569405166250.png","licenseImgBack":"6834396/4c6f8fa4-8067-47e0-91aa-b696e1ef0f871569405171499.png","bankName":null,"bankCode":"","bankCardNumber":null,"rentCompanyId":null,"labourCompanyId":327,"managerId":null,"carId":80801726,"comment":null,"driverType":0,"listenCarTypes":"1","status":1,"carNumber":null,"carBrandId":null,"carModelId":null,"carAttributeId":null,"carBrand":null,"carModel":null,"carAttribute":null,"color":null,"driverScore":100,"driverStar":4.7,"carCertNo":null,"plateColor":null,"driverCertNo":null,"carVerifyCode":null,"engineNumber":null,"flag":2,"createTime":"2019-06-06 10:32:31","updateTime":"2019-12-31 14:40:27","drivingAge":0,"recruitmentChannels":1,"auditStatus":6,"isCertificateA":true,"disablesDateStart":null,"disablesDateEnd":null,"nativePlace":null,"currentResidentialAddress":null,"certificateAImgFront":null,"certificateAImgBack":null,"residencePermitImgFront":null,"residencePermitImgBack":null,"backgroundCheck":0,"appointmentOrderStatus":2,"acceptHomeOrder":2,"homeOrderAddr":null,"homeOrderLatLng":null,"approveStatus":3}]}}
+2019-12-31 14:41:17,649 - uploadDrivers.py[line:103] - INFO: Driver ID：6834326
+2019-12-31 14:41:17,649 - uploadDrivers.py[line:112] - INFO: Interview
+2019-12-31 14:41:17,649 - uploadDrivers.py[line:114] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834326?_=1569383098574
+2019-12-31 14:41:17,716 - uploadDrivers.py[line:116] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 14:41:17,717 - uploadDrivers.py[line:120] - INFO: Has been interviewed before
+2019-12-31 14:41:17,717 - uploadDrivers.py[line:121] - ERROR: 招募状态流转错误
+2019-12-31 14:41:17,717 - uploadDrivers.py[line:152] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-31 14:41:17,717 - uploadDrivers.py[line:153] - DEBUG: {'driverId': 6834326, 'driverAddress': '使用测试脚本添加', 'nation': '汉', 'driverHeight': '111', 'driverWeight': '123', 'driverEducation': '高中', 'driverResidentType': '1', 'driverMaritalStatus': '已婚', 'presentFamilyAddress': '', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'licenseNumber': '112121', 'getDriverLicenseDate': 1569340800, 'licenseStartDate': 1569340800, 'licenseEndDate': 1664121600, 'certificateA': '646531199201010140', 'networkCarIssueDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'networkCarProofOn': 1569340800, 'networkCarProofOff': 1664121600, 'email': '', 'result': 'true', 'interviewDate': 1569340800, 'interviewComment': '备注', 'interviewData': '6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png'}
+2019-12-31 14:41:17,748 - uploadDrivers.py[line:158] - INFO: Has been interviewed before
+2019-12-31 14:41:17,748 - uploadDrivers.py[line:159] - ERROR: 招募状态流转错误
+2019-12-31 14:41:17,748 - uploadDrivers.py[line:165] - INFO: Road test
+2019-12-31 14:41:17,748 - uploadDrivers.py[line:167] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab3&status=3
+2019-12-31 14:41:17,835 - uploadDrivers.py[line:177] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-31 14:41:17,835 - uploadDrivers.py[line:178] - DEBUG: {'driverId': 6834326, 'result': 'true', 'roadTestDate': 1569340800, 'roadTestComment': '备注', 'roadTestData': '6834388/549335f2-8a0d-4964-b05f-8336078e96ce1569396922197.png'}
+2019-12-31 14:41:17,871 - uploadDrivers.py[line:180] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 14:41:17,871 - uploadDrivers.py[line:184] - INFO: Has been tested before
+2019-12-31 14:41:17,872 - uploadDrivers.py[line:190] - INFO: Train
+2019-12-31 14:41:17,872 - uploadDrivers.py[line:192] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab4&status=4
+2019-12-31 14:41:17,942 - uploadDrivers.py[line:202] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-31 14:41:17,942 - uploadDrivers.py[line:203] - DEBUG: {'driverId': 6834326, 'result': 'true', 'courseDate': 1569340800, 'trainComment': '备注', 'courseData': '6834389/3ce2d860-fdf1-4f78-bd67-523cf69497661569397241370.png'}
+2019-12-31 14:41:17,972 - uploadDrivers.py[line:205] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 14:41:17,972 - uploadDrivers.py[line:209] - INFO: Has been trained before
+2019-12-31 14:41:17,972 - uploadDrivers.py[line:215] - INFO: Recruit
+2019-12-31 14:41:17,972 - uploadDrivers.py[line:217] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab5&status=5
+2019-12-31 14:41:18,038 - uploadDrivers.py[line:230] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-31 14:41:18,038 - uploadDrivers.py[line:231] - DEBUG: {'driverId': 6834326, 'isPayDeposit': 1, 'depositPayDate': 1569340800, 'depositPayAmt': '100', 'depositPayType': 1, 'signDate': 1569340800, 'materialReceivingInstructions': '说明', 'informationArchives': '6834388/1078de38-8752-45fd-aba0-4fdfb66746a51569397594363.zip'}
+2019-12-31 14:41:18,073 - uploadDrivers.py[line:233] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 14:41:18,073 - uploadDrivers.py[line:237] - INFO: Has been recruited before
+2019-12-31 14:41:18,073 - uploadDrivers.py[line:238] - ERROR: 招募状态流转错误
+2019-12-31 14:41:18,074 - uploadDrivers.py[line:244] - INFO: Upload driver img
+2019-12-31 14:41:18,074 - uploadDrivers.py[line:254] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-31 14:41:18,137 - uploadDrivers.py[line:256] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:41:18,137 - uploadDrivers.py[line:258] - DEBUG: Success
+2019-12-31 14:41:18,137 - uploadDrivers.py[line:264] - INFO: Contract
+2019-12-31 14:41:18,137 - uploadDrivers.py[line:270] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-31 14:41:18,138 - uploadDrivers.py[line:271] - DEBUG: {'driverId': 6834326, 'contractPhoto': '6834396/fdb895e1-77a9-4a6c-83d7-6fa9e7a17d501569405655930.pdf', 'operator': 'gactravel1', 'contractStatus': 'YX', 'contractType': 'HT', 'invalidTime': 1569427200, 'signTime': 1569340800, 'type': 'ZC', 'validTime': 1569340800}
+2019-12-31 14:41:18,204 - uploadDrivers.py[line:273] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:41:18,204 - uploadDrivers.py[line:275] - DEBUG: Success
+2019-12-31 14:41:18,204 - uploadDrivers.py[line:281] - INFO: Cource
+2019-12-31 14:41:18,204 - uploadDrivers.py[line:287] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-31 14:41:18,204 - uploadDrivers.py[line:288] - DEBUG: {'courseDate': 1569340800, 'courseName': '测试', 'driverId': 6834326, 'duration': 86400, 'operator': 'gactravel1', 'type': 'GQ', 'startTime': 1569340800, 'stopTime': 1569427200, 'trainingAccountInfo': '6834396/9e82e1ab-df17-42ec-922f-18abff91e4c01569405966360.png', 'trainerName': '测试'}
+2019-12-31 14:41:18,259 - uploadDrivers.py[line:290] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:41:18,259 - uploadDrivers.py[line:292] - DEBUG: Success
+2019-12-31 14:41:18,259 - uploadDrivers.py[line:298] - INFO: Upload all driver message
+2019-12-31 14:41:18,260 - uploadDrivers.py[line:342] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-31 14:41:18,260 - uploadDrivers.py[line:343] - DEBUG: {'driverId': 6834326, 'idCardNumber': '646531199201010140', 'licenseNumber': '646531199201010140', 'driverType': '', 'licenseType': 'C2', 'email': '981805021@qq.com', 'name': '老师傅', 'gender': '1', 'city': '440100', 'licenseEndDate': 1664121600, 'licenseStartDate': 1569340800, 'labourCompanyId': '327', 'birthDate': 694198800000, 'nation': '汉', 'driverHeight': '180', 'driverWeight': '70', 'appVersion': '1.6', 'commercialType': '1', 'driverAddress': '该司机使用脚本添加!!!', 'driverResidentType': '1', 'driverContactAddress': '广州市', 'driverEducation': '本科', 'nativePlace': '浙江省帆县璧山周街O座 627049', 'licensePhotoId': '111111', 'recruitmentChannels': '1', 'driverMaritalStatus': '已婚', 'certificateA': '646531199201010140', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'getDriverLicenseDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'mobileModel': 'Android', 'mapType': '1', 'netType': '3', 'presentFamilyAddress': '', 'networkCarIssueDate': 1664121600, 'networkCarIssueOrganization': '1312213231', 'networkCarProofOff': 1569427200, 'networkCarProofOn': 1569340800, 'operator': 'gactravel1', 'taxiDriver': '1', 'informationArchives': '6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip'}
+2019-12-31 14:41:18,315 - uploadDrivers.py[line:345] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:41:18,316 - uploadDrivers.py[line:347] - INFO: Success
+2019-12-31 14:41:18,316 - uploadDrivers.py[line:362] - INFO: Create car
+2019-12-31 14:41:18,316 - uploadDrivers.py[line:368] - DEBUG: Car message:608,粤AB72557,5436634486,5210167565,24403022025994035
+2019-12-31 14:41:18,316 - uploadDrivers.py[line:374] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-31 14:41:18,316 - uploadDrivers.py[line:375] - DEBUG: {'carAttributeId': '300027', 'carLicenseImg': '', 'carImgs': '', 'carNumber': '粤AB72557', 'carNumberImg': '', 'carVerifyCode': '24403022025994035', 'city': '440100', 'engineNumber': '5436634486', 'oilWear': '6', 'rentCompanyId': '608', 'variableBox': '1', 'totalMileage': '12121', 'plateColor': '3', 'carCertNo': '5210167565'}
+2019-12-31 14:41:18,374 - uploadDrivers.py[line:377] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801727}}
+2019-12-31 14:41:18,374 - uploadDrivers.py[line:379] - INFO: Success
+2019-12-31 14:41:18,374 - uploadDrivers.py[line:391] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-31 14:41:18,374 - uploadDrivers.py[line:392] - DEBUG: {'carId': 80801727, 'vehicleType': '2', 'ownerName': '1', 'transAgency': '1', 'transDateStart': 1570665600, 'transDateStop': 1665360000, 'certifyDateB': 1570665600, 'fixState': 1, 'nextFixDate': 1665360000, 'checkDate': 1665360000, 'checkState': 2, 'feelogger.infoid': '1', 'feePrintid': '1111111', 'gpsBrand': '1', 'gpsModel': '1', 'gpsImei': '1', 'commercialType': 3, 'fareType': '1', 'vehicleTec': '1', 'gpsInstallDate': 1570665600, 'vehicleSafe': '1', 'certifyDateA': 1570665600}
+2019-12-31 14:41:18,428 - uploadDrivers.py[line:394] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:41:18,428 - uploadDrivers.py[line:396] - INFO: Success
+2019-12-31 14:41:18,428 - uploadDrivers.py[line:403] - INFO: Set car
+2019-12-31 14:41:18,428 - uploadDrivers.py[line:405] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-31 14:41:18,428 - uploadDrivers.py[line:407] - DEBUG: {'driverId': 6834326, 'carId': 80801727, 'listenCarTypes': '1', 'operator': 'gactravel1'}
+2019-12-31 14:41:18,507 - uploadDrivers.py[line:409] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 14:41:18,507 - uploadDrivers.py[line:411] - INFO: Success
+2019-12-31 15:01:38,446 - uploadDrivers.py[line:47] - INFO: Login RUQIMobility
+2019-12-31 15:01:38,446 - uploadDrivers.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 15:01:38,446 - uploadDrivers.py[line:55] - DEBUG: {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+2019-12-31 15:01:38,583 - uploadDrivers.py[line:57] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:01:38,583 - uploadDrivers.py[line:59] - INFO: Login success
+2019-12-31 15:01:38,583 - uploadDrivers.py[line:66] - INFO: Generate new account
+2019-12-31 15:01:38,583 - uploadDrivers.py[line:67] - INFO: 15989104405
+2019-12-31 15:01:38,583 - uploadDrivers.py[line:69] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-31 15:01:38,584 - uploadDrivers.py[line:84] - DEBUG: {'city': '440100', 'currentResidentialAddress': '台湾省上海县涪城阜新路H座 536773', 'drivingAge': '0', 'gender': '1', 'idCardNumber': '334729199201010140', 'isCertificateA': 'True', 'licenseType': 'C2', 'name': '老师傅', 'nativePlace': '海南省华市大兴吴街y座 126513', 'phone': '15989104405', 'recruitComment': '123', 'recruitmentChannels': '1'}
+2019-12-31 15:01:38,622 - uploadDrivers.py[line:86] - DEBUG: {"code":150001,"message":"登录名、身份证号或手机号已注册"}
+2019-12-31 15:01:38,622 - uploadDrivers.py[line:92] - INFO: Driver ID exist!!!
+2019-12-31 15:01:38,622 - uploadDrivers.py[line:93] - INFO: Get driver ID
+2019-12-31 15:01:38,622 - uploadDrivers.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/list
+2019-12-31 15:01:38,728 - uploadDrivers.py[line:100] - DEBUG: {"code":0,"message":"成功","content":{"pageIndex":"1","pageSize":"10","total":"1","data":[{"driverId":6834326,"loginName":null,"phone":"15989104405","email":"981805021@qq.com","name":"老师傅","gender":1,"birthDate":"1992-01-01 00:00:00","city":"440100","nationality":null,"nation":"汉","areaCode":"+86","headImg":"https://travel-driverdev-driverpub-1258234669.cos.ap-guangzhou.myqcloud.com/6834282/c14358e9-babb-41a3-bebf-6d9cfb0560c11570786304009.png","description":null,"driverImg":"6834396/55b3910d-695a-495e-8dfb-e38968d963811569405148143.png","idCardNumber":"646531199201010140","idCardImgFront":"6834396/02b1d99e-7245-4fad-a267-1076d7f29d5c1569405154540.png","idCardImgBack":"6834396/ac648cb1-5ff7-4aa6-84e4-6825075aefa91569405158969.png","idCardImgHold":"6834396/bb7f3494-3103-487b-9d9e-9ef4c675920e1569405162164.png","licenseNumber":"646531199201010140","licenseStartDate":"1569340800","licenseEndDate":"1664121600","licenseType":"C2","licenseImg":"6834396/a1893c64-bf6b-4751-87ce-51216abb41221569405166250.png","licenseImgBack":"6834396/4c6f8fa4-8067-47e0-91aa-b696e1ef0f871569405171499.png","bankName":null,"bankCode":"","bankCardNumber":null,"rentCompanyId":null,"labourCompanyId":327,"managerId":null,"carId":80801727,"comment":null,"driverType":0,"listenCarTypes":"1","status":1,"carNumber":null,"carBrandId":null,"carModelId":null,"carAttributeId":null,"carBrand":null,"carModel":null,"carAttribute":null,"color":null,"driverScore":100,"driverStar":4.7,"carCertNo":null,"plateColor":null,"driverCertNo":null,"carVerifyCode":null,"engineNumber":null,"flag":2,"createTime":"2019-06-06 10:32:31","updateTime":"2019-12-31 14:41:19","drivingAge":0,"recruitmentChannels":1,"auditStatus":6,"isCertificateA":true,"disablesDateStart":null,"disablesDateEnd":null,"nativePlace":null,"currentResidentialAddress":null,"certificateAImgFront":null,"certificateAImgBack":null,"residencePermitImgFront":null,"residencePermitImgBack":null,"backgroundCheck":0,"appointmentOrderStatus":2,"acceptHomeOrder":2,"homeOrderAddr":null,"homeOrderLatLng":null,"approveStatus":3}]}}
+2019-12-31 15:01:38,729 - uploadDrivers.py[line:103] - INFO: Driver ID：6834326
+2019-12-31 15:01:38,729 - uploadDrivers.py[line:112] - INFO: Interview
+2019-12-31 15:01:38,729 - uploadDrivers.py[line:114] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834326?_=1569383098574
+2019-12-31 15:01:38,759 - uploadDrivers.py[line:116] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:01:38,759 - uploadDrivers.py[line:120] - INFO: Has been interviewed before
+2019-12-31 15:01:38,759 - uploadDrivers.py[line:121] - ERROR: 招募状态流转错误
+2019-12-31 15:01:38,759 - uploadDrivers.py[line:152] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-31 15:01:38,760 - uploadDrivers.py[line:153] - DEBUG: {'driverId': 6834326, 'driverAddress': '使用测试脚本添加', 'nation': '汉', 'driverHeight': '111', 'driverWeight': '123', 'driverEducation': '高中', 'driverResidentType': '1', 'driverMaritalStatus': '已婚', 'presentFamilyAddress': '', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'licenseNumber': '112121', 'getDriverLicenseDate': 1569340800, 'licenseStartDate': 1569340800, 'licenseEndDate': 1664121600, 'certificateA': '334729199201010140', 'networkCarIssueDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'networkCarProofOn': 1569340800, 'networkCarProofOff': 1664121600, 'email': '', 'result': 'true', 'interviewDate': 1569340800, 'interviewComment': '备注', 'interviewData': '6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png'}
+2019-12-31 15:01:38,789 - uploadDrivers.py[line:158] - INFO: Has been interviewed before
+2019-12-31 15:01:38,789 - uploadDrivers.py[line:159] - ERROR: 招募状态流转错误
+2019-12-31 15:01:38,789 - uploadDrivers.py[line:165] - INFO: Road test
+2019-12-31 15:01:38,789 - uploadDrivers.py[line:167] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab3&status=3
+2019-12-31 15:01:38,847 - uploadDrivers.py[line:177] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-31 15:01:38,847 - uploadDrivers.py[line:178] - DEBUG: {'driverId': 6834326, 'result': 'true', 'roadTestDate': 1569340800, 'roadTestComment': '备注', 'roadTestData': '6834388/549335f2-8a0d-4964-b05f-8336078e96ce1569396922197.png'}
+2019-12-31 15:01:38,919 - uploadDrivers.py[line:180] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:01:38,919 - uploadDrivers.py[line:184] - INFO: Has been tested before
+2019-12-31 15:01:38,919 - uploadDrivers.py[line:190] - INFO: Train
+2019-12-31 15:01:38,919 - uploadDrivers.py[line:192] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab4&status=4
+2019-12-31 15:01:39,180 - uploadDrivers.py[line:202] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-31 15:01:39,180 - uploadDrivers.py[line:203] - DEBUG: {'driverId': 6834326, 'result': 'true', 'courseDate': 1569340800, 'trainComment': '备注', 'courseData': '6834389/3ce2d860-fdf1-4f78-bd67-523cf69497661569397241370.png'}
+2019-12-31 15:01:39,211 - uploadDrivers.py[line:205] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:01:39,211 - uploadDrivers.py[line:209] - INFO: Has been trained before
+2019-12-31 15:01:39,211 - uploadDrivers.py[line:215] - INFO: Recruit
+2019-12-31 15:01:39,211 - uploadDrivers.py[line:217] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834326&tabId=tab5&status=5
+2019-12-31 15:01:39,270 - uploadDrivers.py[line:230] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-31 15:01:39,270 - uploadDrivers.py[line:231] - DEBUG: {'driverId': 6834326, 'isPayDeposit': 1, 'depositPayDate': 1569340800, 'depositPayAmt': '100', 'depositPayType': 1, 'signDate': 1569340800, 'materialReceivingInstructions': '说明', 'informationArchives': '6834388/1078de38-8752-45fd-aba0-4fdfb66746a51569397594363.zip'}
+2019-12-31 15:01:39,300 - uploadDrivers.py[line:233] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:01:39,301 - uploadDrivers.py[line:237] - INFO: Has been recruited before
+2019-12-31 15:01:39,301 - uploadDrivers.py[line:238] - ERROR: 招募状态流转错误
+2019-12-31 15:01:39,301 - uploadDrivers.py[line:244] - INFO: Upload driver img
+2019-12-31 15:01:39,301 - uploadDrivers.py[line:254] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-31 15:01:39,357 - uploadDrivers.py[line:256] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:01:39,357 - uploadDrivers.py[line:258] - DEBUG: Success
+2019-12-31 15:01:39,357 - uploadDrivers.py[line:264] - INFO: Contract
+2019-12-31 15:01:39,357 - uploadDrivers.py[line:270] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-31 15:01:39,357 - uploadDrivers.py[line:271] - DEBUG: {'driverId': 6834326, 'contractPhoto': '6834396/fdb895e1-77a9-4a6c-83d7-6fa9e7a17d501569405655930.pdf', 'operator': 'gactravel1', 'contractStatus': 'YX', 'contractType': 'HT', 'invalidTime': 1569427200, 'signTime': 1569340800, 'type': 'ZC', 'validTime': 1569340800}
+2019-12-31 15:01:39,405 - uploadDrivers.py[line:273] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:01:39,405 - uploadDrivers.py[line:275] - DEBUG: Success
+2019-12-31 15:01:39,405 - uploadDrivers.py[line:281] - INFO: Cource
+2019-12-31 15:01:39,405 - uploadDrivers.py[line:287] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-31 15:01:39,405 - uploadDrivers.py[line:288] - DEBUG: {'courseDate': 1569340800, 'courseName': '测试', 'driverId': 6834326, 'duration': 86400, 'operator': 'gactravel1', 'type': 'GQ', 'startTime': 1569340800, 'stopTime': 1569427200, 'trainingAccountInfo': '6834396/9e82e1ab-df17-42ec-922f-18abff91e4c01569405966360.png', 'trainerName': '测试'}
+2019-12-31 15:01:39,447 - uploadDrivers.py[line:290] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:01:39,448 - uploadDrivers.py[line:292] - DEBUG: Success
+2019-12-31 15:01:39,448 - uploadDrivers.py[line:298] - INFO: Upload all driver message
+2019-12-31 15:01:39,448 - uploadDrivers.py[line:342] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-31 15:01:39,448 - uploadDrivers.py[line:343] - DEBUG: {'driverId': 6834326, 'idCardNumber': '334729199201010140', 'licenseNumber': '334729199201010140', 'driverType': '', 'licenseType': 'C2', 'email': '981805021@qq.com', 'name': '老师傅', 'gender': '1', 'city': '440100', 'licenseEndDate': 1664121600, 'licenseStartDate': 1569340800, 'labourCompanyId': '327', 'birthDate': 694198800000, 'nation': '汉', 'driverHeight': '180', 'driverWeight': '70', 'appVersion': '1.6', 'commercialType': '1', 'driverAddress': '该司机使用脚本添加!!!', 'driverResidentType': '1', 'driverContactAddress': '广州市', 'driverEducation': '本科', 'nativePlace': '陕西省合肥县金平熊路Q座 435383', 'licensePhotoId': '111111', 'recruitmentChannels': '1', 'driverMaritalStatus': '已婚', 'certificateA': '334729199201010140', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'getDriverLicenseDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'mobileModel': 'Android', 'mapType': '1', 'netType': '3', 'presentFamilyAddress': '', 'networkCarIssueDate': 1664121600, 'networkCarIssueOrganization': '1312213231', 'networkCarProofOff': 1569427200, 'networkCarProofOn': 1569340800, 'operator': 'gactravel1', 'taxiDriver': '1', 'informationArchives': '6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip'}
+2019-12-31 15:01:39,505 - uploadDrivers.py[line:345] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:01:39,505 - uploadDrivers.py[line:347] - INFO: Success
+2019-12-31 15:01:39,505 - uploadDrivers.py[line:362] - INFO: Create car
+2019-12-31 15:01:39,505 - uploadDrivers.py[line:368] - DEBUG: Car message:608,粤AB58131,4265286501,4522342227,90897251863792856
+2019-12-31 15:01:39,505 - uploadDrivers.py[line:374] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-31 15:01:39,505 - uploadDrivers.py[line:375] - DEBUG: {'carAttributeId': '300027', 'carLicenseImg': '', 'carImgs': '', 'carNumber': '粤AB58131', 'carNumberImg': '', 'carVerifyCode': '90897251863792856', 'city': '440100', 'engineNumber': '4265286501', 'oilWear': '6', 'rentCompanyId': '608', 'variableBox': '1', 'totalMileage': '12121', 'plateColor': '3', 'carCertNo': '4522342227'}
+2019-12-31 15:01:39,652 - uploadDrivers.py[line:377] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801728}}
+2019-12-31 15:01:39,652 - uploadDrivers.py[line:379] - INFO: Success
+2019-12-31 15:01:39,652 - uploadDrivers.py[line:391] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-31 15:01:39,652 - uploadDrivers.py[line:392] - DEBUG: {'carId': 80801728, 'vehicleType': '2', 'ownerName': '1', 'transAgency': '1', 'transDateStart': 1570665600, 'transDateStop': 1665360000, 'certifyDateB': 1570665600, 'fixState': 1, 'nextFixDate': 1665360000, 'checkDate': 1665360000, 'checkState': 2, 'feelogger.infoid': '1', 'feePrintid': '1111111', 'gpsBrand': '1', 'gpsModel': '1', 'gpsImei': '1', 'commercialType': 3, 'fareType': '1', 'vehicleTec': '1', 'gpsInstallDate': 1570665600, 'vehicleSafe': '1', 'certifyDateA': 1570665600}
+2019-12-31 15:01:39,694 - uploadDrivers.py[line:394] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:01:39,694 - uploadDrivers.py[line:396] - INFO: Success
+2019-12-31 15:01:39,694 - uploadDrivers.py[line:403] - INFO: Set car
+2019-12-31 15:01:39,694 - uploadDrivers.py[line:405] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-31 15:01:39,694 - uploadDrivers.py[line:407] - DEBUG: {'driverId': 6834326, 'carId': 80801728, 'listenCarTypes': '1', 'operator': 'gactravel1'}
+2019-12-31 15:01:39,774 - uploadDrivers.py[line:409] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:01:39,774 - uploadDrivers.py[line:411] - INFO: Success
+2019-12-31 15:01:59,908 - uploadDrivers.py[line:47] - INFO: Login RUQIMobility
+2019-12-31 15:01:59,908 - uploadDrivers.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 15:01:59,908 - uploadDrivers.py[line:55] - DEBUG: {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+2019-12-31 15:02:00,051 - uploadDrivers.py[line:57] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:00,052 - uploadDrivers.py[line:59] - INFO: Login success
+2019-12-31 15:02:00,052 - uploadDrivers.py[line:66] - INFO: Generate new account
+2019-12-31 15:02:00,052 - uploadDrivers.py[line:67] - INFO: 15989104402
+2019-12-31 15:02:00,052 - uploadDrivers.py[line:69] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-31 15:02:00,052 - uploadDrivers.py[line:84] - DEBUG: {'city': '440100', 'currentResidentialAddress': '江苏省雪市海陵合山路Y座 842933', 'drivingAge': '0', 'gender': '1', 'idCardNumber': '383474199201010140', 'isCertificateA': 'True', 'licenseType': 'C2', 'name': '测试', 'nativePlace': '浙江省东莞市涪城徐街s座 752159', 'phone': '15989104402', 'recruitComment': '123', 'recruitmentChannels': '1'}
+2019-12-31 15:02:00,089 - uploadDrivers.py[line:86] - DEBUG: {"code":0,"message":"成功","content":{"driverId":6834529}}
+2019-12-31 15:02:00,089 - uploadDrivers.py[line:88] - INFO: Success
+2019-12-31 15:02:00,089 - uploadDrivers.py[line:90] - INFO: Driver id:6834529
+2019-12-31 15:02:00,089 - uploadDrivers.py[line:112] - INFO: Interview
+2019-12-31 15:02:00,090 - uploadDrivers.py[line:114] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834529?_=1569383098574
+2019-12-31 15:02:00,124 - uploadDrivers.py[line:116] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:00,125 - uploadDrivers.py[line:118] - INFO: Success
+2019-12-31 15:02:00,125 - uploadDrivers.py[line:152] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-31 15:02:00,125 - uploadDrivers.py[line:153] - DEBUG: {'driverId': 6834529, 'driverAddress': '使用测试脚本添加', 'nation': '汉', 'driverHeight': '111', 'driverWeight': '123', 'driverEducation': '高中', 'driverResidentType': '1', 'driverMaritalStatus': '已婚', 'presentFamilyAddress': '', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'licenseNumber': '112121', 'getDriverLicenseDate': 1569340800, 'licenseStartDate': 1569340800, 'licenseEndDate': 1664121600, 'certificateA': '383474199201010140', 'networkCarIssueDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'networkCarProofOn': 1569340800, 'networkCarProofOff': 1664121600, 'email': '', 'result': 'true', 'interviewDate': 1569340800, 'interviewComment': '备注', 'interviewData': '6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png'}
+2019-12-31 15:02:00,162 - uploadDrivers.py[line:156] - INFO: Success
+2019-12-31 15:02:00,162 - uploadDrivers.py[line:165] - INFO: Road test
+2019-12-31 15:02:00,162 - uploadDrivers.py[line:167] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834529&tabId=tab3&status=3
+2019-12-31 15:02:00,230 - uploadDrivers.py[line:177] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-31 15:02:00,230 - uploadDrivers.py[line:178] - DEBUG: {'driverId': 6834529, 'result': 'true', 'roadTestDate': 1569340800, 'roadTestComment': '备注', 'roadTestData': '6834388/549335f2-8a0d-4964-b05f-8336078e96ce1569396922197.png'}
+2019-12-31 15:02:00,278 - uploadDrivers.py[line:180] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:00,278 - uploadDrivers.py[line:182] - INFO: Success
+2019-12-31 15:02:00,279 - uploadDrivers.py[line:190] - INFO: Train
+2019-12-31 15:02:00,279 - uploadDrivers.py[line:192] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834529&tabId=tab4&status=4
+2019-12-31 15:02:00,377 - uploadDrivers.py[line:202] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-31 15:02:00,377 - uploadDrivers.py[line:203] - DEBUG: {'driverId': 6834529, 'result': 'true', 'courseDate': 1569340800, 'trainComment': '备注', 'courseData': '6834389/3ce2d860-fdf1-4f78-bd67-523cf69497661569397241370.png'}
+2019-12-31 15:02:00,432 - uploadDrivers.py[line:205] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:00,433 - uploadDrivers.py[line:207] - INFO: Success
+2019-12-31 15:02:00,433 - uploadDrivers.py[line:215] - INFO: Recruit
+2019-12-31 15:02:00,433 - uploadDrivers.py[line:217] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834529&tabId=tab5&status=5
+2019-12-31 15:02:00,494 - uploadDrivers.py[line:230] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-31 15:02:00,494 - uploadDrivers.py[line:231] - DEBUG: {'driverId': 6834529, 'isPayDeposit': 1, 'depositPayDate': 1569340800, 'depositPayAmt': '100', 'depositPayType': 1, 'signDate': 1569340800, 'materialReceivingInstructions': '说明', 'informationArchives': '6834388/1078de38-8752-45fd-aba0-4fdfb66746a51569397594363.zip'}
+2019-12-31 15:02:00,532 - uploadDrivers.py[line:233] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:00,532 - uploadDrivers.py[line:235] - INFO: Success
+2019-12-31 15:02:00,532 - uploadDrivers.py[line:244] - INFO: Upload driver img
+2019-12-31 15:02:00,532 - uploadDrivers.py[line:254] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-31 15:02:00,569 - uploadDrivers.py[line:256] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:00,569 - uploadDrivers.py[line:258] - DEBUG: Success
+2019-12-31 15:02:00,569 - uploadDrivers.py[line:264] - INFO: Contract
+2019-12-31 15:02:00,569 - uploadDrivers.py[line:270] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-31 15:02:00,569 - uploadDrivers.py[line:271] - DEBUG: {'driverId': 6834529, 'contractPhoto': '6834396/fdb895e1-77a9-4a6c-83d7-6fa9e7a17d501569405655930.pdf', 'operator': 'gactravel1', 'contractStatus': 'YX', 'contractType': 'HT', 'invalidTime': 1569427200, 'signTime': 1569340800, 'type': 'ZC', 'validTime': 1569340800}
+2019-12-31 15:02:00,631 - uploadDrivers.py[line:273] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:00,631 - uploadDrivers.py[line:275] - DEBUG: Success
+2019-12-31 15:02:00,631 - uploadDrivers.py[line:281] - INFO: Cource
+2019-12-31 15:02:00,631 - uploadDrivers.py[line:287] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-31 15:02:00,631 - uploadDrivers.py[line:288] - DEBUG: {'courseDate': 1569340800, 'courseName': '测试', 'driverId': 6834529, 'duration': 86400, 'operator': 'gactravel1', 'type': 'GQ', 'startTime': 1569340800, 'stopTime': 1569427200, 'trainingAccountInfo': '6834396/9e82e1ab-df17-42ec-922f-18abff91e4c01569405966360.png', 'trainerName': '测试'}
+2019-12-31 15:02:00,662 - uploadDrivers.py[line:290] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:00,662 - uploadDrivers.py[line:292] - DEBUG: Success
+2019-12-31 15:02:00,663 - uploadDrivers.py[line:298] - INFO: Upload all driver message
+2019-12-31 15:02:00,663 - uploadDrivers.py[line:342] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-31 15:02:00,663 - uploadDrivers.py[line:343] - DEBUG: {'driverId': 6834529, 'idCardNumber': '383474199201010140', 'licenseNumber': '383474199201010140', 'driverType': '', 'licenseType': 'C2', 'email': '981805021@qq.com', 'name': '测试', 'gender': '1', 'city': '440100', 'licenseEndDate': 1664121600, 'licenseStartDate': 1569340800, 'labourCompanyId': '327', 'birthDate': 694198800000, 'nation': '汉', 'driverHeight': '180', 'driverWeight': '70', 'appVersion': '1.6', 'commercialType': '1', 'driverAddress': '该司机使用脚本添加!!!', 'driverResidentType': '1', 'driverContactAddress': '广州市', 'driverEducation': '本科', 'nativePlace': '黑龙江省宜都市魏都广州路r座 551546', 'licensePhotoId': '111111', 'recruitmentChannels': '1', 'driverMaritalStatus': '已婚', 'certificateA': '383474199201010140', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'getDriverLicenseDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'mobileModel': 'Android', 'mapType': '1', 'netType': '3', 'presentFamilyAddress': '', 'networkCarIssueDate': 1664121600, 'networkCarIssueOrganization': '1312213231', 'networkCarProofOff': 1569427200, 'networkCarProofOn': 1569340800, 'operator': 'gactravel1', 'taxiDriver': '1', 'informationArchives': '6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip'}
+2019-12-31 15:02:00,836 - uploadDrivers.py[line:345] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:00,836 - uploadDrivers.py[line:347] - INFO: Success
+2019-12-31 15:02:00,836 - uploadDrivers.py[line:362] - INFO: Create car
+2019-12-31 15:02:00,836 - uploadDrivers.py[line:368] - DEBUG: Car message:608,粤AB36759,1994835980,9664744027,27350101345460706
+2019-12-31 15:02:00,836 - uploadDrivers.py[line:374] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-31 15:02:00,836 - uploadDrivers.py[line:375] - DEBUG: {'carAttributeId': '300027', 'carLicenseImg': '', 'carImgs': '', 'carNumber': '粤AB36759', 'carNumberImg': '', 'carVerifyCode': '27350101345460706', 'city': '440100', 'engineNumber': '1994835980', 'oilWear': '6', 'rentCompanyId': '608', 'variableBox': '1', 'totalMileage': '12121', 'plateColor': '3', 'carCertNo': '9664744027'}
+2019-12-31 15:02:00,957 - uploadDrivers.py[line:377] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801729}}
+2019-12-31 15:02:00,957 - uploadDrivers.py[line:379] - INFO: Success
+2019-12-31 15:02:00,957 - uploadDrivers.py[line:391] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-31 15:02:00,957 - uploadDrivers.py[line:392] - DEBUG: {'carId': 80801729, 'vehicleType': '2', 'ownerName': '1', 'transAgency': '1', 'transDateStart': 1570665600, 'transDateStop': 1665360000, 'certifyDateB': 1570665600, 'fixState': 1, 'nextFixDate': 1665360000, 'checkDate': 1665360000, 'checkState': 2, 'feelogger.infoid': '1', 'feePrintid': '1111111', 'gpsBrand': '1', 'gpsModel': '1', 'gpsImei': '1', 'commercialType': 3, 'fareType': '1', 'vehicleTec': '1', 'gpsInstallDate': 1570665600, 'vehicleSafe': '1', 'certifyDateA': 1570665600}
+2019-12-31 15:02:01,003 - uploadDrivers.py[line:394] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:01,003 - uploadDrivers.py[line:396] - INFO: Success
+2019-12-31 15:02:01,003 - uploadDrivers.py[line:403] - INFO: Set car
+2019-12-31 15:02:01,003 - uploadDrivers.py[line:405] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-31 15:02:01,005 - uploadDrivers.py[line:407] - DEBUG: {'driverId': 6834529, 'carId': 80801729, 'listenCarTypes': '1', 'operator': 'gactravel1'}
+2019-12-31 15:02:01,118 - uploadDrivers.py[line:409] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:02:01,118 - uploadDrivers.py[line:411] - INFO: Success
+2019-12-31 15:03:18,084 - uploadDrivers.py[line:47] - INFO: Login RUQIMobility
+2019-12-31 15:03:18,084 - uploadDrivers.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 15:03:18,084 - uploadDrivers.py[line:55] - DEBUG: {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+2019-12-31 15:03:18,580 - uploadDrivers.py[line:57] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:03:18,580 - uploadDrivers.py[line:59] - INFO: Login success
+2019-12-31 15:03:18,580 - uploadDrivers.py[line:66] - INFO: Generate new account
+2019-12-31 15:03:18,580 - uploadDrivers.py[line:67] - INFO: 15989104402
+2019-12-31 15:03:18,580 - uploadDrivers.py[line:69] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-31 15:03:18,581 - uploadDrivers.py[line:84] - DEBUG: {'city': '440100', 'currentResidentialAddress': '海南省东莞县新城唐街g座 161743', 'drivingAge': '0', 'gender': '1', 'idCardNumber': '436445199201010140', 'isCertificateA': 'True', 'licenseType': 'C2', 'name': '测试', 'nativePlace': '河北省大冶市翔安长沙路U座 174652', 'phone': '15989104402', 'recruitComment': '123', 'recruitmentChannels': '1'}
+2019-12-31 15:03:18,720 - uploadDrivers.py[line:86] - DEBUG: {"code":150001,"message":"登录名、身份证号或手机号已注册"}
+2019-12-31 15:03:18,720 - uploadDrivers.py[line:92] - INFO: Driver ID exist!!!
+2019-12-31 15:03:18,720 - uploadDrivers.py[line:93] - INFO: Get driver ID
+2019-12-31 15:03:18,720 - uploadDrivers.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/list
+2019-12-31 15:03:18,750 - uploadDrivers.py[line:100] - DEBUG: {"code":0,"message":"成功","content":{"pageIndex":"1","pageSize":"10","total":"1","data":[{"driverId":6834529,"loginName":null,"phone":"15989104402","email":"981805021@qq.com","name":"测试","gender":1,"birthDate":"1992-01-01 00:00:00","city":"440100","nationality":null,"nation":"汉","areaCode":"+86","headImg":"https://travel-driverdev-driverpub-1258234669.cos.ap-guangzhou.myqcloud.com/6834282/c14358e9-babb-41a3-bebf-6d9cfb0560c11570786304009.png","description":null,"driverImg":"6834396/55b3910d-695a-495e-8dfb-e38968d963811569405148143.png","idCardNumber":"383474199201010140","idCardImgFront":"6834396/02b1d99e-7245-4fad-a267-1076d7f29d5c1569405154540.png","idCardImgBack":"6834396/ac648cb1-5ff7-4aa6-84e4-6825075aefa91569405158969.png","idCardImgHold":"6834396/bb7f3494-3103-487b-9d9e-9ef4c675920e1569405162164.png","licenseNumber":"383474199201010140","licenseStartDate":"1569340800","licenseEndDate":"1664121600","licenseType":"C2","licenseImg":"6834396/a1893c64-bf6b-4751-87ce-51216abb41221569405166250.png","licenseImgBack":"6834396/4c6f8fa4-8067-47e0-91aa-b696e1ef0f871569405171499.png","bankName":null,"bankCode":"","bankCardNumber":null,"rentCompanyId":null,"labourCompanyId":327,"managerId":null,"carId":80801729,"comment":null,"driverType":0,"listenCarTypes":"1","status":1,"carNumber":null,"carBrandId":null,"carModelId":null,"carAttributeId":null,"carBrand":null,"carModel":null,"carAttribute":null,"color":null,"driverScore":100,"driverStar":5.0,"carCertNo":null,"plateColor":null,"driverCertNo":null,"carVerifyCode":null,"engineNumber":null,"flag":2,"createTime":"2019-12-31 15:02:00","updateTime":"2019-12-31 15:02:01","drivingAge":0,"recruitmentChannels":1,"auditStatus":6,"isCertificateA":true,"disablesDateStart":null,"disablesDateEnd":null,"nativePlace":null,"currentResidentialAddress":null,"certificateAImgFront":null,"certificateAImgBack":null,"residencePermitImgFront":null,"residencePermitImgBack":null,"backgroundCheck":0,"appointmentOrderStatus":2,"acceptHomeOrder":2,"homeOrderAddr":null,"homeOrderLatLng":null,"approveStatus":3}]}}
+2019-12-31 15:03:18,750 - uploadDrivers.py[line:103] - INFO: Driver ID：6834529
+2019-12-31 15:03:18,750 - uploadDrivers.py[line:112] - INFO: Interview
+2019-12-31 15:03:18,750 - uploadDrivers.py[line:114] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834529?_=1569383098574
+2019-12-31 15:03:18,776 - uploadDrivers.py[line:116] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:03:18,776 - uploadDrivers.py[line:120] - INFO: Has been interviewed before
+2019-12-31 15:03:18,776 - uploadDrivers.py[line:121] - ERROR: 招募状态流转错误
+2019-12-31 15:03:18,776 - uploadDrivers.py[line:152] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-31 15:03:18,776 - uploadDrivers.py[line:153] - DEBUG: {'driverId': 6834529, 'driverAddress': '使用测试脚本添加', 'nation': '汉', 'driverHeight': '111', 'driverWeight': '123', 'driverEducation': '高中', 'driverResidentType': '1', 'driverMaritalStatus': '已婚', 'presentFamilyAddress': '', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'licenseNumber': '112121', 'getDriverLicenseDate': 1569340800, 'licenseStartDate': 1569340800, 'licenseEndDate': 1664121600, 'certificateA': '436445199201010140', 'networkCarIssueDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'networkCarProofOn': 1569340800, 'networkCarProofOff': 1664121600, 'email': '', 'result': 'true', 'interviewDate': 1569340800, 'interviewComment': '备注', 'interviewData': '6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png'}
+2019-12-31 15:03:18,800 - uploadDrivers.py[line:158] - INFO: Has been interviewed before
+2019-12-31 15:03:18,800 - uploadDrivers.py[line:159] - ERROR: 招募状态流转错误
+2019-12-31 15:03:18,800 - uploadDrivers.py[line:165] - INFO: Road test
+2019-12-31 15:03:18,800 - uploadDrivers.py[line:167] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834529&tabId=tab3&status=3
+2019-12-31 15:03:19,024 - uploadDrivers.py[line:177] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-31 15:03:19,024 - uploadDrivers.py[line:178] - DEBUG: {'driverId': 6834529, 'result': 'true', 'roadTestDate': 1569340800, 'roadTestComment': '备注', 'roadTestData': '6834388/549335f2-8a0d-4964-b05f-8336078e96ce1569396922197.png'}
+2019-12-31 15:03:19,051 - uploadDrivers.py[line:180] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:03:19,051 - uploadDrivers.py[line:184] - INFO: Has been tested before
+2019-12-31 15:03:19,052 - uploadDrivers.py[line:190] - INFO: Train
+2019-12-31 15:03:19,052 - uploadDrivers.py[line:192] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834529&tabId=tab4&status=4
+2019-12-31 15:03:19,159 - uploadDrivers.py[line:202] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-31 15:03:19,159 - uploadDrivers.py[line:203] - DEBUG: {'driverId': 6834529, 'result': 'true', 'courseDate': 1569340800, 'trainComment': '备注', 'courseData': '6834389/3ce2d860-fdf1-4f78-bd67-523cf69497661569397241370.png'}
+2019-12-31 15:03:19,225 - uploadDrivers.py[line:205] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:03:19,225 - uploadDrivers.py[line:209] - INFO: Has been trained before
+2019-12-31 15:03:19,225 - uploadDrivers.py[line:215] - INFO: Recruit
+2019-12-31 15:03:19,226 - uploadDrivers.py[line:217] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834529&tabId=tab5&status=5
+2019-12-31 15:03:19,363 - uploadDrivers.py[line:230] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-31 15:03:19,363 - uploadDrivers.py[line:231] - DEBUG: {'driverId': 6834529, 'isPayDeposit': 1, 'depositPayDate': 1569340800, 'depositPayAmt': '100', 'depositPayType': 1, 'signDate': 1569340800, 'materialReceivingInstructions': '说明', 'informationArchives': '6834388/1078de38-8752-45fd-aba0-4fdfb66746a51569397594363.zip'}
+2019-12-31 15:03:19,389 - uploadDrivers.py[line:233] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:03:19,389 - uploadDrivers.py[line:237] - INFO: Has been recruited before
+2019-12-31 15:03:19,389 - uploadDrivers.py[line:238] - ERROR: 招募状态流转错误
+2019-12-31 15:03:19,389 - uploadDrivers.py[line:244] - INFO: Upload driver img
+2019-12-31 15:03:19,389 - uploadDrivers.py[line:254] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-31 15:03:19,432 - uploadDrivers.py[line:256] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:03:19,433 - uploadDrivers.py[line:258] - DEBUG: Success
+2019-12-31 15:03:19,433 - uploadDrivers.py[line:264] - INFO: Contract
+2019-12-31 15:03:19,433 - uploadDrivers.py[line:270] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-31 15:03:19,433 - uploadDrivers.py[line:271] - DEBUG: {'driverId': 6834529, 'contractPhoto': '6834396/fdb895e1-77a9-4a6c-83d7-6fa9e7a17d501569405655930.pdf', 'operator': 'gactravel1', 'contractStatus': 'YX', 'contractType': 'HT', 'invalidTime': 1569427200, 'signTime': 1569340800, 'type': 'ZC', 'validTime': 1569340800}
+2019-12-31 15:03:19,473 - uploadDrivers.py[line:273] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:03:19,473 - uploadDrivers.py[line:275] - DEBUG: Success
+2019-12-31 15:03:19,473 - uploadDrivers.py[line:281] - INFO: Cource
+2019-12-31 15:03:19,473 - uploadDrivers.py[line:287] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-31 15:03:19,473 - uploadDrivers.py[line:288] - DEBUG: {'courseDate': 1569340800, 'courseName': '测试', 'driverId': 6834529, 'duration': 86400, 'operator': 'gactravel1', 'type': 'GQ', 'startTime': 1569340800, 'stopTime': 1569427200, 'trainingAccountInfo': '6834396/9e82e1ab-df17-42ec-922f-18abff91e4c01569405966360.png', 'trainerName': '测试'}
+2019-12-31 15:03:19,514 - uploadDrivers.py[line:290] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:03:19,514 - uploadDrivers.py[line:292] - DEBUG: Success
+2019-12-31 15:03:19,514 - uploadDrivers.py[line:298] - INFO: Upload all driver message
+2019-12-31 15:03:19,514 - uploadDrivers.py[line:342] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-31 15:03:19,514 - uploadDrivers.py[line:343] - DEBUG: {'driverId': 6834529, 'idCardNumber': '436445199201010140', 'licenseNumber': '436445199201010140', 'driverType': '', 'licenseType': 'C2', 'email': '981805021@qq.com', 'name': '测试', 'gender': '1', 'city': '440100', 'licenseEndDate': 1664121600, 'licenseStartDate': 1569340800, 'labourCompanyId': '327', 'birthDate': 694198800000, 'nation': '汉', 'driverHeight': '180', 'driverWeight': '70', 'appVersion': '1.6', 'commercialType': '1', 'driverAddress': '该司机使用脚本添加!!!', 'driverResidentType': '1', 'driverContactAddress': '广州市', 'driverEducation': '本科', 'nativePlace': '四川省辛集县山亭东莞路b座 113001', 'licensePhotoId': '111111', 'recruitmentChannels': '1', 'driverMaritalStatus': '已婚', 'certificateA': '436445199201010140', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'getDriverLicenseDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'mobileModel': 'Android', 'mapType': '1', 'netType': '3', 'presentFamilyAddress': '', 'networkCarIssueDate': 1664121600, 'networkCarIssueOrganization': '1312213231', 'networkCarProofOff': 1569427200, 'networkCarProofOn': 1569340800, 'operator': 'gactravel1', 'taxiDriver': '1', 'informationArchives': '6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip'}
+2019-12-31 15:03:19,562 - uploadDrivers.py[line:345] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:03:19,562 - uploadDrivers.py[line:347] - INFO: Success
+2019-12-31 15:03:19,562 - uploadDrivers.py[line:362] - INFO: Create car
+2019-12-31 15:03:19,562 - uploadDrivers.py[line:368] - DEBUG: Car message:608,粤AB25564,9373566310,6947636620,43543923515589944
+2019-12-31 15:03:19,562 - uploadDrivers.py[line:374] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-31 15:03:19,562 - uploadDrivers.py[line:375] - DEBUG: {'carAttributeId': '300027', 'carLicenseImg': '', 'carImgs': '', 'carNumber': '粤AB25564', 'carNumberImg': '', 'carVerifyCode': '43543923515589944', 'city': '440100', 'engineNumber': '9373566310', 'oilWear': '6', 'rentCompanyId': '608', 'variableBox': '1', 'totalMileage': '12121', 'plateColor': '3', 'carCertNo': '6947636620'}
+2019-12-31 15:03:19,694 - uploadDrivers.py[line:377] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801730}}
+2019-12-31 15:03:19,694 - uploadDrivers.py[line:379] - INFO: Success
+2019-12-31 15:03:19,694 - uploadDrivers.py[line:391] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-31 15:03:19,694 - uploadDrivers.py[line:392] - DEBUG: {'carId': 80801730, 'vehicleType': '2', 'ownerName': '1', 'transAgency': '1', 'transDateStart': 1570665600, 'transDateStop': 1665360000, 'certifyDateB': 1570665600, 'fixState': 1, 'nextFixDate': 1665360000, 'checkDate': 1665360000, 'checkState': 2, 'feelogger.infoid': '1', 'feePrintid': '1111111', 'gpsBrand': '1', 'gpsModel': '1', 'gpsImei': '1', 'commercialType': 3, 'fareType': '1', 'vehicleTec': '1', 'gpsInstallDate': 1570665600, 'vehicleSafe': '1', 'certifyDateA': 1570665600}
+2019-12-31 15:03:19,741 - uploadDrivers.py[line:394] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:03:19,741 - uploadDrivers.py[line:396] - INFO: Success
+2019-12-31 15:03:19,741 - uploadDrivers.py[line:403] - INFO: Set car
+2019-12-31 15:03:19,741 - uploadDrivers.py[line:405] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-31 15:03:19,741 - uploadDrivers.py[line:407] - DEBUG: {'driverId': 6834529, 'carId': 80801730, 'listenCarTypes': '1', 'operator': 'gactravel1'}
+2019-12-31 15:03:19,816 - uploadDrivers.py[line:409] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:03:19,816 - uploadDrivers.py[line:411] - INFO: Success
+2019-12-31 15:04:46,908 - uploadDrivers.py[line:47] - INFO: Login RUQIMobility
+2019-12-31 15:04:46,908 - uploadDrivers.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 15:04:46,908 - uploadDrivers.py[line:55] - DEBUG: {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+2019-12-31 15:04:52,457 - uploadDrivers.py[line:57] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:04:52,458 - uploadDrivers.py[line:59] - INFO: Login success
+2019-12-31 15:04:52,458 - uploadDrivers.py[line:66] - INFO: Generate new account
+2019-12-31 15:04:52,458 - uploadDrivers.py[line:67] - INFO: 15989104402
+2019-12-31 15:04:52,458 - uploadDrivers.py[line:69] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-31 15:04:52,458 - uploadDrivers.py[line:84] - DEBUG: {'city': '440100', 'currentResidentialAddress': '贵州省南京市清浦吴路r座 240545', 'drivingAge': '0', 'gender': '1', 'idCardNumber': '636749199201010140', 'isCertificateA': 'True', 'licenseType': 'C2', 'name': '测试', 'nativePlace': '广西壮族自治区长春县南长哈尔滨街n座 178896', 'phone': '15989104402', 'recruitComment': '123', 'recruitmentChannels': '1'}
+2019-12-31 15:04:52,573 - uploadDrivers.py[line:86] - DEBUG: {"code":150001,"message":"登录名、身份证号或手机号已注册"}
+2019-12-31 15:04:52,573 - uploadDrivers.py[line:92] - INFO: Driver ID exist!!!
+2019-12-31 15:04:52,573 - uploadDrivers.py[line:93] - INFO: Get driver ID
+2019-12-31 15:04:52,573 - uploadDrivers.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/list
+2019-12-31 15:04:52,611 - uploadDrivers.py[line:100] - DEBUG: {"code":0,"message":"成功","content":{"pageIndex":"1","pageSize":"10","total":"1","data":[{"driverId":6834529,"loginName":null,"phone":"15989104402","email":"981805021@qq.com","name":"测试","gender":1,"birthDate":"1992-01-01 00:00:00","city":"440100","nationality":null,"nation":"汉","areaCode":"+86","headImg":"https://travel-driverdev-driverpub-1258234669.cos.ap-guangzhou.myqcloud.com/6834282/c14358e9-babb-41a3-bebf-6d9cfb0560c11570786304009.png","description":null,"driverImg":"6834396/55b3910d-695a-495e-8dfb-e38968d963811569405148143.png","idCardNumber":"436445199201010140","idCardImgFront":"6834396/02b1d99e-7245-4fad-a267-1076d7f29d5c1569405154540.png","idCardImgBack":"6834396/ac648cb1-5ff7-4aa6-84e4-6825075aefa91569405158969.png","idCardImgHold":"6834396/bb7f3494-3103-487b-9d9e-9ef4c675920e1569405162164.png","licenseNumber":"436445199201010140","licenseStartDate":"1569340800","licenseEndDate":"1664121600","licenseType":"C2","licenseImg":"6834396/a1893c64-bf6b-4751-87ce-51216abb41221569405166250.png","licenseImgBack":"6834396/4c6f8fa4-8067-47e0-91aa-b696e1ef0f871569405171499.png","bankName":null,"bankCode":"","bankCardNumber":null,"rentCompanyId":null,"labourCompanyId":327,"managerId":null,"carId":80801730,"comment":null,"driverType":0,"listenCarTypes":"1","status":1,"carNumber":null,"carBrandId":null,"carModelId":null,"carAttributeId":null,"carBrand":null,"carModel":null,"carAttribute":null,"color":null,"driverScore":100,"driverStar":5.0,"carCertNo":null,"plateColor":null,"driverCertNo":null,"carVerifyCode":null,"engineNumber":null,"flag":2,"createTime":"2019-12-31 15:02:00","updateTime":"2019-12-31 15:03:20","drivingAge":0,"recruitmentChannels":1,"auditStatus":6,"isCertificateA":true,"disablesDateStart":null,"disablesDateEnd":null,"nativePlace":null,"currentResidentialAddress":null,"certificateAImgFront":null,"certificateAImgBack":null,"residencePermitImgFront":null,"residencePermitImgBack":null,"backgroundCheck":0,"appointmentOrderStatus":2,"acceptHomeOrder":2,"homeOrderAddr":null,"homeOrderLatLng":null,"approveStatus":3}]}}
+2019-12-31 15:04:52,612 - uploadDrivers.py[line:103] - INFO: Driver ID：6834529
+2019-12-31 15:04:52,612 - uploadDrivers.py[line:112] - INFO: Interview
+2019-12-31 15:04:52,612 - uploadDrivers.py[line:114] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834529?_=1569383098574
+2019-12-31 15:04:52,642 - uploadDrivers.py[line:116] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:04:52,642 - uploadDrivers.py[line:120] - INFO: Has been interviewed before
+2019-12-31 15:04:52,642 - uploadDrivers.py[line:121] - ERROR: 招募状态流转错误
+2019-12-31 15:04:52,642 - uploadDrivers.py[line:152] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-31 15:04:52,642 - uploadDrivers.py[line:153] - DEBUG: {'driverId': 6834529, 'driverAddress': '使用测试脚本添加', 'nation': '汉', 'driverHeight': '111', 'driverWeight': '123', 'driverEducation': '高中', 'driverResidentType': '1', 'driverMaritalStatus': '已婚', 'presentFamilyAddress': '', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'licenseNumber': '112121', 'getDriverLicenseDate': 1569340800, 'licenseStartDate': 1569340800, 'licenseEndDate': 1664121600, 'certificateA': '636749199201010140', 'networkCarIssueDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'networkCarProofOn': 1569340800, 'networkCarProofOff': 1664121600, 'email': '', 'result': 'true', 'interviewDate': 1569340800, 'interviewComment': '备注', 'interviewData': '6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png'}
+2019-12-31 15:04:52,676 - uploadDrivers.py[line:158] - INFO: Has been interviewed before
+2019-12-31 15:04:52,677 - uploadDrivers.py[line:159] - ERROR: 招募状态流转错误
+2019-12-31 15:04:52,677 - uploadDrivers.py[line:165] - INFO: Road test
+2019-12-31 15:04:52,677 - uploadDrivers.py[line:167] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834529&tabId=tab3&status=3
+2019-12-31 15:04:53,100 - uploadDrivers.py[line:177] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-31 15:04:53,100 - uploadDrivers.py[line:178] - DEBUG: {'driverId': 6834529, 'result': 'true', 'roadTestDate': 1569340800, 'roadTestComment': '备注', 'roadTestData': '6834388/549335f2-8a0d-4964-b05f-8336078e96ce1569396922197.png'}
+2019-12-31 15:04:53,195 - uploadDrivers.py[line:180] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:04:53,195 - uploadDrivers.py[line:184] - INFO: Has been tested before
+2019-12-31 15:04:53,195 - uploadDrivers.py[line:190] - INFO: Train
+2019-12-31 15:04:53,195 - uploadDrivers.py[line:192] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834529&tabId=tab4&status=4
+2019-12-31 15:04:53,306 - uploadDrivers.py[line:202] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-31 15:04:53,307 - uploadDrivers.py[line:203] - DEBUG: {'driverId': 6834529, 'result': 'true', 'courseDate': 1569340800, 'trainComment': '备注', 'courseData': '6834389/3ce2d860-fdf1-4f78-bd67-523cf69497661569397241370.png'}
+2019-12-31 15:04:53,333 - uploadDrivers.py[line:205] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:04:53,333 - uploadDrivers.py[line:209] - INFO: Has been trained before
+2019-12-31 15:04:53,333 - uploadDrivers.py[line:215] - INFO: Recruit
+2019-12-31 15:04:53,333 - uploadDrivers.py[line:217] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834529&tabId=tab5&status=5
+2019-12-31 15:04:53,422 - uploadDrivers.py[line:230] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-31 15:04:53,422 - uploadDrivers.py[line:231] - DEBUG: {'driverId': 6834529, 'isPayDeposit': 1, 'depositPayDate': 1569340800, 'depositPayAmt': '100', 'depositPayType': 1, 'signDate': 1569340800, 'materialReceivingInstructions': '说明', 'informationArchives': '6834388/1078de38-8752-45fd-aba0-4fdfb66746a51569397594363.zip'}
+2019-12-31 15:04:53,457 - uploadDrivers.py[line:233] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:04:53,457 - uploadDrivers.py[line:237] - INFO: Has been recruited before
+2019-12-31 15:04:53,457 - uploadDrivers.py[line:238] - ERROR: 招募状态流转错误
+2019-12-31 15:04:53,457 - uploadDrivers.py[line:244] - INFO: Upload driver img
+2019-12-31 15:04:53,457 - uploadDrivers.py[line:254] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-31 15:04:53,513 - uploadDrivers.py[line:256] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:04:53,513 - uploadDrivers.py[line:258] - DEBUG: Success
+2019-12-31 15:04:53,513 - uploadDrivers.py[line:264] - INFO: Contract
+2019-12-31 15:04:53,513 - uploadDrivers.py[line:270] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-31 15:04:53,513 - uploadDrivers.py[line:271] - DEBUG: {'driverId': 6834529, 'contractPhoto': '6834396/fdb895e1-77a9-4a6c-83d7-6fa9e7a17d501569405655930.pdf', 'operator': 'gactravel1', 'contractStatus': 'YX', 'contractType': 'HT', 'invalidTime': 1569427200, 'signTime': 1569340800, 'type': 'ZC', 'validTime': 1569340800}
+2019-12-31 15:04:56,756 - uploadDrivers.py[line:273] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:04:56,757 - uploadDrivers.py[line:275] - DEBUG: Success
+2019-12-31 15:04:56,757 - uploadDrivers.py[line:281] - INFO: Cource
+2019-12-31 15:04:56,757 - uploadDrivers.py[line:287] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-31 15:04:56,757 - uploadDrivers.py[line:288] - DEBUG: {'courseDate': 1569340800, 'courseName': '测试', 'driverId': 6834529, 'duration': 86400, 'operator': 'gactravel1', 'type': 'GQ', 'startTime': 1569340800, 'stopTime': 1569427200, 'trainingAccountInfo': '6834396/9e82e1ab-df17-42ec-922f-18abff91e4c01569405966360.png', 'trainerName': '测试'}
+2019-12-31 15:04:56,805 - uploadDrivers.py[line:290] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:04:56,805 - uploadDrivers.py[line:292] - DEBUG: Success
+2019-12-31 15:04:56,805 - uploadDrivers.py[line:298] - INFO: Upload all driver message
+2019-12-31 15:04:56,805 - uploadDrivers.py[line:342] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-31 15:04:56,805 - uploadDrivers.py[line:343] - DEBUG: {'driverId': 6834529, 'idCardNumber': '636749199201010140', 'licenseNumber': '636749199201010140', 'driverType': '', 'licenseType': 'C2', 'email': '981805021@qq.com', 'name': '测试', 'gender': '1', 'city': '440100', 'licenseEndDate': 1664121600, 'licenseStartDate': 1569340800, 'labourCompanyId': '327', 'birthDate': 694198800000, 'nation': '汉', 'driverHeight': '180', 'driverWeight': '70', 'appVersion': '1.6', 'commercialType': '1', 'driverAddress': '该司机使用脚本添加!!!', 'driverResidentType': '1', 'driverContactAddress': '广州市', 'driverEducation': '本科', 'nativePlace': '山东省秀梅县清浦何街F座 578728', 'licensePhotoId': '111111', 'recruitmentChannels': '1', 'driverMaritalStatus': '已婚', 'certificateA': '636749199201010140', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'getDriverLicenseDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'mobileModel': 'Android', 'mapType': '1', 'netType': '3', 'presentFamilyAddress': '', 'networkCarIssueDate': 1664121600, 'networkCarIssueOrganization': '1312213231', 'networkCarProofOff': 1569427200, 'networkCarProofOn': 1569340800, 'operator': 'gactravel1', 'taxiDriver': '1', 'informationArchives': '6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip'}
+2019-12-31 15:04:56,866 - uploadDrivers.py[line:345] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:04:56,866 - uploadDrivers.py[line:347] - INFO: Success
+2019-12-31 15:04:56,866 - uploadDrivers.py[line:362] - INFO: Create car
+2019-12-31 15:04:56,866 - uploadDrivers.py[line:368] - DEBUG: Car message:608,粤AB45933,5475607283,6881298245,11782062893601052
+2019-12-31 15:04:56,867 - uploadDrivers.py[line:374] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-31 15:04:56,867 - uploadDrivers.py[line:375] - DEBUG: {'carAttributeId': '300027', 'carLicenseImg': '', 'carImgs': '', 'carNumber': '粤AB45933', 'carNumberImg': '', 'carVerifyCode': '11782062893601052', 'city': '440100', 'engineNumber': '5475607283', 'oilWear': '6', 'rentCompanyId': '608', 'variableBox': '1', 'totalMileage': '12121', 'plateColor': '3', 'carCertNo': '6881298245'}
+2019-12-31 15:04:57,005 - uploadDrivers.py[line:377] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801731}}
+2019-12-31 15:04:57,005 - uploadDrivers.py[line:379] - INFO: Success
+2019-12-31 15:04:57,005 - uploadDrivers.py[line:391] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-31 15:04:57,005 - uploadDrivers.py[line:392] - DEBUG: {'carId': 80801731, 'vehicleType': '2', 'ownerName': '1', 'transAgency': '1', 'transDateStart': 1570665600, 'transDateStop': 1665360000, 'certifyDateB': 1570665600, 'fixState': 1, 'nextFixDate': 1665360000, 'checkDate': 1665360000, 'checkState': 2, 'feelogger.infoid': '1', 'feePrintid': '1111111', 'gpsBrand': '1', 'gpsModel': '1', 'gpsImei': '1', 'commercialType': 3, 'fareType': '1', 'vehicleTec': '1', 'gpsInstallDate': 1570665600, 'vehicleSafe': '1', 'certifyDateA': 1570665600}
+2019-12-31 15:04:57,072 - uploadDrivers.py[line:394] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:04:57,072 - uploadDrivers.py[line:396] - INFO: Success
+2019-12-31 15:04:57,072 - uploadDrivers.py[line:403] - INFO: Set car
+2019-12-31 15:04:57,072 - uploadDrivers.py[line:405] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-31 15:04:57,072 - uploadDrivers.py[line:407] - DEBUG: {'driverId': 6834529, 'carId': 80801731, 'listenCarTypes': '1', 'operator': 'gactravel1'}
+2019-12-31 15:04:57,153 - uploadDrivers.py[line:409] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:04:57,153 - uploadDrivers.py[line:411] - INFO: Success
+2019-12-31 15:10:29,072 - uploadDrivers.py[line:47] - INFO: Login RUQIMobility
+2019-12-31 15:10:29,073 - uploadDrivers.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 15:10:29,073 - uploadDrivers.py[line:55] - DEBUG: {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+2019-12-31 15:10:29,223 - uploadDrivers.py[line:57] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:29,223 - uploadDrivers.py[line:59] - INFO: Login success
+2019-12-31 15:10:29,223 - uploadDrivers.py[line:66] - INFO: Generate new account
+2019-12-31 15:10:29,223 - uploadDrivers.py[line:67] - INFO: 14389102332
+2019-12-31 15:10:29,223 - uploadDrivers.py[line:69] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-31 15:10:29,223 - uploadDrivers.py[line:84] - DEBUG: {'city': '440100', 'currentResidentialAddress': '山东省波县沈北新辛集街O座 866748', 'drivingAge': '0', 'gender': '1', 'idCardNumber': '299090199201010140', 'isCertificateA': 'True', 'licenseType': 'C2', 'name': '测试', 'nativePlace': '重庆市六盘水县西夏石家庄街u座 905276', 'phone': '14389102332', 'recruitComment': '123', 'recruitmentChannels': '1'}
+2019-12-31 15:10:29,391 - uploadDrivers.py[line:86] - DEBUG: {"code":0,"message":"成功","content":{"driverId":6834530}}
+2019-12-31 15:10:29,391 - uploadDrivers.py[line:88] - INFO: Success
+2019-12-31 15:10:29,391 - uploadDrivers.py[line:90] - INFO: Driver id:6834530
+2019-12-31 15:10:29,391 - uploadDrivers.py[line:112] - INFO: Interview
+2019-12-31 15:10:29,391 - uploadDrivers.py[line:114] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834530?_=1569383098574
+2019-12-31 15:10:29,436 - uploadDrivers.py[line:116] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:29,436 - uploadDrivers.py[line:118] - INFO: Success
+2019-12-31 15:10:29,436 - uploadDrivers.py[line:152] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-31 15:10:29,436 - uploadDrivers.py[line:153] - DEBUG: {'driverId': 6834530, 'driverAddress': '使用测试脚本添加', 'nation': '汉', 'driverHeight': '111', 'driverWeight': '123', 'driverEducation': '高中', 'driverResidentType': '1', 'driverMaritalStatus': '已婚', 'presentFamilyAddress': '', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'licenseNumber': '112121', 'getDriverLicenseDate': 1569340800, 'licenseStartDate': 1569340800, 'licenseEndDate': 1664121600, 'certificateA': '299090199201010140', 'networkCarIssueDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'networkCarProofOn': 1569340800, 'networkCarProofOff': 1664121600, 'email': '', 'result': 'true', 'interviewDate': 1569340800, 'interviewComment': '备注', 'interviewData': '6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png'}
+2019-12-31 15:10:29,484 - uploadDrivers.py[line:156] - INFO: Success
+2019-12-31 15:10:29,484 - uploadDrivers.py[line:165] - INFO: Road test
+2019-12-31 15:10:29,484 - uploadDrivers.py[line:167] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834530&tabId=tab3&status=3
+2019-12-31 15:10:29,631 - uploadDrivers.py[line:177] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-31 15:10:29,631 - uploadDrivers.py[line:178] - DEBUG: {'driverId': 6834530, 'result': 'true', 'roadTestDate': 1569340800, 'roadTestComment': '备注', 'roadTestData': '6834388/549335f2-8a0d-4964-b05f-8336078e96ce1569396922197.png'}
+2019-12-31 15:10:29,674 - uploadDrivers.py[line:180] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:29,674 - uploadDrivers.py[line:182] - INFO: Success
+2019-12-31 15:10:29,674 - uploadDrivers.py[line:190] - INFO: Train
+2019-12-31 15:10:29,675 - uploadDrivers.py[line:192] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834530&tabId=tab4&status=4
+2019-12-31 15:10:29,850 - uploadDrivers.py[line:202] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-31 15:10:29,850 - uploadDrivers.py[line:203] - DEBUG: {'driverId': 6834530, 'result': 'true', 'courseDate': 1569340800, 'trainComment': '备注', 'courseData': '6834389/3ce2d860-fdf1-4f78-bd67-523cf69497661569397241370.png'}
+2019-12-31 15:10:29,894 - uploadDrivers.py[line:205] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:29,894 - uploadDrivers.py[line:207] - INFO: Success
+2019-12-31 15:10:29,894 - uploadDrivers.py[line:215] - INFO: Recruit
+2019-12-31 15:10:29,894 - uploadDrivers.py[line:217] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834530&tabId=tab5&status=5
+2019-12-31 15:10:30,022 - uploadDrivers.py[line:230] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-31 15:10:30,022 - uploadDrivers.py[line:231] - DEBUG: {'driverId': 6834530, 'isPayDeposit': 1, 'depositPayDate': 1569340800, 'depositPayAmt': '100', 'depositPayType': 1, 'signDate': 1569340800, 'materialReceivingInstructions': '说明', 'informationArchives': '6834388/1078de38-8752-45fd-aba0-4fdfb66746a51569397594363.zip'}
+2019-12-31 15:10:30,063 - uploadDrivers.py[line:233] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:30,063 - uploadDrivers.py[line:235] - INFO: Success
+2019-12-31 15:10:30,063 - uploadDrivers.py[line:244] - INFO: Upload driver img
+2019-12-31 15:10:30,063 - uploadDrivers.py[line:254] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-31 15:10:30,106 - uploadDrivers.py[line:256] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:30,106 - uploadDrivers.py[line:258] - DEBUG: Success
+2019-12-31 15:10:30,106 - uploadDrivers.py[line:264] - INFO: Contract
+2019-12-31 15:10:30,106 - uploadDrivers.py[line:270] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-31 15:10:30,106 - uploadDrivers.py[line:271] - DEBUG: {'driverId': 6834530, 'contractPhoto': '6834396/fdb895e1-77a9-4a6c-83d7-6fa9e7a17d501569405655930.pdf', 'operator': 'gactravel1', 'contractStatus': 'YX', 'contractType': 'HT', 'invalidTime': 1569427200, 'signTime': 1569340800, 'type': 'ZC', 'validTime': 1569340800}
+2019-12-31 15:10:30,147 - uploadDrivers.py[line:273] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:30,147 - uploadDrivers.py[line:275] - DEBUG: Success
+2019-12-31 15:10:30,147 - uploadDrivers.py[line:281] - INFO: Cource
+2019-12-31 15:10:30,147 - uploadDrivers.py[line:287] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-31 15:10:30,147 - uploadDrivers.py[line:288] - DEBUG: {'courseDate': 1569340800, 'courseName': '测试', 'driverId': 6834530, 'duration': 86400, 'operator': 'gactravel1', 'type': 'GQ', 'startTime': 1569340800, 'stopTime': 1569427200, 'trainingAccountInfo': '6834396/9e82e1ab-df17-42ec-922f-18abff91e4c01569405966360.png', 'trainerName': '测试'}
+2019-12-31 15:10:30,187 - uploadDrivers.py[line:290] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:30,187 - uploadDrivers.py[line:292] - DEBUG: Success
+2019-12-31 15:10:30,187 - uploadDrivers.py[line:298] - INFO: Upload all driver message
+2019-12-31 15:10:30,187 - uploadDrivers.py[line:342] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-31 15:10:30,187 - uploadDrivers.py[line:343] - DEBUG: {'driverId': 6834530, 'idCardNumber': '299090199201010140', 'licenseNumber': '299090199201010140', 'driverType': '', 'licenseType': 'C2', 'email': '981805021@qq.com', 'name': '测试', 'gender': '1', 'city': '440100', 'licenseEndDate': 1664121600, 'licenseStartDate': 1569340800, 'labourCompanyId': '327', 'birthDate': 694198800000, 'nation': '汉', 'driverHeight': '180', 'driverWeight': '70', 'appVersion': '1.6', 'commercialType': '1', 'driverAddress': '该司机使用脚本添加!!!', 'driverResidentType': '1', 'driverContactAddress': '广州市', 'driverEducation': '本科', 'nativePlace': '云南省雷县吉区孙街q座 889383', 'licensePhotoId': '111111', 'recruitmentChannels': '1', 'driverMaritalStatus': '已婚', 'certificateA': '299090199201010140', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'getDriverLicenseDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'mobileModel': 'Android', 'mapType': '1', 'netType': '3', 'presentFamilyAddress': '', 'networkCarIssueDate': 1664121600, 'networkCarIssueOrganization': '1312213231', 'networkCarProofOff': 1569427200, 'networkCarProofOn': 1569340800, 'operator': 'gactravel1', 'taxiDriver': '1', 'informationArchives': '6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip'}
+2019-12-31 15:10:30,231 - uploadDrivers.py[line:345] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:30,232 - uploadDrivers.py[line:347] - INFO: Success
+2019-12-31 15:10:30,232 - uploadDrivers.py[line:362] - INFO: Create car
+2019-12-31 15:10:30,232 - uploadDrivers.py[line:368] - DEBUG: Car message:608,粤AB42670,2377381444,8156639722,29739639582647297
+2019-12-31 15:10:30,232 - uploadDrivers.py[line:374] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-31 15:10:30,232 - uploadDrivers.py[line:375] - DEBUG: {'carAttributeId': '300027', 'carLicenseImg': '', 'carImgs': '', 'carNumber': '粤AB42670', 'carNumberImg': '', 'carVerifyCode': '29739639582647297', 'city': '440100', 'engineNumber': '2377381444', 'oilWear': '6', 'rentCompanyId': '608', 'variableBox': '1', 'totalMileage': '12121', 'plateColor': '3', 'carCertNo': '8156639722'}
+2019-12-31 15:10:30,362 - uploadDrivers.py[line:377] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801732}}
+2019-12-31 15:10:30,362 - uploadDrivers.py[line:379] - INFO: Success
+2019-12-31 15:10:30,362 - uploadDrivers.py[line:391] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-31 15:10:30,362 - uploadDrivers.py[line:392] - DEBUG: {'carId': 80801732, 'vehicleType': '2', 'ownerName': '1', 'transAgency': '1', 'transDateStart': 1570665600, 'transDateStop': 1665360000, 'certifyDateB': 1570665600, 'fixState': 1, 'nextFixDate': 1665360000, 'checkDate': 1665360000, 'checkState': 2, 'feelogger.infoid': '1', 'feePrintid': '1111111', 'gpsBrand': '1', 'gpsModel': '1', 'gpsImei': '1', 'commercialType': 3, 'fareType': '1', 'vehicleTec': '1', 'gpsInstallDate': 1570665600, 'vehicleSafe': '1', 'certifyDateA': 1570665600}
+2019-12-31 15:10:30,413 - uploadDrivers.py[line:394] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:30,413 - uploadDrivers.py[line:396] - INFO: Success
+2019-12-31 15:10:30,413 - uploadDrivers.py[line:403] - INFO: Set car
+2019-12-31 15:10:30,413 - uploadDrivers.py[line:405] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-31 15:10:30,413 - uploadDrivers.py[line:407] - DEBUG: {'driverId': 6834530, 'carId': 80801732, 'listenCarTypes': '1', 'operator': 'gactravel1'}
+2019-12-31 15:10:30,486 - uploadDrivers.py[line:409] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:10:30,486 - uploadDrivers.py[line:411] - INFO: Success
+2019-12-31 15:14:02,749 - uploadDrivers.py[line:47] - INFO: Login RUQIMobility
+2019-12-31 15:14:02,749 - uploadDrivers.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 15:14:02,749 - uploadDrivers.py[line:55] - DEBUG: {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+2019-12-31 15:14:02,987 - uploadDrivers.py[line:57] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:14:02,987 - uploadDrivers.py[line:59] - INFO: Login success
+2019-12-31 15:14:02,987 - uploadDrivers.py[line:66] - INFO: Generate new account
+2019-12-31 15:14:02,987 - uploadDrivers.py[line:67] - INFO: 14389102332
+2019-12-31 15:14:02,987 - uploadDrivers.py[line:69] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-31 15:14:02,987 - uploadDrivers.py[line:84] - DEBUG: {'city': '440100', 'currentResidentialAddress': '浙江省健县新城丛街G座 443509', 'drivingAge': '0', 'gender': '1', 'idCardNumber': '845999199201010140', 'isCertificateA': 'True', 'licenseType': 'C2', 'name': '测试', 'nativePlace': '江西省帅市沈北新郑街u座 784237', 'phone': '14389102332', 'recruitComment': '123', 'recruitmentChannels': '1'}
+2019-12-31 15:14:03,081 - uploadDrivers.py[line:86] - DEBUG: {"code":150001,"message":"登录名、身份证号或手机号已注册"}
+2019-12-31 15:14:03,081 - uploadDrivers.py[line:92] - INFO: Driver ID exist!!!
+2019-12-31 15:14:03,081 - uploadDrivers.py[line:93] - INFO: Get driver ID
+2019-12-31 15:14:03,081 - uploadDrivers.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/list
+2019-12-31 15:14:03,110 - uploadDrivers.py[line:100] - DEBUG: {"code":0,"message":"成功","content":{"pageIndex":"1","pageSize":"10","total":"1","data":[{"driverId":6834530,"loginName":null,"phone":"14389102332","email":"981805021@qq.com","name":"测试","gender":1,"birthDate":"1992-01-01 00:00:00","city":"440100","nationality":null,"nation":"汉","areaCode":"+86","headImg":"https://travel-driverdev-driverpub-1258234669.cos.ap-guangzhou.myqcloud.com/6834282/c14358e9-babb-41a3-bebf-6d9cfb0560c11570786304009.png","description":null,"driverImg":"6834396/55b3910d-695a-495e-8dfb-e38968d963811569405148143.png","idCardNumber":"299090199201010140","idCardImgFront":"6834396/02b1d99e-7245-4fad-a267-1076d7f29d5c1569405154540.png","idCardImgBack":"6834396/ac648cb1-5ff7-4aa6-84e4-6825075aefa91569405158969.png","idCardImgHold":"6834396/bb7f3494-3103-487b-9d9e-9ef4c675920e1569405162164.png","licenseNumber":"299090199201010140","licenseStartDate":"1569340800","licenseEndDate":"1664121600","licenseType":"C2","licenseImg":"6834396/a1893c64-bf6b-4751-87ce-51216abb41221569405166250.png","licenseImgBack":"6834396/4c6f8fa4-8067-47e0-91aa-b696e1ef0f871569405171499.png","bankName":null,"bankCode":"","bankCardNumber":null,"rentCompanyId":null,"labourCompanyId":327,"managerId":null,"carId":80801732,"comment":null,"driverType":0,"listenCarTypes":"1","status":1,"carNumber":null,"carBrandId":null,"carModelId":null,"carAttributeId":null,"carBrand":null,"carModel":null,"carAttribute":null,"color":null,"driverScore":100,"driverStar":5.0,"carCertNo":null,"plateColor":null,"driverCertNo":null,"carVerifyCode":null,"engineNumber":null,"flag":2,"createTime":"2019-12-31 15:10:30","updateTime":"2019-12-31 15:10:31","drivingAge":0,"recruitmentChannels":1,"auditStatus":6,"isCertificateA":true,"disablesDateStart":null,"disablesDateEnd":null,"nativePlace":null,"currentResidentialAddress":null,"certificateAImgFront":null,"certificateAImgBack":null,"residencePermitImgFront":null,"residencePermitImgBack":null,"backgroundCheck":0,"appointmentOrderStatus":2,"acceptHomeOrder":2,"homeOrderAddr":null,"homeOrderLatLng":null,"approveStatus":3}]}}
+2019-12-31 15:14:03,110 - uploadDrivers.py[line:103] - INFO: Driver ID：6834530
+2019-12-31 15:14:03,110 - uploadDrivers.py[line:112] - INFO: Interview
+2019-12-31 15:14:03,110 - uploadDrivers.py[line:114] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834530?_=1569383098574
+2019-12-31 15:14:03,133 - uploadDrivers.py[line:116] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:14:03,133 - uploadDrivers.py[line:120] - INFO: Has been interviewed before
+2019-12-31 15:14:03,133 - uploadDrivers.py[line:121] - ERROR: 招募状态流转错误
+2019-12-31 15:14:03,133 - uploadDrivers.py[line:152] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-31 15:14:03,133 - uploadDrivers.py[line:153] - DEBUG: {'driverId': 6834530, 'driverAddress': '使用测试脚本添加', 'nation': '汉', 'driverHeight': '111', 'driverWeight': '123', 'driverEducation': '高中', 'driverResidentType': '1', 'driverMaritalStatus': '已婚', 'presentFamilyAddress': '', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'licenseNumber': '112121', 'getDriverLicenseDate': 1569340800, 'licenseStartDate': 1569340800, 'licenseEndDate': 1664121600, 'certificateA': '845999199201010140', 'networkCarIssueDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'networkCarProofOn': 1569340800, 'networkCarProofOff': 1664121600, 'email': '', 'result': 'true', 'interviewDate': 1569340800, 'interviewComment': '备注', 'interviewData': '6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png'}
+2019-12-31 15:14:03,159 - uploadDrivers.py[line:158] - INFO: Has been interviewed before
+2019-12-31 15:14:03,160 - uploadDrivers.py[line:159] - ERROR: 招募状态流转错误
+2019-12-31 15:14:03,160 - uploadDrivers.py[line:165] - INFO: Road test
+2019-12-31 15:14:03,160 - uploadDrivers.py[line:167] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834530&tabId=tab3&status=3
+2019-12-31 15:14:03,200 - uploadDrivers.py[line:177] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-31 15:14:03,200 - uploadDrivers.py[line:178] - DEBUG: {'driverId': 6834530, 'result': 'true', 'roadTestDate': 1569340800, 'roadTestComment': '备注', 'roadTestData': '6834388/549335f2-8a0d-4964-b05f-8336078e96ce1569396922197.png'}
+2019-12-31 15:14:03,226 - uploadDrivers.py[line:180] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:14:03,226 - uploadDrivers.py[line:184] - INFO: Has been tested before
+2019-12-31 15:14:03,227 - uploadDrivers.py[line:190] - INFO: Train
+2019-12-31 15:14:03,227 - uploadDrivers.py[line:192] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834530&tabId=tab4&status=4
+2019-12-31 15:14:03,267 - uploadDrivers.py[line:202] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-31 15:14:03,267 - uploadDrivers.py[line:203] - DEBUG: {'driverId': 6834530, 'result': 'true', 'courseDate': 1569340800, 'trainComment': '备注', 'courseData': '6834389/3ce2d860-fdf1-4f78-bd67-523cf69497661569397241370.png'}
+2019-12-31 15:14:03,297 - uploadDrivers.py[line:205] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:14:03,297 - uploadDrivers.py[line:209] - INFO: Has been trained before
+2019-12-31 15:14:03,297 - uploadDrivers.py[line:215] - INFO: Recruit
+2019-12-31 15:14:03,297 - uploadDrivers.py[line:217] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834530&tabId=tab5&status=5
+2019-12-31 15:14:03,344 - uploadDrivers.py[line:230] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-31 15:14:03,344 - uploadDrivers.py[line:231] - DEBUG: {'driverId': 6834530, 'isPayDeposit': 1, 'depositPayDate': 1569340800, 'depositPayAmt': '100', 'depositPayType': 1, 'signDate': 1569340800, 'materialReceivingInstructions': '说明', 'informationArchives': '6834388/1078de38-8752-45fd-aba0-4fdfb66746a51569397594363.zip'}
+2019-12-31 15:14:03,373 - uploadDrivers.py[line:233] - DEBUG: {"code":150011,"message":"招募状态流转错误"}
+2019-12-31 15:14:03,373 - uploadDrivers.py[line:237] - INFO: Has been recruited before
+2019-12-31 15:14:03,374 - uploadDrivers.py[line:238] - ERROR: 招募状态流转错误
+2019-12-31 15:14:03,374 - uploadDrivers.py[line:244] - INFO: Upload driver img
+2019-12-31 15:14:03,374 - uploadDrivers.py[line:254] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-31 15:14:03,439 - uploadDrivers.py[line:256] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:14:03,439 - uploadDrivers.py[line:258] - DEBUG: Success
+2019-12-31 15:14:03,439 - uploadDrivers.py[line:264] - INFO: Contract
+2019-12-31 15:14:03,439 - uploadDrivers.py[line:270] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-31 15:14:03,439 - uploadDrivers.py[line:271] - DEBUG: {'driverId': 6834530, 'contractPhoto': '6834396/fdb895e1-77a9-4a6c-83d7-6fa9e7a17d501569405655930.pdf', 'operator': 'gactravel1', 'contractStatus': 'YX', 'contractType': 'HT', 'invalidTime': 1569427200, 'signTime': 1569340800, 'type': 'ZC', 'validTime': 1569340800}
+2019-12-31 15:14:03,482 - uploadDrivers.py[line:273] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:14:03,482 - uploadDrivers.py[line:275] - DEBUG: Success
+2019-12-31 15:14:03,483 - uploadDrivers.py[line:281] - INFO: Cource
+2019-12-31 15:14:03,483 - uploadDrivers.py[line:287] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-31 15:14:03,483 - uploadDrivers.py[line:288] - DEBUG: {'courseDate': 1569340800, 'courseName': '测试', 'driverId': 6834530, 'duration': 86400, 'operator': 'gactravel1', 'type': 'GQ', 'startTime': 1569340800, 'stopTime': 1569427200, 'trainingAccountInfo': '6834396/9e82e1ab-df17-42ec-922f-18abff91e4c01569405966360.png', 'trainerName': '测试'}
+2019-12-31 15:14:03,520 - uploadDrivers.py[line:290] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:14:03,520 - uploadDrivers.py[line:292] - DEBUG: Success
+2019-12-31 15:14:03,520 - uploadDrivers.py[line:298] - INFO: Upload all driver message
+2019-12-31 15:14:03,521 - uploadDrivers.py[line:342] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-31 15:14:03,521 - uploadDrivers.py[line:343] - DEBUG: {'driverId': 6834530, 'idCardNumber': '845999199201010140', 'licenseNumber': '845999199201010140', 'driverType': '', 'licenseType': 'C2', 'email': '981805021@qq.com', 'name': '测试', 'gender': '1', 'city': '440100', 'licenseEndDate': 1664121600, 'licenseStartDate': 1569340800, 'labourCompanyId': '327', 'birthDate': 694198800000, 'nation': '汉', 'driverHeight': '180', 'driverWeight': '70', 'appVersion': '1.6', 'commercialType': '1', 'driverAddress': '该司机使用脚本添加!!!', 'driverResidentType': '1', 'driverContactAddress': '广州市', 'driverEducation': '本科', 'nativePlace': '浙江省淮安市高明陆街d座 442601', 'licensePhotoId': '111111', 'recruitmentChannels': '1', 'driverMaritalStatus': '已婚', 'certificateA': '845999199201010140', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'getDriverLicenseDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'mobileModel': 'Android', 'mapType': '1', 'netType': '3', 'presentFamilyAddress': '', 'networkCarIssueDate': 1664121600, 'networkCarIssueOrganization': '1312213231', 'networkCarProofOff': 1569427200, 'networkCarProofOn': 1569340800, 'operator': 'gactravel1', 'taxiDriver': '1', 'informationArchives': '6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip'}
+2019-12-31 15:14:03,572 - uploadDrivers.py[line:345] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:14:03,573 - uploadDrivers.py[line:347] - INFO: Success
+2019-12-31 15:14:03,573 - uploadDrivers.py[line:362] - INFO: Create car
+2019-12-31 15:14:03,573 - uploadDrivers.py[line:368] - DEBUG: Car message:608,粤AB70513,8762962667,7285209472,51011143104468105
+2019-12-31 15:14:03,573 - uploadDrivers.py[line:374] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-31 15:14:03,573 - uploadDrivers.py[line:375] - DEBUG: {'carAttributeId': '300027', 'carLicenseImg': '', 'carImgs': '', 'carNumber': '粤AB70513', 'carNumberImg': '', 'carVerifyCode': '51011143104468105', 'city': '440100', 'engineNumber': '8762962667', 'oilWear': '6', 'rentCompanyId': '608', 'variableBox': '1', 'totalMileage': '12121', 'plateColor': '3', 'carCertNo': '7285209472'}
+2019-12-31 15:14:03,696 - uploadDrivers.py[line:377] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801733}}
+2019-12-31 15:14:03,696 - uploadDrivers.py[line:379] - INFO: Success
+2019-12-31 15:14:03,697 - uploadDrivers.py[line:391] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-31 15:14:03,697 - uploadDrivers.py[line:392] - DEBUG: {'carId': 80801733, 'vehicleType': '2', 'ownerName': '1', 'transAgency': '1', 'transDateStart': 1570665600, 'transDateStop': 1665360000, 'certifyDateB': 1570665600, 'fixState': 1, 'nextFixDate': 1665360000, 'checkDate': 1665360000, 'checkState': 2, 'feelogger.infoid': '1', 'feePrintid': '1111111', 'gpsBrand': '1', 'gpsModel': '1', 'gpsImei': '1', 'commercialType': 3, 'fareType': '1', 'vehicleTec': '1', 'gpsInstallDate': 1570665600, 'vehicleSafe': '1', 'certifyDateA': 1570665600}
+2019-12-31 15:14:03,748 - uploadDrivers.py[line:394] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:14:03,748 - uploadDrivers.py[line:396] - INFO: Success
+2019-12-31 15:14:03,748 - uploadDrivers.py[line:403] - INFO: Set car
+2019-12-31 15:14:03,748 - uploadDrivers.py[line:405] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-31 15:14:03,748 - uploadDrivers.py[line:407] - DEBUG: {'driverId': 6834530, 'carId': 80801733, 'listenCarTypes': '1', 'operator': 'gactravel1'}
+2019-12-31 15:14:03,818 - uploadDrivers.py[line:409] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:14:03,818 - uploadDrivers.py[line:411] - INFO: Success
+2019-12-31 15:20:24,246 - uploadDrivers.py[line:47] - INFO: Login RUQIMobility
+2019-12-31 15:20:24,246 - uploadDrivers.py[line:53] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2019-12-31 15:20:24,247 - uploadDrivers.py[line:55] - DEBUG: {'username': 'gactravel', 'password': 'qwe123!@#web', 'token': '123456'}
+2019-12-31 15:20:24,497 - uploadDrivers.py[line:57] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:24,498 - uploadDrivers.py[line:59] - INFO: Login success
+2019-12-31 15:20:24,498 - uploadDrivers.py[line:66] - INFO: Generate new account
+2019-12-31 15:20:24,498 - uploadDrivers.py[line:67] - INFO: 15879843758
+2019-12-31 15:20:24,498 - uploadDrivers.py[line:69] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/create
+2019-12-31 15:20:24,498 - uploadDrivers.py[line:84] - DEBUG: {'city': '440100', 'currentResidentialAddress': '陕西省亮市璧山永安街B座 116928', 'drivingAge': '0', 'gender': '1', 'idCardNumber': '728775199201010140', 'isCertificateA': 'True', 'licenseType': 'C2', 'name': '测', 'nativePlace': '吉林省雷市蓟州王街L座 506388', 'phone': '15879843758', 'recruitComment': '123', 'recruitmentChannels': '1'}
+2019-12-31 15:20:25,047 - uploadDrivers.py[line:86] - DEBUG: {"code":0,"message":"成功","content":{"driverId":6834531}}
+2019-12-31 15:20:25,047 - uploadDrivers.py[line:88] - INFO: Success
+2019-12-31 15:20:25,047 - uploadDrivers.py[line:90] - INFO: Driver id:6834531
+2019-12-31 15:20:25,047 - uploadDrivers.py[line:112] - INFO: Interview
+2019-12-31 15:20:25,047 - uploadDrivers.py[line:114] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/notice/interview/6834531?_=1569383098574
+2019-12-31 15:20:25,082 - uploadDrivers.py[line:116] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:25,082 - uploadDrivers.py[line:118] - INFO: Success
+2019-12-31 15:20:25,082 - uploadDrivers.py[line:152] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/interview/create
+2019-12-31 15:20:25,082 - uploadDrivers.py[line:153] - DEBUG: {'driverId': 6834531, 'driverAddress': '使用测试脚本添加', 'nation': '汉', 'driverHeight': '111', 'driverWeight': '123', 'driverEducation': '高中', 'driverResidentType': '1', 'driverMaritalStatus': '已婚', 'presentFamilyAddress': '', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'licenseNumber': '112121', 'getDriverLicenseDate': 1569340800, 'licenseStartDate': 1569340800, 'licenseEndDate': 1664121600, 'certificateA': '728775199201010140', 'networkCarIssueDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'networkCarProofOn': 1569340800, 'networkCarProofOff': 1664121600, 'email': '', 'result': 'true', 'interviewDate': 1569340800, 'interviewComment': '备注', 'interviewData': '6834389/05f28172-64b1-4e00-80ed-b87df99711431569394421373.png'}
+2019-12-31 15:20:25,124 - uploadDrivers.py[line:156] - INFO: Success
+2019-12-31 15:20:25,124 - uploadDrivers.py[line:165] - INFO: Road test
+2019-12-31 15:20:25,125 - uploadDrivers.py[line:167] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834531&tabId=tab3&status=3
+2019-12-31 15:20:25,199 - uploadDrivers.py[line:177] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/roadTest/create
+2019-12-31 15:20:25,199 - uploadDrivers.py[line:178] - DEBUG: {'driverId': 6834531, 'result': 'true', 'roadTestDate': 1569340800, 'roadTestComment': '备注', 'roadTestData': '6834388/549335f2-8a0d-4964-b05f-8336078e96ce1569396922197.png'}
+2019-12-31 15:20:25,247 - uploadDrivers.py[line:180] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:25,248 - uploadDrivers.py[line:182] - INFO: Success
+2019-12-31 15:20:25,248 - uploadDrivers.py[line:190] - INFO: Train
+2019-12-31 15:20:25,248 - uploadDrivers.py[line:192] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834531&tabId=tab4&status=4
+2019-12-31 15:20:29,013 - uploadDrivers.py[line:202] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/train/create
+2019-12-31 15:20:29,013 - uploadDrivers.py[line:203] - DEBUG: {'driverId': 6834531, 'result': 'true', 'courseDate': 1569340800, 'trainComment': '备注', 'courseData': '6834389/3ce2d860-fdf1-4f78-bd67-523cf69497661569397241370.png'}
+2019-12-31 15:20:29,052 - uploadDrivers.py[line:205] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:29,052 - uploadDrivers.py[line:207] - INFO: Success
+2019-12-31 15:20:29,052 - uploadDrivers.py[line:215] - INFO: Recruit
+2019-12-31 15:20:29,052 - uploadDrivers.py[line:217] - DEBUG: https://managetest.ruqimobility.com/pages/driver/driver_recruitment_add.html?driverId=6834531&tabId=tab5&status=5
+2019-12-31 15:20:29,164 - uploadDrivers.py[line:230] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/sign/create
+2019-12-31 15:20:29,165 - uploadDrivers.py[line:231] - DEBUG: {'driverId': 6834531, 'isPayDeposit': 1, 'depositPayDate': 1569340800, 'depositPayAmt': '100', 'depositPayType': 1, 'signDate': 1569340800, 'materialReceivingInstructions': '说明', 'informationArchives': '6834388/1078de38-8752-45fd-aba0-4fdfb66746a51569397594363.zip'}
+2019-12-31 15:20:29,205 - uploadDrivers.py[line:233] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:29,205 - uploadDrivers.py[line:235] - INFO: Success
+2019-12-31 15:20:29,205 - uploadDrivers.py[line:244] - INFO: Upload driver img
+2019-12-31 15:20:29,205 - uploadDrivers.py[line:254] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/recruit/img/uploadImg
+2019-12-31 15:20:29,245 - uploadDrivers.py[line:256] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:29,245 - uploadDrivers.py[line:258] - DEBUG: Success
+2019-12-31 15:20:29,245 - uploadDrivers.py[line:264] - INFO: Contract
+2019-12-31 15:20:29,245 - uploadDrivers.py[line:270] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/contract/update
+2019-12-31 15:20:29,245 - uploadDrivers.py[line:271] - DEBUG: {'driverId': 6834531, 'contractPhoto': '6834396/fdb895e1-77a9-4a6c-83d7-6fa9e7a17d501569405655930.pdf', 'operator': 'gactravel1', 'contractStatus': 'YX', 'contractType': 'HT', 'invalidTime': 1569427200, 'signTime': 1569340800, 'type': 'ZC', 'validTime': 1569340800}
+2019-12-31 15:20:29,282 - uploadDrivers.py[line:273] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:29,282 - uploadDrivers.py[line:275] - DEBUG: Success
+2019-12-31 15:20:29,282 - uploadDrivers.py[line:281] - INFO: Cource
+2019-12-31 15:20:29,282 - uploadDrivers.py[line:287] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/cource/create
+2019-12-31 15:20:29,282 - uploadDrivers.py[line:288] - DEBUG: {'courseDate': 1569340800, 'courseName': '测试', 'driverId': 6834531, 'duration': 86400, 'operator': 'gactravel1', 'type': 'GQ', 'startTime': 1569340800, 'stopTime': 1569427200, 'trainingAccountInfo': '6834396/9e82e1ab-df17-42ec-922f-18abff91e4c01569405966360.png', 'trainerName': '测试'}
+2019-12-31 15:20:29,316 - uploadDrivers.py[line:290] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:29,316 - uploadDrivers.py[line:292] - DEBUG: Success
+2019-12-31 15:20:29,316 - uploadDrivers.py[line:298] - INFO: Upload all driver message
+2019-12-31 15:20:29,316 - uploadDrivers.py[line:342] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/base/info/update
+2019-12-31 15:20:29,316 - uploadDrivers.py[line:343] - DEBUG: {'driverId': 6834531, 'idCardNumber': '728775199201010140', 'licenseNumber': '728775199201010140', 'driverType': '', 'licenseType': 'C2', 'email': '981805021@qq.com', 'name': '测', 'gender': '1', 'city': '440100', 'licenseEndDate': 1664121600, 'licenseStartDate': 1569340800, 'labourCompanyId': '327', 'birthDate': 694198800000, 'nation': '汉', 'driverHeight': '180', 'driverWeight': '70', 'appVersion': '1.6', 'commercialType': '1', 'driverAddress': '该司机使用脚本添加!!!', 'driverResidentType': '1', 'driverContactAddress': '广州市', 'driverEducation': '本科', 'nativePlace': '黑龙江省桂珍市门头沟六盘水路C座 792968', 'licensePhotoId': '111111', 'recruitmentChannels': '1', 'driverMaritalStatus': '已婚', 'certificateA': '728775199201010140', 'emergencyContact': '13250890999', 'emergencyContactPhone': '13284884374', 'getDriverLicenseDate': 1569340800, 'getNetworkCarProofDate': 1569340800, 'mobileModel': 'Android', 'mapType': '1', 'netType': '3', 'presentFamilyAddress': '', 'networkCarIssueDate': 1664121600, 'networkCarIssueOrganization': '1312213231', 'networkCarProofOff': 1569427200, 'networkCarProofOn': 1569340800, 'operator': 'gactravel1', 'taxiDriver': '1', 'informationArchives': '6834396/25320fd7-4c71-4d6e-80ef-2e5e835a03621569406462272.zip'}
+2019-12-31 15:20:29,361 - uploadDrivers.py[line:345] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:29,361 - uploadDrivers.py[line:347] - INFO: Success
+2019-12-31 15:20:29,361 - uploadDrivers.py[line:362] - INFO: Create car
+2019-12-31 15:20:29,361 - uploadDrivers.py[line:368] - DEBUG: Car message:608,粤AB66429,6878894446,3610481960,76979605423050046
+2019-12-31 15:20:29,361 - uploadDrivers.py[line:374] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/create
+2019-12-31 15:20:29,361 - uploadDrivers.py[line:375] - DEBUG: {'carAttributeId': '300027', 'carLicenseImg': '', 'carImgs': '', 'carNumber': '粤AB66429', 'carNumberImg': '', 'carVerifyCode': '76979605423050046', 'city': '440100', 'engineNumber': '6878894446', 'oilWear': '6', 'rentCompanyId': '608', 'variableBox': '1', 'totalMileage': '12121', 'plateColor': '3', 'carCertNo': '3610481960'}
+2019-12-31 15:20:29,446 - uploadDrivers.py[line:377] - DEBUG: {"code":0,"message":"成功","content":{"carId":80801734}}
+2019-12-31 15:20:29,446 - uploadDrivers.py[line:379] - INFO: Success
+2019-12-31 15:20:29,446 - uploadDrivers.py[line:391] - DEBUG: https://managetest.ruqimobility.com/management/v1/vehicle/ext/create
+2019-12-31 15:20:29,446 - uploadDrivers.py[line:392] - DEBUG: {'carId': 80801734, 'vehicleType': '2', 'ownerName': '1', 'transAgency': '1', 'transDateStart': 1570665600, 'transDateStop': 1665360000, 'certifyDateB': 1570665600, 'fixState': 1, 'nextFixDate': 1665360000, 'checkDate': 1665360000, 'checkState': 2, 'feelogger.infoid': '1', 'feePrintid': '1111111', 'gpsBrand': '1', 'gpsModel': '1', 'gpsImei': '1', 'commercialType': 3, 'fareType': '1', 'vehicleTec': '1', 'gpsInstallDate': 1570665600, 'vehicleSafe': '1', 'certifyDateA': 1570665600}
+2019-12-31 15:20:29,501 - uploadDrivers.py[line:394] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:29,501 - uploadDrivers.py[line:396] - INFO: Success
+2019-12-31 15:20:29,501 - uploadDrivers.py[line:403] - INFO: Set car
+2019-12-31 15:20:29,501 - uploadDrivers.py[line:405] - DEBUG: https://managetest.ruqimobility.com/management/v1/driver/setCar
+2019-12-31 15:20:29,501 - uploadDrivers.py[line:407] - DEBUG: {'driverId': 6834531, 'carId': 80801734, 'listenCarTypes': '1', 'operator': 'gactravel1'}
+2019-12-31 15:20:29,589 - uploadDrivers.py[line:409] - DEBUG: {"code":0,"message":"成功"}
+2019-12-31 15:20:29,589 - uploadDrivers.py[line:411] - INFO: Success
