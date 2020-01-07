@@ -8,10 +8,17 @@ import json
 import time
 import sys
 import logging
+import mysql.connector
 
 if 'linux' in sys.platform:
     reload(sys)
     sys.setdefaultencoding('utf8')
+try:
+    cnx = mysql.connector.connect(user='root', password='ruqi123456', host='10.10.28.121', database='xjming')
+    cur = cnx.cursor(buffered=True)
+except:
+    print("数据库异常")
+
 USER_PHONE = ['13250790293', '15989104405']
 envs = {'0': 'https://managetest.ruqimobility.com', '1': 'http://111.230.118.77'}
 headers = {
@@ -37,7 +44,7 @@ def round(x):
 
 
 class Refund:
-    def __init__(self, env='0', refund_days=1, user_phone=None):
+    def __init__(self, env='0', refund_days=1, user_phone=None, host='127.0.0.1'):
         self.url_top = envs[env]
         self.user_phone = user_phone
         self.session = requests.session()
@@ -46,6 +53,7 @@ class Refund:
         self.refund_success_times = 0
         self.orders = []
         self.message = ''
+        self.host = host
 
     def login(self):
         logger.info('Login RUQIMobility')
@@ -121,7 +129,7 @@ class Refund:
         logger.info('refundBaseAmount:%s,refundExtraAmount:%s' % (refundBaseAmount, refundExtraAmount))
         payload = {"orderId": orderId,
                    "comment": "网页脚本退款",
-                   "operator": "gactravel1",
+                   "operator": "xjming",
                    "timestamp": self.timestamp,
                    "source": 0,
                    "payAmount": payDoneAmount,
@@ -135,31 +143,26 @@ class Refund:
         logger.info(response.text)
         if response.json()['code'] == 0:
             self.refund_success_times += 1
+            result = "退款成功"
             self.message = self.message + '订单ID:%s\n 支付金额:%s 非附加费:%s 附加费:%s\n' % (
                 orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
             logger.info("Refund Success!!!")
-        # elif response.json()['code'] == 110019 and response.json()['message'] != '退款失败：订单号不存在':  # 兼容预付费情况
-        #     try:
-        #         res = re.match('.*?支付记录1:(.*?):支付记录2:(.*?)元', response.json()['message'])
-        #         logger.debug('%s,%s' % (res.group(1), res.group(2)))
-        #         if float(res.group(1)) < float(refundBaseAmount):
-        #             self.refund(orderId, payDoneAmount, res.group(1), '0')
-        #             self.refund(orderId, payDoneAmount,
-        #                         str(round(float(refundBaseAmount)) - round(float(res.group(1)))), refundExtraAmount)
-        #         else:
-        #             self.refund(orderId, payDoneAmount, refundBaseAmount,
-        #                         str(round(float(res.group(1))) - round(float(refundBaseAmount))))
-        #             self.refund(orderId, payDoneAmount, '0', str(round(float(refundExtraAmount)) - (
-        #                         round(float(res.group(1))) - round(float(refundBaseAmount)))))
-        #     except:
-        #         self.message += '订单ID:%s\n退款失败\n' % orderId
-        #         logger.error('%s Refund fail!!!' % orderId)
-        #         self.refund_success_times += 1
         else:
+            result = "退款失败：%s" % response.json()['message']
             logger.error(response.json()['message'])
+        # 数据库保存记录
+        try:
+            logger.error('Insert database')
+            cur.execute(
+                'insert into refund_record (host,phone,orderId,refundBaseAmount,refundExtraAmount,result,time) values (%s, %s, %s, %s, %s, %s, %s)',
+                [self.host, self.user_phone, orderId, refundBaseAmount, refundExtraAmount, result,
+                 time.strftime("%Y-%m-%d %H:%M:%S")])
+        except:
+            logger.error("Insert Fail")
 
     def commit(self):
         starts_time = time.time()
+        logger.info("user phone:%s" % self.user_phone)
         self.login()
         logger.info('Refund days:%s' % self.refund_days)
         try:
@@ -222,20 +225,25 @@ class Refund:
             self.message = "暂无订单需退款"
         else:
             costs_time = time.time() - starts_time
-            self.message += "\n退款完成，耗时：%.2fs" % costs_time
-        logger.info("Refund %d orders" % self.refund_success_times)
-        logger.info("Done!!!\n")
+            self.message += "\n退款完成\n耗时：%.2fs" % costs_time
+        try:
+            logger.info("Database commit")
+            cnx.commit()
+        except:
+            logger.error("Insert Fail")
+        finally:
+            logger.info("Refund %d orders" % self.refund_success_times)
+            logger.info("Done!!!\n")
 
 
 if __name__ == "__main__":
     start_time = time.time()
     for phone in USER_PHONE:
-        logger.info("user phone:%s" % phone)
-        try:
+        if True:
             RF = Refund(user_phone=phone)
             RF.commit()
-        except:
-            print('Refund fail')
+        # except:
+        #     print('Refund fail')
     cost_time = time.time() - start_time
     logger.info('Cost time:%.2fs' % cost_time)
     time.sleep(3)

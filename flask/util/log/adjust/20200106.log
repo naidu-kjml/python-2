@@ -1,0 +1,27 @@
+2020-01-06 19:44:41,772 - adjust.py[line:101] - INFO: User phone:13250790293
+2020-01-06 19:44:41,773 - adjust.py[line:39] - INFO: Login RUQIMobility
+2020-01-06 19:44:41,773 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-06 19:44:42,051 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2020-01-06 19:44:42,051 - adjust.py[line:50] - INFO: Login success
+2020-01-06 19:44:42,051 - adjust.py[line:57] - INFO: Get adjust orders
+2020-01-06 19:44:42,051 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-06 19:44:42,104 - adjust.py[line:69] - INFO: Success
+2020-01-06 19:44:42,104 - adjust.py[line:104] - INFO: The numbers of orders:1
+2020-01-06 19:44:42,106 - adjust.py[line:76] - INFO: Adjust order:6778782175828377712
+2020-01-06 19:44:42,106 - adjust.py[line:86] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2020-01-06 19:44:42,489 - adjust.py[line:88] - DEBUG: {"code":0,"message":"成功"}
+2020-01-06 19:44:42,489 - adjust.py[line:117] - INFO: Done!!!
+
+2020-01-06 19:44:42,491 - adjust.py[line:101] - INFO: User phone:15989104405
+2020-01-06 19:44:42,491 - adjust.py[line:39] - INFO: Login RUQIMobility
+2020-01-06 19:44:42,491 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-06 19:44:42,664 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2020-01-06 19:44:42,665 - adjust.py[line:50] - INFO: Login success
+2020-01-06 19:44:42,665 - adjust.py[line:57] - INFO: Get adjust orders
+2020-01-06 19:44:42,665 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-06 19:44:42,695 - adjust.py[line:69] - INFO: Success
+2020-01-06 19:44:42,696 - adjust.py[line:104] - INFO: The numbers of orders:0
+2020-01-06 19:44:42,696 - adjust.py[line:112] - INFO: No orders to be adjusted
+2020-01-06 19:44:42,696 - adjust.py[line:117] - INFO: Done!!!
+
+2020-01-06 19:44:42,696 - adjust.py[line:129] - INFO: Cost time:0.92s

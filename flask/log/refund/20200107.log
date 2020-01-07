@@ -1,0 +1,314 @@
+2020-01-07 16:20:21,501 - refund.py[line:51] - INFO: Login RUQIMobility
+2020-01-07 16:20:21,501 - refund.py[line:57] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:20:21,707 - refund.py[line:60] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:20:21,707 - refund.py[line:62] - INFO: Login success
+2020-01-07 16:20:21,707 - refund.py[line:164] - INFO: Refund days:1
+2020-01-07 16:20:21,707 - refund.py[line:69] - INFO: Get refund orders
+2020-01-07 16:20:21,707 - refund.py[line:70] - DEBUG: Page 1
+2020-01-07 16:20:21,707 - refund.py[line:87] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:20:21,952 - refund.py[line:90] - INFO: Success
+2020-01-07 16:20:21,952 - refund.py[line:98] - DEBUG: 1577341239
+2020-01-07 16:20:21,952 - refund.py[line:103] - DEBUG: Finish
+2020-01-07 16:20:21,952 - refund.py[line:172] - INFO: Order_Numbers:10
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 16:20:21,952 - refund.py[line:226] - INFO: Refund 0 orders
+2020-01-07 16:20:21,952 - refund.py[line:227] - INFO: Done!!!
+
+2020-01-07 16:22:59,154 - refund.py[line:51] - INFO: Login RUQIMobility
+2020-01-07 16:22:59,155 - refund.py[line:57] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:22:59,252 - refund.py[line:60] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:22:59,253 - refund.py[line:62] - INFO: Login success
+2020-01-07 16:22:59,253 - refund.py[line:164] - INFO: Refund days:1
+2020-01-07 16:22:59,253 - refund.py[line:69] - INFO: Get refund orders
+2020-01-07 16:22:59,253 - refund.py[line:70] - DEBUG: Page 1
+2020-01-07 16:22:59,253 - refund.py[line:87] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:22:59,316 - refund.py[line:90] - INFO: Success
+2020-01-07 16:22:59,316 - refund.py[line:169] - ERROR: list index out of range
+2020-01-07 16:22:59,316 - refund.py[line:170] - ERROR: No order to refunded
+2020-01-07 16:48:16,476 - refund.py[line:51] - INFO: Login RUQIMobility
+2020-01-07 16:48:16,476 - refund.py[line:57] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:48:16,715 - refund.py[line:60] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:48:16,716 - refund.py[line:62] - INFO: Login success
+2020-01-07 16:48:16,716 - refund.py[line:164] - INFO: Refund days:1
+2020-01-07 16:48:16,716 - refund.py[line:69] - INFO: Get refund orders
+2020-01-07 16:48:16,716 - refund.py[line:70] - DEBUG: Page 1
+2020-01-07 16:48:16,716 - refund.py[line:87] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:48:16,875 - refund.py[line:90] - INFO: Success
+2020-01-07 16:48:16,875 - refund.py[line:169] - ERROR: list index out of range
+2020-01-07 16:48:16,875 - refund.py[line:170] - ERROR: No order to refunded
+2020-01-07 17:05:59,156 - refund.py[line:51] - INFO: Login RUQIMobility
+2020-01-07 17:05:59,157 - refund.py[line:57] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 17:05:59,261 - refund.py[line:60] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 17:05:59,261 - refund.py[line:62] - INFO: Login success
+2020-01-07 17:05:59,261 - refund.py[line:147] - INFO: Refund days:1
+2020-01-07 17:05:59,262 - refund.py[line:69] - INFO: Get refund orders
+2020-01-07 17:05:59,262 - refund.py[line:70] - DEBUG: Page 1
+2020-01-07 17:05:59,262 - refund.py[line:87] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 17:05:59,297 - refund.py[line:90] - INFO: Success
+2020-01-07 17:05:59,297 - refund.py[line:152] - ERROR: list index out of range
+2020-01-07 17:05:59,298 - refund.py[line:153] - ERROR: No order to refunded
+2020-01-07 17:06:14,161 - refund.py[line:51] - INFO: Login RUQIMobility
+2020-01-07 17:06:14,161 - refund.py[line:57] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 17:06:14,738 - refund.py[line:60] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 17:06:14,738 - refund.py[line:62] - INFO: Login success
+2020-01-07 17:06:14,738 - refund.py[line:147] - INFO: Refund days:1
+2020-01-07 17:06:14,739 - refund.py[line:69] - INFO: Get refund orders
+2020-01-07 17:06:14,739 - refund.py[line:70] - DEBUG: Page 1
+2020-01-07 17:06:14,739 - refund.py[line:87] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 17:06:15,145 - refund.py[line:90] - INFO: Success
+2020-01-07 17:06:15,145 - refund.py[line:152] - ERROR: list index out of range
+2020-01-07 17:06:15,145 - refund.py[line:153] - ERROR: No order to refunded
+2020-01-07 17:08:55,657 - refund.py[line:146] - INFO: user phone:11122222222
+2020-01-07 17:08:55,657 - refund.py[line:51] - INFO: Login RUQIMobility
+2020-01-07 17:08:55,657 - refund.py[line:57] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 17:08:55,898 - refund.py[line:60] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 17:08:55,898 - refund.py[line:62] - INFO: Login success
+2020-01-07 17:08:55,898 - refund.py[line:148] - INFO: Refund days:1
+2020-01-07 17:08:55,898 - refund.py[line:69] - INFO: Get refund orders
+2020-01-07 17:08:55,898 - refund.py[line:70] - DEBUG: Page 1
+2020-01-07 17:08:55,898 - refund.py[line:87] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 17:08:56,001 - refund.py[line:90] - INFO: Success
+2020-01-07 17:08:56,001 - refund.py[line:153] - ERROR: list index out of range
+2020-01-07 17:08:56,001 - refund.py[line:154] - ERROR: No order to refunded
+2020-01-07 19:10:42,367 - refund.py[line:162] - INFO: user phone:13250790293
+2020-01-07 19:10:42,368 - refund.py[line:60] - INFO: Login RUQIMobility
+2020-01-07 19:10:42,368 - refund.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 19:10:42,548 - refund.py[line:69] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 19:10:42,549 - refund.py[line:71] - INFO: Login success
+2020-01-07 19:10:42,549 - refund.py[line:164] - INFO: Refund days:1
+2020-01-07 19:10:42,549 - refund.py[line:78] - INFO: Get refund orders
+2020-01-07 19:10:42,549 - refund.py[line:79] - DEBUG: Page 1
+2020-01-07 19:10:42,549 - refund.py[line:96] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 19:10:42,617 - refund.py[line:99] - INFO: Success
+2020-01-07 19:10:42,619 - refund.py[line:107] - DEBUG: 1577774841
+2020-01-07 19:10:42,619 - refund.py[line:112] - DEBUG: Finish
+2020-01-07 19:10:42,619 - refund.py[line:172] - INFO: Order_Numbers:10
+2020-01-07 19:10:42,620 - refund.py[line:115] - DEBUG: Get order info
+2020-01-07 19:10:42,620 - refund.py[line:117] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/query/6779156623962145015?_=1578395442
+2020-01-07 19:10:42,797 - refund.py[line:179] - DEBUG: OrderID：6779156623962145015
+ payDoneAmount:0.11 refundBaseAmount:0.11 refundExtraAmount:0.0
+2020-01-07 19:10:42,797 - refund.py[line:180] - DEBUG: [{'payAmount': 0.11, 'payStatus': 2, 'channel': 1, 'recordTime': '1578395427'}]
+2020-01-07 19:10:42,797 - refund.py[line:186] - DEBUG: 2
+2020-01-07 19:10:42,797 - refund.py[line:187] - DEBUG: 0.11
+2020-01-07 19:10:42,797 - refund.py[line:194] - DEBUG: pay_times: 1
+2020-01-07 19:10:42,797 - refund.py[line:195] - DEBUG: 0
+2020-01-07 19:10:42,797 - refund.py[line:198] - INFO: OrderID：6779156623962145015
+ payDoneAmount:0.11 refundBaseAmount:0.11 refundExtraAmount:0.0
+2020-01-07 19:10:42,797 - refund.py[line:129] - INFO: Commit refund
+2020-01-07 19:10:42,797 - refund.py[line:130] - INFO: refundBaseAmount:0.11,refundExtraAmount:0.0
+2020-01-07 19:10:42,797 - refund.py[line:142] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2020-01-07 19:10:43,860 - refund.py[line:144] - INFO: {"code":0,"message":"成功"}
+2020-01-07 19:10:43,860 - refund.py[line:150] - INFO: Refund Success!!!
+2020-01-07 19:10:43,865 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:10:43,865 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:10:43,866 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:10:43,866 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:10:43,866 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:10:43,866 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:10:43,866 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:10:43,866 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:10:43,866 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:10:43,866 - refund.py[line:226] - INFO: Refund 1 orders
+2020-01-07 19:10:43,866 - refund.py[line:227] - INFO: Done!!!
+
+2020-01-07 19:14:44,415 - refund.py[line:162] - INFO: user phone:13250790293
+2020-01-07 19:14:44,415 - refund.py[line:60] - INFO: Login RUQIMobility
+2020-01-07 19:14:44,415 - refund.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 19:14:44,630 - refund.py[line:69] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 19:14:44,630 - refund.py[line:71] - INFO: Login success
+2020-01-07 19:14:44,630 - refund.py[line:164] - INFO: Refund days:1
+2020-01-07 19:14:44,631 - refund.py[line:78] - INFO: Get refund orders
+2020-01-07 19:14:44,631 - refund.py[line:79] - DEBUG: Page 1
+2020-01-07 19:14:44,631 - refund.py[line:96] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 19:14:44,825 - refund.py[line:99] - INFO: Success
+2020-01-07 19:14:44,828 - refund.py[line:107] - DEBUG: 1577774940
+2020-01-07 19:14:44,828 - refund.py[line:112] - DEBUG: Finish
+2020-01-07 19:14:44,828 - refund.py[line:172] - INFO: Order_Numbers:10
+2020-01-07 19:14:44,828 - refund.py[line:115] - DEBUG: Get order info
+2020-01-07 19:14:44,828 - refund.py[line:117] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/query/6779157671934165241?_=1578395684
+2020-01-07 19:14:45,064 - refund.py[line:179] - DEBUG: OrderID：6779157671934165241
+ payDoneAmount:0.11 refundBaseAmount:0.11 refundExtraAmount:0.0
+2020-01-07 19:14:45,064 - refund.py[line:180] - DEBUG: [{'payAmount': 0.11, 'payStatus': 2, 'channel': 1, 'recordTime': '1578395671'}]
+2020-01-07 19:14:45,064 - refund.py[line:186] - DEBUG: 2
+2020-01-07 19:14:45,064 - refund.py[line:187] - DEBUG: 0.11
+2020-01-07 19:14:45,064 - refund.py[line:194] - DEBUG: pay_times: 1
+2020-01-07 19:14:45,064 - refund.py[line:195] - DEBUG: 0
+2020-01-07 19:14:45,064 - refund.py[line:198] - INFO: OrderID：6779157671934165241
+ payDoneAmount:0.11 refundBaseAmount:0.11 refundExtraAmount:0.0
+2020-01-07 19:14:45,064 - refund.py[line:129] - INFO: Commit refund
+2020-01-07 19:14:45,064 - refund.py[line:130] - INFO: refundBaseAmount:0.11,refundExtraAmount:0.0
+2020-01-07 19:14:45,064 - refund.py[line:142] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2020-01-07 19:14:46,208 - refund.py[line:144] - INFO: {"code":0,"message":"成功"}
+2020-01-07 19:14:46,208 - refund.py[line:150] - INFO: Refund Success!!!
+2020-01-07 19:14:46,213 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:14:46,213 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:14:46,213 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:14:46,213 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:14:46,213 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:14:46,213 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:14:46,213 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:14:46,213 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:14:46,213 - refund.py[line:220] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:14:46,405 - refund.py[line:228] - INFO: Refund 1 orders
+2020-01-07 19:14:46,405 - refund.py[line:229] - INFO: Done!!!
+
+2020-01-07 19:23:39,681 - refund.py[line:164] - INFO: user phone:13250790293
+2020-01-07 19:23:39,681 - refund.py[line:59] - INFO: Login RUQIMobility
+2020-01-07 19:23:39,681 - refund.py[line:65] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 19:23:39,870 - refund.py[line:68] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 19:23:39,870 - refund.py[line:70] - INFO: Login success
+2020-01-07 19:23:39,870 - refund.py[line:166] - INFO: Refund days:1
+2020-01-07 19:23:39,870 - refund.py[line:77] - INFO: Get refund orders
+2020-01-07 19:23:39,870 - refund.py[line:78] - DEBUG: Page 1
+2020-01-07 19:23:39,870 - refund.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 19:23:39,946 - refund.py[line:98] - INFO: Success
+2020-01-07 19:23:39,949 - refund.py[line:106] - DEBUG: 1577774940
+2020-01-07 19:23:39,949 - refund.py[line:111] - DEBUG: Finish
+2020-01-07 19:23:39,949 - refund.py[line:174] - INFO: Order_Numbers:10
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,949 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:39,954 - refund.py[line:233] - INFO: Refund 0 orders
+2020-01-07 19:23:39,954 - refund.py[line:234] - INFO: Done!!!
+
+2020-01-07 19:23:45,605 - refund.py[line:164] - INFO: user phone:13250790293
+2020-01-07 19:23:45,605 - refund.py[line:59] - INFO: Login RUQIMobility
+2020-01-07 19:23:45,605 - refund.py[line:65] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 19:23:45,806 - refund.py[line:68] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 19:23:45,806 - refund.py[line:70] - INFO: Login success
+2020-01-07 19:23:45,806 - refund.py[line:166] - INFO: Refund days:1
+2020-01-07 19:23:45,806 - refund.py[line:77] - INFO: Get refund orders
+2020-01-07 19:23:45,806 - refund.py[line:78] - DEBUG: Page 1
+2020-01-07 19:23:45,806 - refund.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 19:23:45,892 - refund.py[line:98] - INFO: Success
+2020-01-07 19:23:45,892 - refund.py[line:106] - DEBUG: 1577774940
+2020-01-07 19:23:45,893 - refund.py[line:111] - DEBUG: Finish
+2020-01-07 19:23:45,893 - refund.py[line:174] - INFO: Order_Numbers:10
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,893 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:23:45,898 - refund.py[line:233] - INFO: Refund 0 orders
+2020-01-07 19:23:45,898 - refund.py[line:234] - INFO: Done!!!
+
+2020-01-07 19:25:54,899 - refund.py[line:164] - INFO: user phone:13250790293
+2020-01-07 19:25:54,899 - refund.py[line:59] - INFO: Login RUQIMobility
+2020-01-07 19:25:54,899 - refund.py[line:65] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 19:25:55,214 - refund.py[line:68] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 19:25:55,214 - refund.py[line:70] - INFO: Login success
+2020-01-07 19:25:55,214 - refund.py[line:166] - INFO: Refund days:1
+2020-01-07 19:25:55,214 - refund.py[line:77] - INFO: Get refund orders
+2020-01-07 19:25:55,214 - refund.py[line:78] - DEBUG: Page 1
+2020-01-07 19:25:55,214 - refund.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 19:25:55,346 - refund.py[line:98] - INFO: Success
+2020-01-07 19:25:55,347 - refund.py[line:106] - DEBUG: 1578308217
+2020-01-07 19:25:55,347 - refund.py[line:111] - DEBUG: Finish
+2020-01-07 19:25:55,347 - refund.py[line:174] - INFO: Order_Numbers:10
+2020-01-07 19:25:55,347 - refund.py[line:114] - DEBUG: Get order info
+2020-01-07 19:25:55,347 - refund.py[line:116] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/query/6779160562447155452?_=1578396354
+2020-01-07 19:25:55,625 - refund.py[line:181] - DEBUG: OrderID：6779160562447155452
+ payDoneAmount:0.09 refundBaseAmount:0.09 refundExtraAmount:0.0
+2020-01-07 19:25:55,625 - refund.py[line:182] - DEBUG: [{'payAmount': 0.09, 'payStatus': 2, 'channel': 1, 'recordTime': '1578396344'}]
+2020-01-07 19:25:55,625 - refund.py[line:188] - DEBUG: 2
+2020-01-07 19:25:55,625 - refund.py[line:189] - DEBUG: 0.09
+2020-01-07 19:25:55,625 - refund.py[line:196] - DEBUG: pay_times: 1
+2020-01-07 19:25:55,626 - refund.py[line:197] - DEBUG: 0
+2020-01-07 19:25:55,626 - refund.py[line:200] - INFO: OrderID：6779160562447155452
+ payDoneAmount:0.09 refundBaseAmount:0.09 refundExtraAmount:0.0
+2020-01-07 19:25:55,626 - refund.py[line:128] - INFO: Commit refund
+2020-01-07 19:25:55,626 - refund.py[line:129] - INFO: refundBaseAmount:0.09,refundExtraAmount:0.0
+2020-01-07 19:25:55,626 - refund.py[line:141] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2020-01-07 19:25:56,808 - refund.py[line:143] - INFO: {"code":0,"message":"成功"}
+2020-01-07 19:25:56,808 - refund.py[line:149] - INFO: Refund Success!!!
+2020-01-07 19:25:56,812 - refund.py[line:114] - DEBUG: Get order info
+2020-01-07 19:25:56,812 - refund.py[line:116] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/query/6779160326223954171?_=1578396354
+2020-01-07 19:25:56,924 - refund.py[line:181] - DEBUG: OrderID：6779160326223954171
+ payDoneAmount:0.09 refundBaseAmount:0.09 refundExtraAmount:0.0
+2020-01-07 19:25:56,924 - refund.py[line:182] - DEBUG: [{'payAmount': 0.09, 'payStatus': 2, 'channel': 2, 'recordTime': '1578396311'}]
+2020-01-07 19:25:56,924 - refund.py[line:188] - DEBUG: 2
+2020-01-07 19:25:56,924 - refund.py[line:189] - DEBUG: 0.09
+2020-01-07 19:25:56,924 - refund.py[line:196] - DEBUG: pay_times: 1
+2020-01-07 19:25:56,924 - refund.py[line:197] - DEBUG: 0
+2020-01-07 19:25:56,924 - refund.py[line:200] - INFO: OrderID：6779160326223954171
+ payDoneAmount:0.09 refundBaseAmount:0.09 refundExtraAmount:0.0
+2020-01-07 19:25:56,925 - refund.py[line:128] - INFO: Commit refund
+2020-01-07 19:25:56,925 - refund.py[line:129] - INFO: refundBaseAmount:0.09,refundExtraAmount:0.0
+2020-01-07 19:25:56,925 - refund.py[line:141] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/refund
+2020-01-07 19:25:58,126 - refund.py[line:143] - INFO: {"code":0,"message":"成功"}
+2020-01-07 19:25:58,127 - refund.py[line:149] - INFO: Refund Success!!!
+2020-01-07 19:25:58,131 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:25:58,131 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:25:58,131 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:25:58,132 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:25:58,132 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:25:58,132 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:25:58,132 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:25:58,132 - refund.py[line:222] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:25:58,143 - refund.py[line:233] - INFO: Refund 2 orders
+2020-01-07 19:25:58,143 - refund.py[line:234] - INFO: Done!!!
+
+2020-01-07 19:49:12,473 - refund.py[line:165] - INFO: user phone:13250790293
+2020-01-07 19:49:12,473 - refund.py[line:59] - INFO: Login RUQIMobility
+2020-01-07 19:49:12,473 - refund.py[line:65] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 19:49:12,685 - refund.py[line:68] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 19:49:12,686 - refund.py[line:70] - INFO: Login success
+2020-01-07 19:49:12,686 - refund.py[line:167] - INFO: Refund days:1
+2020-01-07 19:49:12,686 - refund.py[line:77] - INFO: Get refund orders
+2020-01-07 19:49:12,686 - refund.py[line:78] - DEBUG: Page 1
+2020-01-07 19:49:12,686 - refund.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 19:49:12,756 - refund.py[line:98] - INFO: Success
+2020-01-07 19:49:12,759 - refund.py[line:106] - DEBUG: 1578388264
+2020-01-07 19:49:12,759 - refund.py[line:108] - DEBUG: Get next page
+2020-01-07 19:49:12,759 - refund.py[line:77] - INFO: Get refund orders
+2020-01-07 19:49:12,759 - refund.py[line:78] - DEBUG: Page 2
+2020-01-07 19:49:12,759 - refund.py[line:95] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 19:49:12,828 - refund.py[line:98] - INFO: Success
+2020-01-07 19:49:12,829 - refund.py[line:106] - DEBUG: 1577687197
+2020-01-07 19:49:12,829 - refund.py[line:111] - DEBUG: Finish
+2020-01-07 19:49:12,829 - refund.py[line:175] - INFO: Order_Numbers:20
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,829 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,830 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,830 - refund.py[line:223] - DEBUG: Order has been refunded or adjusted to 0
+2020-01-07 19:49:12,830 - refund.py[line:230] - INFO: Database commit
+2020-01-07 19:49:12,833 - refund.py[line:235] - INFO: Refund 0 orders
+2020-01-07 19:49:12,833 - refund.py[line:236] - INFO: Done!!!
+

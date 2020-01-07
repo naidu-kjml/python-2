@@ -1,0 +1,101 @@
+2020-01-07 16:21:38,297 - adjust.py[line:101] - INFO: User phone:15989104405
+2020-01-07 16:21:38,297 - adjust.py[line:39] - INFO: Login RUQIMobility
+2020-01-07 16:21:38,297 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:21:38,416 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:21:38,416 - adjust.py[line:50] - INFO: Login success
+2020-01-07 16:21:38,416 - adjust.py[line:57] - INFO: Get adjust orders
+2020-01-07 16:21:38,416 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:21:38,468 - adjust.py[line:69] - INFO: Success
+2020-01-07 16:21:38,469 - adjust.py[line:104] - INFO: The numbers of orders:0
+2020-01-07 16:21:38,473 - adjust.py[line:112] - INFO: No orders to be adjusted
+2020-01-07 16:21:38,473 - adjust.py[line:117] - INFO: Done!!!
+
+2020-01-07 16:37:40,593 - adjust.py[line:101] - INFO: User phone:15989104403
+2020-01-07 16:37:40,593 - adjust.py[line:39] - INFO: Login RUQIMobility
+2020-01-07 16:37:40,593 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:37:41,121 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:37:41,121 - adjust.py[line:50] - INFO: Login success
+2020-01-07 16:37:41,121 - adjust.py[line:57] - INFO: Get adjust orders
+2020-01-07 16:37:41,122 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:37:41,208 - adjust.py[line:69] - INFO: Success
+2020-01-07 16:37:41,208 - adjust.py[line:104] - INFO: The numbers of orders:0
+2020-01-07 16:37:41,208 - adjust.py[line:112] - INFO: No orders to be adjusted
+2020-01-07 16:37:41,208 - adjust.py[line:117] - INFO: Done!!!
+
+2020-01-07 16:38:23,114 - adjust.py[line:101] - INFO: User phone:15989103334
+2020-01-07 16:38:23,115 - adjust.py[line:39] - INFO: Login RUQIMobility
+2020-01-07 16:38:23,115 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:38:23,299 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:38:23,299 - adjust.py[line:50] - INFO: Login success
+2020-01-07 16:38:23,299 - adjust.py[line:57] - INFO: Get adjust orders
+2020-01-07 16:38:23,299 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:38:23,331 - adjust.py[line:69] - INFO: Success
+2020-01-07 16:38:23,331 - adjust.py[line:104] - INFO: The numbers of orders:0
+2020-01-07 16:38:23,331 - adjust.py[line:112] - INFO: No orders to be adjusted
+2020-01-07 16:38:23,331 - adjust.py[line:117] - INFO: Done!!!
+
+2020-01-07 16:47:29,422 - adjust.py[line:101] - INFO: User phone:15989103334
+2020-01-07 16:47:29,422 - adjust.py[line:39] - INFO: Login RUQIMobility
+2020-01-07 16:47:29,422 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:47:29,571 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:47:29,571 - adjust.py[line:50] - INFO: Login success
+2020-01-07 16:47:29,571 - adjust.py[line:57] - INFO: Get adjust orders
+2020-01-07 16:47:29,571 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:47:29,598 - adjust.py[line:69] - INFO: Success
+2020-01-07 16:47:29,598 - adjust.py[line:104] - INFO: The numbers of orders:0
+2020-01-07 16:47:29,598 - adjust.py[line:112] - INFO: No orders to be adjusted
+2020-01-07 16:47:29,598 - adjust.py[line:117] - INFO: Done!!!
+
+2020-01-07 16:47:45,521 - adjust.py[line:101] - INFO: User phone:15989103334
+2020-01-07 16:47:45,521 - adjust.py[line:39] - INFO: Login RUQIMobility
+2020-01-07 16:47:45,521 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:47:45,901 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:47:45,902 - adjust.py[line:50] - INFO: Login success
+2020-01-07 16:47:45,902 - adjust.py[line:57] - INFO: Get adjust orders
+2020-01-07 16:47:45,902 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:47:45,929 - adjust.py[line:69] - INFO: Success
+2020-01-07 16:47:45,929 - adjust.py[line:104] - INFO: The numbers of orders:0
+2020-01-07 16:47:45,929 - adjust.py[line:112] - INFO: No orders to be adjusted
+2020-01-07 16:47:45,929 - adjust.py[line:117] - INFO: Done!!!
+
+2020-01-07 16:48:39,781 - adjust.py[line:101] - INFO: User phone:15989103334
+2020-01-07 16:48:39,782 - adjust.py[line:39] - INFO: Login RUQIMobility
+2020-01-07 16:48:39,782 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:48:39,911 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:48:39,911 - adjust.py[line:50] - INFO: Login success
+2020-01-07 16:48:39,911 - adjust.py[line:57] - INFO: Get adjust orders
+2020-01-07 16:48:39,911 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:48:40,029 - adjust.py[line:69] - INFO: Success
+2020-01-07 16:48:40,029 - adjust.py[line:104] - INFO: The numbers of orders:0
+2020-01-07 16:48:40,029 - adjust.py[line:112] - INFO: No orders to be adjusted
+2020-01-07 16:48:40,029 - adjust.py[line:117] - INFO: Done!!!
+
+2020-01-07 16:48:42,686 - adjust.py[line:101] - INFO: User phone:15989103334
+2020-01-07 16:48:42,686 - adjust.py[line:39] - INFO: Login RUQIMobility
+2020-01-07 16:48:42,686 - adjust.py[line:45] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 16:48:42,940 - adjust.py[line:48] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 16:48:42,940 - adjust.py[line:50] - INFO: Login success
+2020-01-07 16:48:42,940 - adjust.py[line:57] - INFO: Get adjust orders
+2020-01-07 16:48:42,941 - adjust.py[line:66] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 16:48:42,972 - adjust.py[line:69] - INFO: Success
+2020-01-07 16:48:42,972 - adjust.py[line:104] - INFO: The numbers of orders:0
+2020-01-07 16:48:42,972 - adjust.py[line:112] - INFO: No orders to be adjusted
+2020-01-07 16:48:42,972 - adjust.py[line:117] - INFO: Done!!!
+
+2020-01-07 19:50:04,198 - adjust.py[line:121] - INFO: User phone:13250790293
+2020-01-07 19:50:04,199 - adjust.py[line:46] - INFO: Login RUQIMobility
+2020-01-07 19:50:04,199 - adjust.py[line:52] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 19:50:04,679 - adjust.py[line:55] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 19:50:04,680 - adjust.py[line:57] - INFO: Login success
+2020-01-07 19:50:04,680 - adjust.py[line:64] - INFO: Get adjust orders
+2020-01-07 19:50:04,680 - adjust.py[line:73] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 19:50:04,885 - adjust.py[line:76] - INFO: Success
+2020-01-07 19:50:04,886 - adjust.py[line:124] - INFO: The numbers of orders:1
+2020-01-07 19:50:04,886 - adjust.py[line:83] - INFO: Adjust order:6779166781559800064
+2020-01-07 19:50:04,886 - adjust.py[line:93] - DEBUG: https://managetest.ruqimobility.com/management/v1/adjust/charge
+2020-01-07 19:50:05,294 - adjust.py[line:95] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 19:50:05,294 - adjust.py[line:98] - INFO: Success
+2020-01-07 19:50:05,294 - adjust.py[line:111] - ERROR: Insert database
+2020-01-07 19:50:05,297 - adjust.py[line:132] - INFO: Database commit
+2020-01-07 19:50:05,359 - adjust.py[line:142] - INFO: Done!!!
+
