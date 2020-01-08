@@ -1,4 +1,4 @@
-import mysql.connector
+import pymysql
 MYSQL_HOSTS = '10.10.28.121'
 MYSQL_USER = 'root'
 MYSQL_PASSWORD = 'ruqi123456'
@@ -6,10 +6,10 @@ MYSQL_PORT = '3306'
 MYSQL_DB = 'xjming'
 
 try:
-    cnx = mysql.connector.connect(user=MYSQL_USER, password=MYSQL_PASSWORD, host=MYSQL_HOSTS, database=MYSQL_DB)
-    cur = cnx.cursor(buffered=True)
+    cnx = pymysql.connect(user=MYSQL_USER, password=MYSQL_PASSWORD, host=MYSQL_HOSTS, database=MYSQL_DB)
+    cur = cnx.cursor()
 except:
-    print("数据库异常")
+    print("Database error")
 
 
 class Sql:

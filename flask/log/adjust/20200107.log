@@ -99,3 +99,29 @@
 2020-01-07 19:50:05,297 - adjust.py[line:132] - INFO: Database commit
 2020-01-07 19:50:05,359 - adjust.py[line:142] - INFO: Done!!!
 
+2020-01-07 20:17:35,347 - adjust.py[line:121] - INFO: User phone:13250790293
+2020-01-07 20:17:35,347 - adjust.py[line:46] - INFO: Login RUQIMobility
+2020-01-07 20:17:35,347 - adjust.py[line:52] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 20:17:35,641 - adjust.py[line:55] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 20:17:35,641 - adjust.py[line:57] - INFO: Login success
+2020-01-07 20:17:35,641 - adjust.py[line:64] - INFO: Get adjust orders
+2020-01-07 20:17:35,641 - adjust.py[line:73] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 20:17:35,678 - adjust.py[line:76] - INFO: Success
+2020-01-07 20:17:35,679 - adjust.py[line:124] - INFO: The numbers of orders:0
+2020-01-07 20:17:35,679 - adjust.py[line:132] - INFO: Database commit
+2020-01-07 20:17:35,684 - adjust.py[line:137] - INFO: No orders to be adjusted
+2020-01-07 20:17:35,684 - adjust.py[line:142] - INFO: Done!!!
+
+2020-01-07 20:17:53,904 - adjust.py[line:121] - INFO: User phone:15989101213
+2020-01-07 20:17:53,904 - adjust.py[line:46] - INFO: Login RUQIMobility
+2020-01-07 20:17:53,904 - adjust.py[line:52] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-07 20:17:54,077 - adjust.py[line:55] - DEBUG: {"code":0,"message":"成功"}
+2020-01-07 20:17:54,077 - adjust.py[line:57] - INFO: Login success
+2020-01-07 20:17:54,077 - adjust.py[line:64] - INFO: Get adjust orders
+2020-01-07 20:17:54,077 - adjust.py[line:73] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-07 20:17:54,180 - adjust.py[line:76] - INFO: Success
+2020-01-07 20:17:54,180 - adjust.py[line:124] - INFO: The numbers of orders:0
+2020-01-07 20:17:54,180 - adjust.py[line:132] - INFO: Database commit
+2020-01-07 20:17:54,184 - adjust.py[line:137] - INFO: No orders to be adjusted
+2020-01-07 20:17:54,184 - adjust.py[line:142] - INFO: Done!!!
+

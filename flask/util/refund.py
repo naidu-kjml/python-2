@@ -8,14 +8,14 @@ import json
 import time
 import sys
 import logging
-import mysql.connector
+import pymysql
 
 if 'linux' in sys.platform:
     reload(sys)
     sys.setdefaultencoding('utf8')
 try:
-    cnx = mysql.connector.connect(user='root', password='ruqi123456', host='10.10.28.121', database='xjming')
-    cur = cnx.cursor(buffered=True)
+    cnx = pymysql.connect(user='root', password='ruqi123456', host='10.10.28.121', database='xjming')
+    cur = cnx.cursor()
 except:
     print("数据库异常")
 
@@ -129,7 +129,7 @@ class Refund:
         logger.info('refundBaseAmount:%s,refundExtraAmount:%s' % (refundBaseAmount, refundExtraAmount))
         payload = {"orderId": orderId,
                    "comment": "网页脚本退款",
-                   "operator": "xjming",
+                   "operator": self.user_phone,
                    "timestamp": self.timestamp,
                    "source": 0,
                    "payAmount": payDoneAmount,
@@ -152,7 +152,7 @@ class Refund:
             logger.error(response.json()['message'])
         # 数据库保存记录
         try:
-            logger.error('Insert database')
+            logger.info('Insert database')
             cur.execute(
                 'insert into refund_record (host,phone,orderId,refundBaseAmount,refundExtraAmount,result,time) values (%s, %s, %s, %s, %s, %s, %s)',
                 [self.host, self.user_phone, orderId, refundBaseAmount, refundExtraAmount, result,
@@ -197,11 +197,11 @@ class Refund:
                     logger.debug('pay_times: %s' % pay_times)
                     logger.debug(str(refund_sum))
                     if pay_times == 1:  # 普通订单
-                        logger.info('OrderID：%s\n payDoneAmount:%s refundBaseAmount:%s refundExtraAmount:%s' % (
+                        logger.info('OrderID:%s\n payDoneAmount:%s refundBaseAmount:%s refundExtraAmount:%s' % (
                             orderId, payDoneAmount, refundBaseAmount, refundExtraAmount))
                         self.refund(orderId, payDoneAmount, refundBaseAmount, refundExtraAmount)
                     elif pay_times == 0:  # 对公订单
-                        logger.debug('订单ID；%s 对公订单无需退款\n' % orderId)
+                        logger.debug('订单ID:%s 对公订单无需退款\n' % orderId)
                     else:  # 预支付订单
                         if refund_sum < pay_amount:
                             pay_amount = round(pay_amount) - refund_sum
@@ -239,11 +239,11 @@ class Refund:
 if __name__ == "__main__":
     start_time = time.time()
     for phone in USER_PHONE:
-        if True:
+        try:
             RF = Refund(user_phone=phone)
             RF.commit()
-        # except:
-        #     print('Refund fail')
+        except:
+            print('Refund fail')
     cost_time = time.time() - start_time
     logger.info('Cost time:%.2fs' % cost_time)
     time.sleep(3)

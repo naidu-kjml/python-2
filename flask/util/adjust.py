@@ -6,7 +6,7 @@ import requests
 import json
 import time
 import logging
-import mysql.connector
+import pymysql
 
 USER_PHONE = ['13250790293', '15989104405']
 envs = {'0': 'https://managetest.ruqimobility.com', '1': 'http://111.230.118.77'}
@@ -28,8 +28,8 @@ logger.addHandler(console)
 
 
 try:
-    cnx = mysql.connector.connect(user='root', password='ruqi123456', host='10.10.28.121', database='xjming')
-    cur = cnx.cursor(buffered=True)
+    cnx = pymysql.connect(user='root', password='ruqi123456', host='10.10.28.121', database='xjming')
+    cur = cnx.cursor()
 except:
     print("数据库异常")
 
@@ -85,7 +85,7 @@ class Adjust:
         payload = {"adjustBaseAmount": 0,
                    "adjustExtraAmount": 0,
                    "adjustComment": "网页脚本改价",
-                   "operator": "gactravel1",
+                   "operator": self.user_phone,
                    "orderId": orderId,
                    "timestamp": timestamp,
                    "source": 0}
