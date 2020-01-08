@@ -74,10 +74,8 @@ def submit():
     try:
         u = UD(name, phone, city, env)
         u.commit()
-        e = Email('smtp.qq.com', '981805032@qq.com', 'nmfavcrgtlfsbdeb', '13250790293@163.com', '司机录入')
-        e.send("姓名：%s\n手机号：%s\n环境：%s\nIP：%s\n%s" % (name, phone, {'0': '测试环境', "1": "开发环境"}[env], ip, u.message))
-        cost_time = time.time() - start_time
-        message = '%s\n耗时：%.2fs' % (u.message, cost_time)
+        # e = Email('smtp.qq.com', '981805032@qq.com', 'nmfavcrgtlfsbdeb', '13250790293@163.com', '司机录入')
+        # e.send("姓名：%s\n手机号：%s\n环境：%s\nIP：%s\n%s" % (name, phone, {'0': '测试环境', "1": "开发环境"}[env], ip, u.message))
         result = '成功'
         try:
             print("Insert database")
@@ -85,6 +83,8 @@ def submit():
             print("Success")
         except:
             print("Fail!!!")
+        cost_time = time.time() - start_time
+        message = '%s\n耗时：%.2fs' % (u.message, cost_time)
         return {
             "code": "0",
             "msg": message
