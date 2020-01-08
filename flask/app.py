@@ -80,9 +80,11 @@ def submit():
         message = '%s\n耗时：%.2fs' % (u.message, cost_time)
         result = '成功'
         try:
+            print("Insert database")
             Sql.insert_dr(ip, name, phone, citys[city], {'0': '测试环境', "1": "开发环境"}[env], result, time.strftime("%Y-%m-%d %H:%M:%S"))
+            print("Success")
         except:
-            print("数据库异常")
+            print("Fail!!!")
         return {
             "code": "0",
             "msg": message
@@ -92,9 +94,11 @@ def submit():
         e.send("录入失败！！！\n姓名：%s\n手机号：%s\n环境：%s\nIP：%s" % (name, phone, {'0': '测试环境', "1": "开发环境"}[env], ip))
         result = '失败'
         try:
+            print("Insert database")
             Sql.insert_dr(ip, name, phone, citys[city], {'0': '测试环境', "1": "开发环境"}[env], result, time.strftime("%Y-%m-%d %H:%M:%S"))
+            print('Success')
         except:
-            print("数据库异常")
+            print("Fail!!!")
         return {
             "code": "1",
             "msg": "录入失败"

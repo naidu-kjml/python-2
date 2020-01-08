@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c7aad88-a473-4237-ac5c-a64b3dbf1cd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/log/adjust/20200108.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/refund/20200108.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/uploadDrivers/20200108.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/log/refund/20200108.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/adjust/20200107.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/adjust/20200107.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/adjust.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/adjust.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/log/adjust/20200107.log" beforeDir="false" afterPath="$PROJECT_DIR$/util/log/adjust/20200107.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/refund.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/refund.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578397959667</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="修改数据库为pymysql">
+      <created>1578451785837</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1578451785837</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
