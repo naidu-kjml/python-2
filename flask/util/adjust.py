@@ -94,7 +94,7 @@ class Adjust:
         response = self.session.post(url, data=json.dumps(payload), headers=headers)
         logger.debug(response.text)
         if response.json()['code'] == 0:
-            self.message += "订单：%s\n" % orderId
+            self.message += "订单ID：%s\n改价成功!待支付金额为0\n" % orderId
             logger.info('Success')
             result = "改价成功"
         elif response.json()['code'] == 110029:
@@ -108,7 +108,7 @@ class Adjust:
             # raise Exception
         # 数据库保存记录
         try:
-            logger.error('Insert database')
+            logger.info('Insert database')
             cur.execute(
                 'insert into adjust_record (host,phone,orderId,result,time) values (%s, %s, %s, %s, %s)',
                 [self.host, self.user_phone, orderId, result,

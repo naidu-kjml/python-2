@@ -409,7 +409,7 @@ class UD:
         logger.debug(response.text)
         if response.json()['code'] == 0:
             logger.info("Success")
-            self.message = '录入成功! 司机ID:%s' % self.driverId
+            self.message = '录入成功!\n司机ID:%s' % self.driverId
         else:
             logger.error('Fail!!!')
             logger.error(response.json()['message'])

@@ -1,0 +1,13 @@
+2020-01-09 11:00:35,715 - adjust.py[line:121] - INFO: User phone:13250790293
+2020-01-09 11:00:35,716 - adjust.py[line:46] - INFO: Login RUQIMobility
+2020-01-09 11:00:35,716 - adjust.py[line:52] - DEBUG: https://managetest.ruqimobility.com/management/v1/login/web
+2020-01-09 11:00:36,092 - adjust.py[line:55] - DEBUG: {"code":0,"message":"成功"}
+2020-01-09 11:00:36,092 - adjust.py[line:57] - INFO: Login success
+2020-01-09 11:00:36,092 - adjust.py[line:64] - INFO: Get adjust orders
+2020-01-09 11:00:36,092 - adjust.py[line:73] - DEBUG: https://managetest.ruqimobility.com/management/v1/orderinfo/queryListByFilter
+2020-01-09 11:00:36,123 - adjust.py[line:76] - INFO: Success
+2020-01-09 11:00:36,123 - adjust.py[line:124] - INFO: The numbers of orders:0
+2020-01-09 11:00:36,127 - adjust.py[line:132] - INFO: Database commit
+2020-01-09 11:00:36,134 - adjust.py[line:137] - INFO: No orders to be adjusted
+2020-01-09 11:00:36,134 - adjust.py[line:142] - INFO: Done!!!
+
