@@ -2,15 +2,12 @@
 # -*- coding:utf-8 -*-
 __author__ = 'xiaojiaming'
 
-import threading
-
 from flask import Flask, request, render_template
 from util.sql import Sql
 from util.mail import Email
 from util.uploadDrivers import *
 from util.adjust import Adjust
 from util.refund import Refund
-from util.assignDriver import Assign
 import sys
 
 citys = {'440100': '广州', '440300': '深圳', '110000': '北京', '441900': '东莞'}
@@ -202,48 +199,43 @@ def assign1():
     except:
         print("数据库异常")
         values = ''
-    if status == '0':
+    if status == '0':  # 绑定
         if len(values) == 0:
             try:
                 Sql.insert_assign(ip, client_phone, driver_phone, status, time.strftime("%Y-%m-%d %H:%M:%S"))
+                return {
+                    "code": "0",
+                    "msg": "绑定成功"
+                }
             except:
                 print("数据库异常")
-            threading.Thread(target=assign_commit, args=(client_phone, driver_phone, ip,)).start()
-            return {
-                "code": "0",
-                "msg": "绑定成功\n有效期3小时，有接单操作则时间延长"
-            }
+                return {
+                    "code": "1",
+                    "msg": "绑定失败"
+                }
         else:
             is_driver_exist = False
             for v in values:
                 driver_sql = v[3]
-                status_sql = v[4]
                 if driver_phone == driver_sql:
                     is_driver_exist = True
-                try:
-                    Sql.update_assign(ip, client_phone, driver_sql, '1', time.strftime("%Y-%m-%d %H:%M:%S"))
-                except:
-                    print('数据库异常')
-            try:
-                Sql.update_assign(ip, client_phone, driver_phone, status, time.strftime("%Y-%m-%d %H:%M:%S"))
-            except:
-                print('数据库异常')
-            threading.Thread(target=assign_commit, args=(client_phone, driver_phone, ip,)).start()
-            time.sleep(1)
+                    try:
+                        Sql.update_assign(ip, client_phone, driver_phone, '0', time.strftime("%Y-%m-%d %H:%M:%S"))
+                    except:
+                        print('数据库异常')
+                else:
+                    try:
+                        Sql.update_assign(ip, client_phone, driver_sql, '1', time.strftime("%Y-%m-%d %H:%M:%S"))
+                    except:
+                        print('数据库异常')
             if not is_driver_exist:
                 try:
                     Sql.insert_assign(ip, client_phone, driver_phone, status, time.strftime("%Y-%m-%d %H:%M:%S"))
                 except:
                     print("数据库异常")
-                msg = "绑定成功"
-            else:
-                if status_sql == status:
-                    msg = "已绑定，短时间内请勿重复操作"
-                else:
-                    msg = "绑定成功\n有效期3小时，有接单操作则时间延长"
             return {
                 "code": "0",
-                "msg": msg
+                "msg": "绑定成功"
             }
     elif status == '1':
         if len(values) == 0:
@@ -269,11 +261,6 @@ def assign1():
             "code": "1",
             "msg": "type字段错误"
         }
-
-
-def assign_commit(client_phone, driver_phone, host):
-    AS = Assign(client_phone, driver_phone, host)
-    AS.commit()
 
 
 if __name__ == '__main__':
