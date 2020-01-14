@@ -2,12 +2,15 @@
 # -*- coding:utf-8 -*-
 __author__ = 'xiaojiaming'
 
+import threading
+
 from flask import Flask, request, render_template
 from util.sql import Sql
 from util.mail import Email
 from util.uploadDrivers import *
 from util.adjust import Adjust
 from util.refund import Refund
+from util.assignDriver import Assign
 import sys
 
 citys = {'440100': '广州', '440300': '深圳', '110000': '北京', '441900': '东莞'}
@@ -21,6 +24,26 @@ app = Flask(__name__)
 @app.route('/uploadDrivers/', methods=['POST', 'GET'])
 def uploadDrivers():
     return render_template('uploadDrivers.html')
+
+
+@app.route('/assign/', methods=['POST', 'GET'])
+def assign():
+    ip = request.remote_addr
+    try:
+        values = Sql.select_assign1(ip)
+        if len(values) == 0:
+            client_phone = "请输入乘客手机号"
+            driver_phone = "请输入司机手机号"
+        else:
+            client_phone = values[-1][2]
+            driver_phone = values[-1][3]
+    except:
+        e = Email('smtp.qq.com', '981805032@qq.com', 'nmfavcrgtlfsbdeb', '13250790293@163.com', '派单绑定')
+        e.send("数据库异常")
+        print("数据库异常")
+        client_phone = "请输入乘客手机号"
+        driver_phone = "请输入司机手机号"
+    return render_template('assign.html', client_phone=client_phone, driver_phone=driver_phone)
 
 
 @app.route('/adjust', methods=['POST', 'GET'])
@@ -77,7 +100,8 @@ def submit():
         result = '成功'
         try:
             print("Insert database")
-            Sql.insert_dr(ip, name, phone, citys[city], {'0': '测试环境', "1": "开发环境"}[env], result, time.strftime("%Y-%m-%d %H:%M:%S"))
+            Sql.insert_dr(ip, name, phone, citys[city], {'0': '测试环境', "1": "开发环境"}[env], result,
+                          time.strftime("%Y-%m-%d %H:%M:%S"))
             print("Success")
         except:
             print("Fail!!!")
@@ -93,7 +117,8 @@ def submit():
         result = '失败'
         try:
             print("Insert database")
-            Sql.insert_dr(ip, name, phone, citys[city], {'0': '测试环境', "1": "开发环境"}[env], result, time.strftime("%Y-%m-%d %H:%M:%S"))
+            Sql.insert_dr(ip, name, phone, citys[city], {'0': '测试环境', "1": "开发环境"}[env], result,
+                          time.strftime("%Y-%m-%d %H:%M:%S"))
             print('Success')
         except:
             print("Fail!!!")
@@ -164,6 +189,91 @@ def refund1():
             "code": "1",
             "msg": "退款失败"
         }
+
+
+@app.route('/testutil/assign/submit', methods=['POST'])
+def assign1():
+    ip = request.remote_addr
+    client_phone = request.form.get('client_phone').strip()
+    driver_phone = request.form.get('driver_phone').strip()
+    status = request.form.get('status')
+    try:
+        values = Sql.select_assign(client_phone)
+    except:
+        print("数据库异常")
+        values = ''
+    if status == '0':
+        if len(values) == 0:
+            try:
+                Sql.insert_assign(ip, client_phone, driver_phone, status, time.strftime("%Y-%m-%d %H:%M:%S"))
+            except:
+                print("数据库异常")
+            threading.Thread(target=assign_commit, args=(client_phone, driver_phone, ip,)).start()
+            return {
+                "code": "0",
+                "msg": "绑定成功\n有效期3小时，有接单操作则时间延长"
+            }
+        else:
+            is_driver_exist = False
+            for v in values:
+                driver_sql = v[3]
+                status_sql = v[4]
+                if driver_phone == driver_sql:
+                    is_driver_exist = True
+                try:
+                    Sql.update_assign(ip, client_phone, driver_sql, '1', time.strftime("%Y-%m-%d %H:%M:%S"))
+                except:
+                    print('数据库异常')
+            try:
+                Sql.update_assign(ip, client_phone, driver_phone, status, time.strftime("%Y-%m-%d %H:%M:%S"))
+            except:
+                print('数据库异常')
+            threading.Thread(target=assign_commit, args=(client_phone, driver_phone, ip,)).start()
+            time.sleep(1)
+            if not is_driver_exist:
+                try:
+                    Sql.insert_assign(ip, client_phone, driver_phone, status, time.strftime("%Y-%m-%d %H:%M:%S"))
+                except:
+                    print("数据库异常")
+                msg = "绑定成功"
+            else:
+                if status_sql == status:
+                    msg = "已绑定，短时间内请勿重复操作"
+                else:
+                    msg = "绑定成功\n有效期3小时，有接单操作则时间延长"
+            return {
+                "code": "0",
+                "msg": msg
+            }
+    elif status == '1':
+        if len(values) == 0:
+            try:
+                Sql.insert_assign(ip, client_phone, driver_phone, status, time.strftime("%Y-%m-%d %H:%M:%S"))
+            except:
+                print('数据库异常')
+            return {
+                "code": "0",
+                "msg": "未绑定过该账号"
+            }
+        else:
+            try:
+                Sql.update_assign(ip, client_phone, driver_phone, status, time.strftime("%Y-%m-%d %H:%M:%S"))
+            except:
+                print('数据库异常')
+            return {
+                "code": "0",
+                "msg": "解绑成功"
+            }
+    else:
+        return {
+            "code": "1",
+            "msg": "type字段错误"
+        }
+
+
+def assign_commit(client_phone, driver_phone, host):
+    AS = Assign(client_phone, driver_phone, host)
+    AS.commit()
 
 
 if __name__ == '__main__':

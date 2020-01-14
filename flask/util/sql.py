@@ -50,7 +50,7 @@ class Sql:
     def insert_user(cls, host, phone, time):
         cnx = pymysql.connect(user=MYSQL_USER, password=MYSQL_PASSWORD, host=MYSQL_HOSTS, database=MYSQL_DB)
         cnr = cnx.cursor()
-        sql = 'INSERT INTO user(host,phone,time) VALUES (%(host)s,%(phone)s,%(time)s)'
+        sql = 'INSERT INTO user(host,phone,time,driver_phone) VALUES (%(host)s,%(phone)s,%(time)s)'
         value = {
             'host': host,
             'phone': phone,
@@ -61,7 +61,55 @@ class Sql:
         cnr.close()
         cnx.close()
 
+    @classmethod
+    def select_assign(cls, client_phone):
+        cnx = pymysql.connect(user=MYSQL_USER, password=MYSQL_PASSWORD, host=MYSQL_HOSTS, database=MYSQL_DB)
+        cnr = cnx.cursor()
+        cnr.execute('select * from assign where client_phone = %s', (client_phone,))
+        values = cnr.fetchall()
+        cnr.close()
+        cnx.close()
+        return values
+
+    @classmethod
+    def select_assign1(cls, host):
+        cnx = pymysql.connect(user=MYSQL_USER, password=MYSQL_PASSWORD, host=MYSQL_HOSTS, database=MYSQL_DB)
+        cnr = cnx.cursor()
+        cnr.execute('select * from assign where host = %s order by time asc', (host,))
+        values = cnr.fetchall()
+        cnr.close()
+        cnx.close()
+        return values
+
+    @classmethod
+    def insert_assign(cls, host, client_phone, driver_phone, status, time):
+        cnx = pymysql.connect(user=MYSQL_USER, password=MYSQL_PASSWORD, host=MYSQL_HOSTS, database=MYSQL_DB)
+        cnr = cnx.cursor()
+        sql = 'INSERT INTO assign(host,client_phone,driver_phone,status,time) VALUES (%(host)s,%(client_phone)s,%(driver_phone)s,%(status)s,%(time)s)'
+        value = {
+            'host': host,
+            'client_phone': client_phone,
+            'driver_phone': driver_phone,
+            'status': status,
+            'time': time
+        }
+        cnr.execute(sql, value)
+        cnx.commit()
+        cnr.close()
+        cnx.close()
+
+    @classmethod
+    def update_assign(cls, host, client_phone, driver_phone, status, time):
+        cnx = pymysql.connect(user=MYSQL_USER, password=MYSQL_PASSWORD, host=MYSQL_HOSTS, database=MYSQL_DB)
+        cnr = cnx.cursor()
+        cnr.execute('UPDATE assign SET host = %s,status = %s,time = %s WHERE client_phone = %s AND driver_phone = %s',
+                    (host, status, time, client_phone, driver_phone))
+        cnx.commit()
+        cnr.close()
+        cnx.close()
+
 
 if __name__ == "__main__":
-    v = Sql.select_user('10.10.31.92')
-    print(v)
+    values = Sql.select_assign('15989104405')
+    for v in values:
+        print(v[4])

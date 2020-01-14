@@ -1,0 +1,72 @@
+<!--author:xiaojiaming -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>派单绑定</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{{ url_for('static', filename = 'ie10-viewport-bug-workaround.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = 'signin.css')}}" rel="stylesheet">
+	<script type = "text/javascript" src = "{{ url_for('static', filename = 'ajax.js') }}" ></script>
+	<script>
+		function run()
+		{
+		var client_phone = document.getElementById("client_phone").value
+		var driver_phone = document.getElementById("driver_phone").value
+		var status = $('input[name="status"]:checked').val()
+		if (client_phone=="请输入乘客手机号"){alert("请输入乘客手机号");return}
+		if (driver_phone=="请输入司机手机号"){alert("请输入司机手机号");return}
+		$.ajax({
+				url: "/testutil/assign/submit",   //对应flask中的路由
+				type: "POST", //请求方法
+				data: {'client_phone':client_phone, 'driver_phone':driver_phone, 'status':status},	 //传送的数据
+				dataType: "json", //传送的数据类型
+				success: function (res) {	//成功得到返回数据后回调的函数
+					msg = res["msg"]
+					alert(msg)
+				}
+			})
+		}
+</script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="form-signin">
+        <h2 class="form-signin-heading">派单绑定</h2>
+        <label  class="sr-only">乘客手机号</label>
+        <input input required maxlength="11" pattern="[0-9]*" id="client_phone" type="text" value={{client_phone}} onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入乘客手机号';}"} class="form-control" >
+        <label  class="sr-only">司机手机号</label>
+        <input input required maxlength="11" pattern="[0-9]*" id="driver_phone" type="text" value={{driver_phone}} onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入司机手机号';}"} class="form-control" >
+        <div class="radio">
+          <label>
+            <input type="radio" value="0" name="status" checked> 绑定
+          </label>
+          <label>
+            <input type="radio" value="1" name="status"> 解绑
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="run()">绑定</button>
+      </div>
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>

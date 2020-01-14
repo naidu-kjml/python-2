@@ -27,12 +27,6 @@ logger.addHandler(handler)
 logger.addHandler(console)
 
 
-try:
-    cnx = pymysql.connect(user='root', password='ruqi123456', host='10.10.28.121', database='xjming')
-    cur = cnx.cursor()
-except:
-    print("数据库异常")
-
 class Adjust:
     def __init__(self, user_phone, env='0', host='127.0.0.1'):
         self.url_top = envs[env]
@@ -41,6 +35,11 @@ class Adjust:
         self.orders = []
         self.message = ''
         self.host = host
+        try:
+            self.cnx = pymysql.connect(user='root', password='ruqi123456', host='10.10.28.121', database='xjming')
+            self.cur = self.cnx.cursor()
+        except:
+            print("数据库异常")
 
     def login(self):
         logger.info('Login RUQIMobility')
@@ -109,7 +108,7 @@ class Adjust:
         # 数据库保存记录
         try:
             logger.info('Insert database')
-            cur.execute(
+            self.cur.execute(
                 'insert into adjust_record (host,phone,orderId,result,time) values (%s, %s, %s, %s, %s)',
                 [self.host, self.user_phone, orderId, result,
                  time.strftime("%Y-%m-%d %H:%M:%S")])
@@ -130,7 +129,9 @@ class Adjust:
                 self.message += "订单：%s\n改价失败\n" % orderId
         try:
             logger.info("Database commit")
-            cnx.commit()
+            self.cnx.commit()
+            self.cur.close()
+            self.cnx.close()
         except:
             logger.error("Insert Fail")
         if len(self.orders) == 0:

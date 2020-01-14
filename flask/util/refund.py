@@ -13,11 +13,6 @@ import pymysql
 if 'linux' in sys.platform:
     reload(sys)
     sys.setdefaultencoding('utf8')
-try:
-    cnx = pymysql.connect(user='root', password='ruqi123456', host='10.10.28.121', database='xjming')
-    cur = cnx.cursor()
-except:
-    print("数据库异常")
 
 USER_PHONE = ['13250790293', '15989104405']
 envs = {'0': 'https://managetest.ruqimobility.com', '1': 'http://111.230.118.77'}
@@ -54,6 +49,11 @@ class Refund:
         self.orders = []
         self.message = ''
         self.host = host
+        try:
+            self.cnx = pymysql.connect(user='root', password='ruqi123456', host='10.10.28.121', database='xjming')
+            self.cur = self.cnx.cursor()
+        except:
+            print("数据库异常")
 
     def login(self):
         logger.info('Login RUQIMobility')
@@ -153,7 +153,7 @@ class Refund:
         # 数据库保存记录
         try:
             logger.info('Insert database')
-            cur.execute(
+            self.cur.execute(
                 'insert into refund_record (host,phone,orderId,refundBaseAmount,refundExtraAmount,result,time) values (%s, %s, %s, %s, %s, %s, %s)',
                 [self.host, self.user_phone, orderId, refundBaseAmount, refundExtraAmount, result,
                  time.strftime("%Y-%m-%d %H:%M:%S")])
@@ -228,7 +228,9 @@ class Refund:
             self.message += "\n退款完成\n耗时：%.2fs" % costs_time
         try:
             logger.info("Database commit")
-            cnx.commit()
+            self.cnx.commit()
+            self.cur.close()
+            self.cnx.close()
         except:
             logger.error("Insert Fail")
         finally:
