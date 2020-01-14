@@ -97,7 +97,8 @@ class Assign:
 
     def select_drivers(self):
         payload = {"pageIndex": 1,
-                   "manualLimit": 10,
+                   "manualLimit": 100,
+                   "manualRadius": "2000",
                    "carTypeIds": self.order['carTypeIds'],
                    "endCity": self.order['endCity'],
                    "orderId": self.order['orderId'],

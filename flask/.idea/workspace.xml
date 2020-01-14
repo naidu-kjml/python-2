@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c7aad88-a473-4237-ac5c-a64b3dbf1cd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/log/adjust/20200113.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/adjust/20200114.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/refund/20200113.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/refund/20200114.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/uploadDrivers/20200113.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/uploadDrivers/20200114.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/assign.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/assignDriver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/log/adjust/20200113.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/log/adjust/20200114.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/log/refund/20200114.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/adjust.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/adjust.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/refund.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/refund.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assign.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/assignDriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/assignDriver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578632975633</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="增加派单绑定功能">
+      <created>1578984993743</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1578984993743</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -350,7 +344,8 @@
     <MESSAGE value="修改数据库为pymysql" />
     <MESSAGE value="取消司机录入发邮件功能" />
     <MESSAGE value="修复数据库隔天无效的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复数据库隔天无效的问题" />
+    <MESSAGE value="增加派单绑定功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加派单绑定功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="22" key="#Inspections" timestamp="1576207066102">
@@ -369,11 +364,11 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="520" y="63" key="#xdebugger.evaluate/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1576232828306" />
-    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1578632974831">
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1578984991987">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="104" y="-1440" key="CommitChangelistDialog2/0.0.1280.720/-349.-1440.2048.1152@-349.-1440.2048.1152" timestamp="1576632567947" />
-    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578632974831" />
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578984991987" />
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1576340117136" />
     <state x="2203" y="0" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1280.720@1920.0.1280.720" timestamp="1576396765134" />
     <state x="183" y="63" width="1024" height="604" key="DiffContextDialog" timestamp="1576671269864">
@@ -385,28 +380,28 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="420" y="102" key="FileChooserDialogImpl/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578466912243" />
-    <state width="1259" height="177" key="GridCell.Tab.0.bottom" timestamp="1578983038945">
+    <state width="1259" height="177" key="GridCell.Tab.0.bottom" timestamp="1578985297237">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1259" height="177" key="GridCell.Tab.0.bottom/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578983038945" />
+    <state width="1259" height="177" key="GridCell.Tab.0.bottom/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578985297237" />
     <state width="1244" height="203" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1576344197019" />
     <state width="1259" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1280.720@1920.0.1280.720" timestamp="1576396771332" />
-    <state width="1259" height="177" key="GridCell.Tab.0.center" timestamp="1578983038945">
+    <state width="1259" height="177" key="GridCell.Tab.0.center" timestamp="1578985297237">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1259" height="177" key="GridCell.Tab.0.center/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578983038945" />
+    <state width="1259" height="177" key="GridCell.Tab.0.center/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578985297237" />
     <state width="1244" height="203" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1576344197018" />
     <state width="1259" height="205" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1280.720@1920.0.1280.720" timestamp="1576396771331" />
-    <state width="1259" height="177" key="GridCell.Tab.0.left" timestamp="1578983038945">
+    <state width="1259" height="177" key="GridCell.Tab.0.left" timestamp="1578985297237">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1259" height="177" key="GridCell.Tab.0.left/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578983038945" />
+    <state width="1259" height="177" key="GridCell.Tab.0.left/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578985297237" />
     <state width="1244" height="203" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1576344197018" />
     <state width="1259" height="205" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1280.720@1920.0.1280.720" timestamp="1576396771331" />
-    <state width="1259" height="177" key="GridCell.Tab.0.right" timestamp="1578983038945">
+    <state width="1259" height="177" key="GridCell.Tab.0.right" timestamp="1578985297237">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1259" height="177" key="GridCell.Tab.0.right/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578983038945" />
+    <state width="1259" height="177" key="GridCell.Tab.0.right/0.0.1280.720/-349.-1440.2048.1152@0.0.1280.720" timestamp="1578985297237" />
     <state width="1244" height="203" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1576344197018" />
     <state width="1259" height="205" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1280.720@1920.0.1280.720" timestamp="1576396771332" />
     <state width="1259" height="220" key="GridCell.Tab.1.bottom" timestamp="1578452686455">
