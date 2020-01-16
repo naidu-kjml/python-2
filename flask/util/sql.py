@@ -110,6 +110,8 @@ class Sql:
 
 
 if __name__ == "__main__":
+    cnx = pymysql.connect(user=MYSQL_USER, password=MYSQL_PASSWORD, host=MYSQL_HOSTS, database=MYSQL_DB)
+    cnr = cnx.cursor()
     values = Sql.select_assign('15989104405')
     for v in values:
         print(v[4])

@@ -16,7 +16,7 @@ if 'linux' in sys.platform:
     reload(sys)
     sys.setdefaultencoding('utf8')
 
-run_time = 6  # 持续时间 小时
+run_time = 1  # 持续时间 小时
 sleep_time = 5  # 查询间隔时间 秒
 
 headers = {
@@ -113,7 +113,7 @@ class Assign:
             else:
                 print('获取司机失败')
                 continue
-            time.sleep(1)
+            time.sleep(0.1)
         return False
 
     def assign(self, order, driver_mes):
@@ -137,13 +137,14 @@ class Assign:
         print(response.text)
         if response.json()['code'] == 0:
             print('指派成功！！！')
-            if True:
+            try:
                 self.gen_sql_con()
                 self.cur.execute(
-                    'insert into assign_record (client_phone,driver_phone,orderId,time) values (%s, %s, %s, %s)',
-                    [order["userPhone", driver_mes["phone"], order['orderId']], time.strftime("%Y-%m-%d %H:%M:%S")])
-            # except:
-            #     print("数据库异常")
+                    'insert into assign_record (client_phone,driver_phone,order_id,time) values (%s, %s, %s, %s)',
+                    [order["userPhone"], driver_mes["phone"], order['orderId'], time.strftime("%Y-%m-%d %H:%M:%S")])
+                self.clo_sql_con()
+            except:
+                print('数据库异常')
             return True
         else:
             print(response.json()['message'])
@@ -171,7 +172,7 @@ class Assign:
     def commit(self):
         t = 1
         while t < int((run_time * 3600) / sleep_time):
-            print("******第%d次运行*****" % t)
+            print("******第%d次运行******" % t)
             print(time.strftime("%Y-%m-%d %H:%M:%S"))
             t += 1
             if self.get_client_diver():
@@ -179,7 +180,7 @@ class Assign:
                     for order in self.orders:
                         if order['status'] in [2, 3, 4, 5]:
                             print('存在可改派的订单')
-                            if order['userPhone'] in self.clients:
+                            if order['userPhone'] in self.clients and order['driverPhone'] != self.client_driver[order['userPhone']]:
                                 print("满足指派条件")
                                 if self.select(order):
                                     for driver in self.select_drivers:
@@ -212,9 +213,9 @@ class Assign:
                             continue
             time.sleep(sleep_time)
 
+
 class Email:
     def __init__(self, server, sender, password, receiver, title):
-
         self.title = title
         self.msg = MIMEMultipart('related')
         self.server = server
@@ -222,17 +223,17 @@ class Email:
         self.receiver = receiver
         self.password = password
 
-    def send(self,m):
-        self.msg['Subject'] = Header(self.title,'utf-8')
+    def send(self, m):
+        self.msg['Subject'] = Header(self.title, 'utf-8')
         self.msg['From'] = Header(self.sender)
         self.msg['To'] = self.receiver
-        content = MIMEText(m,'plain','utf-8')
+        content = MIMEText(m, 'plain', 'utf-8')
         self.msg.attach(content)
         smtp_server = smtplib.SMTP(self.server)
         # smtp_server.set_debuglevel(1)
         smtp_server.starttls()
-        smtp_server.login(self.sender,self.password)
-        smtp_server.sendmail(self.sender,self.receiver,self.msg.as_string())
+        smtp_server.login(self.sender, self.password)
+        smtp_server.sendmail(self.sender, self.receiver, self.msg.as_string())
         smtp_server.close()
 
 
